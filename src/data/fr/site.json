@@ -33,7 +33,7 @@
     "proofLabel": "ans d'expérience",
     "proofSub": "Produits en ligne, clients accompagnés, projets pilotés"
   },
-  "logos": ["Beneloo", "Service-Volée", "BibliPulse", "Observatory", "Iris Noir", "Royal Wellington"],
+  "logos": ["Beneloo", "Service-Volée", "Bibliopulse", "Observatory", "Iris Noir", "Royal Wellington"],
   "logosLabel": "Mes produits & projets",
   "mission": {
     "label": "Ma mission",
@@ -49,7 +49,7 @@
   "counters": [
     { "label": "Années", "value": 20, "suffix": "+", "text": "D'expérience en IT, produit et transformation digitale, de la PME au groupe pharma." },
     { "label": "Produits", "value": 6, "suffix": "", "text": "Applications et sites que j'ai conçus, construits et mis en ligne moi-même." },
-    { "label": "Projets", "value": 30, "suffix": "+", "text": "Projets digitaux menés de l'idée jusqu'à la mise en ligne, en direct ou en pilotage." },
+    { "label": "Projets", "value": 200, "suffix": "+", "text": "Projets web construits ou pilotés en vingt ans de carrière, du site vitrine à l'application métier." },
     { "label": "Secteurs", "value": 8, "suffix": "", "text": "Pharma, sport, immobilier, culture, santé, industrie, édition, services." }
   ],
   "portfolio": {
@@ -173,7 +173,7 @@
       "intro": "Qui je suis, ce que je fais, ",
       "introStrong": "et comment je travaille.",
       "paragraphs": [
-        "Je m'appelle Benjamin de Bruijne. Je vis en Belgique, près de Bruxelles, et je travaille depuis plus de vingt ans dans l'IT : développement, gestion de projets, produit, qualité, transformation digitale.",
+        "Je m'appelle Benjamin de Bruijne. Je vis en Belgique, près de Bruxelles, et je travaille depuis plus de vingt ans dans l'IT — plus de 200 projets web construits ou pilotés : développement, gestion de projets, produit, qualité, transformation digitale.",
         "J'ai piloté des projets dans des environnements très cadrés (industrie pharmaceutique, réglementaire) et construit, en parallèle, mes propres produits : une plateforme de classement sportif, une bibliothèque personnelle pour lecteurs, un observatoire de la visibilité des PME dans les moteurs d'IA.",
         "Ce double parcours est ma particularité : la rigueur du grand groupe, la vitesse de l'indépendant. Je sais cadrer, documenter et livrer dans les règles, et je sais aussi coder un outil complet en quelques jours quand c'est ce qu'il faut.",
         "Je travaille via ma société, Hakuna Matata SRL, et je choisis des outils qui vous laissent la main : code que vous possédez, données chez vous, pas d'abonnement opaque."

@@ -33,7 +33,7 @@
     "proofLabel": "years of experience",
     "proofSub": "Products shipped, clients supported, projects delivered"
   },
-  "logos": ["Beneloo", "Service-Volée", "BibliPulse", "Observatory", "Iris Noir", "Royal Wellington"],
+  "logos": ["Beneloo", "Service-Volée", "Bibliopulse", "Observatory", "Iris Noir", "Royal Wellington"],
   "logosLabel": "My products & projects",
   "mission": {
     "label": "My mission",
@@ -49,7 +49,7 @@
   "counters": [
     { "label": "Years", "value": 20, "suffix": "+", "text": "Of experience in IT, product and digital transformation, from SMEs to pharma groups." },
     { "label": "Products", "value": 6, "suffix": "", "text": "Applications and websites I designed, built and shipped myself." },
-    { "label": "Projects", "value": 30, "suffix": "+", "text": "Digital projects taken from idea to launch, hands-on or as project lead." },
+    { "label": "Projects", "value": 200, "suffix": "+", "text": "Web projects built or delivered across twenty years, from brochure sites to custom apps." },
     { "label": "Sectors", "value": 8, "suffix": "", "text": "Pharma, sport, real estate, culture, health, industry, publishing, services." }
   ],
   "portfolio": {
@@ -173,7 +173,7 @@
       "intro": "Who I am, what I do, ",
       "introStrong": "and how I work.",
       "paragraphs": [
-        "My name is Benjamin de Bruijne. I live in Belgium, near Brussels, and I have worked in IT for over twenty years: development, project management, product, quality, digital transformation.",
+        "My name is Benjamin de Bruijne. I live in Belgium, near Brussels, and I have worked in IT for over twenty years — over 200 web projects built or delivered: development, project management, product, quality, digital transformation.",
         "I have led projects in highly regulated environments (pharmaceutical industry) and built, in parallel, my own products: a sports ranking platform, a personal library for readers, an observatory of SME visibility in AI engines.",
         "That double track is my edge: the rigour of a large group, the speed of a freelancer. I can scope, document and deliver by the book, and I can also code a complete tool in a few days when that is what is needed.",
         "I work through my company, Hakuna Matata SRL, and I pick tools that leave you in control: code you own, data at home, no opaque subscriptions."
