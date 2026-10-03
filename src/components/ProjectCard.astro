@@ -10,7 +10,7 @@ const s = getSite(lang);
 <a href={projectHref(p.slug, lang)} class="pc reveal">
   <div class="pc__visual trame" style={`--pc: ${p.color}`}>
     <p class="pc__meta mono"><span class="label">0{index + 1}</span><span>{p.tag}</span></p>
-    <p class="pc__name">{p.slug.replace(/-/g, ' ')}</p>
+    <p class="pc__name">{p.name}</p>
     <p class="pc__kpi"><span class="h-xl">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
   </div>
   <div class="pc__body">
@@ -20,14 +20,14 @@ const s = getSite(lang);
   </div>
 </a>
 <style>
-  .pc { display: grid; background: var(--c-white); border: 1px solid var(--c-grey-300); color: var(--c-dark); transition: transform .5s var(--ease-out-strong); }
+  .pc { display: grid; grid-template-rows: auto 1fr; background: var(--c-white); border: 1px solid var(--c-grey-300); color: var(--c-dark); transition: transform .5s var(--ease-out-strong); }
   .pc:hover { transform: translateY(-4px); }
   .pc__visual { background: var(--pc); color: var(--c-white); aspect-ratio: 4/3; display: grid; grid-template-rows: auto 1fr auto; padding: 16px; --trame: #ffffff1f; }
   .pc__meta { display: flex; justify-content: space-between; }
   .pc__meta .label::before { background: var(--c-white); }
-  .pc__name { place-self: center; font-weight: 700; font-size: 22px; letter-spacing: -.02em; text-transform: capitalize; text-align: center; }
+  .pc__name { place-self: center; font-weight: 700; font-size: 22px; letter-spacing: -.02em; text-align: center; }
   .pc__kpi { display: flex; justify-content: space-between; align-items: end; }
-  .pc__kpi .h-xl { font-weight: 700; }
+  .pc__kpi .h-xl { font-weight: 700; font-size: clamp(28px, 2.6vw, 44px); white-space: nowrap; }
   .pc__body { padding: 16px; display: grid; gap: 16px; }
   .pc__year { margin-left: 12px; }
   .pc__text { font-size: 14px; text-transform: uppercase; line-height: 1.4; color: var(--c-grey-500); max-width: 40ch; }

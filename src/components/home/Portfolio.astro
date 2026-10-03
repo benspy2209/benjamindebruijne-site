@@ -13,13 +13,15 @@ const head = all ? { title: s.pages.projects.title, intro: s.pages.projects.intr
   <div class="wrap">
     <SectionHead num={num} label={s.portfolio.label} title={head.title} intro={head.intro} introStrong={head.introStrong} as={all ? 'h1' : 'h2'} />
     <div class:list={['pf__grid', { 'pf__grid--all': all }]}>
-      {projects.map((p, i) => <ProjectCard lang={lang} project={p} index={i} />)}
+      {projects.map((p, i) => <div class="pf__cell"><ProjectCard lang={lang} project={p} index={i} /></div>)}
     </div>
   </div>
 </section>
 <style>
   .pf { background: var(--c-grey-100); }
   .pf__grid { margin-top: 64px; display: grid; gap: 20px; }
+  .pf__cell { display: grid; }
+  @media (width >= 810px) { .pf__grid:not(.pf__grid--all) .pf__cell:first-child :global(.pc__visual) { aspect-ratio: 16/7; } }
   @media (width >= 810px) {
     .pf__grid { grid-template-columns: repeat(6, 1fr); }
     .pf__grid > :nth-child(1) { grid-column: span 4; }

@@ -1,8 +1,104 @@
 [
-  { "slug": "service-volee", "tag": "Product · Tennis", "kpi": "27,000+", "kpiLabel": "players indexed", "role": "Product & development", "year": "2026", "lead": "the Belgian tennis ranking, live:", "text": " player profiles, ranking forecasts, match counter and provisional results.", "url": "https://servicevolee.be", "color": "#1d3a8a", "body": ["Service-Volée takes the federation's public data and makes it readable: every player has a profile, a history, their six best results and a ranking projection. A mobile match counter lets you umpire and share a live score.", "Stack: Next.js, Postgres (Neon), scheduled crawler, installable PWA, account area with magic link."] },
-  { "slug": "bibliopulse", "tag": "Product · Reading", "kpi": "4,000+", "kpiLabel": "books catalogued", "role": "Product & development", "year": "2025", "lead": "the personal library for readers:", "text": " cover scanning, duplicate detection, shareable to-read pile.", "url": "https://bibliopulse.com", "color": "#7a2e1d", "body": ["BibliPulse lets a reader catalogue their library by scanning barcodes, avoid duplicates and share their to-read pile publicly. Over 300 sign-ups through organic growth.", "Stack: React, Supabase, PWA, static pre-rendering for SEO, automated onboarding emails."] },
-  { "slug": "observatory", "tag": "Research · AI", "kpi": "97%", "kpiLabel": "of SMEs invisible", "role": "Design & data", "year": "2026", "lead": "the observatory of Belgian SME visibility", "text": " in ChatGPT, Claude, Gemini and Perplexity, sector by sector.", "url": "https://beneloo.com", "color": "#12121f", "body": ["The Observatory queries four AI models with frozen prompts over exhaustive samples of companies (accountants, plumbers…) and measures who is cited, who is hallucinated, who is invisible. Result: over 96% of local SMEs never appear.", "Stack: Python, Postgres, immutable campaign pipeline, human validation, anonymised reports."] },
-  { "slug": "iris-noir", "tag": "Website · Event", "kpi": "37", "kpiLabel": "guest authors", "role": "Redesign & development", "year": "2026", "lead": "the website of the Brussels crime-fiction fair,", "text": " shop, press and programme included, moved off WordPress.", "url": "https://irisnoirbxl.com", "color": "#2b1d4a", "body": ["Complete redesign of the Iris Noir non-profit's website: fair programme, authors, press, shop with cart and ordering, contact form. Content migrated from the old WordPress, classic shared hosting.", "Stack: React, JSON content, lightweight PHP API, automated deployment."] },
-  { "slug": "royal-wellington", "tag": "Website · Sports club", "kpi": "3", "kpiLabel": "languages", "role": "Review & development", "year": "2026", "lead": "the redesign of a hockey, tennis and padel club's website,", "text": " founded in 1928, in three languages.", "url": "https://well.beneloo.com", "color": "#1d4a2b", "body": ["Editorial and technical review of the Royal Wellington Club website: disciplines, memberships, selections, private hire, physiotherapy. Content validated section by section with the club.", "Stack: TanStack Start, Cloudflare Workers, trilingual content."] },
-  { "slug": "beneloo", "tag": "Brand · AI visibility", "kpi": "6", "kpiLabel": "score pillars", "role": "Founder", "year": "2024", "lead": "my consulting brand:", "text": " the Beneloo Score measures an SME's visibility in AI engines and says what to fix.", "url": "https://beneloo.com", "color": "#8a3a1d", "body": ["Beneloo is the brand under which I support Belgian SMEs on AI visibility: diagnosis, six-pillar score, action plan, follow-up. The website, the prospecting portal and the observatory are tools I built myself.", "Stack: Next.js, Supabase, OpenAI and Perplexity, prospecting pipeline."] }
+  {
+    "slug": "service-volee",
+    "name": "Service-Volée",
+    "tag": "Product · Tennis",
+    "kpi": "27,000+",
+    "kpiLabel": "players indexed",
+    "role": "Product & development",
+    "year": "2026",
+    "lead": "the Belgian tennis ranking, live:",
+    "text": " player profiles, ranking forecasts, match counter and provisional results.",
+    "url": "https://servicevolee.be",
+    "color": "#1d3a8a",
+    "body": [
+      "Service-Volée takes the federation's public data and makes it readable: every player has a profile, a history, their six best results and a ranking projection. A mobile match counter lets you umpire and share a live score.",
+      "Stack: Next.js, Postgres (Neon), scheduled crawler, installable PWA, account area with magic link."
+    ]
+  },
+  {
+    "slug": "bibliopulse",
+    "name": "BibliPulse",
+    "tag": "Product · Reading",
+    "kpi": "4,000+",
+    "kpiLabel": "books catalogued",
+    "role": "Product & development",
+    "year": "2025",
+    "lead": "the personal library for readers:",
+    "text": " cover scanning, duplicate detection, shareable to-read pile.",
+    "url": "https://bibliopulse.com",
+    "color": "#7a2e1d",
+    "body": [
+      "BibliPulse lets a reader catalogue their library by scanning barcodes, avoid duplicates and share their to-read pile publicly. Over 300 sign-ups through organic growth.",
+      "Stack: React, Supabase, PWA, static pre-rendering for SEO, automated onboarding emails."
+    ]
+  },
+  {
+    "slug": "observatory",
+    "name": "Beneloo Observatory",
+    "tag": "Research · AI",
+    "kpi": "97%",
+    "kpiLabel": "of SMEs invisible",
+    "role": "Design & data",
+    "year": "2026",
+    "lead": "the observatory of Belgian SME visibility",
+    "text": " in ChatGPT, Claude, Gemini and Perplexity, sector by sector.",
+    "url": "https://beneloo.com",
+    "color": "#12121f",
+    "body": [
+      "The Observatory queries four AI models with frozen prompts over exhaustive samples of companies (accountants, plumbers…) and measures who is cited, who is hallucinated, who is invisible. Result: over 96% of local SMEs never appear.",
+      "Stack: Python, Postgres, immutable campaign pipeline, human validation, anonymised reports."
+    ]
+  },
+  {
+    "slug": "iris-noir",
+    "name": "Iris Noir Bruxelles",
+    "tag": "Website · Event",
+    "kpi": "37",
+    "kpiLabel": "guest authors",
+    "role": "Redesign & development",
+    "year": "2026",
+    "lead": "the website of the Brussels crime-fiction fair,",
+    "text": " shop, press and programme included, moved off WordPress.",
+    "url": "https://irisnoirbxl.com",
+    "color": "#2b1d4a",
+    "body": [
+      "Complete redesign of the Iris Noir non-profit's website: fair programme, authors, press, shop with cart and ordering, contact form. Content migrated from the old WordPress, classic shared hosting.",
+      "Stack: React, JSON content, lightweight PHP API, automated deployment."
+    ]
+  },
+  {
+    "slug": "royal-wellington",
+    "name": "Royal Wellington",
+    "tag": "Website · Sports club",
+    "kpi": "3",
+    "kpiLabel": "languages",
+    "role": "Review & development",
+    "year": "2026",
+    "lead": "the redesign of a hockey, tennis and padel club's website,",
+    "text": " founded in 1928, in three languages.",
+    "url": "https://well.beneloo.com",
+    "color": "#1d4a2b",
+    "body": [
+      "Editorial and technical review of the Royal Wellington Club website: disciplines, memberships, selections, private hire, physiotherapy. Content validated section by section with the club.",
+      "Stack: TanStack Start, Cloudflare Workers, trilingual content."
+    ]
+  },
+  {
+    "slug": "beneloo",
+    "name": "Beneloo",
+    "tag": "Brand · AI visibility",
+    "kpi": "6",
+    "kpiLabel": "score pillars",
+    "role": "Founder",
+    "year": "2024",
+    "lead": "my consulting brand:",
+    "text": " the Beneloo Score measures an SME's visibility in AI engines and says what to fix.",
+    "url": "https://beneloo.com",
+    "color": "#8a3a1d",
+    "body": [
+      "Beneloo is the brand under which I support Belgian SMEs on AI visibility: diagnosis, six-pillar score, action plan, follow-up. The website, the prospecting portal and the observatory are tools I built myself.",
+      "Stack: Next.js, Supabase, OpenAI and Perplexity, prospecting pipeline."
+    ]
+  }
 ]

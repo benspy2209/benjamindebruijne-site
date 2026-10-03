@@ -11,7 +11,7 @@ const s = getSite(lang);
 const all = getProjects(lang);
 const idx = all.findIndex((x) => x.slug === p.slug);
 const next = all[(idx + 1) % all.length];
-const title = p.slug.replace(/-/g, ' ');
+const title = p.name;
 ---
 <Base lang={lang} routeKey="projects" slug={p.slug} title={title} description={`${p.lead}${p.text}`} onDark>
   <section class="pj dark trame" style={`--pc: ${p.color}`}>
@@ -45,7 +45,7 @@ const title = p.slug.replace(/-/g, ' ');
 <style>
   .pj { background: var(--pc); --trame: #ffffff1f; }
   .pj__hero { padding-top: calc(var(--header-h) + 48px); padding-bottom: 48px; display: grid; gap: 28px; }
-  .pj__title { text-transform: capitalize; }
+  .pj__title { text-transform: none; }
   .pj__lead { max-width: 48ch; }
   .pj__meta { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; }
   .pj__meta dd { margin: 0; }
