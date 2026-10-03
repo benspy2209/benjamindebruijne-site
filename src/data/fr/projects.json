@@ -85,6 +85,108 @@
     ]
   },
   {
+    "slug": "singulr",
+    "name": "Singulr",
+    "tag": "Marque · Infrastructure",
+    "kpi": "2",
+    "kpiLabel": "VPS en production",
+    "role": "Fondateur & architecte",
+    "year": "2026",
+    "lead": "ma société de conseil tech en constitution :",
+    "text": " Forgejo self-hébergé, PostgreSQL, Caddy, déploiement continu.",
+    "url": "https://singulr.be",
+    "color": "#1e3a5f",
+    "body": [
+      "Singulr SRL est ma structure de conseil technique en cours de constitution. L'infrastructure est déjà live : Forgejo sur forge.singulr.be, deux VPS Behostings, PostgreSQL, Caddy en reverse-proxy, déploiement automatisé.",
+      "Stack : Forgejo, PostgreSQL, Caddy, VPS Debian."
+    ]
+  },
+  {
+    "slug": "wimbledon",
+    "name": "Wimbledon Club",
+    "tag": "Site · Club sportif",
+    "kpi": "1",
+    "kpiLabel": "club, 3 disciplines",
+    "role": "Développement",
+    "year": "2025",
+    "lead": "le site d'un club sportif belge,",
+    "text": " vitrine des disciplines, agenda et informations pratiques.",
+    "url": "https://wim.beneloo.com",
+    "color": "#2e5c1a",
+    "body": [
+      "Développement du site web d'un club sportif belge : présentation des disciplines, agenda des événements, informations pratiques et formulaire de contact.",
+      "Stack : React, contenu JSON, déploiement Vercel."
+    ]
+  },
+  {
+    "slug": "pulse-noir",
+    "name": "Pulse Noir",
+    "tag": "Communauté · Polar",
+    "kpi": "2 150+",
+    "kpiLabel": "membres actifs",
+    "role": "Fondateur",
+    "year": "2023",
+    "lead": "la communauté francophone du polar et du thriller :",
+    "text": " hub auteurs, Grand Prix littéraire, magazine, bibliothèque de 1 900+ livres.",
+    "url": "https://pulsenoir.be",
+    "color": "#1a0a2e",
+    "body": [
+      "Pulse Noir est l'écosystème polar que j'anime sous le pseudonyme PULSEMAN : groupe Facebook de 2 150+ membres, site pulsenoir.be avec 1 900+ livres et 267 auteurs référencés, La Revue Pulse Noir, le Grand Prix Pulse Noir (247 votes, 22 finalistes, jury de 20 lecteurs) et BiblioPulse.",
+      "Stack : React, Supabase, Brevo, Lovable, Claude API, Stripe, Edge Middleware SEO."
+    ]
+  },
+  {
+    "slug": "saul-racine",
+    "name": "Saul Racine",
+    "tag": "Site · Auteur",
+    "kpi": "1",
+    "kpiLabel": "roman en écriture",
+    "role": "Auteur & développement",
+    "year": "2025",
+    "lead": "mon site d'auteur sous pseudonyme :",
+    "text": " Le Cartographe des Ombres, roman noir social en cours de soumission.",
+    "url": "https://saulracine.be",
+    "color": "#2e1a0a",
+    "body": [
+      "Saul Racine est mon nom de plume pour la fiction noire francophone. Le site présente mon univers, mes textes publiés sur le Dark Blog de Pulse Noir et mon roman \"On attend. On instruit. On condamne.\", thriller social ancré dans le milieu maçonnique belge.",
+      "Stack : Astro, contenu Markdown, déploiement Vercel."
+    ]
+  },
+  {
+    "slug": "rene-manzor",
+    "name": "René Manzor",
+    "tag": "Site · Cinéaste & auteur",
+    "kpi": "30+",
+    "kpiLabel": "années de carrière",
+    "role": "Développement",
+    "year": "2025",
+    "lead": "le site officiel du cinéaste et auteur René Manzor,",
+    "text": " filmographie complète, masterclass et espace presse.",
+    "url": "https://renemanzor.com",
+    "color": "#0a1a2e",
+    "body": [
+      "Site officiel de René Manzor, réalisateur et auteur franco-thaïlandais connu pour ses films à caractère fantastique et noir. Le site présente sa filmographie, ses livres, sa masterclass en ligne et un espace presse.",
+      "Stack : React, TypeScript, contenu structuré, déploiement Vercel."
+    ]
+  },
+  {
+    "slug": "chir-ophta",
+    "name": "Chir-Ophta",
+    "tag": "Site · Médical",
+    "kpi": "1",
+    "kpiLabel": "cabinet spécialisé",
+    "role": "Développement",
+    "year": "2025",
+    "lead": "le site d'un cabinet de chirurgie ophtalmologique belge,",
+    "text": " soins, équipe et prise de rendez-vous.",
+    "url": "https://chir-ophta.be",
+    "color": "#0a2e3a",
+    "body": [
+      "Site vitrine pour un cabinet de chirurgie ophtalmologique en Belgique : présentation des chirurgiens, des actes pris en charge, des techniques utilisées et formulaire de prise de rendez-vous.",
+      "Stack : React, contenu JSON, déploiement Vercel."
+    ]
+  },
+  {
     "slug": "beneloo",
     "name": "Beneloo",
     "tag": "Marque · Visibilité IA",
