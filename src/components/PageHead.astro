@@ -1,0 +1,15 @@
+---
+/** En-tête de page intérieure : label + titre géant + intro, sur fond sombre. */
+import SectionHead from './SectionHead.astro';
+interface Props { num: string; label: string; title: string[]; intro?: string; introStrong?: string }
+const { num, label, title, intro, introStrong } = Astro.props;
+---
+<section class="ph dark trame">
+  <div class="wrap ph__in">
+    <SectionHead num={num} label={label} title={title} intro={intro} introStrong={introStrong} as="h1" />
+  </div>
+</section>
+<style>
+  .ph__in { padding-top: calc(var(--header-h) + 48px); padding-bottom: 64px; }
+  @media (width >= 810px) { .ph__in { padding-top: calc(var(--header-h) + 96px); padding-bottom: 96px; } }
+</style>

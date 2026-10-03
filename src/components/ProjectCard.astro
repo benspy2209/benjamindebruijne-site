@@ -1,0 +1,39 @@
+---
+import type { Lang } from '../lib/i18n';
+import { projectHref } from '../lib/i18n';
+import { getSite, type Project } from '../lib/content';
+import Icon from './Icon.astro';
+interface Props { lang: Lang; project: Project; index: number }
+const { lang, project: p, index } = Astro.props;
+const s = getSite(lang);
+---
+<a href={projectHref(p.slug, lang)} class="pc reveal">
+  <div class="pc__visual trame" style={`--pc: ${p.color}`}>
+    <p class="pc__meta mono"><span class="label">0{index + 1}</span><span>{p.tag}</span></p>
+    <p class="pc__name">{p.slug.replace(/-/g, ' ')}</p>
+    <p class="pc__kpi"><span class="h-xl">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
+  </div>
+  <div class="pc__body">
+    <p class="mono pc__role"><span class="muted">{s.portfolio.role}</span> {p.role} <span class="muted pc__year">{s.portfolio.year}</span> {p.year}</p>
+    <p class="pc__text"><strong>{p.lead}</strong>{p.text}</p>
+    <p class="pc__cta mono">{s.portfolio.cta}<span class="btn__i"><Icon name="chevron" /></span></p>
+  </div>
+</a>
+<style>
+  .pc { display: grid; background: var(--c-white); border: 1px solid var(--c-grey-300); color: var(--c-dark); transition: transform .5s var(--ease-out-strong); }
+  .pc:hover { transform: translateY(-4px); }
+  .pc__visual { background: var(--pc); color: var(--c-white); aspect-ratio: 4/3; display: grid; grid-template-rows: auto 1fr auto; padding: 16px; --trame: #ffffff1f; }
+  .pc__meta { display: flex; justify-content: space-between; }
+  .pc__meta .label::before { background: var(--c-white); }
+  .pc__name { place-self: center; font-weight: 700; font-size: 22px; letter-spacing: -.02em; text-transform: capitalize; text-align: center; }
+  .pc__kpi { display: flex; justify-content: space-between; align-items: end; }
+  .pc__kpi .h-xl { font-weight: 700; }
+  .pc__body { padding: 16px; display: grid; gap: 16px; }
+  .pc__year { margin-left: 12px; }
+  .pc__text { font-size: 14px; text-transform: uppercase; line-height: 1.4; color: var(--c-grey-500); max-width: 40ch; }
+  .pc__text strong { color: var(--c-dark); font-weight: 600; }
+  .pc__cta { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--c-grey-300); padding-top: 16px; margin-top: 8px; }
+  .pc__cta .btn__i { width: 28px; height: 28px; display: grid; place-items: center; background: var(--c-accent); color: #fff; transition: transform .4s var(--ease-out-strong); }
+  .pc:hover .pc__cta .btn__i { transform: translateX(3px); }
+  .pc__cta .btn__i svg { width: 10px; height: 10px; }
+</style>

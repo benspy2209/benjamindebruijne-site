@@ -1,0 +1,22 @@
+---
+import type { Lang } from '../lib/i18n';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/home/Hero.astro';
+import LogoMarquee from '../components/home/LogoMarquee.astro';
+import Mission from '../components/home/Mission.astro';
+import Portfolio from '../components/home/Portfolio.astro';
+import Services from '../components/home/Services.astro';
+import Process from '../components/home/Process.astro';
+import ContactForm from '../components/home/ContactForm.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<Base lang={lang} routeKey="home" onDark>
+  <Hero lang={lang} />
+  <LogoMarquee lang={lang} />
+  <Mission lang={lang} />
+  <Portfolio lang={lang} />
+  <Services lang={lang} />
+  <Process lang={lang} />
+  <ContactForm lang={lang} />
+</Base>

@@ -1,0 +1,15 @@
+---
+import type { Lang, RouteKey } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Prose from '../components/Prose.astro';
+interface Props { lang: Lang; kind: 'legal' | 'privacy' }
+const { lang, kind } = Astro.props;
+const s = getSite(lang);
+const page = s.pages[kind];
+---
+<Base lang={lang} routeKey={kind as RouteKey} title={page.title.join(' ')} onDark>
+  <PageHead num="01" label={kind === 'legal' ? s.footer.legal : s.footer.privacy} title={page.title} />
+  <Prose sections={page.sections} />
+</Base>

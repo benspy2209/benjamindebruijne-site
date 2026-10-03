@@ -1,0 +1,58 @@
+---
+import type { Lang } from '../../lib/i18n';
+import { href } from '../../lib/i18n';
+import { getSite } from '../../lib/content';
+import SectionHead from '../SectionHead.astro';
+import Button from '../Button.astro';
+import Icon from '../Icon.astro';
+interface Props { lang: Lang; num?: string }
+const { lang, num = '04' } = Astro.props;
+const s = getSite(lang);
+const p = s.process;
+---
+<section class="prc dark trame section" id="process">
+  <div class="wrap">
+    <SectionHead num={num} label={p.label} title={p.title} intro={p.intro} introStrong={p.introStrong} />
+    <ol class="prc__grid">
+      {p.items.map((it, i) => (
+        <li class="prc__step reveal">
+          <div class="prc__shead"><span class="prc__n h-lg">0{i + 1}</span><span class="dots" aria-hidden="true">{[0,1,2,3,4].map((d) => <i class={d <= i ? 'on' : ''}></i>)}</span></div>
+          <p class="label">{it.tag}</p>
+          <h3 class="h-sm">{it.title}</h3>
+          <p class="muted prc__text">{it.text}</p>
+        </li>
+      ))}
+      <li class="prc__cta reveal">
+        <p class="h-md lines prc__ctitle">{p.cta.title.map((l) => <span>{l}</span>)}</p>
+        <p class="prc__ctext">{p.cta.text}</p>
+        <p class="mono prc__clabel">{p.cta.listLabel}</p>
+        <ul class="prc__list">{p.cta.list.map((l) => <li><span class="prc__check"><Icon name="check" /></span>{l}</li>)}</ul>
+        <Button href={href('contact', lang)} label={p.cta.button} suffix={p.cta.buttonSuffix} variant="dark" />
+      </li>
+    </ol>
+  </div>
+</section>
+<style>
+  .prc__grid { margin-top: 64px; display: grid; gap: 0; }
+  .prc__step { border-top: 1px solid var(--c-accent); padding: 28px 0 40px; display: grid; gap: 14px; align-content: start; }
+  .prc__shead { display: flex; justify-content: space-between; align-items: start; margin-bottom: 40px; }
+  .prc__n { font-weight: 500; }
+  .prc__text { font-size: 14px; max-width: 36ch; }
+  .prc__cta { background: var(--c-accent); color: var(--c-white); padding: 32px 28px; display: grid; gap: 18px; align-content: start; }
+  .prc__ctitle { font-weight: 700; text-transform: uppercase; }
+  .prc__ctext { font-size: 15px; max-width: 32ch; }
+  .prc__clabel { opacity: .8; margin-top: 8px; }
+  .prc__list { display: grid; gap: 12px; margin-bottom: 20px; }
+  .prc__list li { display: flex; align-items: center; gap: 10px; font-size: 15px; }
+  .prc__check { width: 16px; height: 16px; background: var(--c-white); color: var(--c-accent); display: grid; place-items: center; }
+  .prc__check svg { width: 10px; height: 10px; }
+  @media (width >= 810px) {
+    .prc__grid { grid-template-columns: repeat(3, 1fr); gap: 0 32px; }
+    .prc__step { padding-right: 16px; }
+    .prc__step:nth-child(2) { margin-top: 90px; }
+    .prc__step:nth-child(3) { margin-top: 180px; }
+    .prc__step:nth-child(4) { grid-column: 1; }
+    .prc__step:nth-child(5) { grid-column: 2; }
+    .prc__cta { grid-column: 3; margin-top: -40px; }
+  }
+</style>

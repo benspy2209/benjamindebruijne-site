@@ -1,0 +1,105 @@
+---
+import type { Lang, RouteKey } from '../lib/i18n';
+import { href, alternate } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Button from './Button.astro';
+interface Props { lang: Lang; routeKey: RouteKey; slug?: string; onDark?: boolean }
+const { lang, routeKey, slug, onDark = false } = Astro.props;
+const s = getSite(lang);
+const alt = alternate(routeKey, lang, slug);
+---
+<header class:list={['hdr', { 'hdr--dark': onDark }]} data-header>
+  <div class="hdr__in wrap">
+    <div class="hdr__l">
+      <button class="hdr__menu mono" type="button" data-menu-open aria-expanded="false" aria-controls="menu">
+        <span class="hdr__dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>{s.header.menu}
+      </button>
+      <span class="hdr__rule" aria-hidden="true"></span>
+      <a href={href('home', lang)} class="hdr__brand">{s.meta.short}</a>
+    </div>
+    <p class="hdr__time mono"><time data-clock>--:--</time> <span class="muted">{s.header.localTime}</span></p>
+    <div class="hdr__r">
+      <a href={alt} class="hdr__lang mono" hreflang={lang === 'fr' ? 'en' : 'fr'}>{s.header.langSwitch}</a>
+      <a href={href('contact', lang)} class="hdr__cta btn btn--light">
+        <img src="/benjamin.jpg" alt="" width="40" height="40" class="hdr__avatar" />
+        <span class="btn__t">{s.header.cta}<small>{s.header.ctaSuffix}</small></span>
+        <span class="btn__i"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 2l4 4-4 4"/></svg></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <div class="menu__in wrap">
+    <div class="menu__top">
+      <span class="hdr__brand">{s.meta.short}</span>
+      <button type="button" class="mono" data-menu-close>{s.header.close} ✕</button>
+    </div>
+    <nav aria-label="Menu">
+      <ul class="menu__list">
+        {s.nav.map((n, i) => (
+          <li><a href={href(n.key as RouteKey, lang)} class="menu__link h-xl" aria-current={n.key === routeKey ? 'page' : undefined}><span class="mono num">0{i + 1}</span>{n.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div class="menu__foot mono">
+      <a href={alt}>{s.header.langSwitch}</a>
+      <a href={`mailto:${s.meta.email}`}>{s.meta.email}</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hdr { position: absolute; inset: 0 0 auto; z-index: 20; height: var(--header-h); color: var(--c-dark); }
+  .hdr--dark { color: var(--c-white); }
+  .hdr__in { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .hdr__l { display: flex; align-items: center; gap: 16px; }
+  .hdr__menu { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
+  .hdr__dots { display: grid; grid-template-columns: repeat(2, 3px); gap: 2px; }
+  .hdr__dots i { width: 3px; height: 3px; background: currentColor; }
+  .hdr__rule { width: 28px; height: 1px; background: currentColor; opacity: .3; display: none; }
+  .hdr__brand { font-weight: 700; letter-spacing: -.02em; font-size: 15px; }
+  .hdr__time { display: none; }
+  .hdr__r { display: flex; align-items: center; gap: 14px; }
+  .hdr__lang { font-weight: 500; opacity: .8; }
+  .hdr__cta { height: 40px; }
+  .hdr__avatar { width: 40px; height: 40px; object-fit: cover; }
+  .hdr__cta .btn__t { display: none; }
+  @media (width >= 810px) {
+    .hdr__rule { display: block; }
+    .hdr__time { display: block; position: absolute; left: 50%; transform: translateX(-50%); }
+    .hdr__time time { font-weight: 500; }
+    .hdr__cta .btn__t { display: flex; }
+  }
+  .menu { position: fixed; inset: 0; z-index: 30; background: var(--c-dark); color: var(--c-white); overflow: auto; }
+  .menu__in { min-height: 100%; display: flex; flex-direction: column; padding-block: 28px 40px; }
+  .menu__top { display: flex; justify-content: space-between; align-items: center; height: calc(var(--header-h) - 56px); }
+  .menu__list { margin-block: 48px auto; display: grid; gap: 8px; }
+  .menu__link { display: flex; align-items: baseline; gap: 16px; font-weight: 600; padding-block: 6px; transition: color .3s; }
+  .menu__link:hover, .menu__link[aria-current] { color: var(--c-accent); }
+  .menu__link .num { opacity: .5; font-size: 11px; }
+  .menu__foot { display: flex; justify-content: space-between; gap: 16px; opacity: .7; margin-top: 48px; }
+</style>
+<script>
+  const open = document.querySelector<HTMLButtonElement>('[data-menu-open]');
+  const close = document.querySelector<HTMLButtonElement>('[data-menu-close]');
+  const menu = document.querySelector<HTMLElement>('[data-menu]');
+  const set = (on: boolean) => {
+    if (!menu || !open) return;
+    menu.hidden = !on; open.setAttribute('aria-expanded', String(on));
+    document.documentElement.style.overflow = on ? 'hidden' : '';
+    if (on) close?.focus(); else open.focus();
+  };
+  open?.addEventListener('click', () => set(true));
+  close?.addEventListener('click', () => set(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menu && !menu.hidden) set(false); });
+
+  const clock = document.querySelector<HTMLElement>('[data-clock]');
+  const tick = () => {
+    if (!clock) return;
+    const d = new Date();
+    clock.textContent = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Europe/Brussels' }).format(d).toUpperCase();
+    clock.dateTime = d.toISOString();
+  };
+  tick(); setInterval(tick, 30_000);
+</script>

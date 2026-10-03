@@ -1,0 +1,17 @@
+---
+import type { Lang } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Services from '../components/home/Services.astro';
+import Process from '../components/home/Process.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = getSite(lang);
+const sv = s.pages.services;
+---
+<Base lang={lang} routeKey="services" title={sv.title.join(' ')} onDark>
+  <PageHead num="01" label={s.services.label} title={sv.title} intro={sv.intro} introStrong={sv.introStrong} />
+  <Services lang={lang} num="02" open />
+  <Process lang={lang} num="03" />
+</Base>

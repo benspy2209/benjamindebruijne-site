@@ -1,0 +1,20 @@
+---
+/** Sections titre + paragraphe pour les pages légales et à-propos. */
+interface Props { sections: { h: string; p: string }[] }
+const { sections } = Astro.props;
+---
+<section class="prose trame section">
+  <div class="wrap">
+    {sections.map((sec, i) => (
+      <article class="prose__sec reveal">
+        <p class="label"><span class="num">0{i + 1}</span>{sec.h}</p>
+        <p class="prose__p">{sec.p}</p>
+      </article>
+    ))}
+  </div>
+</section>
+<style>
+  .prose__sec { display: grid; gap: 16px; padding-block: 32px; border-top: 1px solid var(--c-grey-300); }
+  .prose__p { max-width: 64ch; font-size: 16px; line-height: 1.6; }
+  @media (width >= 810px) { .prose__sec { grid-template-columns: 1fr 2fr; gap: 32px; } }
+</style>

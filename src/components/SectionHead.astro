@@ -1,0 +1,22 @@
+---
+/** Label numéroté + titre géant + intro, pattern commun à toutes les sections. */
+interface Props { num: string; label: string; title: string[]; intro?: string; introStrong?: string; class?: string; titleClass?: string; as?: 'h1' | 'h2' }
+const { num, label, title, intro, introStrong, class: cls = '', titleClass = 'h-giant', as = 'h2' } = Astro.props;
+const Tag = as;
+---
+<header class={`shead ${cls}`}>
+  <p class="label"><span class="num">{num}</span>{label}</p>
+  <Tag class={`${titleClass} lines reveal`}>{title.map((l, i) => <span class={i === 0 ? 'muted' : ''}>{l}</span>)}</Tag>
+  {intro && <p class="lead reveal">{intro}<strong>{introStrong}</strong></p>}
+</header>
+<style>
+  .shead { display: grid; gap: 28px; }
+  .shead .lead { max-width: 34ch; }
+  @media (width >= 810px) {
+    .shead { grid-template-columns: 1fr 1fr; grid-template-areas: "label label" "title lead"; align-items: end; gap: 40px; }
+    .shead .label { grid-area: label; }
+    .shead h1, .shead h2 { grid-area: title; }
+    .shead .lead { grid-area: lead; justify-self: end; text-align: right; }
+    .shead .lead strong { display: inline; }
+  }
+</style>

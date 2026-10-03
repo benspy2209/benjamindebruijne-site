@@ -1,0 +1,17 @@
+---
+import Icon from './Icon.astro';
+interface Props { href?: string; label: string; suffix?: string; variant?: 'dark' | 'light' | 'accent' | 'ghost'; icon?: 'chevron' | 'chevron-left' | 'arrow-ext'; class?: string; type?: 'button' | 'submit'; id?: string; disabled?: boolean; external?: boolean }
+const { href, label, suffix, variant = 'dark', icon = 'chevron', class: cls = '', type, id, disabled, external } = Astro.props;
+const classes = `btn btn--${variant} ${cls}`.trim();
+---
+{href ? (
+  <a href={href} class={classes} target={external ? '_blank' : undefined} rel={external ? 'noopener' : undefined}>
+    <span class="btn__t">{label}{suffix && <small>{suffix}</small>}</span>
+    <span class="btn__i"><Icon name={icon} /></span>
+  </a>
+) : (
+  <button type={type ?? 'button'} class={classes} id={id} disabled={disabled}>
+    <span class="btn__t" data-label>{label}{suffix && <small>{suffix}</small>}</span>
+    <span class="btn__i"><Icon name={icon} /></span>
+  </button>
+)}

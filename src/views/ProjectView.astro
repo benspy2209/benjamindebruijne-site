@@ -1,0 +1,63 @@
+---
+import type { Lang } from '../lib/i18n';
+import { href, projectHref } from '../lib/i18n';
+import { getSite, getProjects, type Project } from '../lib/content';
+import Base from '../layouts/Base.astro';
+import Button from '../components/Button.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+interface Props { lang: Lang; project: Project }
+const { lang, project: p } = Astro.props;
+const s = getSite(lang);
+const all = getProjects(lang);
+const idx = all.findIndex((x) => x.slug === p.slug);
+const next = all[(idx + 1) % all.length];
+const title = p.slug.replace(/-/g, ' ');
+---
+<Base lang={lang} routeKey="projects" slug={p.slug} title={title} description={`${p.lead}${p.text}`} onDark>
+  <section class="pj dark trame" style={`--pc: ${p.color}`}>
+    <div class="wrap pj__hero">
+      <p class="label"><span class="num">0{idx + 1}</span>{p.tag}</p>
+      <h1 class="h-giant pj__title">{title}</h1>
+      <p class="lead pj__lead"><strong>{p.lead}</strong>{p.text}</p>
+      <dl class="pj__meta mono">
+        <dt class="muted">{s.portfolio.role}</dt><dd>{p.role}</dd>
+        <dt class="muted">{s.portfolio.year}</dt><dd>{p.year}</dd>
+      </dl>
+      <p class="pj__kpi"><span class="h-giant">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
+    </div>
+  </section>
+  <section class="trame section">
+    <div class="wrap pj__body">
+      <div class="pj__text">{p.body.map((para) => <p>{para}</p>)}</div>
+      <div class="pj__actions">
+        <Button href={p.url} label={p.url.replace(/^https?:\/\//, '')} icon="arrow-ext" external />
+        <Button href={href('projects', lang)} label={s.mission.allProjects} variant="ghost" icon="chevron-left" />
+      </div>
+    </div>
+  </section>
+  <section class="trame section pj__next">
+    <div class="wrap">
+      <p class="label"><span class="num">→</span>{s.portfolio.cta}</p>
+      <div class="pj__nextcard"><ProjectCard lang={lang} project={next} index={(idx + 1) % all.length} /></div>
+    </div>
+  </section>
+</Base>
+<style>
+  .pj { background: var(--pc); --trame: #ffffff1f; }
+  .pj__hero { padding-top: calc(var(--header-h) + 48px); padding-bottom: 48px; display: grid; gap: 28px; }
+  .pj__title { text-transform: capitalize; }
+  .pj__lead { max-width: 48ch; }
+  .pj__meta { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; }
+  .pj__meta dd { margin: 0; }
+  .pj__kpi { display: flex; flex-direction: column; gap: 6px; justify-self: end; text-align: right; }
+  .pj__body { display: grid; gap: 40px; }
+  .pj__text { display: grid; gap: 20px; max-width: 64ch; font-size: 17px; line-height: 1.6; }
+  .pj__actions { display: flex; flex-wrap: wrap; gap: 16px; align-content: start; }
+  .pj__next { background: var(--c-grey-100); }
+  .pj__nextcard { margin-top: 32px; max-width: 560px; }
+  @media (width >= 810px) {
+    .pj__hero { grid-template-columns: 2fr 1fr; grid-template-areas: "label label" "title title" "lead meta" "kpi kpi"; padding-top: calc(var(--header-h) + 96px); padding-bottom: 96px; }
+    .pj__hero .label { grid-area: label; } .pj__title { grid-area: title; } .pj__lead { grid-area: lead; } .pj__meta { grid-area: meta; align-self: end; justify-self: end; } .pj__kpi { grid-area: kpi; }
+    .pj__body { grid-template-columns: 2fr 1fr; }
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+import type { Lang } from '../lib/i18n';
+import { href } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Button from '../components/Button.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = getSite(lang);
+const a = s.pages.about;
+---
+<Base lang={lang} routeKey="about" title={a.title.join(' ')} onDark>
+  <PageHead num="01" label={s.nav.find((n) => n.key === 'about')!.label} title={a.title} intro={a.intro} introStrong={a.introStrong} />
+  <section class="ab trame section">
+    <div class="wrap ab__in">
+      <div class="ab__photo"><img src="/benjamin.jpg" alt={s.meta.name} width="704" height="704" loading="lazy" /></div>
+      <div class="ab__text">
+        {a.paragraphs.map((p) => <p class="reveal">{p}</p>)}
+        <p class="label ab__flabel">{a.factsLabel}</p>
+        <dl class="ab__facts">{a.facts.map((f) => <><dt class="mono muted">{f.k}</dt><dd>{f.v}</dd></>)}</dl>
+        <Button href={href('contact', lang)} label={s.mission.cta} suffix={s.mission.ctaSuffix} class="ab__cta" />
+      </div>
+    </div>
+  </section>
+</Base>
+<style>
+  .ab__in { display: grid; gap: 40px; }
+  .ab__photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; border-top: 2px solid var(--c-accent); }
+  .ab__text { display: grid; gap: 20px; font-size: 17px; line-height: 1.6; max-width: 60ch; align-content: start; }
+  .ab__flabel { margin-top: 24px; }
+  .ab__facts { display: grid; grid-template-columns: auto 1fr; gap: 10px 24px; margin: 0; font-size: 15px; }
+  .ab__facts dd { margin: 0; }
+  .ab__cta { margin-top: 16px; justify-self: start; }
+  @media (width >= 810px) { .ab__in { grid-template-columns: 1fr 2fr; } }
+</style>

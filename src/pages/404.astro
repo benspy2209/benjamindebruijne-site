@@ -1,0 +1,16 @@
+---
+import { getSite } from '../lib/content';
+import { href } from '../lib/i18n';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Button from '../components/Button.astro';
+const fr = getSite('fr'); const en = getSite('en');
+---
+<Base lang="fr" routeKey="home" title="404" onDark>
+  <PageHead num="404" label="Erreur / Error" title={fr.pages.notFound.title} intro={fr.pages.notFound.text} introStrong="" />
+  <section class="trame section"><div class="wrap nf">
+    <Button href={href('home', 'fr')} label={fr.pages.notFound.cta} />
+    <Button href={href('home', 'en')} label={en.pages.notFound.cta} variant="ghost" />
+  </div></section>
+</Base>
+<style>.nf { display: flex; gap: 16px; flex-wrap: wrap; }</style>

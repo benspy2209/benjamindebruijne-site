@@ -1,0 +1,46 @@
+---
+import type { Lang, RouteKey } from '../lib/i18n';
+import { href } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Icon from './Icon.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = getSite(lang);
+---
+<footer class="ftr dark trame">
+  <div class="ftr__in wrap">
+    <p class="ftr__mark h-giant" aria-hidden="true">{s.meta.short}</p>
+    <nav class="ftr__nav" aria-label="Footer">
+      <ul>
+        {s.nav.map((n) => <li><a href={href(n.key as RouteKey, lang)}>{n.label}</a></li>)}
+      </ul>
+      <p class="mono ftr__copy">{s.footer.copyright}<br />{s.footer.rights}</p>
+    </nav>
+    <div class="ftr__contact">
+      <p class="muted">{s.footer.roleLine}<br />{s.meta.location}</p>
+      <a href={`mailto:${s.meta.email}`} class="ftr__mail h-sm">{s.meta.email}</a>
+      <a href={href('contact', lang)} class="ftr__cta">{s.footer.contact} <span class="btn__i"><Icon name="chevron" /></span></a>
+      <ul class="ftr__legal mono">
+        <li><a href={href('legal', lang)}>{s.footer.legal}</a></li>
+        <li><a href={href('privacy', lang)}>{s.footer.privacy}</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<style>
+  .ftr { padding-block: 64px 40px; }
+  .ftr__in { display: grid; gap: 40px; }
+  .ftr__mark { font-size: clamp(64px, 18vw, 240px); line-height: .85; letter-spacing: -.04em; }
+  .ftr__nav ul { display: grid; gap: 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .02em; font-weight: 500; }
+  .ftr__nav a:hover { color: var(--c-accent); }
+  .ftr__copy { margin-top: 48px; opacity: .6; line-height: 1.6; }
+  .ftr__contact { display: grid; gap: 18px; align-content: start; }
+  .ftr__mail { font-weight: 600; text-transform: uppercase; word-break: break-all; }
+  .ftr__cta { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; text-transform: uppercase; font-weight: 500; }
+  .ftr__cta .btn__i { width: 20px; height: 18px; display: grid; place-items: center; background: var(--c-accent); }
+  .ftr__cta .btn__i svg { width: 10px; height: 10px; }
+  .ftr__legal { display: grid; gap: 8px; opacity: .6; margin-top: 48px; }
+  @media (width >= 810px) {
+    .ftr__in { grid-template-columns: 2fr 1fr 1fr; }
+  }
+</style>

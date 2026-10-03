@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "name": "Benjamin de Bruijne",
+    "short": "BENJAMIN",
+    "role": "Consultant digital & IA",
+    "roleLong": "Consultant digital & IA — sites, automatisation, visibilité, pilotage",
+    "location": "Belgique",
+    "email": "debruijneb@gmail.com",
+    "title": "Benjamin de Bruijne — Consultant digital & IA",
+    "description": "Je construis des outils digitaux qui travaillent pour vous : sites et apps sur mesure, IA et automatisation, visibilité Google & IA, pilotage de projets.",
+    "since": "2005"
+  },
+  "nav": [
+    { "key": "home", "label": "Accueil" },
+    { "key": "projects", "label": "Projets" },
+    { "key": "about", "label": "À propos" },
+    { "key": "services", "label": "Services" },
+    { "key": "contact", "label": "Contact" },
+    { "key": "blog", "label": "Blog" }
+  ],
+  "header": {
+    "menu": "Menu",
+    "close": "Fermer",
+    "localTime": "Heure locale",
+    "cta": "Démarrer un projet",
+    "ctaSuffix": "/Benjamin",
+    "langSwitch": "EN"
+  },
+  "hero": {
+    "title": "J'aide les indépendants et les PME à construire des outils digitaux qui travaillent pour eux.",
+    "services": ["Sites & apps sur mesure", "IA & automatisation", "Visibilité Google & IA"],
+    "proofValue": "20+",
+    "proofLabel": "ans d'expérience",
+    "proofSub": "Produits en ligne, clients accompagnés, projets pilotés"
+  },
+  "logos": ["Beneloo", "Service-Volée", "BibliPulse", "Observatory", "Iris Noir", "Royal Wellington"],
+  "logosLabel": "Mes produits & projets",
+  "mission": {
+    "label": "Ma mission",
+    "copyright": "©2005-2026",
+    "text": "Salut, moi c'est Benjamin. Consultant digital & IA, j'aide ",
+    "highlight": "les indépendants, les PME et les équipes IT à transformer une idée en outil qui tourne : sites, automatisations, données, pilotage — pas de blabla, du concret.",
+    "cta": "Me contacter",
+    "ctaSuffix": "/Benjamin",
+    "profession": "Profession",
+    "localisation": "Localisation",
+    "allProjects": "Tous les projets"
+  },
+  "counters": [
+    { "label": "Années", "value": 20, "suffix": "+", "text": "D'expérience en IT, produit et transformation digitale, de la PME au groupe pharma." },
+    { "label": "Produits", "value": 6, "suffix": "", "text": "Applications et sites que j'ai conçus, construits et mis en ligne moi-même." },
+    { "label": "Projets", "value": 30, "suffix": "+", "text": "Projets digitaux menés de l'idée jusqu'à la mise en ligne, en direct ou en pilotage." },
+    { "label": "Secteurs", "value": 8, "suffix": "", "text": "Pharma, sport, immobilier, culture, santé, industrie, édition, services." }
+  ],
+  "portfolio": {
+    "label": "Portfolio",
+    "title": ["Études", "de cas."],
+    "intro": "Chaque projet montre comment je connecte ",
+    "introStrong": "produit, outils et données.",
+    "cta": "Voir le projet",
+    "role": "Rôle",
+    "year": "Année"
+  },
+  "services": {
+    "label": "Services",
+    "title": ["Ce que je", "construis."],
+    "intro": "Du premier échange à la mise en ligne, je construis des outils qui ",
+    "introStrong": "travaillent pour vous.",
+    "cardLabel": "Contact",
+    "cardTitle": ["Planifiez votre", "prochain outil", "avec moi."],
+    "cardName": "Benjamin de Bruijne",
+    "cardRole": "Consultant digital & IA",
+    "cardCta": "Réserver un appel",
+    "steps": "Étapes",
+    "items": [
+      {
+        "name": "Sites & apps sur mesure",
+        "title": "Des outils qui font le travail",
+        "p1": "Un site vitrine, c'est bien. Un site ou une application qui répond à un besoin précis — réservation, catalogue, espace membre, tableau de bord — c'est mieux. Je conçois des outils clairs, rapides, sans dépendance à un éditeur.",
+        "p2": "Astro, React, PHP, Supabase ou Postgres selon le besoin : le bon outil, pas le plus à la mode. Vous gardez le code et la main.",
+        "steps": ["Analyse du besoin", "Structure & design", "Mise en ligne & suivi"]
+      },
+      {
+        "name": "IA & automatisation",
+        "title": "Votre machine à gagner du temps",
+        "p1": "Résumés automatiques, tri de demandes, génération de contenu, scénarios de relance : l'IA est utile quand elle enlève une corvée précise. Je branche les modèles sur vos données et vos outils, avec des garde-fous.",
+        "p2": "Résultat : des heures récupérées chaque semaine, et un système que vous comprenez et pouvez faire évoluer.",
+        "steps": ["Cartographie des tâches", "Prototype sur vos données", "Industrialisation"]
+      },
+      {
+        "name": "Visibilité Google & IA",
+        "title": "Être trouvé, être cité",
+        "p1": "Vos clients cherchent sur Google, et de plus en plus directement auprès de ChatGPT, Perplexity ou Gemini. Je mesure votre visibilité réelle dans ces moteurs, puis je travaille votre site pour qu'il remonte et qu'il soit cité.",
+        "p2": "Avec Beneloo, j'ai développé un score de visibilité IA et un observatoire sectoriel : des chiffres, pas des promesses.",
+        "steps": ["Audit de visibilité", "Contenus & données structurées", "Suivi Google & IA"]
+      },
+      {
+        "name": "CRM & tunnels de conversion",
+        "title": "Plus aucun contact perdu",
+        "p1": "Un prospect sans réponse en 24h est un prospect perdu. Je mets en place un CRM simple qui centralise vos leads, vos échanges et vos rendez-vous, avec des relances automatiques.",
+        "p2": "Formulaire, agenda, paiement, mails : tout est relié. Vous répondez présent même en rendez-vous ou en vacances.",
+        "steps": ["Mise en place du CRM", "Scénarios de relance", "Mesure & ajustements"]
+      },
+      {
+        "name": "Pilotage de projets IT",
+        "title": "Livrer, dans les règles",
+        "p1": "Vingt ans de projets IT, dont plusieurs années en environnement pharmaceutique réglementé : cadrage, planning, qualité, validation, conduite du changement. Je pilote vos projets avec méthode, de l'idée à la mise en production.",
+        "p2": "Cahier des charges, suivi des fournisseurs, tests, documentation : vous avez un interlocuteur unique qui parle métier et technique.",
+        "steps": ["Cadrage & objectifs", "Pilotage & qualité", "Mise en production"]
+      },
+      {
+        "name": "Formation & accompagnement",
+        "title": "Rendre vos équipes autonomes",
+        "p1": "Un outil ne sert à rien si personne ne s'en sert. Je forme vos équipes à l'IA, aux outils que je mets en place et aux bonnes pratiques, en séances courtes et concrètes.",
+        "p2": "Supports, ateliers, suivi : l'objectif est que vous n'ayez plus besoin de moi.",
+        "steps": ["Diagnostic des usages", "Ateliers pratiques", "Suivi & supports"]
+      }
+    ]
+  },
+  "process": {
+    "label": "Processus",
+    "title": ["5 étapes", "vers le lancement."],
+    "intro": "Du premier appel à la mise en ligne, ",
+    "introStrong": "un processus simple et sans jargon.",
+    "items": [
+      { "tag": "Comprendre", "title": "Analyse & objectifs", "text": "On commence par un vrai échange : votre activité, vos clients, ce qui coince aujourd'hui. Pas de solution toute faite — je cherche d'abord à comprendre où se perd le temps et où se perdent les prospects." },
+      { "tag": "Structurer", "title": "Plan de construction", "text": "Je dessine le parcours complet : qui utilise l'outil, ce qu'il voit, ce qui déclenche l'action. Chaque écran et chaque automatisation a un rôle précis." },
+      { "tag": "Construire", "title": "Outil & intégrations", "text": "Je construis l'outil et je le connecte à l'existant : agenda, formulaire, CRM, base de données. Un système propre, rapide, que vous pouvez faire évoluer sans dépendre de personne." },
+      { "tag": "Automatiser", "title": "IA & relances", "text": "Tout ce qui peut être automatisé l'est : relances, résumés, tri, confirmations. Vous répondez présent en 24h même quand vous êtes débordé." },
+      { "tag": "Suivre", "title": "Mesure & optimisation", "text": "Mise en ligne, tests, mesure. On regarde les chiffres ensemble, on ajuste ce qui doit l'être, et l'outil s'améliore mois après mois." }
+    ],
+    "cta": {
+      "title": ["Prêt à passer", "à l'action ?"],
+      "text": "Parlez-moi de votre activité, de vos objectifs, et de là où vous voulez emmener votre business.",
+      "listLabel": "Ce que vous obtenez",
+      "list": ["Appel gratuit de 30 min", "Sans engagement", "Plan d'action clair"],
+      "button": "Réserver un appel",
+      "buttonSuffix": "/gratuit"
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": ["Parlons de", "votre projet."],
+    "intro": "Un besoin, une idée, une question : ",
+    "introStrong": "je réponds sous 24h.",
+    "name": "Votre nom",
+    "namePh": "Marie Dupont",
+    "email": "Adresse email",
+    "emailPh": "marie@exemple.be",
+    "message": "Comment puis-je aider ?",
+    "messagePh": "J'ai besoin d'un outil qui…",
+    "incomplete": "Formulaire incomplet",
+    "send": "Envoyer le message",
+    "sent": "Votre messagerie s'ouvre…",
+    "legal": "En envoyant, vous acceptez nos ",
+    "legalLink": "mentions légales",
+    "legalAnd": " et notre ",
+    "privacyLink": "politique de confidentialité",
+    "subject": "Projet via benjamindebruijne.be"
+  },
+  "footer": {
+    "roleLine": "Consultant digital & IA",
+    "contact": "Me contacter",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "rights": "Tous droits réservés.",
+    "copyright": "© 2026 Benjamin de Bruijne"
+  },
+  "pages": {
+    "projects": { "title": ["Tous les", "projets."], "intro": "Produits, sites et plateformes que j'ai ", "introStrong": "conçus et mis en ligne." },
+    "about": {
+      "title": ["Vingt ans", "de projets."],
+      "intro": "Qui je suis, ce que je fais, ",
+      "introStrong": "et comment je travaille.",
+      "paragraphs": [
+        "Je m'appelle Benjamin de Bruijne. Je vis en Belgique, près de Bruxelles, et je travaille depuis plus de vingt ans dans l'IT : développement, gestion de projets, produit, qualité, transformation digitale.",
+        "J'ai piloté des projets dans des environnements très cadrés (industrie pharmaceutique, réglementaire) et construit, en parallèle, mes propres produits : une plateforme de classement sportif, une bibliothèque personnelle pour lecteurs, un observatoire de la visibilité des PME dans les moteurs d'IA.",
+        "Ce double parcours est ma particularité : la rigueur du grand groupe, la vitesse de l'indépendant. Je sais cadrer, documenter et livrer dans les règles, et je sais aussi coder un outil complet en quelques jours quand c'est ce qu'il faut.",
+        "Je travaille via ma société, Hakuna Matata SRL, et je choisis des outils qui vous laissent la main : code que vous possédez, données chez vous, pas d'abonnement opaque."
+      ],
+      "factsLabel": "En bref",
+      "facts": [
+        { "k": "Base", "v": "Rhode-Saint-Genèse, Belgique" },
+        { "k": "Langues", "v": "Français, anglais, néerlandais" },
+        { "k": "Société", "v": "Hakuna Matata SRL" },
+        { "k": "Stack", "v": "Astro, React, Next.js, Node, PHP, Postgres, Supabase, IA (OpenAI, Claude)" }
+      ]
+    },
+    "services": { "title": ["Services", "& offres."], "intro": "Six façons de travailler ensemble, ", "introStrong": "toujours sur mesure." },
+    "blog": { "title": ["Notes", "& articles."], "intro": "Retours d'expérience sur l'IA, les outils et le pilotage. ", "introStrong": "Premiers articles bientôt.", "empty": "Aucun article pour le moment." },
+    "legal": {
+      "title": ["Mentions", "légales."],
+      "sections": [
+        { "h": "Éditeur", "p": "Ce site est édité par Hakuna Matata SRL, société de droit belge, BCE 0877.585.922, dont le siège est établi à Rhode-Saint-Genèse (Belgique). Responsable de la publication : Benjamin de Bruijne. Contact : debruijneb@gmail.com." },
+        { "h": "Hébergement", "p": "Hébergeur à préciser lors de la mise en ligne." },
+        { "h": "Propriété intellectuelle", "p": "L'ensemble des contenus de ce site (textes, visuels, code) est la propriété de Hakuna Matata SRL, sauf mention contraire. Toute reproduction sans autorisation est interdite." }
+      ]
+    },
+    "privacy": {
+      "title": ["Politique de", "confidentialité."],
+      "sections": [
+        { "h": "Données collectées", "p": "Le formulaire de contact ouvre votre messagerie : aucune donnée n'est stockée sur ce site. Les informations que vous m'envoyez par email servent uniquement à répondre à votre demande." },
+        { "h": "Cookies", "p": "Ce site n'utilise aucun cookie de suivi ni outil d'analyse d'audience." },
+        { "h": "Vos droits", "p": "Conformément au RGPD, vous pouvez demander l'accès, la rectification ou la suppression de vos données en écrivant à debruijneb@gmail.com." }
+      ]
+    },
+    "notFound": { "title": ["Page", "introuvable."], "text": "Cette page n'existe pas ou a été déplacée.", "cta": "Retour à l'accueil" }
+  }
+}

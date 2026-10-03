@@ -1,0 +1,75 @@
+---
+import '../styles/global.css';
+import type { Lang, RouteKey } from '../lib/i18n';
+import { alternate, locale, href } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+interface Props { lang: Lang; routeKey: RouteKey; slug?: string; title?: string; description?: string; onDark?: boolean }
+const { lang, routeKey, slug, title, description, onDark = false } = Astro.props;
+const s = getSite(lang);
+const pageTitle = title ? `${title} — ${s.meta.name}` : s.meta.title;
+const desc = description ?? s.meta.description;
+const site = Astro.site ?? new URL('http://localhost:4321');
+const canonical = new URL(Astro.url.pathname, site);
+const alt = new URL(alternate(routeKey, lang, slug), site);
+const self = slug ? `${href('projects', lang)}${slug}/` : href(routeKey, lang);
+---
+<!doctype html>
+<html lang={locale[lang]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={lang} href={new URL(self, site)} />
+    <link rel="alternate" hreflang={lang === 'fr' ? 'en' : 'fr'} href={alt} />
+    <link rel="alternate" hreflang="x-default" href={new URL(slug ? `${href('projects', 'fr')}${slug}/` : href(routeKey, 'fr'), site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/zalando-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/og.jpg', site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org', '@type': 'Person', name: s.meta.name, jobTitle: s.meta.role,
+      email: s.meta.email, url: site.toString(), address: { '@type': 'PostalAddress', addressLocality: 'Rhode-Saint-Genèse', addressCountry: 'BE' },
+      worksFor: { '@type': 'Organization', name: 'Hakuna Matata SRL' },
+    })} />
+  </head>
+  <body>
+    <a href="#main" class="skip mono">Skip to content</a>
+    <Header lang={lang} routeKey={routeKey} slug={slug} onDark={onDark} />
+    <main id="main"><slot /></main>
+    <Footer lang={lang} />
+    <script>
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const els = document.querySelectorAll<HTMLElement>('.reveal');
+      if (reduced || !('IntersectionObserver' in window)) els.forEach((e) => e.classList.add('is-in'));
+      else {
+        const io = new IntersectionObserver((entries) => entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -10% 0px' });
+        els.forEach((e) => io.observe(e));
+      }
+      document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
+        const target = Number(el.dataset.count); const suffix = el.dataset.suffix ?? '';
+        const render = (v: number) => { el.textContent = `${Math.round(v)}${suffix}`; };
+        if (reduced) { render(target); return; }
+        render(0);
+        const io = new IntersectionObserver((ens) => { if (!ens[0].isIntersecting) return; io.disconnect();
+          const t0 = performance.now(); const dur = 1400;
+          const step = (t: number) => { const p = Math.min(1, (t - t0) / dur); render(target * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); };
+          requestAnimationFrame(step);
+        }, { threshold: .4 });
+        io.observe(el);
+      });
+    </script>
+  </body>
+</html>
+<style is:global>
+  .skip { position: absolute; left: 8px; top: -60px; z-index: 50; background: var(--c-accent); color: #fff; padding: 8px 12px; }
+  .skip:focus { top: 8px; }
+</style>

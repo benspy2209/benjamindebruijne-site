@@ -1,0 +1,82 @@
+---
+import type { Lang } from '../../lib/i18n';
+import { href } from '../../lib/i18n';
+import { getSite } from '../../lib/content';
+import Button from '../Button.astro';
+import Icon from '../Icon.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = getSite(lang);
+const m = s.mission;
+---
+<section class="mis trame section" id="mission">
+  <div class="mis__in wrap">
+    <aside class="mis__card">
+      <div class="mis__photo">
+        <img src="/benjamin.jpg" alt={s.meta.name} width="704" height="704" loading="lazy" />
+        <Button href={href('contact', lang)} label={m.cta} suffix={m.ctaSuffix} class="mis__cta" />
+      </div>
+      <div class="mis__id">
+        <p class="label">{s.meta.name}</p>
+        <ul class="mis__social">
+          <li><a href="https://www.linkedin.com/in/benjamindebruijne/" aria-label="LinkedIn" target="_blank" rel="noopener"><Icon name="linkedin" /></a></li>
+          <li><a href="https://github.com/benspy2209" aria-label="GitHub" target="_blank" rel="noopener"><Icon name="github" /></a></li>
+          <li><a href={`mailto:${s.meta.email}`} aria-label="Email"><Icon name="mail" /></a></li>
+        </ul>
+        <dl class="mis__dl mono">
+          <dt>{m.profession}</dt><dd>{s.meta.role}</dd>
+          <dt>{m.localisation}</dt><dd>{s.meta.location}</dd>
+        </dl>
+      </div>
+      <a href={href('projects', lang)} class="mis__all mono"><span class="mis__allicon"><Icon name="chevron-left" /></span>{m.allProjects}</a>
+    </aside>
+
+    <div class="mis__body">
+      <div class="mis__head">
+        <p class="label"><span class="num">01</span>{m.label}</p>
+        <p class="mono muted">{m.copyright}</p>
+      </div>
+      <p class="mis__text h-md reveal">{m.text}<span class="muted">{m.highlight}</span></p>
+      <ol class="mis__counters">
+        {s.counters.map((c, i) => (
+          <li class="mis__counter reveal">
+            <div class="mis__chead"><p class="label"><span class="num">0{i + 1}</span>{c.label}</p><span class="dots" aria-hidden="true">{[0,1,2,3].map((d) => <i class={d <= i ? 'on' : ''}></i>)}</span></div>
+            <p class="mis__cval h-giant" data-count={c.value} data-suffix={c.suffix}>{c.value}{c.suffix}</p>
+            <p class="mis__ctext muted">{c.text}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>
+<style>
+  .mis__in { display: grid; gap: 48px; }
+  .mis__card { display: grid; gap: 0; align-content: start; }
+  .mis__photo { position: relative; border-top: 2px solid var(--c-accent); }
+  .mis__photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+  .mis__cta { position: absolute; left: 24px; bottom: 0; }
+  .mis__id { background: var(--c-white); padding: 20px; display: grid; gap: 14px; border-bottom: 1px solid var(--c-grey-300); }
+  .mis__id .label { font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: uppercase; }
+  .mis__social { display: flex; gap: 14px; }
+  .mis__social svg { width: 14px; height: 14px; }
+  .mis__dl { display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; margin: 0; }
+  .mis__dl dt { color: var(--c-grey-500); } .mis__dl dd { margin: 0; text-align: right; font-family: var(--font-sans); font-size: 12px; font-weight: 600; text-transform: uppercase; }
+  .mis__all { display: inline-flex; align-items: center; gap: 12px; margin-top: 40px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0; }
+  .mis__allicon { width: 22px; height: 22px; border: 1px solid var(--c-grey-300); border-radius: 50%; display: grid; place-items: center; }
+  .mis__allicon svg { width: 10px; height: 10px; }
+  .mis__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; }
+  .mis__text { font-weight: 500; max-width: 24ch; }
+  .mis__counters { margin-top: 64px; display: grid; }
+  .mis__counter { padding-block: 28px; border-top: 1px solid var(--c-accent); display: grid; gap: 20px; }
+  .mis__chead { display: flex; justify-content: space-between; align-items: center; }
+  .mis__cval { font-weight: 500; letter-spacing: -.03em; text-transform: none; }
+  .mis__ctext { font-size: 14px; max-width: 32ch; }
+  @media (width >= 810px) {
+    .mis__in { grid-template-columns: 1fr 1fr; gap: 0; }
+    .mis__card { padding-right: 15%; }
+    .mis__text { max-width: 22ch; }
+    .mis__counters { grid-template-columns: 1fr 1fr; gap: 0 32px; align-items: start; }
+    .mis__counter:nth-child(2) { margin-top: 120px; }
+  }
+  @media (width >= 1200px) { .mis__text { max-width: 24ch; } }
+</style>

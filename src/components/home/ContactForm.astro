@@ -1,0 +1,73 @@
+---
+import type { Lang } from '../../lib/i18n';
+import { href } from '../../lib/i18n';
+import { getSite } from '../../lib/content';
+import SectionHead from '../SectionHead.astro';
+import Button from '../Button.astro';
+interface Props { lang: Lang; num?: string; as?: 'h1' | 'h2' }
+const { lang, num = '05', as = 'h2' } = Astro.props;
+const s = getSite(lang);
+const c = s.contact;
+---
+<section class="ctc trame section" id="contact">
+  <div class="wrap ctc__in">
+    <SectionHead num={num} label={c.label} title={c.title} intro={c.intro} introStrong={c.introStrong} class="ctc__head" as={as} />
+    <form class="ctc__form" data-contact novalidate data-to={s.meta.email} data-subject={c.subject} data-incomplete={c.incomplete} data-send={c.send} data-sent={c.sent}>
+      <div class="ctc__field">
+        <label for="f-name" class="label">{c.name}</label>
+        <input id="f-name" name="name" type="text" required autocomplete="name" placeholder={c.namePh} />
+      </div>
+      <div class="ctc__field">
+        <label for="f-email" class="label">{c.email}</label>
+        <input id="f-email" name="email" type="email" required autocomplete="email" placeholder={c.emailPh} />
+      </div>
+      <div class="ctc__field">
+        <label for="f-msg" class="label">{c.message}</label>
+        <textarea id="f-msg" name="message" rows="4" required placeholder={c.messagePh}></textarea>
+      </div>
+      <div class="ctc__foot">
+        <Button type="submit" label={c.incomplete} variant="accent" id="f-submit" disabled />
+        <p class="mono ctc__legal muted">{c.legal}<a href={href('legal', lang)}>{c.legalLink}</a>{c.legalAnd}<a href={href('privacy', lang)}>{c.privacyLink}</a></p>
+      </div>
+      <p class="ctc__status mono" role="status" aria-live="polite" data-status></p>
+    </form>
+  </div>
+</section>
+<style>
+  .ctc__in { display: grid; gap: 48px; }
+  .ctc__form { display: grid; }
+  .ctc__field { display: grid; gap: 10px; padding: 20px 0; border-top: 1px solid var(--c-grey-300); }
+  .ctc__field input, .ctc__field textarea { font: inherit; font-size: 15px; border: 0; background: transparent; padding: 0; color: var(--c-dark); resize: vertical; }
+  .ctc__field input::placeholder, .ctc__field textarea::placeholder { color: var(--c-grey-500); }
+  .ctc__field input:focus, .ctc__field textarea:focus { outline: none; }
+  .ctc__field:focus-within { border-top-color: var(--c-accent); }
+  .ctc__foot { display: grid; gap: 20px; padding-top: 24px; border-top: 1px solid var(--c-grey-300); align-items: center; }
+  .ctc__legal a { text-decoration: underline; text-underline-offset: 2px; }
+  .ctc__status:empty { display: none; }
+  .ctc__status { margin-top: 16px; color: var(--c-accent); }
+  @media (width >= 810px) {
+    .ctc__in { grid-template-columns: 1fr 1fr; align-items: start; }
+    .ctc__foot { grid-template-columns: auto 1fr; }
+  }
+</style>
+<script>
+  const form = document.querySelector<HTMLFormElement>('[data-contact]');
+  if (form) {
+    const btn = form.querySelector<HTMLButtonElement>('#f-submit')!;
+    const label = btn.querySelector<HTMLElement>('[data-label]')!;
+    const status = form.querySelector<HTMLElement>('[data-status]')!;
+    const fields = ['name', 'email', 'message'].map((n) => form.elements.namedItem(n) as HTMLInputElement);
+    const valid = () => fields.every((f) => f.value.trim() !== '' && f.checkValidity());
+    const sync = () => { const ok = valid(); btn.disabled = !ok; label.textContent = ok ? form.dataset.send! : form.dataset.incomplete!; };
+    fields.forEach((f) => f.addEventListener('input', sync));
+    sync();
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!valid()) { sync(); return; }
+      const [name, email, message] = fields.map((f) => f.value.trim());
+      const body = `${message}\n\n— ${name} <${email}>`;
+      status.textContent = form.dataset.sent!;
+      window.location.href = `mailto:${form.dataset.to}?subject=${encodeURIComponent(form.dataset.subject!)}&body=${encodeURIComponent(body)}`;
+    });
+  }
+</script>
