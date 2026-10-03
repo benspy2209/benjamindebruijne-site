@@ -18,7 +18,7 @@
   },
   {
     "slug": "bibliopulse",
-    "name": "BibliPulse",
+    "name": "Bibliopulse",
     "tag": "Produit · Lecture",
     "kpi": "4 000+",
     "kpiLabel": "livres catalogués",
@@ -131,7 +131,7 @@
     "url": "https://pulsenoir.be",
     "color": "#1a0a2e",
     "body": [
-      "Pulse Noir est l'écosystème polar que j'anime sous le pseudonyme PULSEMAN : groupe Facebook de 2 150+ membres, site pulsenoir.be avec 1 900+ livres et 267 auteurs référencés, La Revue Pulse Noir, le Grand Prix Pulse Noir (247 votes, 22 finalistes, jury de 20 lecteurs) et BiblioPulse.",
+      "Pulse Noir est l'écosystème polar que j'anime sous le pseudonyme PULSEMAN : groupe Facebook de 2 150+ membres, site pulsenoir.be avec 1 900+ livres et 267 auteurs référencés, La Revue Pulse Noir, le Grand Prix Pulse Noir (247 votes, 22 finalistes, jury de 20 lecteurs) et Bibliopulse.",
       "Stack : React, Supabase, Brevo, Lovable, Claude API, Stripe, Edge Middleware SEO."
     ]
   },
