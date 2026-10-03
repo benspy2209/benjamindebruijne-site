@@ -85,6 +85,108 @@
     ]
   },
   {
+    "slug": "singulr",
+    "name": "Singulr",
+    "tag": "Brand · Infrastructure",
+    "kpi": "2",
+    "kpiLabel": "VPS in production",
+    "role": "Founder & architect",
+    "year": "2026",
+    "lead": "my tech consulting company in the making:",
+    "text": " self-hosted Forgejo, PostgreSQL, Caddy, continuous deployment.",
+    "url": "https://singulr.be",
+    "color": "#1e3a5f",
+    "body": [
+      "Singulr SRL is my technical consulting company, currently being incorporated. The infrastructure is already live: Forgejo on forge.singulr.be, two Behostings VPS, PostgreSQL, Caddy as reverse-proxy, automated deployment.",
+      "Stack: Forgejo, PostgreSQL, Caddy, Debian VPS."
+    ]
+  },
+  {
+    "slug": "wimbledon",
+    "name": "Wimbledon Club",
+    "tag": "Website · Sports club",
+    "kpi": "1",
+    "kpiLabel": "club, 3 disciplines",
+    "role": "Development",
+    "year": "2025",
+    "lead": "the website of a Belgian sports club,",
+    "text": " disciplines showcase, calendar and practical information.",
+    "url": "https://wim.beneloo.com",
+    "color": "#2e5c1a",
+    "body": [
+      "Development of the website for a Belgian sports club: disciplines overview, event calendar, practical information and contact form.",
+      "Stack: React, JSON content, Vercel deployment."
+    ]
+  },
+  {
+    "slug": "pulse-noir",
+    "name": "Pulse Noir",
+    "tag": "Community · Crime fiction",
+    "kpi": "2,150+",
+    "kpiLabel": "active members",
+    "role": "Founder",
+    "year": "2023",
+    "lead": "the French-language crime and thriller community:",
+    "text": " authors hub, literary prize, magazine, library of 1,900+ books.",
+    "url": "https://pulsenoir.be",
+    "color": "#1a0a2e",
+    "body": [
+      "Pulse Noir is the crime-fiction ecosystem I run under the PULSEMAN persona: a 2,150+ member Facebook group, pulsenoir.be with 1,900+ books and 267 referenced authors, La Revue Pulse Noir, the Grand Prix Pulse Noir (247 votes, 22 finalists, 20-reader jury) and BiblioPulse.",
+      "Stack: React, Supabase, Brevo, Lovable, Claude API, Stripe, Edge Middleware SEO."
+    ]
+  },
+  {
+    "slug": "saul-racine",
+    "name": "Saul Racine",
+    "tag": "Website · Author",
+    "kpi": "1",
+    "kpiLabel": "novel in progress",
+    "role": "Author & development",
+    "year": "2025",
+    "lead": "my pen-name author site:",
+    "text": " Le Cartographe des Ombres, a social noir novel being submitted to publishers.",
+    "url": "https://saulracine.be",
+    "color": "#2e1a0a",
+    "body": [
+      "Saul Racine is my pen name for French-language noir fiction. The site presents my universe, texts published on Pulse Noir's Dark Blog and my novel \"On attend. On instruit. On condamne.\", a social thriller set in the Belgian Masonic world.",
+      "Stack: Astro, Markdown content, Vercel deployment."
+    ]
+  },
+  {
+    "slug": "rene-manzor",
+    "name": "René Manzor",
+    "tag": "Website · Filmmaker & author",
+    "kpi": "30+",
+    "kpiLabel": "years of career",
+    "role": "Development",
+    "year": "2025",
+    "lead": "the official site of filmmaker and author René Manzor,",
+    "text": " complete filmography, masterclass and press area.",
+    "url": "https://renemanzor.com",
+    "color": "#0a1a2e",
+    "body": [
+      "Official site of René Manzor, French-Thai filmmaker and author known for his dark and fantastical films. The site features his filmography, books, online masterclass and press area.",
+      "Stack: React, TypeScript, structured content, Vercel deployment."
+    ]
+  },
+  {
+    "slug": "chir-ophta",
+    "name": "Chir-Ophta",
+    "tag": "Website · Medical",
+    "kpi": "1",
+    "kpiLabel": "specialist practice",
+    "role": "Development",
+    "year": "2025",
+    "lead": "the website of a Belgian ophthalmological surgery practice,",
+    "text": " treatments, team and appointment booking.",
+    "url": "https://chir-ophta.be",
+    "color": "#0a2e3a",
+    "body": [
+      "Showcase website for a Belgian ophthalmological surgery practice: presentation of surgeons, covered procedures, techniques used and an appointment request form.",
+      "Stack: React, JSON content, Vercel deployment."
+    ]
+  },
+  {
     "slug": "beneloo",
     "name": "Beneloo",
     "tag": "Brand · AI visibility",
