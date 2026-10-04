@@ -8,7 +8,8 @@ interface Props { lang: Lang; all?: boolean; num?: string }
 const { lang, all = false, num = '02' } = Astro.props;
 const s = getSite(lang);
 const everything = getProjects(lang);
-const projects = all ? everything : everything.slice(0, 5);
+const products = everything.filter((p) => p.kind === 'product');
+const projects = all ? products : products.filter((p) => p.featured);
 const eco = s.ecosystems;
 const nameOf = (slug: string) => everything.find((p) => p.slug === slug)?.name ?? slug;
 const head = all ? { title: s.pages.projects.title, intro: s.pages.projects.intro, introStrong: s.pages.projects.introStrong } : { title: s.portfolio.title, intro: s.portfolio.intro, introStrong: s.portfolio.introStrong };
@@ -52,5 +53,6 @@ const head = all ? { title: s.pages.projects.title, intro: s.pages.projects.intr
     .pf__grid > :nth-child(2) { grid-column: span 2; }
     .pf__grid > :nth-child(n+3) { grid-column: span 2; }
     .pf__grid--all > :nth-child(n) { grid-column: span 2; }
+    .pf__grid--all > :nth-child(1) { grid-column: span 4; }
   }
 </style>

@@ -9,6 +9,6 @@ const s = getSite(lang);
 const b = s.pages.blog;
 ---
 <Base lang={lang} routeKey="blog" title={b.title.join(' ')} onDark>
-  <PageHead num="01" label={s.nav.find((n) => n.key === 'blog')!.label} title={b.title} intro={b.intro} introStrong={b.introStrong} />
+  <PageHead num="01" label="Blog" title={b.title} intro={b.intro} introStrong={b.introStrong} />
   <section class="trame section"><div class="wrap"><p class="mono muted">{b.empty}</p></div></section>
 </Base>

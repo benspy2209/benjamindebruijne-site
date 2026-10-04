@@ -8,7 +8,8 @@
     "email": "debruijneb@gmail.com",
     "title": "Benjamin de Bruijne — Consultant digital & IA",
     "description": "Je construis des outils digitaux qui travaillent pour vous : sites et apps sur mesure, IA et automatisation, visibilité Google & IA, pilotage de projets.",
-    "since": "2005"
+    "since": "2005",
+    "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo"
   },
   "nav": [
     {
@@ -30,10 +31,6 @@
     {
       "key": "contact",
       "label": "Contact"
-    },
-    {
-      "key": "blog",
-      "label": "Blog"
     }
   ],
   "header": {
@@ -45,29 +42,54 @@
     "langSwitch": "EN"
   },
   "hero": {
-    "title": "J'aide les indépendants et les PME à construire des outils digitaux qui travaillent pour eux.",
+    "title": "Je construis et je pilote des outils digitaux pour les entreprises belges.",
     "services": [
-      "Sites & apps sur mesure",
-      "IA & automatisation",
-      "Visibilité Google & IA"
+      "Construire : sites, apps, produits",
+      "Automatiser : IA, données, CRM",
+      "Piloter : projets IT, qualité, GxP"
     ],
     "proofValue": "3",
     "proofLabel": "missions en cours",
     "proofSub": "UCB · XLG · Leroy & Partners"
   },
   "logos": [
-    "Beneloo",
-    "Observatory",
-    "Singulr",
-    "Pulse Noir",
-    "BiblioPulse",
-    "Service-Volée",
-    "Iris Noir",
-    "Royal Wellington"
+    {
+      "name": "Beneloo",
+      "src": "/logos/beneloo.svg"
+    },
+    {
+      "name": "Observatory",
+      "src": ""
+    },
+    {
+      "name": "Singulr",
+      "src": "/logos/singulr.svg"
+    },
+    {
+      "name": "Pulse Noir",
+      "src": "/logos/pulse-noir.png",
+      "dark": true
+    },
+    {
+      "name": "BiblioPulse",
+      "src": "/logos/bibliopulse.png"
+    },
+    {
+      "name": "Service-Volée",
+      "src": "/logos/service-volee.png"
+    },
+    {
+      "name": "Iris Noir",
+      "src": "/logos/iris-noir.png"
+    },
+    {
+      "name": "Royal Wellington",
+      "src": ""
+    }
   ],
   "logosLabel": "Mes produits & projets",
   "mission": {
-    "label": "Ma mission",
+    "label": "Qui je suis",
     "copyright": "©2005-2026",
     "cta": "Me contacter",
     "ctaSuffix": "/Benjamin",
@@ -95,26 +117,26 @@
       "text": "Projets web construits ou pilotés en vingt ans de carrière, du site vitrine à l'application métier."
     },
     {
-      "label": "Secteurs",
-      "value": 15,
-      "suffix": "+",
-      "text": "Pharma, sport, immobilier, culture, santé, industrie, édition, formation, associations, services…"
+      "label": "Produits en ligne",
+      "value": 6,
+      "suffix": "",
+      "text": "Service-Volée, BiblioPulse, Pulse Noir, Beneloo, Observatory, Singulr : conçus et opérés par moi."
     },
     {
-      "label": "Langues",
+      "label": "Missions en cours",
       "value": 3,
       "suffix": "",
-      "text": "Français, anglais, néerlandais : je travaille avec des équipes en Belgique et au-delà."
+      "text": "UCB, XLG et Leroy & Partners, en parallèle de mes produits."
     }
   ],
   "portfolio": {
-    "label": "Portfolio",
+    "label": "Mes produits",
     "title": [
-      "Études",
-      "de cas."
+      "Mes",
+      "produits."
     ],
-    "intro": "Chaque projet montre comment je connecte ",
-    "introStrong": "produit, outils et données.",
+    "intro": "Produits que j'ai conçus, construits et mis en ligne, ",
+    "introStrong": "regroupés en deux écosystèmes.",
     "cta": "Voir le projet",
     "role": "Rôle",
     "year": "Année",
@@ -130,85 +152,55 @@
     "label": "Services",
     "title": [
       "Ce que je",
-      "construis."
+      "fais."
     ],
-    "intro": "Du premier échange à la mise en ligne, je construis des outils qui ",
-    "introStrong": "travaillent pour vous.",
+    "intro": "Trois façons de travailler ensemble, ",
+    "introStrong": "toujours sur mesure.",
     "cardLabel": "Contact",
     "cardTitle": [
-      "Planifiez votre",
-      "prochain outil",
-      "avec moi."
+      "Parlons de",
+      "votre prochain",
+      "outil."
     ],
     "cardName": "Benjamin de Bruijne",
     "cardRole": "Consultant digital & IA",
     "cardCta": "Réserver un appel",
-    "steps": "Étapes",
+    "steps": "Inclus",
     "items": [
       {
-        "name": "Sites & apps sur mesure",
-        "title": "Des outils qui font le travail",
-        "p1": "Un site vitrine, c'est bien. Un site ou une application qui répond à un besoin précis — réservation, catalogue, espace membre, tableau de bord — c'est mieux. Je conçois des outils clairs, rapides, sans dépendance à un éditeur.",
-        "p2": "Astro, React, PHP, Supabase ou Postgres selon le besoin : le bon outil, pas le plus à la mode. Vous gardez le code et la main.",
+        "name": "Construire",
+        "title": "Sites, applications et produits qui tournent",
+        "p1": "Un site vitrine, une application métier, une boutique, un espace membre, un produit complet : je conçois et je construis l'outil, du cahier des charges à la mise en ligne, sans dépendance à un éditeur ni à une agence.",
+        "p2": "Astro, React, Next.js, PHP, Postgres ou Supabase selon le besoin : le bon outil, pas le plus à la mode. Vous gardez le code, les données et la main.",
         "steps": [
-          "Analyse du besoin",
-          "Structure & design",
-          "Mise en ligne & suivi"
+          "Sites vitrines et plateformes multilingues",
+          "Applications métier et espaces membres",
+          "Boutiques, paiements, formulaires reliés",
+          "Migration hors WordPress, Podia ou Lovable"
         ]
       },
       {
-        "name": "IA & automatisation",
-        "title": "Votre machine à gagner du temps",
-        "p1": "Résumés automatiques, tri de demandes, génération de contenu, scénarios de relance : l'IA est utile quand elle enlève une corvée précise. Je branche les modèles sur vos données et vos outils, avec des garde-fous.",
-        "p2": "Résultat : des heures récupérées chaque semaine, et un système que vous comprenez et pouvez faire évoluer.",
+        "name": "Automatiser",
+        "title": "IA, données et CRM qui travaillent pour vous",
+        "p1": "Résumés automatiques, tri de demandes, relances, génération de contenu, mesure de visibilité dans les moteurs d'IA : l'IA est utile quand elle enlève une corvée précise. Je branche les modèles sur vos données et vos outils, avec des garde-fous.",
+        "p2": "Un CRM simple qui centralise vos contacts, des scénarios de relance, des tableaux de bord qui disent la vérité : des heures récupérées chaque semaine, et un système que vous comprenez.",
         "steps": [
-          "Cartographie des tâches",
-          "Prototype sur vos données",
-          "Industrialisation"
+          "Automatisations et scénarios de relance",
+          "IA sur vos données (OpenAI, Claude, Perplexity)",
+          "CRM, tunnels et tableaux de bord",
+          "Visibilité Google & IA : audit et plan d'action"
         ]
       },
       {
-        "name": "Visibilité Google & IA",
-        "title": "Être trouvé, être cité",
-        "p1": "Vos clients cherchent sur Google, et de plus en plus directement auprès de ChatGPT, Perplexity ou Gemini. Je mesure votre visibilité réelle dans ces moteurs, puis je travaille votre site pour qu'il remonte et qu'il soit cité.",
-        "p2": "Avec Beneloo, j'ai développé un score de visibilité IA et un observatoire sectoriel : des chiffres, pas des promesses.",
-        "steps": [
-          "Audit de visibilité",
-          "Contenus & données structurées",
-          "Suivi Google & IA"
-        ]
-      },
-      {
-        "name": "CRM & tunnels de conversion",
-        "title": "Plus aucun contact perdu",
-        "p1": "Un prospect sans réponse en 24h est un prospect perdu. Je mets en place un CRM simple qui centralise vos leads, vos échanges et vos rendez-vous, avec des relances automatiques.",
-        "p2": "Formulaire, agenda, paiement, mails : tout est relié. Vous répondez présent même en rendez-vous ou en vacances.",
-        "steps": [
-          "Mise en place du CRM",
-          "Scénarios de relance",
-          "Mesure & ajustements"
-        ]
-      },
-      {
-        "name": "Pilotage de projets IT",
-        "title": "Livrer, dans les règles",
+        "name": "Piloter",
+        "title": "Projets IT livrés dans les règles",
         "p1": "Vingt ans de projets IT, dont plusieurs années en environnement pharmaceutique réglementé : cadrage, planning, qualité, validation, conduite du changement. Je pilote vos projets avec méthode, de l'idée à la mise en production.",
-        "p2": "Cahier des charges, suivi des fournisseurs, tests, documentation : vous avez un interlocuteur unique qui parle métier et technique.",
+        "p2": "Cahier des charges, suivi des fournisseurs, tests, documentation, formation des équipes : un interlocuteur unique qui parle métier et technique, et qui rend vos équipes autonomes.",
         "steps": [
-          "Cadrage & objectifs",
-          "Pilotage & qualité",
-          "Mise en production"
-        ]
-      },
-      {
-        "name": "Formation & accompagnement",
-        "title": "Rendre vos équipes autonomes",
-        "p1": "Un outil ne sert à rien si personne ne s'en sert. Je forme vos équipes à l'IA, aux outils que je mets en place et aux bonnes pratiques, en séances courtes et concrètes.",
-        "p2": "Supports, ateliers, suivi : l'objectif est que vous n'ayez plus besoin de moi.",
-        "steps": [
-          "Diagnostic des usages",
-          "Ateliers pratiques",
-          "Suivi & supports"
+          "Cadrage, planning et suivi des fournisseurs",
+          "Qualité, validation et conformité GxP",
+          "Tests, documentation, mise en production",
+          "Formation et accompagnement des équipes"
         ]
       }
     ]
@@ -285,7 +277,10 @@
     "legalLink": "mentions légales",
     "legalAnd": " et notre ",
     "privacyLink": "politique de confidentialité",
-    "subject": "Projet via benjamindebruijne.be"
+    "subject": "Projet via benjamindebruijne.be",
+    "sending": "Envoi en cours…",
+    "success": "Message envoyé. Je vous réponds sous 24h.",
+    "error": "Envoi impossible, votre messagerie s'ouvre à la place."
   },
   "footer": {
     "roleLine": "Consultant digital & IA",
@@ -298,11 +293,11 @@
   "pages": {
     "projects": {
       "title": [
-        "Tous les",
-        "projets."
+        "Produits",
+        "& projets."
       ],
-      "intro": "Produits, sites et plateformes que j'ai ",
-      "introStrong": "conçus et mis en ligne."
+      "intro": "Mes produits, les projets clients avec une vraie histoire, ",
+      "introStrong": "et les sites livrés."
     },
     "about": {
       "title": [
@@ -340,10 +335,26 @@
     "services": {
       "title": [
         "Services",
-        "& offres."
+        "& formats."
       ],
-      "intro": "Six façons de travailler ensemble, ",
-      "introStrong": "toujours sur mesure."
+      "intro": "Trois offres, trois formats, ",
+      "introStrong": "et un premier appel gratuit.",
+      "formatsLabel": "Formats",
+      "formats": [
+        {
+          "name": "Mission au forfait",
+          "text": "Un périmètre, un prix, une date. Pour un site, un outil, une migration, un produit."
+        },
+        {
+          "name": "Régie à la journée",
+          "text": "Pour un pilotage de projet, un renfort d'équipe ou une expertise ponctuelle, facturé à la journée."
+        },
+        {
+          "name": "Accompagnement mensuel",
+          "text": "Suivi, automatisations et évolutions mois après mois, sans engagement de durée."
+        }
+      ],
+      "formatsNote": "Tarifs sur devis après un premier appel de 30 minutes, gratuit et sans engagement."
     },
     "blog": {
       "title": [
@@ -404,10 +415,10 @@
     }
   },
   "missions": {
-    "label": "Missions en cours",
+    "label": "En mission chez",
     "title": [
-      "Où je",
-      "travaille."
+      "En mission",
+      "chez."
     ],
     "intro": "Trois missions en parallèle, ",
     "introStrong": "en plus de mes propres produits.",
@@ -467,5 +478,16 @@
         ]
       }
     ]
+  },
+  "sites": {
+    "label": "Sites réalisés",
+    "title": [
+      "Sites",
+      "réalisés."
+    ],
+    "intro": "Sites vitrines et plateformes livrés à des clients, ",
+    "introStrong": "en Belgique et en France.",
+    "visit": "Voir le site",
+    "sheet": "Fiche"
   }
 }

@@ -1,17 +1,47 @@
 ---
 import type { Lang } from '../lib/i18n';
+import { href } from '../lib/i18n';
 import { getSite } from '../lib/content';
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
 import Services from '../components/home/Services.astro';
 import Process from '../components/home/Process.astro';
+import Button from '../components/Button.astro';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
 const sv = s.pages.services;
+const bookHref = s.meta.booking || href('contact', lang);
 ---
 <Base lang={lang} routeKey="services" title={sv.title.join(' ')} onDark>
   <PageHead num="01" label={s.services.label} title={sv.title} intro={sv.intro} introStrong={sv.introStrong} />
   <Services lang={lang} num="02" open />
-  <Process lang={lang} num="03" />
+  <section class="fm trame section">
+    <div class="wrap">
+      <p class="label"><span class="num">03</span>{sv.formatsLabel}</p>
+      <ul class="fm__grid">
+        {sv.formats.map((f, i) => (
+          <li class="fm__card reveal">
+            <span class="mono num">0{i + 1}</span>
+            <p class="h-sm">{f.name}</p>
+            <p class="muted">{f.text}</p>
+          </li>
+        ))}
+      </ul>
+      <div class="fm__foot">
+        <p class="muted fm__note">{sv.formatsNote}</p>
+        <Button href={bookHref} label={s.process.cta.button} suffix={s.process.cta.buttonSuffix} external={!!s.meta.booking} />
+      </div>
+    </div>
+  </section>
+  <Process lang={lang} num="04" />
 </Base>
+<style>
+  .fm__grid { margin-top: 40px; display: grid; gap: 20px; }
+  .fm__card { border-top: 1px solid var(--c-accent); padding-top: 20px; display: grid; gap: 12px; align-content: start; }
+  .fm__card .num { opacity: .5; }
+  .fm__card .muted { font-size: 15px; max-width: 36ch; }
+  .fm__foot { margin-top: 40px; display: grid; gap: 20px; align-items: center; }
+  .fm__note { font-size: 14px; max-width: 48ch; }
+  @media (width >= 810px) { .fm__grid { grid-template-columns: repeat(3, 1fr); gap: 32px; } .fm__foot { grid-template-columns: 1fr auto; } }
+</style>

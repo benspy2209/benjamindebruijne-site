@@ -3,6 +3,7 @@ import type { Lang } from '../lib/i18n';
 import { getSite } from '../lib/content';
 import Base from '../layouts/Base.astro';
 import Portfolio from '../components/home/Portfolio.astro';
+import ClientSites from '../components/home/ClientSites.astro';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
@@ -10,5 +11,6 @@ const s = getSite(lang);
 <Base lang={lang} routeKey="projects" title={s.pages.projects.title.join(' ')}>
   <div class="pad"></div>
   <Portfolio lang={lang} all num="01" />
+  <ClientSites lang={lang} num="02" />
 </Base>
 <style>.pad { height: var(--header-h); background: var(--c-grey-100); }</style>

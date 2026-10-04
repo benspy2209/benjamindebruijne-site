@@ -11,7 +11,7 @@ const s = getSite(lang);
   <div class="pc__visual" style={`--pc: ${p.color}`}>
     <p class="pc__meta mono"><span class="label">0{index + 1}</span><span>{p.tag}</span></p>
     <p class="pc__name">{p.name}</p>
-    <p class="pc__kpi"><span class="h-xl">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
+    {p.kpi ? <p class="pc__kpi"><span class="h-xl">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p> : <p class="pc__kpi"><span class="mono">{p.tag}</span></p>}
   </div>
   <div class="pc__body">
     <p class="mono pc__role"><span class="muted">{s.portfolio.role}</span> {p.role} {p.year && <><span class="muted pc__year">{s.portfolio.year}</span> {p.year}</>}{p.status === 'ongoing' && <span class="pc__ongoing"><i></i>{s.portfolio.ongoing}</span>}</p>

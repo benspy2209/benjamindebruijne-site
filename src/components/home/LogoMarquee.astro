@@ -10,18 +10,25 @@ const items = [...s.logos, ...s.logos, ...s.logos];
   <p class="label wrap mq__label">{s.logosLabel}</p>
   <div class="mq__track" aria-hidden="true">
     <ul class="mq__list">
-      {items.map((l) => <li class="mq__item">{l}</li>)}
+      {items.map((l) => (
+        <li class:list={['mq__item', { 'mq__item--dark': l.dark }]}>
+          {l.src ? <img src={l.src} alt="" loading="lazy" height="40" /> : <span class="mq__name">{l.name}</span>}
+        </li>
+      ))}
     </ul>
   </div>
-  <ul class="sr-only">{s.logos.map((l) => <li>{l}</li>)}</ul>
+  <ul class="sr-only">{s.logos.map((l) => <li>{l.name}</li>)}</ul>
 </section>
 <style>
   .mq { border-bottom: 1px solid var(--c-grey-300); background: var(--c-grey-100); }
   .mq__label { padding-block: 12px; border-bottom: 1px solid var(--c-grey-300); display: flex; }
   .mq__track { overflow: hidden; }
-  .mq__list { display: flex; width: max-content; animation: mq 40s linear infinite; }
-  .mq__item { width: 220px; height: 136px; display: grid; place-items: center; border-right: 1px solid var(--c-grey-300); font-weight: 700; font-size: 18px; letter-spacing: -.02em; color: var(--c-dark); }
-  .mq__item::after { content: ""; display: block; width: 6px; height: 6px; background: var(--c-accent); margin-top: 4px; }
+  .mq__list { display: flex; width: max-content; animation: mq 48s linear infinite; }
+  .mq__item { width: 220px; height: 136px; display: grid; place-items: center; border-right: 1px solid var(--c-grey-300); padding: 32px; }
+  .mq__item img { max-height: 48px; max-width: 150px; width: auto; height: auto; object-fit: contain; }
+  .mq__item--dark { background: var(--c-dark); }
+  .mq__item--dark img { max-height: 64px; }
+  .mq__name { font-weight: 700; font-size: 18px; letter-spacing: -.02em; color: var(--c-dark); }
   @keyframes mq { to { transform: translateX(-33.333%); } }
   .mq__track:hover .mq__list { animation-play-state: paused; }
   @media (prefers-reduced-motion: reduce) { .mq__list { animation: none; } }

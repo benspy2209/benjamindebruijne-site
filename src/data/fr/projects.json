@@ -43,7 +43,9 @@
         "p2": "Prochaines étapes : interclubs dans les estimations, grille hiver 2026-27 dès publication, et un vrai lancement auprès des clubs."
       }
     ],
-    "ecosystem": ""
+    "ecosystem": "",
+    "kind": "product",
+    "featured": true
   },
   {
     "slug": "bibliopulse",
@@ -89,7 +91,9 @@
         "p2": "Prochaines étapes : application de scan dédiée et monétisation par affiliation, sans jamais vendre les données des lecteurs."
       }
     ],
-    "ecosystem": "Pulse Noir × BiblioPulse"
+    "ecosystem": "Pulse Noir × BiblioPulse",
+    "kind": "product",
+    "featured": true
   },
   {
     "slug": "pulse-noir",
@@ -135,575 +139,9 @@
         "p2": "Prochaines étapes : tome 2 de D'Encre Noire pour les fêtes 2026, relance de l'Academy, et le pont Pulse Noir → BiblioPulse comme premier canal d'acquisition."
       }
     ],
-    "ecosystem": "Pulse Noir × BiblioPulse"
-  },
-  {
-    "slug": "observatory",
-    "name": "Beneloo Observatory",
-    "tag": "Recherche · IA",
-    "kpi": "1 668",
-    "kpiLabel": "PME testées",
-    "role": "Conception & données",
-    "year": "2026",
-    "lead": "l'observatoire de la visibilité des PME belges",
-    "text": " dans ChatGPT, Claude, Gemini et Perplexity : 3 campagnes, 1 668 sociétés, 96 à 98 % invisibles.",
-    "url": "https://beneloo.com",
-    "color": "#12121f",
-    "body": [
-      "L'Observatory interroge quatre modèles d'IA avec des prompts figés sur des échantillons exhaustifs de sociétés : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque mention est validée à la main (correct, réseau, hallucination). Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité ; ChatGPT et Claude ne citent aucun cabinet local, Gemini hallucine jusqu'à 52 % de ses réponses.",
-      "Stack : Python, Postgres, pipeline de campagnes immuable (prompts et modèles figés, coûts plafonnés), validation humaine tracée, agrégats anonymisés publiables."
-    ],
-    "status": "",
-    "stack": "Python · Postgres · pipeline de campagnes immuable (prompts",
-    "tagline": "Mesurer, chiffres à l'appui, qui existe pour les IA.",
-    "sticker": [
-      "96 à 98 %",
-      "invisibles"
-    ],
-    "cat": "Recherche",
-    "sections": [
-      {
-        "label": "Le problème",
-        "title": "Tout le monde parle de visibilité IA, personne ne la mesure.",
-        "p1": "Quand un particulier demande à ChatGPT ou Perplexity un comptable ou un plombier près de chez lui, qui est cité ? Les discours abondent, les chiffres manquent. Et sans mesure, impossible de dire à une PME si elle a un problème, ni s'il se corrige.",
-        "p2": "Il fallait un protocole reproductible : mêmes questions, mêmes modèles, échantillons exhaustifs, validation humaine de chaque nom cité."
-      },
-      {
-        "label": "Ce que j'ai construit",
-        "title": "Un pipeline de campagnes figées et une validation nom par nom.",
-        "p1": "L'Observatory interroge quatre modèles (ChatGPT, Claude, Gemini, Perplexity) avec des prompts gelés sur des populations entières : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque entité citée est rapprochée du registre officiel et classée : correcte, marque de réseau, hallucination.",
-        "p2": "Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité. ChatGPT et Claude ne citent aucun cabinet local ; Gemini hallucine jusqu'à 52 % de ses réponses. Coût total des trois campagnes : moins de 5 euros d'API."
-      },
-      {
-        "label": "Où ça en est",
-        "title": "Trois campagnes publiées en interne, méthode documentée.",
-        "p1": "Les agrégats sont anonymisés et publiables ; le protocole de validation, les limites et les biais sont écrits. Le mur éditorial sépare strictement l'observatoire public du conseil Beneloo.",
-        "p2": "Prochaines étapes : nouveaux secteurs, contraste à deux secteurs publié, et le Beneloo Score qui applique cette mesure à une entreprise à la fois."
-      }
-    ],
-    "ecosystem": "Beneloo × Observatory × Singulr"
-  },
-  {
-    "slug": "singulr",
-    "name": "Singulr",
-    "tag": "Écosystème · Souveraineté numérique",
-    "kpi": "4",
-    "kpiLabel": "piliers",
-    "role": "Fondateur & président",
-    "year": "2026",
-    "lead": "l'ASBL que j'ai fondée pour des communs numériques européens :",
-    "text": " veille, observatoire, forge Git souveraine opérée en Belgique, fédération d'acteurs. Site en 4 langues, événement Singulr Health 2026.",
-    "url": "https://singulr.be",
-    "color": "#1d2b4a",
-    "body": [
-      "Singulr est une ASBL belge que j'ai fondée et que je préside : développer et opérer des communs numériques européens, fédérer les acteurs souverains et promouvoir la souveraineté numérique. Quatre piliers : une veille hebdomadaire, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, forge.singulr.be, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Première édition de Singulr Health le 10 septembre 2026 à Waterloo : une cinquantaine de médecins, experts du numérique, entreprises et institutions. Avec Beneloo et l'Observatory, Singulr forme l'écosystème que je construis autour de la maîtrise des données et des outils.",
-      "Stack : site statique quadrilingue (FR, NL, DE, EN), Forgejo et PostgreSQL sur VPS Debian, Caddy, déploiement continu, formulaires Brevo."
-    ],
-    "status": "",
-    "stack": "site statique quadrilingue (FR · NL · DE",
-    "tagline": "Le numérique dont on garde la clé.",
-    "sticker": [
-      "Forge Git",
-      "souveraine"
-    ],
-    "cat": "Communs",
-    "sections": [
-      {
-        "label": "Le problème",
-        "title": "On a normalisé la dépendance.",
-        "p1": "Données de santé, code source, outils de travail : l'essentiel de ce qui compte pour une organisation belge tourne chez des acteurs qu'elle ne contrôle pas. Ce n'est pas une accusation, c'est la logique de toute infrastructure critique confiée à un tiers.",
-        "p2": "Les alternatives européennes existent mais sont mal connues, mal comparées, et personne ne coordonne ceux qui veulent s'en servir."
-      },
-      {
-        "label": "Ce que j'ai construit",
-        "title": "Quatre piliers, un seul mouvement.",
-        "p1": "Singulr ASBL opère une veille hebdomadaire sur la souveraineté numérique, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Le site existe en quatre langues.",
-        "p2": "Le 10 septembre 2026, la première édition de Singulr Health a réuni une cinquantaine de médecins, experts du numérique, entreprises et institutions à Waterloo."
-      },
-      {
-        "label": "Où ça en est",
-        "title": "Forge en service, fédération en construction.",
-        "p1": "La forge héberge déjà mes propres projets et ceux de premiers partenaires. Les adhésions sont ouvertes en trois niveaux. La vidéo de Singulr Health arrive.",
-        "p2": "Prochaines étapes : outil d'envoi souverain pour les membres, nouveaux guides santé, deuxième édition de Singulr Health."
-      }
-    ],
-    "ecosystem": "Beneloo × Observatory × Singulr"
-  },
-  {
-    "slug": "iris-noir",
-    "name": "Iris Noir Bruxelles",
-    "tag": "Site · Événement",
-    "kpi": "39",
-    "kpiLabel": "auteurs invités",
-    "role": "Refonte & développement",
-    "year": "2026",
-    "lead": "le site du salon du polar de Bruxelles,",
-    "text": " programme 2026 au Be-Here, 39 auteurs, boutique de 23 produits, presse, sorti de WordPress.",
-    "url": "https://irisnoirbxl.com",
-    "color": "#2b1d4a",
-    "body": [
-      "Refonte complète du site de l'asbl Iris Noir, salon du polar de Bruxelles (8e édition, 30 octobre au 1er novembre 2026 au Be-Here) : 39 auteurs invités, horaires, marraine et parrains, prix littéraires, revue de presse, boutique de 23 produits avec panier et commande par email, formulaire de contact. Contenu repris de l'ancien WordPress via son API, hébergement mutualisé classique.",
-      "Stack : React, contenu JSON, API PHP légère (commande, contact, SMTP maison), déploiement FTP automatisé."
-    ],
-    "status": "ongoing",
-    "stack": "React · contenu JSON · API PHP légère (commande",
-    "tagline": "Un salon du polar qui n'a plus besoin de WordPress.",
-    "sticker": [
-      "39 auteurs",
-      "au Be-Here"
-    ],
-    "cat": "Événement",
-    "sections": [
-      {
-        "label": "Le problème",
-        "title": "Un site WordPress lourd, cher à maintenir, pour une asbl bénévole.",
-        "p1": "Le salon Iris Noir change de lieu, d'auteurs et de programme chaque année. Chaque modification passait par un prestataire, des extensions payantes pour la boutique et les dons, et un hébergement qu'il fallait surveiller.",
-        "p2": "L'asbl voulait un site qu'elle comprend, rapide, et qu'on peut faire évoluer sans casser."
-      },
-      {
-        "label": "Ce que j'ai construit",
-        "title": "Un site statique, une API minuscule, et tout le contenu repris.",
-        "p1": "Programme 2026 au Be-Here, 39 auteurs avec horaires, marraine et parrains, prix littéraires, revue de presse, boutique de 23 produits avec panier et commande par email, formulaire de contact : tout le contenu de l'ancien WordPress a été récupéré via son API et converti en fichiers JSON.",
-        "p2": "Les commandes et contacts passent par une petite API PHP avec client SMTP maison, parce que l'hébergeur bloque l'envoi standard. Déploiement automatisé, vérifié fichier par fichier."
-      },
-      {
-        "label": "Où ça en est",
-        "title": "Testé en ligne, bascule du domaine en cours.",
-        "p1": "Le site complet tourne sur l'hébergement du client, en attente de la bascule finale du domaine irisnoirbxl.com par son gestionnaire.",
-        "p2": "Prochaines étapes : paiement en ligne pour la boutique et les adhésions, puis extinction définitive de WordPress."
-      }
-    ],
-    "ecosystem": ""
-  },
-  {
-    "slug": "royal-wellington",
-    "name": "Royal Wellington",
-    "tag": "Site · Club sportif",
-    "kpi": "1 600",
-    "kpiLabel": "membres actifs",
-    "role": "Revue & développement",
-    "year": "2026",
-    "lead": "la refonte du site du Royal Wellington Club,",
-    "text": " hockey, tennis et padel depuis 1928, 1 600 membres, 900 jeunes formés, en trois langues.",
-    "url": "https://well.beneloo.com",
-    "color": "#1d4a2b",
-    "body": [
-      "Revue éditoriale et technique complète du site du Royal Wellington Club (Bruxelles) : 13 pages, disciplines, cotisations, sélections avec interrupteur saisonnier, privatisation, kiné, en français, néerlandais et anglais. Contenu validé section par section avec le club, 98 ans d'histoire, 1 600 membres actifs, 900 jeunes formés.",
-      "Stack : TanStack Start, Cloudflare Workers, contenu trilingue, déploiement wrangler."
-    ],
-    "status": "ongoing",
-    "stack": "TanStack Start · Cloudflare Workers · contenu trilingue",
-    "tagline": "Cent ans de club, un site qui dit vrai.",
-    "sticker": [
-      "1 600 membres",
-      "3 langues"
-    ],
-    "cat": "Club",
-    "sections": [
-      {
-        "label": "Le problème",
-        "title": "Des informations périmées sur un site que personne n'osait toucher.",
-        "p1": "Dates de fondation fausses, tarifs d'une autre saison, contacts partis, sélections annoncées hors période : le site d'un club de 1 600 membres racontait un club qui n'existait plus.",
-        "p2": "Et tout existait en trois langues, donc chaque erreur se répétait trois fois."
-      },
-      {
-        "label": "Ce que j'ai construit",
-        "title": "Une revue section par section, validée avec le club.",
-        "p1": "Treize pages passées au crible : hockey, tennis, padel, cotisations, école, privatisation, kiné, contact. Chaque modification tracée dans un journal de revue, chaque chiffre vérifié avec le secrétariat.",
-        "p2": "Un interrupteur saisonnier ouvre et ferme la page des sélections sans toucher au code, et les compteurs (98 ans, 1 600 membres, 900 jeunes formés) sont rendus côté serveur pour le référencement."
-      },
-      {
-        "label": "Où ça en est",
-        "title": "En ligne, passe multilingue à venir.",
-        "p1": "La version française est validée et déployée sur Cloudflare Workers. Le néerlandais et l'anglais seront alignés en une passe une fois le français définitivement figé par le club.",
-        "p2": "Prochaines étapes : page tennis bloquée sur la grille tarifaire, agenda Twizzit, flux Instagram."
-      }
-    ],
-    "ecosystem": ""
-  },
-  {
-    "slug": "wimbledon",
-    "name": "Wimbledon Tennis Club",
-    "tag": "Site · Club sportif",
-    "kpi": "17",
-    "kpiLabel": "terrains",
-    "role": "Conception & développement",
-    "year": "2025",
-    "lead": "le site du Wimbledon Tennis Club de Rhode-Saint-Genèse :",
-    "text": " 7 terrains intérieurs, 9 en terre battue, 1 en dur, squash, fitness, école de tennis.",
-    "url": "https://www.wimbledontc.com",
-    "color": "#1d4a2b",
-    "body": [
-      "Site vitrine du Wimbledon Tennis Club (Rhode-Saint-Genèse) : présentation des 17 terrains (7 intérieurs, 9 terre battue, 1 dur), squash et fitness, école de tennis, bar et terrasse, informations pratiques et contact.",
-      "Stack : React (export Lovable), Vite, déploiement Vercel."
-    ],
-    "status": "",
-    "stack": "React · Vite · déploiement Vercel",
-    "tagline": "17 terrains.",
-    "sticker": [
-      "Wimbledon Tennis Club"
-    ],
-    "cat": "Club sportif",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "saul-racine",
-    "name": "Saul Racine",
-    "tag": "Site · Auteur",
-    "kpi": "1",
-    "kpiLabel": "roman en écriture",
-    "role": "Auteur & développement",
-    "year": "2025",
-    "lead": "mon site d'auteur sous pseudonyme :",
-    "text": " Le Cartographe des Ombres, roman noir social en cours de soumission.",
-    "url": "https://saulracine.be",
-    "color": "#2e1a0a",
-    "body": [
-      "Saul Racine est mon nom de plume pour la fiction noire francophone. Le site présente mon univers, mes textes publiés sur le Dark Blog de Pulse Noir et mon roman \"On attend. On instruit. On condamne.\", thriller social ancré dans le milieu maçonnique belge.",
-      "Stack : Astro, contenu Markdown, déploiement Vercel."
-    ],
-    "status": "",
-    "stack": "Astro · contenu Markdown · déploiement Vercel",
-    "tagline": "1 roman en écriture.",
-    "sticker": [
-      "Saul Racine"
-    ],
-    "cat": "Auteur",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "rene-manzor",
-    "name": "René Manzor",
-    "tag": "Site · Cinéaste & auteur",
-    "kpi": "26",
-    "kpiLabel": "leçons de masterclass",
-    "role": "Développement",
-    "year": "2025",
-    "lead": "le site officiel du cinéaste et auteur René Manzor :",
-    "text": " filmographie, livres, presse et masterclass en ligne migrée de Podia, 26 leçons, 22 vidéos, 71 élèves.",
-    "url": "https://renemanzor.com",
-    "color": "#0a1a2e",
-    "body": [
-      "Site officiel de René Manzor, réalisateur et auteur : filmographie, livres, espace presse. En 2026, migration complète de sa masterclass d'écriture hors de Podia : 26 leçons, 22 vidéos en lecture signée, 24 PDF, 71 élèves et leurs commentaires repris sans perte, paiement Stripe en direct.",
-      "Stack : React, Supabase (auth, base, RLS), Cloudflare Stream, Resend, Stripe, déploiement Vercel."
-    ],
-    "status": "",
-    "stack": "React · Supabase (auth · base",
-    "tagline": "Une masterclass qui ne dépend plus d'une plateforme.",
-    "sticker": [
-      "26 leçons",
-      "hors Podia"
-    ],
-    "cat": "Formation",
-    "sections": [
-      {
-        "label": "Le problème",
-        "title": "Une masterclass prisonnière de Podia, avec ses élèves et ses vidéos.",
-        "p1": "René Manzor vendait sa masterclass d'écriture sur Podia : abonnement mensuel, vidéos hébergées chez eux, élèves et commentaires enfermés dans leur base. Quitter la plateforme voulait dire tout perdre.",
-        "p2": "Il fallait migrer sans interruption de service, sans perdre un élève, et garder les vidéos protégées."
-      },
-      {
-        "label": "Ce que j'ai construit",
-        "title": "Un espace formation complet, de la vidéo au paiement.",
-        "p1": "26 leçons, 24 PDF, 22 vidéos en lecture signée sur Cloudflare Stream, 71 élèves et leurs 119 inscriptions migrés avec leurs commentaires, connexion par lien magique, paiement Stripe en direct, administration par le cinéaste lui-même.",
-        "p2": "Trente tests unitaires, cinq tests côté serveur et un parcours de bout en bout vérifient chaque déploiement."
-      },
-      {
-        "label": "Où ça en est",
-        "title": "En production sur renemanzor.com depuis septembre 2026.",
-        "p1": "Stripe est passé en mode réel avec une clé limitée, les élèves se connectent sur le nouveau site, Podia sera résilié à l'issue du préavis.",
-        "p2": "Prochaines étapes : mail d'annonce aux anciens élèves et nouveaux modules."
-      }
-    ],
-    "ecosystem": ""
-  },
-  {
-    "slug": "chir-ophta",
-    "name": "Chir-Ophta",
-    "tag": "Site · Médical",
-    "kpi": "1",
-    "kpiLabel": "cabinet spécialisé",
-    "role": "Développement",
-    "year": "2025",
-    "lead": "le site d'un cabinet de chirurgie ophtalmologique belge,",
-    "text": " soins, équipe et prise de rendez-vous.",
-    "url": "https://chir-ophta.be",
-    "color": "#0a2e3a",
-    "body": [
-      "Site vitrine pour un cabinet de chirurgie ophtalmologique en Belgique : présentation des chirurgiens, des actes pris en charge, des techniques utilisées et formulaire de prise de rendez-vous.",
-      "Stack : React, contenu JSON, déploiement Vercel."
-    ],
-    "status": "",
-    "stack": "React · contenu JSON · déploiement Vercel",
-    "tagline": "1 cabinet spécialisé.",
-    "sticker": [
-      "Chir-Ophta"
-    ],
-    "cat": "Médical",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "le-verseau",
-    "name": "Clinique Le Verseau",
-    "tag": "Site · Clinique",
-    "kpi": "10+",
-    "kpiLabel": "ans à Wavre",
-    "role": "Conception & développement",
-    "year": "2026",
-    "lead": "le site de la clinique ophtalmologique Le Verseau à Wavre :",
-    "text": " équipe d'ophtalmologues accrédités FEBO, équipements, urgences, prise de rendez-vous en ligne.",
-    "url": "https://www.cliniqueleverseau.be",
-    "color": "#12303f",
-    "body": [
-      "Site de la clinique ophtalmologique Le Verseau, fondée par le Dr Jean-Luc Mélard et implantée depuis plus de dix ans dans le Brabant wallon : clinique, équipe, équipements, urgences, contact et prise de rendez-vous en ligne. Français et néerlandais.",
-      "Stack : React, Vite, Tailwind, déploiement Vercel."
-    ],
-    "status": "",
-    "stack": "React · Vite · Tailwind",
-    "tagline": "10+ ans à Wavre.",
-    "sticker": [
-      "Clinique Le Verseau"
-    ],
-    "cat": "Clinique",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "notre-dame-de-stockel",
-    "name": "Notre-Dame de Stockel",
-    "tag": "Site · Maison de repos",
-    "kpi": "88",
-    "kpiLabel": "résidents",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site de la maison de repos et de soins Notre-Dame de Stockel,",
-    "text": " 88 résidents, Woluwe-Saint-Pierre, en français et néerlandais.",
-    "url": "https://notre-dame-de-stockel.be",
-    "color": "#3a2a1d",
-    "body": [
-      "Site de la Maison de Repos et de Soins Notre-Dame de Stockel (Woluwe-Saint-Pierre) : établissement de 88 résidents dont 18 places en chambre double, présentation de la maison, des soins, de la vie quotidienne, admission et contact, en français et en néerlandais.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "88 résidents.",
-    "sticker": [
-      "Notre-Dame de Stockel"
-    ],
-    "cat": "Maison de repos",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "residence-sainte-anne",
-    "name": "Résidence Sainte-Anne",
-    "tag": "Site · Maison de repos",
-    "kpi": "97",
-    "kpiLabel": "chambres",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site de la maison de repos Résidence Sainte-Anne,",
-    "text": " 97 chambres, Watermael-Boitsfort, en français et néerlandais.",
-    "url": "https://residence-sainte-anne.be",
-    "color": "#2b1d4a",
-    "body": [
-      "Site de la Résidence Sainte-Anne (Watermael-Boitsfort) : maison de repos de 97 chambres avec parc privé, agrandie par l'annexion du Couvent Sainte-Anne. Présentation, services, admission et contact, en français et en néerlandais.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "97 chambres.",
-    "sticker": [
-      "Résidence Sainte-Anne"
-    ],
-    "cat": "Maison de repos",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "rtms-wellcare",
-    "name": "rTMS Wellcare",
-    "tag": "Site · Médical",
-    "kpi": "2",
-    "kpiLabel": "langues",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site rTMS du centre médical Wellcare :",
-    "text": " stimulation magnétique transcrânienne pour les douleurs chroniques et la dépression, en français et anglais.",
-    "url": "https://www.stimulation-magnetique-transcranienne.be",
-    "color": "#1d3a8a",
-    "body": [
-      "Site dédié à la stimulation magnétique transcrânienne répétitive (rTMS) du centre médical Wellcare : explication du traitement, indications (douleurs chroniques, maladies neurologiques, dépression), équipe multidisciplinaire, prise de rendez-vous. Français et anglais.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "2 langues.",
-    "sticker": [
-      "rTMS Wellcare"
-    ],
-    "cat": "Médical",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "abofield",
-    "name": "Abofield",
-    "tag": "Site · Industrie",
-    "kpi": "3",
-    "kpiLabel": "métiers",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site d'Abofield, spécialiste des terrains de sport et aires de jeux :",
-    "text": " revêtements, aménagement, entretien, brochure, en français et néerlandais.",
-    "url": "https://www.abofield.be",
-    "color": "#4a2b1d",
-    "body": [
-      "Site d'Abofield, spécialiste de l'aménagement et de la maintenance de terrains de sport et d'aires de jeux : trois métiers (terrains, aires de jeux, entretien), projets réalisés, brochure téléchargeable, contact. Français et néerlandais.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "3 métiers.",
-    "sticker": [
-      "Abofield"
-    ],
-    "cat": "Industrie",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "sar-benelux",
-    "name": "SAR Benelux",
-    "tag": "Site · Assurance",
-    "kpi": "2",
-    "kpiLabel": "langues",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site de SAR Benelux, courtier spécialisé en risque légal et immobilier :",
-    "text": " assurance permis d'urbanisme et garanties construction, en français et néerlandais.",
-    "url": "https://www.sar-benelux.com",
-    "color": "#12121f",
-    "body": [
-      "Site de SAR Benelux (Société d'Analyse de Risques), courtier spécialisé : assurance permis d'urbanisme, analyse de risque de recours, contrats pour lotisseurs, promoteurs, architectes et maîtres d'ouvrage. Français et néerlandais.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "2 langues.",
-    "sticker": [
-      "SAR Benelux"
-    ],
-    "cat": "Assurance",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "valeone",
-    "name": "Valeone",
-    "tag": "Site · Couture",
-    "kpi": "100 %",
-    "kpiLabel": "sur mesure",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site de la maison de couture Valeone :",
-    "text": " robes de mariée et de soirée sur mesure, cours de couture en petits groupes.",
-    "url": "https://valeone.be",
-    "color": "#7a2e1d",
-    "body": [
-      "Site de Valeone, maison de couture : création de robes de mariée et de soirée sur mesure, cours de couture en petits groupes, galerie et contact.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "100 % sur mesure.",
-    "sticker": [
-      "Valeone"
-    ],
-    "cat": "Couture",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "aquares",
-    "name": "Aquares",
-    "tag": "Site · E-commerce",
-    "kpi": "3",
-    "kpiLabel": "langues",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site d'Aquares, textile personnalisé et produits de natation Aqualine :",
-    "text": " offres du mois, devis, en français, néerlandais et anglais.",
-    "url": "https://www.aquares.be",
-    "color": "#1d4a4a",
-    "body": [
-      "Site d'Aquares, partenaire textile depuis 20 ans : vêtements personnalisés pour camps, rhétos, cercles étudiants, entreprises et clubs, gamme de natation Aqualine, propositions du mois, demande de devis. Français, néerlandais et anglais.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "3 langues.",
-    "sticker": [
-      "Aquares"
-    ],
-    "cat": "E-commerce",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "success-tennis-cool",
-    "name": "Success Tennis Cool",
-    "tag": "Site · École de tennis",
-    "kpi": "4",
-    "kpiLabel": "langues",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site de l'école Success Tennis Cool de Jacques Grandjean :",
-    "text": " cours, stages, philosophie du tennis autrement, en quatre langues.",
-    "url": "https://www.successtenniscool.com",
-    "color": "#1d4a2b",
-    "body": [
-      "Site de l'école de tennis Success Tennis Cool, dirigée par Jacques Grandjean (ancien ATP 230, joueur de Coupe Davis) : philosophie, cours, stages, inscriptions et contact, en français, néerlandais, anglais et italien.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "4 langues.",
-    "sticker": [
-      "Success Tennis Cool"
-    ],
-    "cat": "École de tennis",
-    "sections": [],
-    "ecosystem": ""
-  },
-  {
-    "slug": "manuel-apicella",
-    "name": "Manuel Apicella Échecs",
-    "tag": "Site · Formation en ligne",
-    "kpi": "GMI",
-    "kpiLabel": "grand maître international",
-    "role": "Conception & développement",
-    "year": "",
-    "lead": "le site du grand maître international d'échecs Manuel Apicella :",
-    "text": " cours en ligne, masterclass, champion de France 1992.",
-    "url": "https://www.manuel-apicella-echecs.fr",
-    "color": "#3a1d4a",
-    "body": [
-      "Site de Manuel Apicella, Grand Maître International et champion de France 1992 : cours d'échecs en ligne à tous niveaux, masterclass programmées, répertoire d'ouvertures, analyse de parties, contact.",
-      "Stack : WordPress, Elementor."
-    ],
-    "status": "",
-    "stack": "WordPress · Elementor",
-    "tagline": "GMI grand maître international.",
-    "sticker": [
-      "Manuel Apicella Échecs"
-    ],
-    "cat": "Formation en ligne",
-    "sections": [],
-    "ecosystem": ""
+    "ecosystem": "Pulse Noir × BiblioPulse",
+    "kind": "product",
+    "featured": true
   },
   {
     "slug": "beneloo",
@@ -749,6 +187,612 @@
         "p2": "Prochaines étapes : annuaire public de la visibilité IA par société, revendication de fiche, et premiers clients accompagnés sur la durée."
       }
     ],
-    "ecosystem": "Beneloo × Observatory × Singulr"
+    "ecosystem": "Beneloo × Observatory × Singulr",
+    "kind": "product",
+    "featured": true
+  },
+  {
+    "slug": "observatory",
+    "name": "Beneloo Observatory",
+    "tag": "Recherche · IA",
+    "kpi": "1 668",
+    "kpiLabel": "PME testées",
+    "role": "Conception & données",
+    "year": "2026",
+    "lead": "l'observatoire de la visibilité des PME belges",
+    "text": " dans ChatGPT, Claude, Gemini et Perplexity : 3 campagnes, 1 668 sociétés, 96 à 98 % invisibles.",
+    "url": "https://beneloo.com",
+    "color": "#12121f",
+    "body": [
+      "L'Observatory interroge quatre modèles d'IA avec des prompts figés sur des échantillons exhaustifs de sociétés : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque mention est validée à la main (correct, réseau, hallucination). Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité ; ChatGPT et Claude ne citent aucun cabinet local, Gemini hallucine jusqu'à 52 % de ses réponses.",
+      "Stack : Python, Postgres, pipeline de campagnes immuable (prompts et modèles figés, coûts plafonnés), validation humaine tracée, agrégats anonymisés publiables."
+    ],
+    "status": "",
+    "stack": "Python · Postgres · pipeline de campagnes immuable (prompts",
+    "tagline": "Mesurer, chiffres à l'appui, qui existe pour les IA.",
+    "sticker": [
+      "96 à 98 %",
+      "invisibles"
+    ],
+    "cat": "Recherche",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "Tout le monde parle de visibilité IA, personne ne la mesure.",
+        "p1": "Quand un particulier demande à ChatGPT ou Perplexity un comptable ou un plombier près de chez lui, qui est cité ? Les discours abondent, les chiffres manquent. Et sans mesure, impossible de dire à une PME si elle a un problème, ni s'il se corrige.",
+        "p2": "Il fallait un protocole reproductible : mêmes questions, mêmes modèles, échantillons exhaustifs, validation humaine de chaque nom cité."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Un pipeline de campagnes figées et une validation nom par nom.",
+        "p1": "L'Observatory interroge quatre modèles (ChatGPT, Claude, Gemini, Perplexity) avec des prompts gelés sur des populations entières : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque entité citée est rapprochée du registre officiel et classée : correcte, marque de réseau, hallucination.",
+        "p2": "Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité. ChatGPT et Claude ne citent aucun cabinet local ; Gemini hallucine jusqu'à 52 % de ses réponses. Coût total des trois campagnes : moins de 5 euros d'API."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "Trois campagnes publiées en interne, méthode documentée.",
+        "p1": "Les agrégats sont anonymisés et publiables ; le protocole de validation, les limites et les biais sont écrits. Le mur éditorial sépare strictement l'observatoire public du conseil Beneloo.",
+        "p2": "Prochaines étapes : nouveaux secteurs, contraste à deux secteurs publié, et le Beneloo Score qui applique cette mesure à une entreprise à la fois."
+      }
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr",
+    "kind": "product",
+    "featured": true
+  },
+  {
+    "slug": "singulr",
+    "name": "Singulr",
+    "tag": "Écosystème · Souveraineté numérique",
+    "kpi": "4",
+    "kpiLabel": "piliers",
+    "role": "Fondateur & président",
+    "year": "2026",
+    "lead": "l'ASBL que j'ai fondée pour des communs numériques européens :",
+    "text": " veille, observatoire, forge Git souveraine opérée en Belgique, fédération d'acteurs. Site en 4 langues, événement Singulr Health 2026.",
+    "url": "https://singulr.be",
+    "color": "#1d2b4a",
+    "body": [
+      "Singulr est une ASBL belge que j'ai fondée et que je préside : développer et opérer des communs numériques européens, fédérer les acteurs souverains et promouvoir la souveraineté numérique. Quatre piliers : une veille hebdomadaire, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, forge.singulr.be, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Première édition de Singulr Health le 10 septembre 2026 à Waterloo : une cinquantaine de médecins, experts du numérique, entreprises et institutions. Avec Beneloo et l'Observatory, Singulr forme l'écosystème que je construis autour de la maîtrise des données et des outils.",
+      "Stack : site statique quadrilingue (FR, NL, DE, EN), Forgejo et PostgreSQL sur VPS Debian, Caddy, déploiement continu, formulaires Brevo."
+    ],
+    "status": "",
+    "stack": "site statique quadrilingue (FR · NL · DE",
+    "tagline": "Le numérique dont on garde la clé.",
+    "sticker": [
+      "Forge Git",
+      "souveraine"
+    ],
+    "cat": "Communs",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "On a normalisé la dépendance.",
+        "p1": "Données de santé, code source, outils de travail : l'essentiel de ce qui compte pour une organisation belge tourne chez des acteurs qu'elle ne contrôle pas. Ce n'est pas une accusation, c'est la logique de toute infrastructure critique confiée à un tiers.",
+        "p2": "Les alternatives européennes existent mais sont mal connues, mal comparées, et personne ne coordonne ceux qui veulent s'en servir."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Quatre piliers, un seul mouvement.",
+        "p1": "Singulr ASBL opère une veille hebdomadaire sur la souveraineté numérique, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Le site existe en quatre langues.",
+        "p2": "Le 10 septembre 2026, la première édition de Singulr Health a réuni une cinquantaine de médecins, experts du numérique, entreprises et institutions à Waterloo."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "Forge en service, fédération en construction.",
+        "p1": "La forge héberge déjà mes propres projets et ceux de premiers partenaires. Les adhésions sont ouvertes en trois niveaux. La vidéo de Singulr Health arrive.",
+        "p2": "Prochaines étapes : outil d'envoi souverain pour les membres, nouveaux guides santé, deuxième édition de Singulr Health."
+      }
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr",
+    "kind": "product",
+    "featured": true
+  },
+  {
+    "slug": "rene-manzor",
+    "name": "René Manzor",
+    "tag": "Site · Cinéaste & auteur",
+    "kpi": "26",
+    "kpiLabel": "leçons de masterclass",
+    "role": "Développement",
+    "year": "2025",
+    "lead": "le site officiel du cinéaste et auteur René Manzor :",
+    "text": " filmographie, livres, presse et masterclass en ligne migrée de Podia, 26 leçons, 22 vidéos, 71 élèves.",
+    "url": "https://renemanzor.com",
+    "color": "#0a1a2e",
+    "body": [
+      "Site officiel de René Manzor, réalisateur et auteur : filmographie, livres, espace presse. En 2026, migration complète de sa masterclass d'écriture hors de Podia : 26 leçons, 22 vidéos en lecture signée, 24 PDF, 71 élèves et leurs commentaires repris sans perte, paiement Stripe en direct.",
+      "Stack : React, Supabase (auth, base, RLS), Cloudflare Stream, Resend, Stripe, déploiement Vercel."
+    ],
+    "status": "",
+    "stack": "React · Supabase (auth · base",
+    "tagline": "Une masterclass qui ne dépend plus d'une plateforme.",
+    "sticker": [
+      "26 leçons",
+      "hors Podia"
+    ],
+    "cat": "Formation",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "Une masterclass prisonnière de Podia, avec ses élèves et ses vidéos.",
+        "p1": "René Manzor vendait sa masterclass d'écriture sur Podia : abonnement mensuel, vidéos hébergées chez eux, élèves et commentaires enfermés dans leur base. Quitter la plateforme voulait dire tout perdre.",
+        "p2": "Il fallait migrer sans interruption de service, sans perdre un élève, et garder les vidéos protégées."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Un espace formation complet, de la vidéo au paiement.",
+        "p1": "26 leçons, 24 PDF, 22 vidéos en lecture signée sur Cloudflare Stream, 71 élèves et leurs 119 inscriptions migrés avec leurs commentaires, connexion par lien magique, paiement Stripe en direct, administration par le cinéaste lui-même.",
+        "p2": "Trente tests unitaires, cinq tests côté serveur et un parcours de bout en bout vérifient chaque déploiement."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "En production sur renemanzor.com depuis septembre 2026.",
+        "p1": "Stripe est passé en mode réel avec une clé limitée, les élèves se connectent sur le nouveau site, Podia sera résilié à l'issue du préavis.",
+        "p2": "Prochaines étapes : mail d'annonce aux anciens élèves et nouveaux modules."
+      }
+    ],
+    "ecosystem": "",
+    "kind": "product",
+    "featured": false
+  },
+  {
+    "slug": "iris-noir",
+    "name": "Iris Noir Bruxelles",
+    "tag": "Site · Événement",
+    "kpi": "39",
+    "kpiLabel": "auteurs invités",
+    "role": "Refonte & développement",
+    "year": "2026",
+    "lead": "le site du salon du polar de Bruxelles,",
+    "text": " programme 2026 au Be-Here, 39 auteurs, boutique de 23 produits, presse, sorti de WordPress.",
+    "url": "https://irisnoirbxl.com",
+    "color": "#2b1d4a",
+    "body": [
+      "Refonte complète du site de l'asbl Iris Noir, salon du polar de Bruxelles (8e édition, 30 octobre au 1er novembre 2026 au Be-Here) : 39 auteurs invités, horaires, marraine et parrains, prix littéraires, revue de presse, boutique de 23 produits avec panier et commande par email, formulaire de contact. Contenu repris de l'ancien WordPress via son API, hébergement mutualisé classique.",
+      "Stack : React, contenu JSON, API PHP légère (commande, contact, SMTP maison), déploiement FTP automatisé."
+    ],
+    "status": "ongoing",
+    "stack": "React · contenu JSON · API PHP légère (commande",
+    "tagline": "Un salon du polar qui n'a plus besoin de WordPress.",
+    "sticker": [
+      "39 auteurs",
+      "au Be-Here"
+    ],
+    "cat": "Événement",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "Un site WordPress lourd, cher à maintenir, pour une asbl bénévole.",
+        "p1": "Le salon Iris Noir change de lieu, d'auteurs et de programme chaque année. Chaque modification passait par un prestataire, des extensions payantes pour la boutique et les dons, et un hébergement qu'il fallait surveiller.",
+        "p2": "L'asbl voulait un site qu'elle comprend, rapide, et qu'on peut faire évoluer sans casser."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Un site statique, une API minuscule, et tout le contenu repris.",
+        "p1": "Programme 2026 au Be-Here, 39 auteurs avec horaires, marraine et parrains, prix littéraires, revue de presse, boutique de 23 produits avec panier et commande par email, formulaire de contact : tout le contenu de l'ancien WordPress a été récupéré via son API et converti en fichiers JSON.",
+        "p2": "Les commandes et contacts passent par une petite API PHP avec client SMTP maison, parce que l'hébergeur bloque l'envoi standard. Déploiement automatisé, vérifié fichier par fichier."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "Testé en ligne, bascule du domaine en cours.",
+        "p1": "Le site complet tourne sur l'hébergement du client, en attente de la bascule finale du domaine irisnoirbxl.com par son gestionnaire.",
+        "p2": "Prochaines étapes : paiement en ligne pour la boutique et les adhésions, puis extinction définitive de WordPress."
+      }
+    ],
+    "ecosystem": "",
+    "kind": "product",
+    "featured": false
+  },
+  {
+    "slug": "royal-wellington",
+    "name": "Royal Wellington",
+    "tag": "Site · Club sportif",
+    "kpi": "1 600",
+    "kpiLabel": "membres actifs",
+    "role": "Revue & développement",
+    "year": "2026",
+    "lead": "la refonte du site du Royal Wellington Club,",
+    "text": " hockey, tennis et padel depuis 1928, 1 600 membres, 900 jeunes formés, en trois langues.",
+    "url": "https://well.beneloo.com",
+    "color": "#1d4a2b",
+    "body": [
+      "Revue éditoriale et technique complète du site du Royal Wellington Club (Bruxelles) : 13 pages, disciplines, cotisations, sélections avec interrupteur saisonnier, privatisation, kiné, en français, néerlandais et anglais. Contenu validé section par section avec le club, 98 ans d'histoire, 1 600 membres actifs, 900 jeunes formés.",
+      "Stack : TanStack Start, Cloudflare Workers, contenu trilingue, déploiement wrangler."
+    ],
+    "status": "ongoing",
+    "stack": "TanStack Start · Cloudflare Workers · contenu trilingue",
+    "tagline": "Cent ans de club, un site qui dit vrai.",
+    "sticker": [
+      "1 600 membres",
+      "3 langues"
+    ],
+    "cat": "Club",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "Des informations périmées sur un site que personne n'osait toucher.",
+        "p1": "Dates de fondation fausses, tarifs d'une autre saison, contacts partis, sélections annoncées hors période : le site d'un club de 1 600 membres racontait un club qui n'existait plus.",
+        "p2": "Et tout existait en trois langues, donc chaque erreur se répétait trois fois."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Une revue section par section, validée avec le club.",
+        "p1": "Treize pages passées au crible : hockey, tennis, padel, cotisations, école, privatisation, kiné, contact. Chaque modification tracée dans un journal de revue, chaque chiffre vérifié avec le secrétariat.",
+        "p2": "Un interrupteur saisonnier ouvre et ferme la page des sélections sans toucher au code, et les compteurs (98 ans, 1 600 membres, 900 jeunes formés) sont rendus côté serveur pour le référencement."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "En ligne, passe multilingue à venir.",
+        "p1": "La version française est validée et déployée sur Cloudflare Workers. Le néerlandais et l'anglais seront alignés en une passe une fois le français définitivement figé par le club.",
+        "p2": "Prochaines étapes : page tennis bloquée sur la grille tarifaire, agenda Twizzit, flux Instagram."
+      }
+    ],
+    "ecosystem": "",
+    "kind": "product",
+    "featured": false
+  },
+  {
+    "slug": "wimbledon",
+    "name": "Wimbledon Tennis Club",
+    "tag": "Site · Club sportif",
+    "kpi": "17",
+    "kpiLabel": "terrains",
+    "role": "Conception & développement",
+    "year": "2025",
+    "lead": "le site du Wimbledon Tennis Club de Rhode-Saint-Genèse :",
+    "text": " 7 terrains intérieurs, 9 en terre battue, 1 en dur, squash, fitness, école de tennis.",
+    "url": "https://www.wimbledontc.com",
+    "color": "#1d4a2b",
+    "body": [
+      "Site vitrine du Wimbledon Tennis Club (Rhode-Saint-Genèse) : présentation des 17 terrains (7 intérieurs, 9 terre battue, 1 dur), squash et fitness, école de tennis, bar et terrasse, informations pratiques et contact.",
+      "Stack : React (export Lovable), Vite, déploiement Vercel."
+    ],
+    "status": "",
+    "stack": "React · Vite · déploiement Vercel",
+    "tagline": "17 terrains.",
+    "sticker": [
+      "Wimbledon Tennis Club"
+    ],
+    "cat": "Club sportif",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "saul-racine",
+    "name": "Saul Racine",
+    "tag": "Site · Auteur",
+    "kpi": "1",
+    "kpiLabel": "roman en écriture",
+    "role": "Auteur & développement",
+    "year": "2025",
+    "lead": "mon site d'auteur sous pseudonyme :",
+    "text": " Le Cartographe des Ombres, roman noir social en cours de soumission.",
+    "url": "https://saulracine.be",
+    "color": "#2e1a0a",
+    "body": [
+      "Saul Racine est mon nom de plume pour la fiction noire francophone. Le site présente mon univers, mes textes publiés sur le Dark Blog de Pulse Noir et mon roman \"On attend. On instruit. On condamne.\", thriller social ancré dans le milieu maçonnique belge.",
+      "Stack : Astro, contenu Markdown, déploiement Vercel."
+    ],
+    "status": "",
+    "stack": "Astro · contenu Markdown · déploiement Vercel",
+    "tagline": "1 roman en écriture.",
+    "sticker": [
+      "Saul Racine"
+    ],
+    "cat": "Auteur",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "chir-ophta",
+    "name": "Chir-Ophta",
+    "tag": "Site · Médical",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Développement",
+    "year": "2025",
+    "lead": "le site d'un cabinet de chirurgie ophtalmologique belge,",
+    "text": " soins, équipe et prise de rendez-vous.",
+    "url": "https://chir-ophta.be",
+    "color": "#0a2e3a",
+    "body": [
+      "Site vitrine pour un cabinet de chirurgie ophtalmologique en Belgique : présentation des chirurgiens, des actes pris en charge, des techniques utilisées et formulaire de prise de rendez-vous.",
+      "Stack : React, contenu JSON, déploiement Vercel."
+    ],
+    "status": "",
+    "stack": "React · contenu JSON · déploiement Vercel",
+    "tagline": "1 cabinet spécialisé.",
+    "sticker": [
+      "Chir-Ophta"
+    ],
+    "cat": "Médical",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "le-verseau",
+    "name": "Clinique Le Verseau",
+    "tag": "Site · Clinique",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "2026",
+    "lead": "le site de la clinique ophtalmologique Le Verseau à Wavre :",
+    "text": " équipe d'ophtalmologues accrédités FEBO, équipements, urgences, prise de rendez-vous en ligne.",
+    "url": "https://www.cliniqueleverseau.be",
+    "color": "#12303f",
+    "body": [
+      "Site de la clinique ophtalmologique Le Verseau, fondée par le Dr Jean-Luc Mélard et implantée depuis plus de dix ans dans le Brabant wallon : clinique, équipe, équipements, urgences, contact et prise de rendez-vous en ligne. Français et néerlandais.",
+      "Stack : React, Vite, Tailwind, déploiement Vercel."
+    ],
+    "status": "",
+    "stack": "React · Vite · Tailwind",
+    "tagline": "10+ ans à Wavre.",
+    "sticker": [
+      "Clinique Le Verseau"
+    ],
+    "cat": "Clinique",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "notre-dame-de-stockel",
+    "name": "Notre-Dame de Stockel",
+    "tag": "Site · Maison de repos",
+    "kpi": "88",
+    "kpiLabel": "résidents",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de la maison de repos et de soins Notre-Dame de Stockel,",
+    "text": " 88 résidents, Woluwe-Saint-Pierre, en français et néerlandais.",
+    "url": "https://notre-dame-de-stockel.be",
+    "color": "#3a2a1d",
+    "body": [
+      "Site de la Maison de Repos et de Soins Notre-Dame de Stockel (Woluwe-Saint-Pierre) : établissement de 88 résidents dont 18 places en chambre double, présentation de la maison, des soins, de la vie quotidienne, admission et contact, en français et en néerlandais.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "88 résidents.",
+    "sticker": [
+      "Notre-Dame de Stockel"
+    ],
+    "cat": "Maison de repos",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "residence-sainte-anne",
+    "name": "Résidence Sainte-Anne",
+    "tag": "Site · Maison de repos",
+    "kpi": "97",
+    "kpiLabel": "chambres",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de la maison de repos Résidence Sainte-Anne,",
+    "text": " 97 chambres, Watermael-Boitsfort, en français et néerlandais.",
+    "url": "https://residence-sainte-anne.be",
+    "color": "#2b1d4a",
+    "body": [
+      "Site de la Résidence Sainte-Anne (Watermael-Boitsfort) : maison de repos de 97 chambres avec parc privé, agrandie par l'annexion du Couvent Sainte-Anne. Présentation, services, admission et contact, en français et en néerlandais.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "97 chambres.",
+    "sticker": [
+      "Résidence Sainte-Anne"
+    ],
+    "cat": "Maison de repos",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "rtms-wellcare",
+    "name": "rTMS Wellcare",
+    "tag": "Site · Médical",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site rTMS du centre médical Wellcare :",
+    "text": " stimulation magnétique transcrânienne pour les douleurs chroniques et la dépression, en français et anglais.",
+    "url": "https://www.stimulation-magnetique-transcranienne.be",
+    "color": "#1d3a8a",
+    "body": [
+      "Site dédié à la stimulation magnétique transcrânienne répétitive (rTMS) du centre médical Wellcare : explication du traitement, indications (douleurs chroniques, maladies neurologiques, dépression), équipe multidisciplinaire, prise de rendez-vous. Français et anglais.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "2 langues.",
+    "sticker": [
+      "rTMS Wellcare"
+    ],
+    "cat": "Médical",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "abofield",
+    "name": "Abofield",
+    "tag": "Site · Industrie",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site d'Abofield, spécialiste des terrains de sport et aires de jeux :",
+    "text": " revêtements, aménagement, entretien, brochure, en français et néerlandais.",
+    "url": "https://www.abofield.be",
+    "color": "#4a2b1d",
+    "body": [
+      "Site d'Abofield, spécialiste de l'aménagement et de la maintenance de terrains de sport et d'aires de jeux : trois métiers (terrains, aires de jeux, entretien), projets réalisés, brochure téléchargeable, contact. Français et néerlandais.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "3 métiers.",
+    "sticker": [
+      "Abofield"
+    ],
+    "cat": "Industrie",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "sar-benelux",
+    "name": "SAR Benelux",
+    "tag": "Site · Assurance",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de SAR Benelux, courtier spécialisé en risque légal et immobilier :",
+    "text": " assurance permis d'urbanisme et garanties construction, en français et néerlandais.",
+    "url": "https://www.sar-benelux.com",
+    "color": "#12121f",
+    "body": [
+      "Site de SAR Benelux (Société d'Analyse de Risques), courtier spécialisé : assurance permis d'urbanisme, analyse de risque de recours, contrats pour lotisseurs, promoteurs, architectes et maîtres d'ouvrage. Français et néerlandais.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "2 langues.",
+    "sticker": [
+      "SAR Benelux"
+    ],
+    "cat": "Assurance",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "valeone",
+    "name": "Valeone",
+    "tag": "Site · Couture",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de la maison de couture Valeone :",
+    "text": " robes de mariée et de soirée sur mesure, cours de couture en petits groupes.",
+    "url": "https://valeone.be",
+    "color": "#7a2e1d",
+    "body": [
+      "Site de Valeone, maison de couture : création de robes de mariée et de soirée sur mesure, cours de couture en petits groupes, galerie et contact.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "100 % sur mesure.",
+    "sticker": [
+      "Valeone"
+    ],
+    "cat": "Couture",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "aquares",
+    "name": "Aquares",
+    "tag": "Site · E-commerce",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site d'Aquares, textile personnalisé et produits de natation Aqualine :",
+    "text": " offres du mois, devis, en français, néerlandais et anglais.",
+    "url": "https://www.aquares.be",
+    "color": "#1d4a4a",
+    "body": [
+      "Site d'Aquares, partenaire textile depuis 20 ans : vêtements personnalisés pour camps, rhétos, cercles étudiants, entreprises et clubs, gamme de natation Aqualine, propositions du mois, demande de devis. Français, néerlandais et anglais.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "3 langues.",
+    "sticker": [
+      "Aquares"
+    ],
+    "cat": "E-commerce",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "success-tennis-cool",
+    "name": "Success Tennis Cool",
+    "tag": "Site · École de tennis",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de l'école Success Tennis Cool de Jacques Grandjean :",
+    "text": " cours, stages, philosophie du tennis autrement, en quatre langues.",
+    "url": "https://www.successtenniscool.com",
+    "color": "#1d4a2b",
+    "body": [
+      "Site de l'école de tennis Success Tennis Cool, dirigée par Jacques Grandjean (ancien ATP 230, joueur de Coupe Davis) : philosophie, cours, stages, inscriptions et contact, en français, néerlandais, anglais et italien.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "4 langues.",
+    "sticker": [
+      "Success Tennis Cool"
+    ],
+    "cat": "École de tennis",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
+    "slug": "manuel-apicella",
+    "name": "Manuel Apicella Échecs",
+    "tag": "Site · Formation en ligne",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site du grand maître international d'échecs Manuel Apicella :",
+    "text": " cours en ligne, masterclass, champion de France 1992.",
+    "url": "https://www.manuel-apicella-echecs.fr",
+    "color": "#3a1d4a",
+    "body": [
+      "Site de Manuel Apicella, Grand Maître International et champion de France 1992 : cours d'échecs en ligne à tous niveaux, masterclass programmées, répertoire d'ouvertures, analyse de parties, contact.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "GMI grand maître international.",
+    "sticker": [
+      "Manuel Apicella Échecs"
+    ],
+    "cat": "Formation en ligne",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
   }
 ]

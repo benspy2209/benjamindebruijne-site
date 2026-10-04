@@ -8,7 +8,8 @@
     "email": "debruijneb@gmail.com",
     "title": "Benjamin de Bruijne — Digital & AI consultant",
     "description": "I build digital tools that work for you: custom websites and apps, AI and automation, Google & AI visibility, project delivery.",
-    "since": "2005"
+    "since": "2005",
+    "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo"
   },
   "nav": [
     {
@@ -30,10 +31,6 @@
     {
       "key": "contact",
       "label": "Contact"
-    },
-    {
-      "key": "blog",
-      "label": "Blog"
     }
   ],
   "header": {
@@ -45,29 +42,54 @@
     "langSwitch": "FR"
   },
   "hero": {
-    "title": "I help freelancers and SMEs build digital tools that work for them.",
+    "title": "I build and run digital tools for Belgian businesses.",
     "services": [
-      "Custom websites & apps",
-      "AI & automation",
-      "Google & AI visibility"
+      "Build: websites, apps, products",
+      "Automate: AI, data, CRM",
+      "Deliver: IT projects, quality, GxP"
     ],
     "proofValue": "3",
     "proofLabel": "ongoing missions",
     "proofSub": "UCB · XLG · Leroy & Partners"
   },
   "logos": [
-    "Beneloo",
-    "Observatory",
-    "Singulr",
-    "Pulse Noir",
-    "BiblioPulse",
-    "Service-Volée",
-    "Iris Noir",
-    "Royal Wellington"
+    {
+      "name": "Beneloo",
+      "src": "/logos/beneloo.svg"
+    },
+    {
+      "name": "Observatory",
+      "src": ""
+    },
+    {
+      "name": "Singulr",
+      "src": "/logos/singulr.svg"
+    },
+    {
+      "name": "Pulse Noir",
+      "src": "/logos/pulse-noir.png",
+      "dark": true
+    },
+    {
+      "name": "BiblioPulse",
+      "src": "/logos/bibliopulse.png"
+    },
+    {
+      "name": "Service-Volée",
+      "src": "/logos/service-volee.png"
+    },
+    {
+      "name": "Iris Noir",
+      "src": "/logos/iris-noir.png"
+    },
+    {
+      "name": "Royal Wellington",
+      "src": ""
+    }
   ],
   "logosLabel": "My products & projects",
   "mission": {
-    "label": "My mission",
+    "label": "Who I am",
     "copyright": "©2005-2026",
     "cta": "Contact me",
     "ctaSuffix": "/Benjamin",
@@ -95,26 +117,26 @@
       "text": "Web projects built or led over twenty years, from brochure sites to business applications."
     },
     {
-      "label": "Sectors",
-      "value": 15,
-      "suffix": "+",
-      "text": "Pharma, sport, real estate, culture, health, industry, publishing, training, non-profits, services…"
+      "label": "Products live",
+      "value": 6,
+      "suffix": "",
+      "text": "Service-Volée, BiblioPulse, Pulse Noir, Beneloo, Observatory, Singulr: designed and operated by me."
     },
     {
-      "label": "Languages",
+      "label": "Ongoing missions",
       "value": 3,
       "suffix": "",
-      "text": "French, English, Dutch: I work with teams in Belgium and beyond."
+      "text": "UCB, XLG and Leroy & Partners, alongside my products."
     }
   ],
   "portfolio": {
-    "label": "Portfolio",
+    "label": "My products",
     "title": [
-      "Case",
-      "studies."
+      "My",
+      "products."
     ],
-    "intro": "Each project shows how I connect ",
-    "introStrong": "product, tools and data.",
+    "intro": "Products I designed, built and shipped, ",
+    "introStrong": "grouped in two ecosystems.",
     "cta": "View project",
     "role": "Role",
     "year": "Year",
@@ -130,85 +152,55 @@
     "label": "Services",
     "title": [
       "What I",
-      "build."
+      "do."
     ],
-    "intro": "From the first call to launch, I build tools that ",
-    "introStrong": "work for you.",
+    "intro": "Three ways to work together, ",
+    "introStrong": "always tailored.",
     "cardLabel": "Contact",
     "cardTitle": [
-      "Plan your",
-      "next tool",
-      "with me."
+      "Let's talk",
+      "about your",
+      "next tool."
     ],
     "cardName": "Benjamin de Bruijne",
     "cardRole": "Digital & AI consultant",
     "cardCta": "Book a call",
-    "steps": "Steps",
+    "steps": "Included",
     "items": [
       {
-        "name": "Custom websites & apps",
-        "title": "Tools that do the job",
-        "p1": "A brochure site is fine. A website or app that answers a precise need — booking, catalogue, member area, dashboard — is better. I design clear, fast tools with no vendor lock-in.",
-        "p2": "Astro, React, PHP, Supabase or Postgres depending on the need: the right tool, not the trendiest one. You keep the code and the keys.",
+        "name": "Build",
+        "title": "Websites, applications and products that run",
+        "p1": "A brochure site, a business application, a shop, a member area, a complete product: I design and build the tool, from specification to launch, with no dependency on a vendor or an agency.",
+        "p2": "Astro, React, Next.js, PHP, Postgres or Supabase depending on the need: the right tool, not the trendiest. You keep the code, the data and the keys.",
         "steps": [
-          "Needs analysis",
-          "Structure & design",
-          "Launch & follow-up"
+          "Brochure sites and multilingual platforms",
+          "Business applications and member areas",
+          "Shops, payments, connected forms",
+          "Migration off WordPress, Podia or Lovable"
         ]
       },
       {
-        "name": "AI & automation",
-        "title": "Your time-saving machine",
-        "p1": "Automatic summaries, request triage, content generation, follow-up scenarios: AI is useful when it removes a specific chore. I plug models into your data and tools, with guardrails.",
-        "p2": "Result: hours recovered every week, and a system you understand and can evolve.",
+        "name": "Automate",
+        "title": "AI, data and CRM that work for you",
+        "p1": "Automatic summaries, request triage, follow-ups, content generation, visibility measurement in AI engines: AI is useful when it removes a specific chore. I plug models into your data and tools, with guardrails.",
+        "p2": "A simple CRM that centralises your contacts, follow-up scenarios, dashboards that tell the truth: hours recovered every week, and a system you understand.",
         "steps": [
-          "Task mapping",
-          "Prototype on your data",
-          "Industrialisation"
+          "Automations and follow-up scenarios",
+          "AI on your data (OpenAI, Claude, Perplexity)",
+          "CRM, funnels and dashboards",
+          "Google & AI visibility: audit and action plan"
         ]
       },
       {
-        "name": "Google & AI visibility",
-        "title": "Be found, be cited",
-        "p1": "Your clients search on Google, and increasingly ask ChatGPT, Perplexity or Gemini directly. I measure your real visibility in those engines, then work on your site so it ranks and gets cited.",
-        "p2": "With Beneloo I built an AI visibility score and a sector observatory: numbers, not promises.",
-        "steps": [
-          "Visibility audit",
-          "Content & structured data",
-          "Google & AI tracking"
-        ]
-      },
-      {
-        "name": "CRM & conversion funnels",
-        "title": "No more lost contacts",
-        "p1": "A lead with no answer within 24h is a lost lead. I set up a simple CRM that centralises your leads, exchanges and appointments, with automatic follow-ups.",
-        "p2": "Form, calendar, payment, emails: everything is connected. You stay responsive even in meetings or on holiday.",
-        "steps": [
-          "CRM setup",
-          "Follow-up scenarios",
-          "Measure & adjust"
-        ]
-      },
-      {
-        "name": "IT project delivery",
-        "title": "Deliver, by the book",
+        "name": "Deliver",
+        "title": "IT projects delivered by the book",
         "p1": "Twenty years of IT projects, including several in regulated pharmaceutical environments: scoping, planning, quality, validation, change management. I run your projects with method, from idea to production.",
-        "p2": "Specifications, supplier follow-up, testing, documentation: one contact who speaks both business and tech.",
+        "p2": "Specifications, supplier follow-up, testing, documentation, team training: one contact who speaks business and tech, and who makes your teams autonomous.",
         "steps": [
-          "Scoping & objectives",
-          "Delivery & quality",
-          "Go-live"
-        ]
-      },
-      {
-        "name": "Training & coaching",
-        "title": "Make your teams autonomous",
-        "p1": "A tool is useless if nobody uses it. I train your teams on AI, on the tools I set up and on good practices, in short, practical sessions.",
-        "p2": "Materials, workshops, follow-up: the goal is that you no longer need me.",
-        "steps": [
-          "Usage diagnosis",
-          "Hands-on workshops",
-          "Follow-up & materials"
+          "Scoping, planning and supplier follow-up",
+          "Quality, validation and GxP compliance",
+          "Testing, documentation, go-live",
+          "Team training and support"
         ]
       }
     ]
@@ -285,7 +277,10 @@
     "legalLink": "legal notice",
     "legalAnd": " and our ",
     "privacyLink": "privacy policy",
-    "subject": "Project via benjamindebruijne.be"
+    "subject": "Project via benjamindebruijne.be",
+    "sending": "Sending…",
+    "success": "Message sent. I will reply within 24h.",
+    "error": "Could not send, opening your email client instead."
   },
   "footer": {
     "roleLine": "Digital & AI consultant",
@@ -298,11 +293,11 @@
   "pages": {
     "projects": {
       "title": [
-        "All",
-        "projects."
+        "Products",
+        "& projects."
       ],
-      "intro": "Products, websites and platforms I ",
-      "introStrong": "designed and shipped."
+      "intro": "My products, client projects with a real story, ",
+      "introStrong": "and the websites delivered."
     },
     "about": {
       "title": [
@@ -340,10 +335,26 @@
     "services": {
       "title": [
         "Services",
-        "& offers."
+        "& formats."
       ],
-      "intro": "Six ways to work together, ",
-      "introStrong": "always tailored."
+      "intro": "Three offers, three formats, ",
+      "introStrong": "and a free first call.",
+      "formatsLabel": "Formats",
+      "formats": [
+        {
+          "name": "Fixed-price project",
+          "text": "One scope, one price, one date. For a website, a tool, a migration, a product."
+        },
+        {
+          "name": "Day rate",
+          "text": "For project delivery, team reinforcement or one-off expertise, billed by the day."
+        },
+        {
+          "name": "Monthly support",
+          "text": "Follow-up, automations and evolutions month after month, with no fixed term."
+        }
+      ],
+      "formatsNote": "Pricing on quote after a free, no-commitment 30-minute call."
     },
     "blog": {
       "title": [
@@ -404,10 +415,10 @@
     }
   },
   "missions": {
-    "label": "Ongoing missions",
+    "label": "On mission at",
     "title": [
-      "Where I",
-      "work."
+      "On mission",
+      "at."
     ],
     "intro": "Three missions in parallel, ",
     "introStrong": "on top of my own products.",
@@ -467,5 +478,16 @@
         ]
       }
     ]
+  },
+  "sites": {
+    "label": "Websites delivered",
+    "title": [
+      "Websites",
+      "delivered."
+    ],
+    "intro": "Brochure sites and platforms delivered to clients, ",
+    "introStrong": "in Belgium and France.",
+    "visit": "Visit site",
+    "sheet": "Details"
   }
 }

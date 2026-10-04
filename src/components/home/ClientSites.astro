@@ -1,0 +1,42 @@
+---
+import type { Lang } from '../../lib/i18n';
+import { projectHref } from '../../lib/i18n';
+import { getSite, getProjects } from '../../lib/content';
+import SectionHead from '../SectionHead.astro';
+import Icon from '../Icon.astro';
+interface Props { lang: Lang; num?: string }
+const { lang, num = '04' } = Astro.props;
+const s = getSite(lang);
+const sites = getProjects(lang).filter((p) => p.kind === 'site');
+const domain = (u: string) => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '');
+---
+<section class="cs trame section" id="sites">
+  <div class="wrap">
+    <SectionHead num={num} label={s.sites.label} title={s.sites.title} intro={s.sites.intro} introStrong={s.sites.introStrong} />
+    <ol class="cs__list">
+      {sites.map((p, i) => (
+        <li class="cs__row reveal">
+          <span class="mono num cs__n">{String(i + 1).padStart(2, '0')}</span>
+          <a href={projectHref(p.slug, lang)} class="cs__name">{p.name}</a>
+          <span class="mono cs__tag">{p.tag.split('·').pop()?.trim()}{p.year && <span class="muted"> · {p.year}</span>}</span>
+          <a href={p.url} target="_blank" rel="noopener" class="mono cs__ext">{domain(p.url)}<span class="cs__i"><Icon name="arrow-ext" /></span></a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+<style>
+  .cs__list { margin-top: 56px; border-top: 1px solid var(--c-grey-300); }
+  .cs__row { display: grid; grid-template-columns: 32px 1fr; grid-template-areas: "n name" "n tag" "n ext"; gap: 6px 12px; padding: 18px 0; border-bottom: 1px solid var(--c-grey-300); align-items: center; }
+  .cs__n { grid-area: n; opacity: .5; }
+  .cs__name { grid-area: name; font-weight: 600; font-size: 17px; letter-spacing: -.01em; }
+  .cs__name:hover { color: var(--c-accent); }
+  .cs__tag { grid-area: tag; }
+  .cs__ext { grid-area: ext; display: inline-flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: 0; justify-self: start; }
+  .cs__i { display: inline-grid; place-items: center; width: 12px; height: 12px; }
+  .cs__i :global(svg) { width: 10px; height: 10px; }
+  @media (width >= 810px) {
+    .cs__row { grid-template-columns: 48px 2fr 1.4fr 1fr; grid-template-areas: "n name tag ext"; padding: 22px 0; }
+    .cs__ext { justify-self: end; }
+  }
+</style>

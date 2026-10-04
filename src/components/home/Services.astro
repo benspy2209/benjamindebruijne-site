@@ -9,6 +9,7 @@ interface Props { lang: Lang; num?: string; open?: boolean }
 const { lang, num = '03', open = false } = Astro.props;
 const s = getSite(lang);
 const sv = s.services;
+const bookHref = s.meta.booking || href('contact', lang);
 ---
 <section class="svc dark trame section" id="services">
   <div class="wrap">
@@ -22,7 +23,7 @@ const sv = s.services;
           <div>
             <p class="svc__cname">{sv.cardName}</p>
             <p class="mono muted">{sv.cardRole}</p>
-            <Button href={href('contact', lang)} label={sv.cardCta} variant="ghost" class="svc__ccta" />
+            <Button href={bookHref} label={sv.cardCta} variant="ghost" class="svc__ccta" external={!!s.meta.booking} />
           </div>
         </div>
       </aside>
@@ -73,6 +74,7 @@ const sv = s.services;
   .svc__text h3 { margin-bottom: 8px; }
   .svc__text p { color: var(--c-white-60); font-size: 15px; }
   .svc__steps ol { display: grid; gap: 10px; margin-top: 16px; }
+  .svc__steps li { text-transform: none; letter-spacing: 0; font-family: var(--font-sans); font-size: 14px; }
   .svc__steps .num { opacity: .5; margin-right: 10px; }
   @media (width >= 810px) {
     .svc__top { grid-template-columns: 2fr 1fr; align-items: start; }
