@@ -628,6 +628,34 @@
     "featured": false
   },
   {
+    "slug": "wellcare-waterloo",
+    "name": "Wellcare Waterloo",
+    "tag": "Website · Medical / paramedical",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Development",
+    "year": "2024",
+    "lead": "the Wellcare back rehabilitation centre in Waterloo:",
+    "text": " spine care, physiotherapy, osteopathy and online appointment booking.",
+    "url": "https://centredoswaterloo.be",
+    "color": "#1d3a8a",
+    "body": [
+      "Website for the Wellcare Waterloo back rehabilitation centre: presentation of specialities (spine, physiotherapy, osteopathy), multidisciplinary team, online appointment booking and contact.",
+      "Stack: WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "Back rehabilitation in Waterloo.",
+    "sticker": [
+      "Wellcare Waterloo"
+    ],
+    "cat": "Medical / paramedical",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
     "slug": "abofield",
     "name": "Abofield",
     "tag": "Website · Industry",

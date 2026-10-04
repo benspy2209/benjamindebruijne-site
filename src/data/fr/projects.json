@@ -628,6 +628,34 @@
     "featured": false
   },
   {
+    "slug": "wellcare-waterloo",
+    "name": "Wellcare Waterloo",
+    "tag": "Site · Médical / paramédical",
+    "kpi": "",
+    "kpiLabel": "",
+    "role": "Développement",
+    "year": "2024",
+    "lead": "le site du centre de rééducation du dos Wellcare à Waterloo :",
+    "text": " rachis, kinésithérapie, ostéopathie et prise de rendez-vous en ligne.",
+    "url": "https://centredoswaterloo.be",
+    "color": "#1d3a8a",
+    "body": [
+      "Site du centre de rééducation du dos Wellcare Waterloo : présentation des spécialités (rachis, kinésithérapie, ostéopathie), équipe multidisciplinaire, prise de rendez-vous en ligne et contact.",
+      "Stack : WordPress, Elementor."
+    ],
+    "status": "",
+    "stack": "WordPress · Elementor",
+    "tagline": "La rééducation du dos à Waterloo.",
+    "sticker": [
+      "Wellcare Waterloo"
+    ],
+    "cat": "Médical / paramédical",
+    "sections": [],
+    "ecosystem": "",
+    "kind": "site",
+    "featured": false
+  },
+  {
     "slug": "abofield",
     "name": "Abofield",
     "tag": "Site · Industrie",
