@@ -4,9 +4,13 @@ import { getSite } from '../../lib/content';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
+const videos = import.meta.glob('/public/videos/hero.mp4');
+const hasVideo = Object.keys(videos).length > 0;
 ---
 <section class="hero dark trame" aria-label="Intro">
   <div class="hero__bg" aria-hidden="true"></div>
+  {hasVideo && <video class="hero__video" src="/videos/hero.mp4" poster="/videos/hero-poster.jpg" autoplay loop muted playsinline preload="metadata" aria-hidden="true"></video>}
+  <div class="hero__veil" aria-hidden="true"></div>
   <div class="hero__in wrap">
     <h1 class="hero__h1 reveal is-in">{s.hero.title}</h1>
     <ul class="hero__services mono">
@@ -33,6 +37,9 @@ const s = getSite(lang);
   }
   .hero__bg::after { content: ""; position: absolute; inset: 0; opacity: .12; mix-blend-mode: overlay;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: .8; }
+  .hero__veil { position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, #12121266 0%, #12121233 40%, #121212cc 100%); pointer-events: none; }
+  @media (prefers-reduced-motion: reduce) { .hero__video { display: none; } }
   .hero__in { position: relative; z-index: 1; display: grid; grid-template-rows: 1fr auto auto; padding-top: calc(var(--header-h) + 24px); padding-bottom: 28px; min-height: 100svh; }
   .hero__h1 { font-size: 22px; line-height: 1.25; font-weight: 500; letter-spacing: -.01em; max-width: 30ch; align-self: start; margin-top: 8vh; }
   .hero__services { display: grid; gap: 6px; margin-top: 24px; align-self: start; }

@@ -1,64 +1,138 @@
 ---
 import type { Lang } from '../lib/i18n';
-import { href, projectHref } from '../lib/i18n';
+import { href } from '../lib/i18n';
 import { getSite, getProjects, type Project } from '../lib/content';
 import Base from '../layouts/Base.astro';
-import Button from '../components/Button.astro';
+import Icon from '../components/Icon.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 interface Props { lang: Lang; project: Project }
 const { lang, project: p } = Astro.props;
 const s = getSite(lang);
+const pf = s.portfolio;
 const all = getProjects(lang);
 const idx = all.findIndex((x) => x.slug === p.slug);
 const next = all[(idx + 1) % all.length];
-const title = p.name;
+const domain = p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '');
+const statut = p.status === 'ongoing' ? pf.ongoing : pf.online;
+const sections = (p as any).sections as { label: string; title: string; p1: string; p2: string }[];
+const sticker = (p as any).sticker as string[];
+const cat = (p as any).cat as string;
+const tagline = (p as any).tagline as string;
+const stack = (p as any).stack as string;
+/** Teinte plus claire de la couleur du projet pour la bande. */
+const lighten = (hex: string, k = 0.22) => {
+  const n = parseInt(hex.slice(1), 16); const r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+  const f = (c: number) => Math.round(c + (255 - c) * k).toString(16).padStart(2, '0');
+  return `#${f(r)}${f(g)}${f(b)}`;
+};
 ---
-<Base lang={lang} routeKey="projects" slug={p.slug} title={title} description={`${p.lead}${p.text}`} onDark>
-  <section class="pj dark trame" style={`--pc: ${p.color}`}>
+<Base lang={lang} routeKey="projects" slug={p.slug} title={p.name} description={`${p.lead}${p.text}`} onDark>
+  <section class="pj" style={`--brand: ${p.color}; --brand-2: ${lighten(p.color)}`}>
+    <div class="pj__fond" aria-hidden="true"></div>
     <div class="wrap pj__hero">
-      <p class="label"><span class="num">0{idx + 1}</span>{p.tag}{p.status === 'ongoing' && <span class="pj__ongoing">· {s.portfolio.ongoing}</span>}</p>
-      <h1 class="h-giant pj__title">{title}</h1>
-      <p class="lead pj__lead"><strong>{p.lead}</strong>{p.text}</p>
-      <dl class="pj__meta mono">
-        <dt class="muted">{s.portfolio.role}</dt><dd>{p.role}</dd>
-        {p.year && <><dt class="muted">{s.portfolio.year}</dt><dd>{p.year}</dd></>}
-      </dl>
-      <p class="pj__kpi"><span class="h-giant">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
-    </div>
-  </section>
-  <section class="trame section">
-    <div class="wrap pj__body">
-      <div class="pj__text">{p.body.map((para) => <p>{para}</p>)}</div>
-      <div class="pj__actions">
-        <Button href={p.url} label={p.url.replace(/^https?:\/\//, '')} icon="arrow-ext" external />
-        <Button href={href('projects', lang)} label={s.mission.allProjects} variant="ghost" icon="chevron-left" />
+      <a href={href('projects', lang)} class="pj__all"><span class="pj__allicon"><Icon name="chevron-left" /></span>{s.mission.allProjects}</a>
+      <div class="pj__plaque" aria-hidden="true"><span class="pj__plaquename">{p.name}</span></div>
+      <div class="pj__side">
+        <dl class="pj__meta mono">
+          <dt class="muted">{pf.year}</dt><dd>{p.year || '—'}</dd>
+          <dt class="muted">{pf.role}</dt><dd>{p.role}</dd>
+          {stack && <><dt class="muted">{pf.stack}</dt><dd>{stack}</dd></>}
+          <dt class="muted">{pf.status}</dt><dd class:list={{ 'pj__status--on': p.status === 'ongoing' }}>{statut}</dd>
+        </dl>
+        <span class="pj__dot" aria-hidden="true"></span>
+        <h1 class="h-giant pj__title">{p.name}</h1>
+        <p class="lead pj__lead"><strong>{p.lead}</strong>{p.text}</p>
       </div>
     </div>
   </section>
+
+  <section class="trame section pj__produit">
+    <div class="wrap pj__grid">
+      <div class="pj__col">
+        <p class="label">{pf.product}</p>
+        <p class="h-sm pj__tagline">{tagline}</p>
+        <dl class="pj__table">
+          <dt class="mono muted">{pf.role}</dt><dd>{p.role}</dd>
+          {stack && <><dt class="mono muted">{pf.stack}</dt><dd>{stack}</dd></>}
+          <dt class="mono muted">{pf.status}</dt><dd>{statut}</dd>
+        </dl>
+        <a href={p.url} target="_blank" rel="noopener" class="pj__link mono">{domain}<span class="pj__ext"><Icon name="arrow-ext" /></span></a>
+      </div>
+      <div class="pj__col pj__text">
+        <h2 class="h-md">{p.lead.charAt(0).toUpperCase() + p.lead.slice(1)}{p.text}</h2>
+        {p.body.filter((t) => !/^Stack\s*:/.test(t)).map((t) => <p>{t}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="pj__bande" style={`--brand: ${p.color}; --brand-2: ${lighten(p.color)}`} aria-hidden="true">
+    <div class="wrap pj__bandein">
+      <p class="pj__sticker mono">{sticker.map((l) => <span>{l}</span>)}</p>
+      {cat && <p class="pj__cat mono">{cat}</p>}
+    </div>
+  </section>
+
+  {sections.map((sec, i) => (
+    <section class:list={['trame', 'section', { dark: i % 2 === 1 }]}>
+      <div class="wrap pj__grid">
+        <div class="pj__col"><p class="label"><span class="num">0{i + 1}</span>{sec.label}</p></div>
+        <div class="pj__col pj__text">
+          <h2 class="h-md reveal">{sec.title}</h2>
+          <p class="reveal">{sec.p1}</p>
+          <p class="reveal">{sec.p2}</p>
+        </div>
+      </div>
+    </section>
+  ))}
+
   <section class="trame section pj__next">
     <div class="wrap">
-      <p class="label"><span class="num">→</span>{s.portfolio.cta}</p>
+      <p class="label"><span class="num">→</span>{pf.next}</p>
       <div class="pj__nextcard"><ProjectCard lang={lang} project={next} index={(idx + 1) % all.length} /></div>
     </div>
   </section>
 </Base>
 <style>
-  .pj { background: var(--pc); --trame: #ffffff1f; }
-  .pj__hero { padding-top: calc(var(--header-h) + 48px); padding-bottom: 48px; display: grid; gap: 28px; }
-  .pj__title { text-transform: none; }
-  .pj__ongoing { color: var(--c-accent); margin-left: 6px; }
-  .pj__lead { max-width: 48ch; }
-  .pj__meta { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; }
+  .pj { position: relative; color: var(--c-white); min-height: 100svh; display: grid; overflow: hidden; }
+  .pj__fond { position: absolute; inset: 0; background-color: var(--brand); background-image: repeating-linear-gradient(to right, #ffffff1f 0 1px, transparent 1px 3.6cqw), repeating-linear-gradient(to bottom, #ffffff1f 0 1px, transparent 1px 3.6cqw); container-type: inline-size; }
+  .pj__hero { position: relative; z-index: 1; padding-top: calc(var(--header-h) + 24px); padding-bottom: 56px; display: grid; gap: 32px; align-content: end; min-height: 100svh; }
+  .pj__all { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; text-transform: uppercase; align-self: start; }
+  .pj__allicon { width: 22px; height: 22px; border-radius: 50%; background: var(--c-white); color: var(--brand); display: grid; place-items: center; }
+  .pj__allicon svg { width: 10px; height: 10px; }
+  .pj__plaque { background: #00000040; border: 1px solid #ffffff14; aspect-ratio: 3/4; max-width: 265px; width: 100%; display: grid; place-items: center; padding: 24px; background-image: repeating-linear-gradient(to right, #ffffff14 0 1px, transparent 1px 25%), repeating-linear-gradient(to bottom, #ffffff14 0 1px, transparent 1px 25%); }
+  .pj__plaquename { font-weight: 700; font-size: 22px; letter-spacing: -.02em; text-align: center; }
+  .pj__side { display: grid; gap: 18px; }
+  .pj__meta { display: grid; grid-template-columns: auto 1fr; gap: 8px 24px; margin: 0; }
   .pj__meta dd { margin: 0; }
-  .pj__kpi { display: flex; flex-direction: column; gap: 6px; justify-self: end; text-align: right; }
-  .pj__body { display: grid; gap: 40px; }
-  .pj__text { display: grid; gap: 20px; max-width: 64ch; font-size: 17px; line-height: 1.6; }
-  .pj__actions { display: flex; flex-wrap: wrap; gap: 16px; align-content: start; }
+  .pj__status--on { color: var(--c-accent); }
+  .pj__dot { width: 5px; height: 5px; background: var(--c-accent); }
+  .pj__title { text-transform: uppercase; }
+  .pj__lead { max-width: 44ch; }
+  .pj__grid { display: grid; gap: 40px; }
+  .pj__col { display: grid; gap: 20px; align-content: start; }
+  .pj__tagline { font-weight: 600; max-width: 24ch; }
+  .pj__table { display: grid; grid-template-columns: auto 1fr; gap: 0; margin: 0; }
+  .pj__table dt, .pj__table dd { padding: 12px 0; border-top: 1px solid var(--c-grey-300); margin: 0; font-size: 13px; }
+  .pj__table dd { text-align: right; }
+  .pj__link { display: inline-flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: 0; border-bottom: 1px solid currentColor; justify-self: start; }
+  .pj__ext { display: inline-grid; place-items: center; width: 12px; height: 12px; }
+  .pj__ext :global(svg) { width: 10px; height: 10px; }
+  .pj__text { font-size: 16px; line-height: 1.6; max-width: 62ch; }
+  .pj__text h2 { margin-bottom: 8px; }
+  .pj__bande { position: relative; background-color: var(--brand-2); background-image: repeating-linear-gradient(to right, #ffffff1f 0 1px, transparent 1px 3.6cqw), repeating-linear-gradient(to bottom, #ffffff1f 0 1px, transparent 1px 3.6cqw); container-type: inline-size; color: var(--c-white); }
+  .pj__bandein { min-height: 220px; display: flex; align-items: center; justify-content: flex-end; gap: 24px; padding-block: 48px; }
+  .pj__sticker { background: var(--c-white); color: var(--c-dark); padding: 14px 20px; font-size: 14px; letter-spacing: .08em; transform: rotate(-4deg); display: grid; gap: 2px; box-shadow: 0 10px 30px #00000033; }
+  .pj__cat { position: absolute; left: var(--page-margin); bottom: 16px; opacity: .7; }
   .pj__next { background: var(--c-grey-100); }
   .pj__nextcard { margin-top: 32px; max-width: 560px; }
   @media (width >= 810px) {
-    .pj__hero { grid-template-columns: 2fr 1fr; grid-template-areas: "label label" "title title" "lead meta" "kpi kpi"; padding-top: calc(var(--header-h) + 96px); padding-bottom: 96px; }
-    .pj__hero .label { grid-area: label; } .pj__title { grid-area: title; } .pj__lead { grid-area: lead; } .pj__meta { grid-area: meta; align-self: end; justify-self: end; } .pj__kpi { grid-area: kpi; }
-    .pj__body { grid-template-columns: 2fr 1fr; }
+    .pj__hero { grid-template-columns: 1fr 1fr; grid-template-areas: "all all" "plaque side"; align-items: center; padding-bottom: 96px; }
+    .pj__all { grid-area: all; justify-self: center; }
+    .pj__plaque { grid-area: plaque; align-self: center; }
+    .pj__side { grid-area: side; }
+    .pj__grid { grid-template-columns: 1fr 2fr; gap: 64px; }
+    .pj__bandein { min-height: 320px; }
+    .pj__sticker { font-size: 18px; padding: 18px 28px; }
   }
+  @media (width >= 1200px) { .pj__grid { grid-template-columns: 1fr 1fr; } .pj__text { padding-left: 10%; } }
 </style>

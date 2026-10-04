@@ -8,7 +8,7 @@ const { lang, project: p, index } = Astro.props;
 const s = getSite(lang);
 ---
 <a href={projectHref(p.slug, lang)} class="pc reveal">
-  <div class="pc__visual trame" style={`--pc: ${p.color}`}>
+  <div class="pc__visual" style={`--pc: ${p.color}`}>
     <p class="pc__meta mono"><span class="label">0{index + 1}</span><span>{p.tag}</span></p>
     <p class="pc__name">{p.name}</p>
     <p class="pc__kpi"><span class="h-xl">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
@@ -22,7 +22,7 @@ const s = getSite(lang);
 <style>
   .pc { display: grid; grid-template-rows: auto 1fr; background: var(--c-white); border: 1px solid var(--c-grey-300); color: var(--c-dark); transition: transform .5s var(--ease-out-strong); }
   .pc:hover { transform: translateY(-4px); }
-  .pc__visual { background: var(--pc); color: var(--c-white); aspect-ratio: 4/3; display: grid; grid-template-rows: auto 1fr auto; padding: 16px; --trame: #ffffff1f; }
+  .pc__visual { background-color: var(--pc); background-image: repeating-linear-gradient(to right, #ffffff1f 0 1px, transparent 1px 3.6cqw), repeating-linear-gradient(to bottom, #ffffff1f 0 1px, transparent 1px 3.6cqw); container-type: inline-size; color: var(--c-white); aspect-ratio: 4/3; display: grid; grid-template-rows: auto 1fr auto; padding: 16px; }
   .pc__meta { display: flex; justify-content: space-between; }
   .pc__meta .label::before { background: var(--c-white); }
   .pc__name { place-self: center; font-weight: 700; font-size: 22px; letter-spacing: -.02em; text-align: center; }

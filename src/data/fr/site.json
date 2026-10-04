@@ -117,7 +117,12 @@
     "cta": "Voir le projet",
     "role": "Rôle",
     "year": "Année",
-    "ongoing": "En développement"
+    "ongoing": "En développement",
+    "product": "Le produit",
+    "stack": "Stack",
+    "status": "Statut",
+    "online": "En ligne",
+    "next": "Projet suivant"
   },
   "services": {
     "label": "Services",

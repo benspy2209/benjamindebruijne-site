@@ -117,7 +117,12 @@
     "cta": "View project",
     "role": "Role",
     "year": "Year",
-    "ongoing": "In development"
+    "ongoing": "In development",
+    "product": "The product",
+    "stack": "Stack",
+    "status": "Status",
+    "online": "Live",
+    "next": "Next project"
   },
   "services": {
     "label": "Services",
