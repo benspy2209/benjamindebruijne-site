@@ -123,7 +123,8 @@
     "stack": "Stack",
     "status": "Status",
     "online": "Live",
-    "next": "Next project"
+    "next": "Next project",
+    "ecosystem": "Ecosystem"
   },
   "services": {
     "label": "Services",
@@ -438,6 +439,32 @@
         "since": "2026",
         "url": "https://www.leroy-partners.be/fr/",
         "logo": "/logos/leroy.png"
+      }
+    ]
+  },
+  "ecosystems": {
+    "label": "Two ecosystems",
+    "items": [
+      {
+        "key": "lecture",
+        "name": "Pulse Noir × BiblioPulse",
+        "label": "Reading ecosystem",
+        "text": "A 2,150-reader crime-fiction community, its author hub, its literary prize, and the personal library that grew out of it.",
+        "members": [
+          "pulse-noir",
+          "bibliopulse"
+        ]
+      },
+      {
+        "key": "data",
+        "name": "Beneloo × Observatory × Singulr",
+        "label": "Data & sovereignty ecosystem",
+        "text": "Measure SME visibility in AIs, advise from the measurement, and keep control of data and tools.",
+        "members": [
+          "beneloo",
+          "observatory",
+          "singulr"
+        ]
       }
     ]
   }

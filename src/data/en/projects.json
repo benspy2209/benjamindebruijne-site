@@ -42,7 +42,8 @@
         "p1": "The site has run in production since September 2026 on Next.js and Postgres, with an installable PWA and its own domain. The crawl keeps widening the index every day.",
         "p2": "Next steps: team competitions in the estimates, the 2026-27 winter grid as soon as it is published, and a real launch with clubs."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "bibliopulse",
@@ -87,7 +88,8 @@
         "p1": "BiblioPulse runs on React and Supabase, hosted on Vercel, with a daily cron for onboarding. The full audit of August 2026 cut the initial load weight thirty-fold.",
         "p2": "Next steps: a dedicated scanning app and affiliate monetisation, never selling readers' data."
       }
-    ]
+    ],
+    "ecosystem": "Pulse Noir × BiblioPulse"
   },
   {
     "slug": "pulse-noir",
@@ -132,7 +134,8 @@
         "p1": "The group exceeds 2,150 active members, the site runs on Vercel and Supabase, author interviews and Dark Blog texts keep coming. The mobile app is ready in Capacitor.",
         "p2": "Next steps: volume 2 of D'Encre Noire for the 2026 holidays, relaunch of the Academy, and the Pulse Noir → BiblioPulse bridge as first acquisition channel."
       }
-    ]
+    ],
+    "ecosystem": "Pulse Noir × BiblioPulse"
   },
   {
     "slug": "observatory",
@@ -177,7 +180,8 @@
         "p1": "Aggregates are anonymised and publishable; the validation protocol, limits and biases are written down. An editorial wall strictly separates the public observatory from Beneloo consulting.",
         "p2": "Next steps: new sectors, a published two-sector contrast, and the Beneloo Score applying this measurement to one company at a time."
       }
-    ]
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr"
   },
   {
     "slug": "singulr",
@@ -222,7 +226,8 @@
         "p1": "The forge already hosts my own projects and those of first partners. Memberships are open at three levels. The Singulr Health video is coming.",
         "p2": "Next steps: a sovereign mailing tool for members, new health guides, a second edition of Singulr Health."
       }
-    ]
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr"
   },
   {
     "slug": "iris-noir",
@@ -267,7 +272,8 @@
         "p1": "The complete site runs on the client's hosting, awaiting the final switch of the irisnoirbxl.com domain by its manager.",
         "p2": "Next steps: online payment for the shop and memberships, then WordPress switched off for good."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "royal-wellington",
@@ -312,7 +318,8 @@
         "p1": "The French version is validated and deployed on Cloudflare Workers. Dutch and English will be aligned in one pass once the French is finally frozen by the club.",
         "p2": "Next steps: tennis page blocked on the price grid, Twizzit calendar, Instagram feed."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "wimbledon",
@@ -337,7 +344,8 @@
       "Wimbledon Tennis Club"
     ],
     "cat": "Sports club",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "saul-racine",
@@ -362,7 +370,8 @@
       "Saul Racine"
     ],
     "cat": "Author",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "rene-manzor",
@@ -407,7 +416,8 @@
         "p1": "Stripe is live with a restricted key, students log in on the new site, Podia will be cancelled at the end of the notice period.",
         "p2": "Next steps: announcement email to former students and new modules."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "chir-ophta",
@@ -432,7 +442,8 @@
       "Chir-Ophta"
     ],
     "cat": "Medical",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "le-verseau",
@@ -457,7 +468,8 @@
       "Le Verseau Clinic"
     ],
     "cat": "Clinic",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "notre-dame-de-stockel",
@@ -482,7 +494,8 @@
       "Notre-Dame de Stockel"
     ],
     "cat": "Care home",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "residence-sainte-anne",
@@ -507,7 +520,8 @@
       "Résidence Sainte-Anne"
     ],
     "cat": "Care home",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "rtms-wellcare",
@@ -532,7 +546,8 @@
       "rTMS Wellcare"
     ],
     "cat": "Medical",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "abofield",
@@ -557,7 +572,8 @@
       "Abofield"
     ],
     "cat": "Industry",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "sar-benelux",
@@ -582,7 +598,8 @@
       "SAR Benelux"
     ],
     "cat": "Insurance",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "valeone",
@@ -607,7 +624,8 @@
       "Valeone"
     ],
     "cat": "Couture",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "aquares",
@@ -632,7 +650,8 @@
       "Aquares"
     ],
     "cat": "E-commerce",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "success-tennis-cool",
@@ -657,7 +676,8 @@
       "Success Tennis Cool"
     ],
     "cat": "Tennis school",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "manuel-apicella",
@@ -682,7 +702,8 @@
       "Manuel Apicella Chess"
     ],
     "cat": "Online training",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "beneloo",
@@ -727,6 +748,7 @@
         "p1": "The first emails go out every working day, the sector tabs are in place. Renaming the former diagnosis to Beneloo Score and the method page are the current work.",
         "p2": "Next steps: a public AI-visibility directory by company, record claiming, and first clients supported over time."
       }
-    ]
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr"
   }
 ]

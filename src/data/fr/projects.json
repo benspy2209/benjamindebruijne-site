@@ -42,7 +42,8 @@
         "p1": "Le site tourne en production depuis septembre 2026 sur Next.js et Postgres, avec une PWA installable et un domaine propre. Le crawl continue d'élargir l'index chaque jour.",
         "p2": "Prochaines étapes : interclubs dans les estimations, grille hiver 2026-27 dès publication, et un vrai lancement auprès des clubs."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "bibliopulse",
@@ -87,7 +88,8 @@
         "p1": "BiblioPulse tourne sur React et Supabase, hébergé sur Vercel, avec un cron quotidien pour l'onboarding. L'audit complet d'août 2026 a divisé par trente le poids du chargement initial.",
         "p2": "Prochaines étapes : application de scan dédiée et monétisation par affiliation, sans jamais vendre les données des lecteurs."
       }
-    ]
+    ],
+    "ecosystem": "Pulse Noir × BiblioPulse"
   },
   {
     "slug": "pulse-noir",
@@ -132,7 +134,8 @@
         "p1": "Le groupe dépasse 2 150 membres actifs, le site tourne sur Vercel et Supabase, les interviews d'auteurs et les textes du Dark Blog continuent d'arriver. L'app mobile est prête en Capacitor.",
         "p2": "Prochaines étapes : tome 2 de D'Encre Noire pour les fêtes 2026, relance de l'Academy, et le pont Pulse Noir → BiblioPulse comme premier canal d'acquisition."
       }
-    ]
+    ],
+    "ecosystem": "Pulse Noir × BiblioPulse"
   },
   {
     "slug": "observatory",
@@ -177,7 +180,8 @@
         "p1": "Les agrégats sont anonymisés et publiables ; le protocole de validation, les limites et les biais sont écrits. Le mur éditorial sépare strictement l'observatoire public du conseil Beneloo.",
         "p2": "Prochaines étapes : nouveaux secteurs, contraste à deux secteurs publié, et le Beneloo Score qui applique cette mesure à une entreprise à la fois."
       }
-    ]
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr"
   },
   {
     "slug": "singulr",
@@ -222,7 +226,8 @@
         "p1": "La forge héberge déjà mes propres projets et ceux de premiers partenaires. Les adhésions sont ouvertes en trois niveaux. La vidéo de Singulr Health arrive.",
         "p2": "Prochaines étapes : outil d'envoi souverain pour les membres, nouveaux guides santé, deuxième édition de Singulr Health."
       }
-    ]
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr"
   },
   {
     "slug": "iris-noir",
@@ -267,7 +272,8 @@
         "p1": "Le site complet tourne sur l'hébergement du client, en attente de la bascule finale du domaine irisnoirbxl.com par son gestionnaire.",
         "p2": "Prochaines étapes : paiement en ligne pour la boutique et les adhésions, puis extinction définitive de WordPress."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "royal-wellington",
@@ -312,7 +318,8 @@
         "p1": "La version française est validée et déployée sur Cloudflare Workers. Le néerlandais et l'anglais seront alignés en une passe une fois le français définitivement figé par le club.",
         "p2": "Prochaines étapes : page tennis bloquée sur la grille tarifaire, agenda Twizzit, flux Instagram."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "wimbledon",
@@ -337,7 +344,8 @@
       "Wimbledon Tennis Club"
     ],
     "cat": "Club sportif",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "saul-racine",
@@ -362,7 +370,8 @@
       "Saul Racine"
     ],
     "cat": "Auteur",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "rene-manzor",
@@ -407,7 +416,8 @@
         "p1": "Stripe est passé en mode réel avec une clé limitée, les élèves se connectent sur le nouveau site, Podia sera résilié à l'issue du préavis.",
         "p2": "Prochaines étapes : mail d'annonce aux anciens élèves et nouveaux modules."
       }
-    ]
+    ],
+    "ecosystem": ""
   },
   {
     "slug": "chir-ophta",
@@ -432,7 +442,8 @@
       "Chir-Ophta"
     ],
     "cat": "Médical",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "le-verseau",
@@ -457,7 +468,8 @@
       "Clinique Le Verseau"
     ],
     "cat": "Clinique",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "notre-dame-de-stockel",
@@ -482,7 +494,8 @@
       "Notre-Dame de Stockel"
     ],
     "cat": "Maison de repos",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "residence-sainte-anne",
@@ -507,7 +520,8 @@
       "Résidence Sainte-Anne"
     ],
     "cat": "Maison de repos",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "rtms-wellcare",
@@ -532,7 +546,8 @@
       "rTMS Wellcare"
     ],
     "cat": "Médical",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "abofield",
@@ -557,7 +572,8 @@
       "Abofield"
     ],
     "cat": "Industrie",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "sar-benelux",
@@ -582,7 +598,8 @@
       "SAR Benelux"
     ],
     "cat": "Assurance",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "valeone",
@@ -607,7 +624,8 @@
       "Valeone"
     ],
     "cat": "Couture",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "aquares",
@@ -632,7 +650,8 @@
       "Aquares"
     ],
     "cat": "E-commerce",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "success-tennis-cool",
@@ -657,7 +676,8 @@
       "Success Tennis Cool"
     ],
     "cat": "École de tennis",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "manuel-apicella",
@@ -682,7 +702,8 @@
       "Manuel Apicella Échecs"
     ],
     "cat": "Formation en ligne",
-    "sections": []
+    "sections": [],
+    "ecosystem": ""
   },
   {
     "slug": "beneloo",
@@ -727,6 +748,7 @@
         "p1": "Les premiers emails partent chaque jour ouvré, les onglets sectoriels sont en place. Le renommage de l'ancien diagnostic en Beneloo Score et la page méthode sont le chantier du moment.",
         "p2": "Prochaines étapes : annuaire public de la visibilité IA par société, revendication de fiche, et premiers clients accompagnés sur la durée."
       }
-    ]
+    ],
+    "ecosystem": "Beneloo × Observatory × Singulr"
   }
 ]

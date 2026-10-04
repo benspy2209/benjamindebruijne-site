@@ -38,6 +38,7 @@ const lighten = (hex: string, k = 0.22) => {
           <dt class="muted">{pf.role}</dt><dd>{p.role}</dd>
           {stack && <><dt class="muted">{pf.stack}</dt><dd>{stack}</dd></>}
           <dt class="muted">{pf.status}</dt><dd class:list={{ 'pj__status--on': p.status === 'ongoing' }}>{statut}</dd>
+          {p.ecosystem && <><dt class="muted">{pf.ecosystem}</dt><dd>{p.ecosystem}</dd></>}
         </dl>
         <span class="pj__dot" aria-hidden="true"></span>
         <h1 class="h-giant pj__title">{p.name}</h1>

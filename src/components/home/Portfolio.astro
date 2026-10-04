@@ -3,15 +3,29 @@ import type { Lang } from '../../lib/i18n';
 import { getSite, getProjects } from '../../lib/content';
 import SectionHead from '../SectionHead.astro';
 import ProjectCard from '../ProjectCard.astro';
+import { projectHref } from '../../lib/i18n';
 interface Props { lang: Lang; all?: boolean; num?: string }
 const { lang, all = false, num = '02' } = Astro.props;
 const s = getSite(lang);
-const projects = all ? getProjects(lang) : getProjects(lang).slice(0, 5);
+const everything = getProjects(lang);
+const projects = all ? everything : everything.slice(0, 5);
+const eco = s.ecosystems;
+const nameOf = (slug: string) => everything.find((p) => p.slug === slug)?.name ?? slug;
 const head = all ? { title: s.pages.projects.title, intro: s.pages.projects.intro, introStrong: s.pages.projects.introStrong } : { title: s.portfolio.title, intro: s.portfolio.intro, introStrong: s.portfolio.introStrong };
 ---
 <section class="pf trame section" id="portfolio">
   <div class="wrap">
     <SectionHead num={num} label={s.portfolio.label} title={head.title} intro={head.intro} introStrong={head.introStrong} as={all ? 'h1' : 'h2'} />
+    <ul class="pf__eco">
+      {eco.items.map((e) => (
+        <li class="pf__ecocard reveal">
+          <p class="label">{e.label}</p>
+          <p class="pf__econame h-sm">{e.name}</p>
+          <p class="pf__ecotext muted">{e.text}</p>
+          <ul class="pf__ecomembers mono">{e.members.map((m, i) => <li>{i > 0 && <span class="pf__arrow" aria-hidden="true">→</span>}<a href={projectHref(m, lang)}>{nameOf(m)}</a></li>)}</ul>
+        </li>
+      ))}
+    </ul>
     <div class:list={['pf__grid', { 'pf__grid--all': all }]}>
       {projects.map((p, i) => <div class="pf__cell"><ProjectCard lang={lang} project={p} index={i} /></div>)}
     </div>
@@ -19,10 +33,20 @@ const head = all ? { title: s.pages.projects.title, intro: s.pages.projects.intr
 </section>
 <style>
   .pf { background: var(--c-grey-100); }
-  .pf__grid { margin-top: 64px; display: grid; gap: 20px; }
+  .pf__eco { margin-top: 56px; display: grid; gap: 20px; }
+  .pf__ecocard { background: var(--c-dark); color: var(--c-white); padding: 24px; display: grid; gap: 14px; align-content: start; border-top: 2px solid var(--c-accent); }
+  .pf__ecocard .muted { color: var(--c-white-60); }
+  .pf__econame { font-weight: 600; }
+  .pf__ecotext { font-size: 14px; max-width: 44ch; }
+  .pf__ecomembers { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; padding-top: 12px; border-top: 1px solid var(--c-white-20); }
+  .pf__ecomembers li { display: inline-flex; align-items: center; gap: 10px; }
+  .pf__ecomembers a { border-bottom: 1px solid var(--c-accent); padding-bottom: 2px; }
+  .pf__arrow { color: var(--c-accent); }
+  .pf__grid { margin-top: 24px; display: grid; gap: 20px; }
   .pf__cell { display: grid; }
   @media (width >= 810px) { .pf__grid:not(.pf__grid--all) .pf__cell:first-child :global(.pc__visual) { aspect-ratio: 16/7; } }
   @media (width >= 810px) {
+    .pf__eco { grid-template-columns: 1fr 1fr; }
     .pf__grid { grid-template-columns: repeat(6, 1fr); }
     .pf__grid > :nth-child(1) { grid-column: span 4; }
     .pf__grid > :nth-child(2) { grid-column: span 2; }

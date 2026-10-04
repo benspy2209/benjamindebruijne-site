@@ -123,7 +123,8 @@
     "stack": "Stack",
     "status": "Statut",
     "online": "En ligne",
-    "next": "Projet suivant"
+    "next": "Projet suivant",
+    "ecosystem": "Écosystème"
   },
   "services": {
     "label": "Services",
@@ -438,6 +439,32 @@
         "since": "2026",
         "url": "https://www.leroy-partners.be/fr/",
         "logo": "/logos/leroy.png"
+      }
+    ]
+  },
+  "ecosystems": {
+    "label": "Deux écosystèmes",
+    "items": [
+      {
+        "key": "lecture",
+        "name": "Pulse Noir × BiblioPulse",
+        "label": "Écosystème lecture",
+        "text": "Une communauté de 2 150 lecteurs de polars, son hub auteurs, son prix littéraire, et la bibliothèque personnelle qui en découle.",
+        "members": [
+          "pulse-noir",
+          "bibliopulse"
+        ]
+      },
+      {
+        "key": "data",
+        "name": "Beneloo × Observatory × Singulr",
+        "label": "Écosystème données & souveraineté",
+        "text": "Mesurer la visibilité des PME dans les IA, conseiller à partir de la mesure, et garder la main sur les données et les outils.",
+        "members": [
+          "beneloo",
+          "observatory",
+          "singulr"
+        ]
       }
     ]
   }
