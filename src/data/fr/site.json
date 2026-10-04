@@ -67,8 +67,7 @@
     },
     {
       "name": "Pulse Noir",
-      "src": "/logos/pulse-noir-dark.jpg",
-      "dark": true
+      "src": "/logos/pulse-noir.png"
     },
     {
       "name": "BiblioPulse",
