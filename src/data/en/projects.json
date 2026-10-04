@@ -103,19 +103,19 @@
   },
   {
     "slug": "wimbledon",
-    "name": "Wimbledon Club",
+    "name": "Wimbledon Tennis Club",
     "tag": "Website · Sports club",
-    "kpi": "1",
-    "kpiLabel": "club, 3 disciplines",
-    "role": "Development",
+    "kpi": "17",
+    "kpiLabel": "courts",
+    "role": "Design & development",
     "year": "2025",
-    "lead": "the website of a Belgian sports club,",
-    "text": " disciplines showcase, calendar and practical information.",
-    "url": "https://wim.beneloo.com",
-    "color": "#2e5c1a",
+    "lead": "the website of the Wimbledon Tennis Club in Rhode-Saint-Genèse:",
+    "text": " 7 indoor courts, 9 clay, 1 hard, squash, fitness, tennis school.",
+    "url": "https://www.wimbledontc.com",
+    "color": "#1d4a2b",
     "body": [
-      "Development of the website for a Belgian sports club: disciplines overview, event calendar, practical information and contact form.",
-      "Stack: React, JSON content, Vercel deployment."
+      "Brochure website of the Wimbledon Tennis Club (Rhode-Saint-Genèse): the 17 courts (7 indoor, 9 clay, 1 hard), squash and fitness, tennis school, bar and terrace, practical information and contact.",
+      "Stack: React (Lovable export), Vite, Vercel deployment."
     ]
   },
   {
@@ -184,6 +184,176 @@
     "body": [
       "Showcase website for a Belgian ophthalmological surgery practice: presentation of surgeons, covered procedures, techniques used and an appointment request form.",
       "Stack: React, JSON content, Vercel deployment."
+    ]
+  },
+  {
+    "slug": "le-verseau",
+    "name": "Le Verseau Clinic",
+    "tag": "Website · Clinic",
+    "kpi": "10+",
+    "kpiLabel": "years in Wavre",
+    "role": "Design & development",
+    "year": "2026",
+    "lead": "the website of the Le Verseau eye clinic in Wavre:",
+    "text": " FEBO-accredited ophthalmologists, equipment, emergencies, online appointment booking.",
+    "url": "https://www.cliniqueleverseau.be",
+    "color": "#12303f",
+    "body": [
+      "Website of the Le Verseau ophthalmology clinic, founded by Dr Jean-Luc Mélard and established for over ten years in Walloon Brabant: clinic, team, equipment, emergencies, contact and online booking. French and Dutch.",
+      "Stack: React, Vite, Tailwind, Vercel deployment."
+    ]
+  },
+  {
+    "slug": "notre-dame-de-stockel",
+    "name": "Notre-Dame de Stockel",
+    "tag": "Website · Care home",
+    "kpi": "88",
+    "kpiLabel": "residents",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of the Notre-Dame de Stockel nursing home,",
+    "text": " 88 residents, Woluwe-Saint-Pierre, in French and Dutch.",
+    "url": "https://notre-dame-de-stockel.be",
+    "color": "#3a2a1d",
+    "body": [
+      "Website of the Notre-Dame de Stockel nursing and care home (Woluwe-Saint-Pierre): an 88-resident facility including 18 double-room places, presentation of the home, care, daily life, admission and contact, in French and Dutch.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "residence-sainte-anne",
+    "name": "Résidence Sainte-Anne",
+    "tag": "Website · Care home",
+    "kpi": "97",
+    "kpiLabel": "rooms",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of the Résidence Sainte-Anne care home,",
+    "text": " 97 rooms, Watermael-Boitsfort, in French and Dutch.",
+    "url": "https://residence-sainte-anne.be",
+    "color": "#2b1d4a",
+    "body": [
+      "Website of the Résidence Sainte-Anne (Watermael-Boitsfort): a 97-room care home with a private park, extended by annexing the Sainte-Anne convent. Presentation, services, admission and contact, in French and Dutch.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "rtms-wellcare",
+    "name": "rTMS Wellcare",
+    "tag": "Website · Medical",
+    "kpi": "2",
+    "kpiLabel": "languages",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the rTMS website of the Wellcare medical centre:",
+    "text": " transcranial magnetic stimulation for chronic pain and depression, in French and English.",
+    "url": "https://www.stimulation-magnetique-transcranienne.be",
+    "color": "#1d3a8a",
+    "body": [
+      "Website dedicated to repetitive transcranial magnetic stimulation (rTMS) at the Wellcare medical centre: how the treatment works, indications (chronic pain, neurological conditions, depression), multidisciplinary team, appointment booking. French and English.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "abofield",
+    "name": "Abofield",
+    "tag": "Website · Industry",
+    "kpi": "3",
+    "kpiLabel": "trades",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of Abofield, sports-field and playground specialist:",
+    "text": " surfaces, installation, maintenance, brochure, in French and Dutch.",
+    "url": "https://www.abofield.be",
+    "color": "#4a2b1d",
+    "body": [
+      "Website of Abofield, specialist in building and maintaining sports fields and playgrounds: three trades (fields, playgrounds, maintenance), completed projects, downloadable brochure, contact. French and Dutch.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "sar-benelux",
+    "name": "SAR Benelux",
+    "tag": "Website · Insurance",
+    "kpi": "2",
+    "kpiLabel": "languages",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of SAR Benelux, a broker specialised in legal and property risk:",
+    "text": " planning-permit insurance and construction guarantees, in French and Dutch.",
+    "url": "https://www.sar-benelux.com",
+    "color": "#12121f",
+    "body": [
+      "Website of SAR Benelux (Société d'Analyse de Risques), a specialised broker: planning-permit insurance, appeal-risk analysis, contracts for developers, promoters, architects and project owners. French and Dutch.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "valeone",
+    "name": "Valeone",
+    "tag": "Website · Couture",
+    "kpi": "100%",
+    "kpiLabel": "made to measure",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of the Valeone couture house:",
+    "text": " made-to-measure wedding and evening dresses, small-group sewing classes.",
+    "url": "https://valeone.be",
+    "color": "#7a2e1d",
+    "body": [
+      "Website of Valeone, a couture house: made-to-measure wedding and evening dresses, small-group sewing classes, gallery and contact.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "aquares",
+    "name": "Aquares",
+    "tag": "Website · E-commerce",
+    "kpi": "3",
+    "kpiLabel": "languages",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of Aquares, custom textiles and Aqualine swimming products:",
+    "text": " monthly offers, quotes, in French, Dutch and English.",
+    "url": "https://www.aquares.be",
+    "color": "#1d4a4a",
+    "body": [
+      "Website of Aquares, a textile partner for 20 years: custom clothing for camps, graduating classes, student societies, companies and clubs, the Aqualine swimming range, monthly offers, quote requests. French, Dutch and English.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "success-tennis-cool",
+    "name": "Success Tennis Cool",
+    "tag": "Website · Tennis school",
+    "kpi": "4",
+    "kpiLabel": "languages",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of Jacques Grandjean's Success Tennis Cool school:",
+    "text": " lessons, camps, a different philosophy of tennis, in four languages.",
+    "url": "https://www.successtenniscool.com",
+    "color": "#1d4a2b",
+    "body": [
+      "Website of the Success Tennis Cool tennis school, run by Jacques Grandjean (former ATP 230, Davis Cup player): philosophy, lessons, camps, registration and contact, in French, Dutch, English and Italian.",
+      "Stack: WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "manuel-apicella",
+    "name": "Manuel Apicella Chess",
+    "tag": "Website · Online training",
+    "kpi": "GMI",
+    "kpiLabel": "international grandmaster",
+    "role": "Design & development",
+    "year": "",
+    "lead": "the website of chess grandmaster Manuel Apicella:",
+    "text": " online lessons, masterclasses, 1992 French champion.",
+    "url": "https://www.manuel-apicella-echecs.fr",
+    "color": "#3a1d4a",
+    "body": [
+      "Website of Manuel Apicella, International Grandmaster and 1992 French champion: online chess lessons at all levels, scheduled masterclasses, opening repertoire, game analysis, contact.",
+      "Stack: WordPress, Elementor."
     ]
   },
   {

@@ -103,19 +103,19 @@
   },
   {
     "slug": "wimbledon",
-    "name": "Wimbledon Club",
+    "name": "Wimbledon Tennis Club",
     "tag": "Site · Club sportif",
-    "kpi": "1",
-    "kpiLabel": "club, 3 disciplines",
-    "role": "Développement",
+    "kpi": "17",
+    "kpiLabel": "terrains",
+    "role": "Conception & développement",
     "year": "2025",
-    "lead": "le site d'un club sportif belge,",
-    "text": " vitrine des disciplines, agenda et informations pratiques.",
-    "url": "https://wim.beneloo.com",
-    "color": "#2e5c1a",
+    "lead": "le site du Wimbledon Tennis Club de Rhode-Saint-Genèse :",
+    "text": " 7 terrains intérieurs, 9 en terre battue, 1 en dur, squash, fitness, école de tennis.",
+    "url": "https://www.wimbledontc.com",
+    "color": "#1d4a2b",
     "body": [
-      "Développement du site web d'un club sportif belge : présentation des disciplines, agenda des événements, informations pratiques et formulaire de contact.",
-      "Stack : React, contenu JSON, déploiement Vercel."
+      "Site vitrine du Wimbledon Tennis Club (Rhode-Saint-Genèse) : présentation des 17 terrains (7 intérieurs, 9 terre battue, 1 dur), squash et fitness, école de tennis, bar et terrasse, informations pratiques et contact.",
+      "Stack : React (export Lovable), Vite, déploiement Vercel."
     ]
   },
   {
@@ -184,6 +184,176 @@
     "body": [
       "Site vitrine pour un cabinet de chirurgie ophtalmologique en Belgique : présentation des chirurgiens, des actes pris en charge, des techniques utilisées et formulaire de prise de rendez-vous.",
       "Stack : React, contenu JSON, déploiement Vercel."
+    ]
+  },
+  {
+    "slug": "le-verseau",
+    "name": "Clinique Le Verseau",
+    "tag": "Site · Clinique",
+    "kpi": "10+",
+    "kpiLabel": "ans à Wavre",
+    "role": "Conception & développement",
+    "year": "2026",
+    "lead": "le site de la clinique ophtalmologique Le Verseau à Wavre :",
+    "text": " équipe d'ophtalmologues accrédités FEBO, équipements, urgences, prise de rendez-vous en ligne.",
+    "url": "https://www.cliniqueleverseau.be",
+    "color": "#12303f",
+    "body": [
+      "Site de la clinique ophtalmologique Le Verseau, fondée par le Dr Jean-Luc Mélard et implantée depuis plus de dix ans dans le Brabant wallon : clinique, équipe, équipements, urgences, contact et prise de rendez-vous en ligne. Français et néerlandais.",
+      "Stack : React, Vite, Tailwind, déploiement Vercel."
+    ]
+  },
+  {
+    "slug": "notre-dame-de-stockel",
+    "name": "Notre-Dame de Stockel",
+    "tag": "Site · Maison de repos",
+    "kpi": "88",
+    "kpiLabel": "résidents",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de la maison de repos et de soins Notre-Dame de Stockel,",
+    "text": " 88 résidents, Woluwe-Saint-Pierre, en français et néerlandais.",
+    "url": "https://notre-dame-de-stockel.be",
+    "color": "#3a2a1d",
+    "body": [
+      "Site de la Maison de Repos et de Soins Notre-Dame de Stockel (Woluwe-Saint-Pierre) : établissement de 88 résidents dont 18 places en chambre double, présentation de la maison, des soins, de la vie quotidienne, admission et contact, en français et en néerlandais.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "residence-sainte-anne",
+    "name": "Résidence Sainte-Anne",
+    "tag": "Site · Maison de repos",
+    "kpi": "97",
+    "kpiLabel": "chambres",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de la maison de repos Résidence Sainte-Anne,",
+    "text": " 97 chambres, Watermael-Boitsfort, en français et néerlandais.",
+    "url": "https://residence-sainte-anne.be",
+    "color": "#2b1d4a",
+    "body": [
+      "Site de la Résidence Sainte-Anne (Watermael-Boitsfort) : maison de repos de 97 chambres avec parc privé, agrandie par l'annexion du Couvent Sainte-Anne. Présentation, services, admission et contact, en français et en néerlandais.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "rtms-wellcare",
+    "name": "rTMS Wellcare",
+    "tag": "Site · Médical",
+    "kpi": "2",
+    "kpiLabel": "langues",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site rTMS du centre médical Wellcare :",
+    "text": " stimulation magnétique transcrânienne pour les douleurs chroniques et la dépression, en français et anglais.",
+    "url": "https://www.stimulation-magnetique-transcranienne.be",
+    "color": "#1d3a8a",
+    "body": [
+      "Site dédié à la stimulation magnétique transcrânienne répétitive (rTMS) du centre médical Wellcare : explication du traitement, indications (douleurs chroniques, maladies neurologiques, dépression), équipe multidisciplinaire, prise de rendez-vous. Français et anglais.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "abofield",
+    "name": "Abofield",
+    "tag": "Site · Industrie",
+    "kpi": "3",
+    "kpiLabel": "métiers",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site d'Abofield, spécialiste des terrains de sport et aires de jeux :",
+    "text": " revêtements, aménagement, entretien, brochure, en français et néerlandais.",
+    "url": "https://www.abofield.be",
+    "color": "#4a2b1d",
+    "body": [
+      "Site d'Abofield, spécialiste de l'aménagement et de la maintenance de terrains de sport et d'aires de jeux : trois métiers (terrains, aires de jeux, entretien), projets réalisés, brochure téléchargeable, contact. Français et néerlandais.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "sar-benelux",
+    "name": "SAR Benelux",
+    "tag": "Site · Assurance",
+    "kpi": "2",
+    "kpiLabel": "langues",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de SAR Benelux, courtier spécialisé en risque légal et immobilier :",
+    "text": " assurance permis d'urbanisme et garanties construction, en français et néerlandais.",
+    "url": "https://www.sar-benelux.com",
+    "color": "#12121f",
+    "body": [
+      "Site de SAR Benelux (Société d'Analyse de Risques), courtier spécialisé : assurance permis d'urbanisme, analyse de risque de recours, contrats pour lotisseurs, promoteurs, architectes et maîtres d'ouvrage. Français et néerlandais.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "valeone",
+    "name": "Valeone",
+    "tag": "Site · Couture",
+    "kpi": "100 %",
+    "kpiLabel": "sur mesure",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de la maison de couture Valeone :",
+    "text": " robes de mariée et de soirée sur mesure, cours de couture en petits groupes.",
+    "url": "https://valeone.be",
+    "color": "#7a2e1d",
+    "body": [
+      "Site de Valeone, maison de couture : création de robes de mariée et de soirée sur mesure, cours de couture en petits groupes, galerie et contact.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "aquares",
+    "name": "Aquares",
+    "tag": "Site · E-commerce",
+    "kpi": "3",
+    "kpiLabel": "langues",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site d'Aquares, textile personnalisé et produits de natation Aqualine :",
+    "text": " offres du mois, devis, en français, néerlandais et anglais.",
+    "url": "https://www.aquares.be",
+    "color": "#1d4a4a",
+    "body": [
+      "Site d'Aquares, partenaire textile depuis 20 ans : vêtements personnalisés pour camps, rhétos, cercles étudiants, entreprises et clubs, gamme de natation Aqualine, propositions du mois, demande de devis. Français, néerlandais et anglais.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "success-tennis-cool",
+    "name": "Success Tennis Cool",
+    "tag": "Site · École de tennis",
+    "kpi": "4",
+    "kpiLabel": "langues",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site de l'école Success Tennis Cool de Jacques Grandjean :",
+    "text": " cours, stages, philosophie du tennis autrement, en quatre langues.",
+    "url": "https://www.successtenniscool.com",
+    "color": "#1d4a2b",
+    "body": [
+      "Site de l'école de tennis Success Tennis Cool, dirigée par Jacques Grandjean (ancien ATP 230, joueur de Coupe Davis) : philosophie, cours, stages, inscriptions et contact, en français, néerlandais, anglais et italien.",
+      "Stack : WordPress, Elementor."
+    ]
+  },
+  {
+    "slug": "manuel-apicella",
+    "name": "Manuel Apicella Échecs",
+    "tag": "Site · Formation en ligne",
+    "kpi": "GMI",
+    "kpiLabel": "grand maître international",
+    "role": "Conception & développement",
+    "year": "",
+    "lead": "le site du grand maître international d'échecs Manuel Apicella :",
+    "text": " cours en ligne, masterclass, champion de France 1992.",
+    "url": "https://www.manuel-apicella-echecs.fr",
+    "color": "#3a1d4a",
+    "body": [
+      "Site de Manuel Apicella, Grand Maître International et champion de France 1992 : cours d'échecs en ligne à tous niveaux, masterclass programmées, répertoire d'ouvertures, analyse de parties, contact.",
+      "Stack : WordPress, Elementor."
     ]
   },
   {

@@ -21,7 +21,7 @@ const title = p.name;
       <p class="lead pj__lead"><strong>{p.lead}</strong>{p.text}</p>
       <dl class="pj__meta mono">
         <dt class="muted">{s.portfolio.role}</dt><dd>{p.role}</dd>
-        <dt class="muted">{s.portfolio.year}</dt><dd>{p.year}</dd>
+        {p.year && <><dt class="muted">{s.portfolio.year}</dt><dd>{p.year}</dd></>}
       </dl>
       <p class="pj__kpi"><span class="h-giant">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
     </div>

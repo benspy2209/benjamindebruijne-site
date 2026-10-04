@@ -14,7 +14,7 @@ const s = getSite(lang);
     <p class="pc__kpi"><span class="h-xl">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
   </div>
   <div class="pc__body">
-    <p class="mono pc__role"><span class="muted">{s.portfolio.role}</span> {p.role} <span class="muted pc__year">{s.portfolio.year}</span> {p.year}</p>
+    <p class="mono pc__role"><span class="muted">{s.portfolio.role}</span> {p.role} {p.year && <><span class="muted pc__year">{s.portfolio.year}</span> {p.year}</>}</p>
     <p class="pc__text"><strong>{p.lead}</strong>{p.text}</p>
     <p class="pc__cta mono">{s.portfolio.cta}<span class="btn__i"><Icon name="chevron" /></span></p>
   </div>
