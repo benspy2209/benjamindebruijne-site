@@ -11,7 +11,7 @@ const items = [...s.logos, ...s.logos, ...s.logos];
   <div class="mq__track" aria-hidden="true">
     <ul class="mq__list">
       {items.map((l) => (
-        <li class="mq__item">
+        <li class:list={['mq__item', { 'mq__item--dark': l.dark }]}>
           {l.src ? <img src={l.src} alt="" loading="lazy" /> : <span class="mq__name">{l.name}</span>}
         </li>
       ))}
@@ -26,6 +26,8 @@ const items = [...s.logos, ...s.logos, ...s.logos];
   .mq__list { display: flex; width: max-content; animation: mq 60s linear infinite; }
   .mq__item { width: 200px; height: 120px; display: grid; place-items: center; border-right: 1px solid var(--c-grey-300); padding: 24px; }
   .mq__item img { max-height: 36px; max-width: 128px; width: auto; height: auto; object-fit: contain; filter: brightness(0); opacity: .82; }
+  .mq__item--dark { background: #0b0b0b; padding: 0; }
+  .mq__item--dark img { filter: none; opacity: 1; max-height: 120px; max-width: 200px; height: 120px; width: 200px; object-fit: cover; }
   .mq__name { font-weight: 700; font-size: 17px; letter-spacing: -.02em; color: var(--c-dark); opacity: .82; white-space: nowrap; }
   @keyframes mq { to { transform: translateX(-33.333%); } }
   .mq__track:hover .mq__list { animation-play-state: paused; }

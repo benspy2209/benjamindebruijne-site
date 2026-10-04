@@ -6,8 +6,7 @@ const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>
 const json = (status, body) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
 const send = (key, payload) => fetch('https://api.resend.com/emails', { method: 'POST', headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
 
-export default async function handler(request) {
-  if (request.method !== 'POST') return json(405, { error: 'method' });
+export async function POST(request) {
   const key = process.env.RESEND_API_KEY;
   if (!key) return json(503, { error: 'not-configured' });
   const from = process.env.CONTACT_FROM || 'Benjamin de Bruijne <onboarding@resend.dev>';
