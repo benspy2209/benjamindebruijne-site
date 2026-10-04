@@ -90,6 +90,51 @@
     ]
   },
   {
+    "slug": "pulse-noir",
+    "name": "Pulse Noir",
+    "tag": "Communauté · Polar",
+    "kpi": "2 150+",
+    "kpiLabel": "membres actifs",
+    "role": "Fondateur",
+    "year": "2023",
+    "lead": "la communauté francophone du polar et du thriller :",
+    "text": " hub auteurs, Grand Prix littéraire, magazine, bibliothèque de 1 900+ livres.",
+    "url": "https://pulsenoir.be",
+    "color": "#1a0a2e",
+    "body": [
+      "Pulse Noir est l'écosystème polar que j'anime sous le pseudonyme PULSEMAN : groupe Facebook de 2 150+ membres, site pulsenoir.be avec 1 900+ livres et 267 auteurs référencés, La Revue Pulse Noir, le Grand Prix Pulse Noir (247 votes, 22 finalistes, jury de 20 lecteurs) et BiblioPulse.",
+      "Stack : React, Supabase, Brevo, Lovable, Claude API, Stripe, Edge Middleware SEO."
+    ],
+    "status": "",
+    "stack": "React · Supabase · Vercel",
+    "tagline": "2 150 lecteurs de polars, un écosystème complet.",
+    "sticker": [
+      "Pulse Noir",
+      "× BiblioPulse"
+    ],
+    "cat": "Communauté",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "Une communauté vivante sur Facebook, mais rien qui lui appartienne.",
+        "p1": "Pulse Noir est né comme un groupe Facebook de passionnés de polars et de thrillers. Des milliers de lecteurs, des auteurs qui viennent échanger, des chroniques chaque semaine, mais tout vivait sur une plateforme qui décide seule de qui voit quoi.",
+        "p2": "Pas de site, pas de base d'auteurs, pas de moyen de faire vivre un prix littéraire ou une revue autrement que dans des publications qui disparaissent au bout de trois jours."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Un hub auteurs, un prix, une revue et une bibliothèque reliée.",
+        "p1": "pulsenoir.be rassemble aujourd'hui plus de 1 900 livres et 267 auteurs référencés, un Dark Blog de textes inédits, La Revue Pulse Noir et le Grand Prix Pulse Noir (247 votes, 22 finalistes, un jury de 20 lecteurs). La page D'Encre Noire présente la collection née du Dark Blog, avec ses données structurées pour les moteurs de recherche.",
+        "p2": "BiblioPulse en est le prolongement naturel : la bibliothèque personnelle des lecteurs de la communauté. Derrière, une base Supabase partagée, des fonctions serveur protégées, un formulaire de contact défendu contre le spam par Cloudflare Turnstile."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "2 150 membres, et une communauté qui alimente les produits.",
+        "p1": "Le groupe dépasse 2 150 membres actifs, le site tourne sur Vercel et Supabase, les interviews d'auteurs et les textes du Dark Blog continuent d'arriver. L'app mobile est prête en Capacitor.",
+        "p2": "Prochaines étapes : tome 2 de D'Encre Noire pour les fêtes 2026, relance de l'Academy, et le pont Pulse Noir → BiblioPulse comme premier canal d'acquisition."
+      }
+    ]
+  },
+  {
     "slug": "observatory",
     "name": "Beneloo Observatory",
     "tag": "Recherche · IA",
@@ -292,31 +337,6 @@
       "Wimbledon Tennis Club"
     ],
     "cat": "Club sportif",
-    "sections": []
-  },
-  {
-    "slug": "pulse-noir",
-    "name": "Pulse Noir",
-    "tag": "Communauté · Polar",
-    "kpi": "2 150+",
-    "kpiLabel": "membres actifs",
-    "role": "Fondateur",
-    "year": "2023",
-    "lead": "la communauté francophone du polar et du thriller :",
-    "text": " hub auteurs, Grand Prix littéraire, magazine, bibliothèque de 1 900+ livres.",
-    "url": "https://pulsenoir.be",
-    "color": "#1a0a2e",
-    "body": [
-      "Pulse Noir est l'écosystème polar que j'anime sous le pseudonyme PULSEMAN : groupe Facebook de 2 150+ membres, site pulsenoir.be avec 1 900+ livres et 267 auteurs référencés, La Revue Pulse Noir, le Grand Prix Pulse Noir (247 votes, 22 finalistes, jury de 20 lecteurs) et BiblioPulse.",
-      "Stack : React, Supabase, Brevo, Lovable, Claude API, Stripe, Edge Middleware SEO."
-    ],
-    "status": "",
-    "stack": "React · Supabase · Brevo",
-    "tagline": "2 150+ membres actifs.",
-    "sticker": [
-      "Pulse Noir"
-    ],
-    "cat": "Polar",
     "sections": []
   },
   {
