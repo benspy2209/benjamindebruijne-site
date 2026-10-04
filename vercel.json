@@ -1,0 +1,74 @@
+{
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/a-propos/",
+      "permanent": true
+    },
+    {
+      "source": "/projects",
+      "destination": "/projets/",
+      "permanent": true
+    },
+    {
+      "source": "/projects/:slug*",
+      "destination": "/projets/",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug*",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug+",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/about",
+      "destination": "/en/about/",
+      "permanent": true
+    },
+    {
+      "source": "/en/projects",
+      "destination": "/en/projects/",
+      "permanent": true
+    },
+    {
+      "source": "/en/projects/:slug*",
+      "destination": "/en/projects/",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/:slug*",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/:slug+",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact",
+      "destination": "/en/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

@@ -3,4 +3,4 @@ Allow: /
 Disallow: /blog/
 Disallow: /en/blog/
 
-Sitemap: https://benjamindebruijne.be/sitemap-index.xml
+Sitemap: https://benjamindebruijne.com/sitemap-index.xml
