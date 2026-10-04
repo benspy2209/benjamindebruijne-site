@@ -3,85 +3,85 @@
     "slug": "service-volee",
     "name": "Service-Volée",
     "tag": "Produit · Tennis",
-    "kpi": "27 000+",
+    "kpi": "76 000+",
     "kpiLabel": "joueurs indexés",
     "role": "Produit & développement",
     "year": "2026",
     "lead": "le classement tennis belge en direct :",
-    "text": " fiches joueurs, prévisions de classement, compteur de match et résultats provisoires.",
+    "text": " 76 000 joueurs indexés, des centaines de milliers de matchs, prévisions de classement et compteur de match.",
     "url": "https://servicevolee.be",
     "color": "#1d3a8a",
     "body": [
-      "Service-Volée reprend les données publiques de la fédération et les rend lisibles : chaque joueur a sa fiche, son historique, ses six meilleurs résultats et une projection de classement. Un compteur de match sur mobile permet d'arbitrer et de partager un score en direct.",
-      "Stack : Next.js, Postgres (Neon), crawler planifié, PWA installable, espace compte avec lien magique."
+      "Service-Volée reprend les données publiques de la fédération (AFT) et les rend lisibles : plus de 76 000 fiches joueurs indexées, plus de 300 000 matchs, six meilleurs résultats, estimation des points en attente et projection de classement validée sur cas réel. Un compteur de match sur mobile permet d'arbitrer, de partager un score en direct et de poser un résultat provisoire sur la fiche.",
+      "Stack : Next.js, Postgres (Neon), crawler planifié toutes les 10 minutes, PWA installable, compte avec lien magique, chat règlement (OpenAI)."
     ]
   },
   {
     "slug": "bibliopulse",
     "name": "Bibliopulse",
     "tag": "Produit · Lecture",
-    "kpi": "4 000+",
-    "kpiLabel": "livres catalogués",
+    "kpi": "44 M",
+    "kpiLabel": "références ISBNdb",
     "role": "Produit & développement",
     "year": "2025",
     "lead": "la bibliothèque personnelle des lecteurs :",
-    "text": " scan de couvertures, anti-doublons, partage de pile à lire.",
+    "text": " scan de couvertures, catalogue ISBNdb de 44 millions de références, anti-doublons, partage de pile à lire.",
     "url": "https://bibliopulse.com",
     "color": "#7a2e1d",
     "body": [
-      "BibliPulse permet à un lecteur de cataloguer sa bibliothèque en scannant les codes-barres, d'éviter les doublons et de partager publiquement sa pile à lire. Plus de 300 inscrits en croissance organique.",
-      "Stack : React, Supabase, PWA, prérendu statique pour le SEO, emails d'onboarding automatisés."
+      "BibliPulse permet à un lecteur de cataloguer sa bibliothèque en scannant les codes-barres : chaque livre est reconnu via ISBNdb (44 millions de références), dédoublonné et classé. Aujourd'hui : 378 inscrits, 4 800 livres catalogués par 172 lecteurs, bibliothèques publiques partageables, croissance organique sans publicité.",
+      "Stack : React, Supabase (auth, base, edge functions), proxy ISBNdb côté serveur, PWA, prérendu statique pour le SEO, emails d'onboarding automatisés (Resend)."
     ]
   },
   {
     "slug": "observatory",
     "name": "Beneloo Observatory",
     "tag": "Recherche · IA",
-    "kpi": "97 %",
-    "kpiLabel": "de PME invisibles",
+    "kpi": "1 668",
+    "kpiLabel": "PME testées",
     "role": "Conception & données",
     "year": "2026",
     "lead": "l'observatoire de la visibilité des PME belges",
-    "text": " dans ChatGPT, Claude, Gemini et Perplexity, secteur par secteur.",
+    "text": " dans ChatGPT, Claude, Gemini et Perplexity : 3 campagnes, 1 668 sociétés, 96 à 98 % invisibles.",
     "url": "https://beneloo.com",
     "color": "#12121f",
     "body": [
-      "L'Observatory interroge quatre modèles d'IA avec des prompts figés sur des échantillons exhaustifs de sociétés (comptables, plombiers…) et mesure qui est cité, qui est halluciné, qui est invisible. Résultat : plus de 96 % des PME locales n'apparaissent jamais.",
-      "Stack : Python, Postgres, pipeline de campagnes immuable, validation humaine, rapports anonymisés."
+      "L'Observatory interroge quatre modèles d'IA avec des prompts figés sur des échantillons exhaustifs de sociétés : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque mention est validée à la main (correct, réseau, hallucination). Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité ; ChatGPT et Claude ne citent aucun cabinet local, Gemini hallucine jusqu'à 52 % de ses réponses.",
+      "Stack : Python, Postgres, pipeline de campagnes immuable (prompts et modèles figés, coûts plafonnés), validation humaine tracée, agrégats anonymisés publiables."
     ]
   },
   {
     "slug": "iris-noir",
     "name": "Iris Noir Bruxelles",
     "tag": "Site · Événement",
-    "kpi": "37",
+    "kpi": "39",
     "kpiLabel": "auteurs invités",
     "role": "Refonte & développement",
     "year": "2026",
     "lead": "le site du salon du polar de Bruxelles,",
-    "text": " boutique, presse et programme compris, sorti de WordPress.",
+    "text": " programme 2026 au Be-Here, 39 auteurs, boutique de 23 produits, presse, sorti de WordPress.",
     "url": "https://irisnoirbxl.com",
     "color": "#2b1d4a",
     "body": [
-      "Refonte complète du site de l'asbl Iris Noir : programme du salon, auteurs, presse, boutique avec panier et commande, formulaire de contact. Contenu repris de l'ancien WordPress, hébergement mutualisé classique.",
-      "Stack : React, contenu JSON, API PHP légère, déploiement automatisé."
+      "Refonte complète du site de l'asbl Iris Noir, salon du polar de Bruxelles (8e édition, 30 octobre au 1er novembre 2026 au Be-Here) : 39 auteurs invités, horaires, marraine et parrains, prix littéraires, revue de presse, boutique de 23 produits avec panier et commande par email, formulaire de contact. Contenu repris de l'ancien WordPress via son API, hébergement mutualisé classique.",
+      "Stack : React, contenu JSON, API PHP légère (commande, contact, SMTP maison), déploiement FTP automatisé."
     ]
   },
   {
     "slug": "royal-wellington",
     "name": "Royal Wellington",
     "tag": "Site · Club sportif",
-    "kpi": "3",
-    "kpiLabel": "langues",
+    "kpi": "1 600",
+    "kpiLabel": "membres actifs",
     "role": "Revue & développement",
     "year": "2026",
-    "lead": "la refonte du site d'un club de hockey, tennis et padel,",
-    "text": " fondé en 1928, en trois langues.",
+    "lead": "la refonte du site du Royal Wellington Club,",
+    "text": " hockey, tennis et padel depuis 1928, 1 600 membres, 900 jeunes formés, en trois langues.",
     "url": "https://well.beneloo.com",
     "color": "#1d4a2b",
     "body": [
-      "Revue éditoriale et technique du site du Royal Wellington Club : disciplines, cotisations, sélections, privatisation, kiné. Contenu validé section par section avec le club.",
-      "Stack : TanStack Start, Cloudflare Workers, contenu trilingue."
+      "Revue éditoriale et technique complète du site du Royal Wellington Club (Bruxelles) : 13 pages, disciplines, cotisations, sélections avec interrupteur saisonnier, privatisation, kiné, en français, néerlandais et anglais. Contenu validé section par section avec le club, 98 ans d'histoire, 1 600 membres actifs, 900 jeunes formés.",
+      "Stack : TanStack Start, Cloudflare Workers, contenu trilingue, déploiement wrangler."
     ]
   },
   {
@@ -156,17 +156,17 @@
     "slug": "rene-manzor",
     "name": "René Manzor",
     "tag": "Site · Cinéaste & auteur",
-    "kpi": "30+",
-    "kpiLabel": "années de carrière",
+    "kpi": "26",
+    "kpiLabel": "leçons de masterclass",
     "role": "Développement",
     "year": "2025",
-    "lead": "le site officiel du cinéaste et auteur René Manzor,",
-    "text": " filmographie complète, masterclass et espace presse.",
+    "lead": "le site officiel du cinéaste et auteur René Manzor :",
+    "text": " filmographie, livres, presse et masterclass en ligne migrée de Podia, 26 leçons, 22 vidéos, 71 élèves.",
     "url": "https://renemanzor.com",
     "color": "#0a1a2e",
     "body": [
-      "Site officiel de René Manzor, réalisateur et auteur franco-thaïlandais connu pour ses films à caractère fantastique et noir. Le site présente sa filmographie, ses livres, sa masterclass en ligne et un espace presse.",
-      "Stack : React, TypeScript, contenu structuré, déploiement Vercel."
+      "Site officiel de René Manzor, réalisateur et auteur : filmographie, livres, espace presse. En 2026, migration complète de sa masterclass d'écriture hors de Podia : 26 leçons, 22 vidéos en lecture signée, 24 PDF, 71 élèves et leurs commentaires repris sans perte, paiement Stripe en direct.",
+      "Stack : React, Supabase (auth, base, RLS), Cloudflare Stream, Resend, Stripe, déploiement Vercel."
     ]
   },
   {
@@ -190,17 +190,17 @@
     "slug": "beneloo",
     "name": "Beneloo",
     "tag": "Marque · Visibilité IA",
-    "kpi": "6",
-    "kpiLabel": "piliers du score",
+    "kpi": "17 000+",
+    "kpiLabel": "PME analysées",
     "role": "Fondateur",
     "year": "2024",
     "lead": "ma structure de conseil :",
-    "text": " le Beneloo Score mesure la visibilité d'une PME dans les moteurs d'IA et dit quoi corriger.",
+    "text": " le Beneloo Score mesure la visibilité d'une PME dans les moteurs d'IA, un portail suit 17 000 fiches de prospection.",
     "url": "https://beneloo.com",
     "color": "#8a3a1d",
     "body": [
-      "Beneloo est la marque sous laquelle j'accompagne les PME belges sur la visibilité IA : diagnostic, score en six piliers, plan d'action, suivi. Le site, le portail de prospection et l'observatoire sont des outils que j'ai construits moi-même.",
-      "Stack : Next.js, Supabase, OpenAI et Perplexity, pipeline de prospection."
+      "Beneloo est la marque sous laquelle j'accompagne les PME belges sur la visibilité IA : diagnostic, score en six piliers, plan d'action, suivi. J'ai construit moi-même le site, l'observatoire et le portail de prospection : 17 000 fiches de sociétés francophones avec téléphone, réparties en 11 secteurs, résumé d'activité généré par IA à l'ouverture de chaque fiche.",
+      "Stack : Next.js, Supabase, OpenAI et Perplexity, données BCE et BNB, pipeline de prospection par email."
     ]
   }
 ]
