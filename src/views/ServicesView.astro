@@ -7,13 +7,14 @@ import PageHead from '../components/PageHead.astro';
 import Services from '../components/home/Services.astro';
 import Process from '../components/home/Process.astro';
 import Button from '../components/Button.astro';
+import Faq from '../components/Faq.astro';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
 const sv = s.pages.services;
 const bookHref = s.meta.booking || href('contact', lang);
 ---
-<Base lang={lang} routeKey="services" title={sv.title.join(' ')} onDark>
+<Base lang={lang} routeKey="services" title={sv.title.join(' ')} description={sv.description} onDark>
   <PageHead num="01" label={s.services.label} title={sv.title} intro={sv.intro} introStrong={sv.introStrong} />
   <Services lang={lang} num="02" open />
   <section class="fm trame section">
@@ -34,7 +35,8 @@ const bookHref = s.meta.booking || href('contact', lang);
       </div>
     </div>
   </section>
-  <Process lang={lang} num="04" />
+  <Faq label={sv.faqLabel} items={sv.faq} num="04" />
+  <Process lang={lang} num="05" />
 </Base>
 <style>
   .fm__grid { margin-top: 40px; display: grid; gap: 20px; }

@@ -3,7 +3,8 @@ export const langs: Lang[] = ['fr', 'en'];
 export const defaultLang: Lang = 'fr';
 
 export type RouteKey =
-  | 'home' | 'projects' | 'about' | 'services' | 'contact' | 'blog' | 'legal' | 'privacy';
+  | 'home' | 'projects' | 'about' | 'services' | 'contact' | 'blog' | 'legal' | 'privacy'
+  | 'offer-build' | 'offer-automate' | 'offer-deliver';
 
 export const routes: Record<RouteKey, Record<Lang, string>> = {
   home: { fr: '/', en: '/en/' },
@@ -14,6 +15,9 @@ export const routes: Record<RouteKey, Record<Lang, string>> = {
   blog: { fr: '/blog/', en: '/en/blog/' },
   legal: { fr: '/mentions-legales/', en: '/en/legal/' },
   privacy: { fr: '/confidentialite/', en: '/en/privacy/' },
+  'offer-build': { fr: '/services/construire/', en: '/en/services/build/' },
+  'offer-automate': { fr: '/services/automatiser/', en: '/en/services/automate/' },
+  'offer-deliver': { fr: '/services/piloter/', en: '/en/services/deliver/' },
 };
 
 export function href(key: RouteKey, lang: Lang): string {
@@ -33,5 +37,8 @@ export function alternate(key: RouteKey, lang: Lang, slug?: string): string {
   const other = otherLang(lang);
   return slug ? projectHref(slug, other) : href(key, other);
 }
+
+/** Clé de route d'une offre à partir de son slug (fr ou en). */
+export const offerRoute: Record<string, RouteKey> = { construire: 'offer-build', build: 'offer-build', automatiser: 'offer-automate', automate: 'offer-automate', piloter: 'offer-deliver', deliver: 'offer-deliver' };
 
 export const locale: Record<Lang, string> = { fr: 'fr-BE', en: 'en-GB' };

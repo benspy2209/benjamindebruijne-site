@@ -1,6 +1,81 @@
 {
   "redirects": [
     {
+      "source": "/en/developpement-sur-mesure",
+      "destination": "/en/services/build/",
+      "permanent": true
+    },
+    {
+      "source": "/en/gestion-projets",
+      "destination": "/en/services/deliver/",
+      "permanent": true
+    },
+    {
+      "source": "/en/conformite-cybersecurite",
+      "destination": "/en/services/deliver/",
+      "permanent": true
+    },
+    {
+      "source": "/en/ia",
+      "destination": "/en/services/automate/",
+      "permanent": true
+    },
+    {
+      "source": "/devis/:slug",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/projets/:id",
+      "destination": "/projets/",
+      "permanent": true
+    },
+    {
+      "source": "/veille",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/conseils",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/analyse",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/developpement-sur-mesure",
+      "destination": "/services/construire/",
+      "permanent": true
+    },
+    {
+      "source": "/gestion-projets",
+      "destination": "/services/piloter/",
+      "permanent": true
+    },
+    {
+      "source": "/conformite-cybersecurite",
+      "destination": "/services/piloter/",
+      "permanent": true
+    },
+    {
+      "source": "/optimisation",
+      "destination": "/services/automatiser/",
+      "permanent": true
+    },
+    {
+      "source": "/product-management-ia",
+      "destination": "/services/automatiser/",
+      "permanent": true
+    },
+    {
+      "source": "/ia",
+      "destination": "/services/automatiser/",
+      "permanent": true
+    },
+    {
       "source": "/about",
       "destination": "/a-propos/",
       "permanent": true

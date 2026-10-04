@@ -7,7 +7,7 @@
     "location": "Belgique",
     "email": "debruijneb@gmail.com",
     "title": "Benjamin de Bruijne — Consultant digital & IA",
-    "description": "Je construis des outils digitaux qui travaillent pour vous : sites et apps sur mesure, IA et automatisation, visibilité Google & IA, pilotage de projets.",
+    "description": "Consultant digital & IA en Belgique : sites et applications sur mesure, IA et automatisation, pilotage de projets IT en environnements réglementés (GxP, biopharma, industrie).",
     "since": "2005",
     "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo"
   },
@@ -188,7 +188,8 @@
           "Applications métier et espaces membres",
           "Boutiques, paiements, formulaires reliés",
           "Migration hors WordPress, Podia ou Lovable"
-        ]
+        ],
+        "slug": "construire"
       },
       {
         "name": "Automatiser",
@@ -200,21 +201,24 @@
           "IA sur vos données (OpenAI, Claude, Perplexity)",
           "CRM, tunnels et tableaux de bord",
           "Visibilité Google & IA : audit et plan d'action"
-        ]
+        ],
+        "slug": "automatiser"
       },
       {
         "name": "Piloter",
-        "title": "Projets IT livrés dans les règles",
-        "p1": "Vingt ans de projets IT, dont plusieurs années en environnement pharmaceutique réglementé : cadrage, planning, qualité, validation, conduite du changement. Je pilote vos projets avec méthode, de l'idée à la mise en production.",
-        "p2": "Cahier des charges, suivi des fournisseurs, tests, documentation, formation des équipes : un interlocuteur unique qui parle métier et technique, et qui rend vos équipes autonomes.",
+        "title": "Projets IT livrés dans les règles, y compris en environnement GxP",
+        "p1": "Vingt ans de projets IT, dont plusieurs années en environnement pharmaceutique réglementé : cadrage, planning, qualité, validation des systèmes informatisés (CSV), conduite du changement. Je pilote vos projets avec méthode, de l'idée à la mise en production, dans le respect des exigences GxP, 21 CFR Part 11 et d'intégrité des données.",
+        "p2": "Cahier des charges, suivi des fournisseurs, intégration IT/OT, gouvernance documentaire, tests, formation des équipes : un interlocuteur unique qui parle métier, qualité et technique, et qui rend vos équipes autonomes.",
         "steps": [
           "Cadrage, planning et suivi des fournisseurs",
-          "Qualité, validation et conformité GxP",
-          "Tests, documentation, mise en production",
-          "Formation et accompagnement des équipes"
-        ]
+          "Validation CSV, conformité GxP et 21 CFR Part 11",
+          "Intégration IT/OT et gouvernance documentaire",
+          "Tests, mise en production, formation des équipes"
+        ],
+        "slug": "piloter"
       }
-    ]
+    ],
+    "more": "Voir l'offre"
   },
   "process": {
     "label": "Processus",
@@ -299,7 +303,8 @@
     "legal": "Mentions légales",
     "privacy": "Confidentialité",
     "rights": "Tous droits réservés.",
-    "copyright": "© 2026 Benjamin de Bruijne"
+    "copyright": "© 2026 Benjamin de Bruijne",
+    "signature": "Turning complexity into clarity."
   },
   "pages": {
     "projects": {
@@ -319,12 +324,16 @@
       "introStrong": "et comment je travaille.",
       "paragraphs": [
         "Je m'appelle Benjamin de Bruijne. Je vis en Belgique, près de Bruxelles, et je travaille depuis plus de vingt ans dans l'IT — plus de 200 projets web construits ou pilotés : développement, gestion de projets, produit, qualité, transformation digitale.",
-        "J'ai piloté des projets dans des environnements très cadrés (industrie pharmaceutique, réglementaire) et construit, en parallèle, mes propres produits : Service-Volée, Pulse Noir et BiblioPulse (une communauté de 2 150 lecteurs de polars et sa bibliothèque), et un écosystème autour de la maîtrise des données : Beneloo (visibilité des PME dans les moteurs d'IA), l'Observatory (la mesure, secteur par secteur) et Singulr, l'ASBL que je préside, qui opère des communs numériques souverains dont une forge Git hébergée en Belgique.",
-        "Ce double parcours est ma particularité : la rigueur du grand groupe, la vitesse de l'indépendant. Je sais cadrer, documenter et livrer dans les règles, et je sais aussi coder un outil complet en quelques jours quand c'est ce qu'il faut.",
+        "J'ai piloté des projets dans des environnements très cadrés, notamment plusieurs années dans l'industrie biopharmaceutique en tant qu'AI & GxP Solutions Architect : validation des systèmes informatisés (CSV), conformité GxP et 21 CFR Part 11, intégrité des données, intégration IT/OT et gouvernance documentaire. En parallèle, j'ai construit mes propres produits : Service-Volée, Pulse Noir et BiblioPulse (une communauté de 2 150 lecteurs de polars et sa bibliothèque), et un écosystème autour de la maîtrise des données : Beneloo (visibilité des PME dans les moteurs d'IA), l'Observatory (la mesure, secteur par secteur) et Singulr, l'ASBL que je préside, qui opère des communs numériques souverains dont une forge Git hébergée en Belgique.",
+        "Ce double parcours est ma particularité : la rigueur des environnements réglementés, la vitesse de l'indépendant. Je sais cadrer, documenter et livrer dans les règles, et je sais aussi coder un outil complet en quelques jours quand c'est ce qu'il faut.",
         "Je travaille via ma société, Hakuna Matata SRL, et je choisis des outils qui vous laissent la main : code que vous possédez, données chez vous, pas d'abonnement opaque."
       ],
       "factsLabel": "En bref",
       "facts": [
+        {
+          "k": "Rôle actuel",
+          "v": "AI & GxP Solutions Architect, groupe biopharmaceutique (UCB)"
+        },
         {
           "k": "Base",
           "v": "Rhode-Saint-Genèse, Belgique"
@@ -341,7 +350,24 @@
           "k": "Stack",
           "v": "Astro, React, Next.js, Node, PHP, Postgres, Supabase, IA (OpenAI, Claude)"
         }
-      ]
+      ],
+      "faq": [
+        {
+          "q": "Qu'est-ce que la conformité GxP ?",
+          "a": "La conformité GxP désigne le respect des bonnes pratiques réglementaires des industries pharmaceutique, biotechnologique et des dispositifs médicaux : GMP (fabrication), GLP (laboratoire), GCP (clinique), GDP (distribution). Pour les systèmes informatiques, elle implique des systèmes validés, des données intègres et une documentation qui prouve, à tout moment, que le processus est maîtrisé."
+        },
+        {
+          "q": "Qu'est-ce que la validation CSV (Computer System Validation) ?",
+          "a": "La validation CSV est le processus documenté qui démontre qu'un système informatisé fait exactement ce qu'il est censé faire, de manière cohérente et reproductible. Elle couvre les exigences utilisateur, l'analyse de risque, les tests de qualification (IQ, OQ, PQ) et la gestion des changements. C'est une exigence réglementaire dans les industries pharmaceutiques et biopharmaceutiques pour garantir l'intégrité des données."
+        },
+        {
+          "q": "Travailles-tu uniquement avec des entreprises biopharmaceutiques ?",
+          "a": "Non. Mon expertise la plus pointue est en biopharma et en conformité GxP, mais je travaille aussi avec des PME, des indépendants, des associations et des clubs pour leurs sites, leurs automatisations et leurs projets IA. Ce qui ne change pas d'un secteur à l'autre : la méthode, la documentation et un outil qui tourne."
+        }
+      ],
+      "faqLabel": "Questions fréquentes",
+      "description": "Benjamin de Bruijne, consultant digital & IA en Belgique : vingt ans de projets IT, AI & GxP Solutions Architect en biopharma, et six produits construits en parallèle.",
+      "piloterLink": "Voir l'offre Piloter : projets IT en environnement réglementé"
     },
     "services": {
       "title": [
@@ -365,7 +391,23 @@
           "text": "Suivi, automatisations et évolutions mois après mois, sans engagement de durée."
         }
       ],
-      "formatsNote": "Tarifs sur devis après un premier appel de 30 minutes, gratuit et sans engagement."
+      "formatsNote": "Tarifs sur devis après un premier appel de 30 minutes, gratuit et sans engagement.",
+      "faq": [
+        {
+          "q": "Combien de temps dure un projet de transformation digitale ?",
+          "a": "De quelques semaines à un an selon le périmètre. Un audit ou un cadrage prend deux à quatre semaines ; un site ou une automatisation simple, un à trois mois ; une transformation complète avec validation réglementaire, six à douze mois. Je fournis un planning détaillé après le cadrage initial, et les livraisons sont régulières pour que vous voyiez le résultat avant la fin."
+        },
+        {
+          "q": "Quels sont tes tarifs ?",
+          "a": "Sur devis, après un premier appel de 30 minutes gratuit. Trois formats : forfait pour un périmètre défini (site, outil, migration), régie à la journée pour le pilotage de projet ou l'expertise, accompagnement mensuel pour le suivi et les évolutions. Le devis précise toujours le périmètre, les livrables et les dates."
+        },
+        {
+          "q": "Faut-il valider (CSV) un site ou une automatisation ?",
+          "a": "Seulement si le système a un impact GxP, c'est-à-dire s'il touche à la qualité du produit, à la sécurité du patient ou à l'intégrité de données réglementées. Un site vitrine ne se valide pas ; un outil qui gère des enregistrements de production ou des signatures électroniques, oui. Je fais cette évaluation au cadrage et je proportionne l'effort de validation au risque, selon GAMP 5."
+        }
+      ],
+      "faqLabel": "Questions fréquentes",
+      "description": "Trois offres : construire des sites et applications, automatiser avec l'IA, piloter des projets IT en environnement réglementé (GxP, CSV). Tarifs sur devis."
     },
     "blog": {
       "title": [
@@ -500,5 +542,143 @@
     "introStrong": "en Belgique et en France.",
     "visit": "Voir le site",
     "sheet": "Fiche"
+  },
+  "offers": {
+    "label": "Offre",
+    "back": "Toutes les offres",
+    "who": "Pour qui",
+    "deliverables": "Ce que je livre",
+    "faqLabel": "Questions fréquentes",
+    "cta": "Parlons de votre projet",
+    "related": "Voir aussi",
+    "items": {
+      "construire": {
+        "name": "Construire",
+        "title": [
+          "Sites, applications",
+          "et produits."
+        ],
+        "metaTitle": "Construire : sites, applications et produits sur mesure",
+        "description": "Conception et développement de sites, applications métier et produits digitaux sur mesure, sans dépendance à un éditeur. Vous gardez le code et les données.",
+        "intro": "Un site vitrine, une application métier, une boutique, un espace membre, un produit complet : ",
+        "introStrong": "je conçois et je construis l'outil, du cahier des charges à la mise en ligne.",
+        "sections": [
+          {
+            "h": "Ce que je construis",
+            "p": [
+              "Des sites vitrines et des plateformes multilingues, des applications métier et des espaces membres, des boutiques avec paiement, des formulaires reliés à vos outils. Chaque projet part d'un besoin précis et se termine par un outil en production, documenté, que vos équipes savent faire évoluer.",
+              "Je choisis la technologie selon le besoin, pas selon la mode : Astro ou Next.js pour les sites rapides et bien référencés, React pour les applications, PHP ou Node pour les API, Postgres ou Supabase pour les données. Le code vous appartient, les données restent chez vous."
+            ]
+          },
+          {
+            "h": "Comment je travaille",
+            "p": [
+              "Un cadrage court pour fixer le périmètre, un prototype pour valider les écrans, puis des livraisons régulières testées. Les tests automatisés et le déploiement continu sont posés dès le début : chaque mise en ligne est vérifiée, chaque régression est détectée avant vous.",
+              "Quand il faut sortir d'un outil fermé (WordPress, Podia, Lovable, Wix), je reprends le contenu existant via les API ou les exports, sans perte, et je coupe l'ancien système seulement quand le nouveau est vérifié."
+            ]
+          }
+        ],
+        "who": [
+          "Indépendants et PME qui veulent un site rapide, bien référencé et qu'ils possèdent",
+          "Organisations qui ont besoin d'une application métier ou d'un espace membre",
+          "Équipes qui veulent quitter une plateforme fermée sans perdre leur contenu"
+        ],
+        "faq": []
+      },
+      "automatiser": {
+        "name": "Automatiser",
+        "title": [
+          "IA, données",
+          "et CRM."
+        ],
+        "metaTitle": "Automatiser : IA, données et CRM qui travaillent pour vous",
+        "description": "Automatisations, IA branchée sur vos données, CRM et tableaux de bord : des heures récupérées chaque semaine, avec des garde-fous et une gouvernance claire.",
+        "intro": "L'IA est utile quand elle enlève une corvée précise : ",
+        "introStrong": "je branche les modèles sur vos données et vos outils, avec des garde-fous.",
+        "sections": [
+          {
+            "h": "Ce que j'automatise",
+            "p": [
+              "Résumés automatiques, tri et qualification de demandes, relances, génération de contenu, mesure de votre visibilité dans les moteurs d'IA. Je pars des tâches qui coûtent du temps chaque semaine et je construis l'automatisation qui les absorbe, en gardant un humain dans la boucle là où c'est nécessaire.",
+              "Un CRM simple qui centralise vos contacts, des scénarios de relance qui partent seuls, des tableaux de bord qui disent la vérité : vous savez où en est chaque demande sans ouvrir cinq outils."
+            ]
+          },
+          {
+            "h": "IA avec gouvernance",
+            "p": [
+              "Les modèles (OpenAI, Claude, Perplexity ou modèles ouverts) sont utilisés via des API, avec journalisation des appels, contrôle des données envoyées et des réponses, et respect du RGPD. En environnement réglementé, j'applique les mêmes principes qu'en validation de systèmes informatisés : exigences écrites, tests documentés, traçabilité.",
+              "Avec Beneloo, j'ai aussi construit un observatoire qui mesure, chiffres à l'appui, si les moteurs d'IA citent une entreprise. Ce qui se mesure se corrige."
+            ]
+          }
+        ],
+        "who": [
+          "PME et indépendants qui perdent du temps en tâches répétitives",
+          "Entreprises qui veulent une IA utile, cadrée et conforme au RGPD",
+          "Équipes qui veulent savoir si ChatGPT, Claude ou Perplexity les citent"
+        ],
+        "faq": []
+      },
+      "piloter": {
+        "name": "Piloter",
+        "title": [
+          "Projets IT",
+          "en environnement",
+          "réglementé."
+        ],
+        "metaTitle": "Piloter : projets IT, validation CSV et conformité GxP",
+        "description": "Pilotage de projets IT en environnement industriel et biopharmaceutique : validation CSV, conformité GxP et 21 CFR Part 11, intégration IT/OT, intégrité des données.",
+        "intro": "Un décideur IT, Digital, Qualité ou Compliance doit pouvoir répondre à une question simple : ",
+        "introStrong": "ce projet sera-t-il livré, validé et défendable en inspection ?",
+        "sections": [
+          {
+            "h": "AI & GxP Solutions Architect",
+            "p": [
+              "C'est le rôle que j'occupe aujourd'hui chez un groupe biopharmaceutique belge : relier la technologie, la qualité et les utilisateurs. Concrètement, je traduis les exigences métier et réglementaires en solutions techniques validées, j'organise la documentation (URS, spécifications, IQ/OQ/PQ, matrice de traçabilité) et je coordonne les équipes IT, OT, Qualité et fournisseurs jusqu'à la mise en production.",
+              "Vingt ans de projets IT, dont plusieurs années en environnement pharmaceutique réglementé, m'ont appris une chose : un système n'est utile que s'il est fiable, documenté et compris par ceux qui l'utilisent."
+            ]
+          },
+          {
+            "h": "Validation CSV, GxP et intégrité des données",
+            "p": [
+              "La validation des systèmes informatisés (CSV, Computer System Validation) démontre, preuves à l'appui, qu'un système fait ce qu'il doit faire de manière reproductible. Je structure la démarche selon GAMP 5, en proportionnant l'effort au risque : exigences utilisateur, évaluation des risques, protocoles et rapports de qualification, gestion des changements.",
+              "Les exigences du 21 CFR Part 11 (signatures et enregistrements électroniques) et les principes d'intégrité des données (ALCOA+) sont intégrés dès la conception : pistes d'audit, contrôle des accès, horodatage, sauvegardes, revue périodique. L'objectif n'est pas la paperasse, c'est un dossier que vous pouvez défendre en inspection."
+            ]
+          },
+          {
+            "h": "Intégration IT/OT et gouvernance documentaire",
+            "p": [
+              "Dans un site industriel, les systèmes d'information rencontrent les systèmes de production : automates, SCADA, MES, LIMS, historians. Cette convergence IT/OT crée des risques spécifiques (sécurité, continuité, intégrité des données) que je traite avec les référentiels adaptés, ISA/IEC 62443 pour la cybersécurité industrielle et GAMP 5 pour la validation.",
+              "La gouvernance documentaire relie le tout : procédures, versions, approbations, archivage. Je mets en place des systèmes et des règles simples pour que la bonne version du bon document soit toujours celle qui est utilisée."
+            ]
+          },
+          {
+            "h": "IA en environnement réglementé",
+            "p": [
+              "L'intelligence artificielle entre dans les usines et les laboratoires, et elle doit y entrer avec une gouvernance : cas d'usage justifié, données maîtrisées, validation proportionnée au risque, traçabilité des décisions. J'aide à définir ce cadre (AI governance, AI compliance) et à livrer des premiers cas d'usage utiles, par exemple l'assistance documentaire, l'analyse de déviations ou le résumé de rapports, sans compromettre la conformité.",
+              "La transformation digitale d'un site industriel ne se décrète pas : elle se construit projet après projet, avec les utilisateurs, et avec un dossier qualité qui suit."
+            ]
+          }
+        ],
+        "who": [
+          "Entreprises industrielles et biopharmaceutiques qui lancent ou redressent un projet IT",
+          "Directions IT, Digital, Qualité ou Compliance qui ont besoin d'un pilote qui parle les deux langues",
+          "Fournisseurs et intégrateurs qui doivent livrer un système validé à un client pharma"
+        ],
+        "faq": [
+          {
+            "q": "Qu'est-ce que le 21 CFR Part 11 ?",
+            "a": "Le 21 CFR Part 11 est la réglementation de la FDA américaine qui fixe les conditions dans lesquelles les enregistrements et signatures électroniques sont considérés comme fiables, équivalents au papier. Elle exige notamment des pistes d'audit, un contrôle des accès, des signatures électroniques liées à leur enregistrement et des systèmes validés. Son équivalent européen est l'annexe 11 des BPF (EU GMP Annex 11)."
+          },
+          {
+            "q": "Qu'est-ce que l'intégrité des données (data integrity) en pharma ?",
+            "a": "L'intégrité des données signifie que les données sont complètes, cohérentes et exactes pendant tout leur cycle de vie. Les autorités la résument par l'acronyme ALCOA+ : attribuables, lisibles, contemporaines, originales, exactes, et aussi complètes, cohérentes, durables et disponibles. Concrètement, cela se traduit par des pistes d'audit, des horodatages, des accès nominatifs et des revues régulières."
+          },
+          {
+            "q": "Qu'est-ce que la convergence IT/OT ?",
+            "a": "La convergence IT/OT est le rapprochement des systèmes d'information (IT : serveurs, réseaux, applications) et des systèmes de production (OT : automates, SCADA, capteurs, MES). Elle permet de remonter les données de production vers l'entreprise et d'automatiser davantage, mais elle expose des équipements industriels à des risques cyber nouveaux, d'où l'usage de référentiels comme ISA/IEC 62443."
+          }
+        ]
+      }
+    }
   }
 }

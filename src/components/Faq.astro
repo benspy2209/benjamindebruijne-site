@@ -1,0 +1,38 @@
+---
+/** FAQ visible + balisage FAQPage généré depuis les mêmes questions (jamais de FAQ cachée). */
+interface Props { label: string; items: { q: string; a: string }[]; num?: string; dark?: boolean }
+const { label, items, num = '', dark = false } = Astro.props;
+const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items.map((i) => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })) };
+---
+{items.length > 0 && (
+  <section class:list={['faq', 'trame', 'section', { dark }]} id="faq">
+    <div class="wrap faq__in">
+      <h2 class="label faq__label">{num && <span class="num">{num}</span>}{label}</h2>
+      <div class="faq__list">
+        {items.map((it) => (
+          <details class="faq__item">
+            <summary class="faq__q"><h3 class="h-sm">{it.q}</h3><span class="faq__plus" aria-hidden="true">+</span></summary>
+            <p class="faq__a">{it.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+  </section>
+)}
+<style>
+  .faq__in { display: grid; gap: 32px; }
+  .faq__label { font-weight: 500; }
+  .faq__list { border-top: 1px solid var(--c-grey-300); }
+  .dark .faq__list { border-color: var(--c-white-20); }
+  .faq__item { border-bottom: 1px solid var(--c-grey-300); }
+  .dark .faq__item { border-color: var(--c-white-20); }
+  .faq__q { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; }
+  .faq__q::-webkit-details-marker { display: none; }
+  .faq__q h3 { font-weight: 600; font-size: 19px; }
+  .faq__plus { font-size: 24px; line-height: 1; opacity: .6; transition: transform .4s var(--ease-out-strong); }
+  .faq__item[open] .faq__plus { transform: rotate(45deg); }
+  .faq__a { padding: 0 0 26px; max-width: 70ch; font-size: 16px; line-height: 1.6; color: var(--c-grey-500); }
+  .dark .faq__a { color: var(--c-white-60); }
+  @media (width >= 810px) { .faq__in { grid-template-columns: 1fr 2fr; gap: 48px; align-items: start; } }
+</style>

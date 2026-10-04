@@ -7,7 +7,7 @@
     "location": "Belgium",
     "email": "debruijneb@gmail.com",
     "title": "Benjamin de Bruijne — Digital & AI consultant",
-    "description": "I build digital tools that work for you: custom websites and apps, AI and automation, Google & AI visibility, project delivery.",
+    "description": "Digital & AI consultant in Belgium: custom websites and applications, AI and automation, IT project delivery in regulated environments (GxP, biopharma, industry).",
     "since": "2005",
     "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo"
   },
@@ -188,7 +188,8 @@
           "Business applications and member areas",
           "Shops, payments, connected forms",
           "Migration off WordPress, Podia or Lovable"
-        ]
+        ],
+        "slug": "build"
       },
       {
         "name": "Automate",
@@ -200,21 +201,24 @@
           "AI on your data (OpenAI, Claude, Perplexity)",
           "CRM, funnels and dashboards",
           "Google & AI visibility: audit and action plan"
-        ]
+        ],
+        "slug": "automate"
       },
       {
         "name": "Deliver",
-        "title": "IT projects delivered by the book",
-        "p1": "Twenty years of IT projects, including several in regulated pharmaceutical environments: scoping, planning, quality, validation, change management. I run your projects with method, from idea to production.",
-        "p2": "Specifications, supplier follow-up, testing, documentation, team training: one contact who speaks business and tech, and who makes your teams autonomous.",
+        "title": "IT projects delivered by the book, including in GxP environments",
+        "p1": "Twenty years of IT projects, including several in regulated pharmaceutical environments: scoping, planning, quality, computer system validation (CSV), change management. I run your projects with method, from idea to production, in line with GxP, 21 CFR Part 11 and data integrity requirements.",
+        "p2": "Specifications, supplier follow-up, IT/OT integration, document governance, testing, team training: one contact who speaks business, quality and tech, and who makes your teams autonomous.",
         "steps": [
           "Scoping, planning and supplier follow-up",
-          "Quality, validation and GxP compliance",
-          "Testing, documentation, go-live",
-          "Team training and support"
-        ]
+          "CSV validation, GxP and 21 CFR Part 11 compliance",
+          "IT/OT integration and document governance",
+          "Testing, go-live, team training"
+        ],
+        "slug": "deliver"
       }
-    ]
+    ],
+    "more": "See the offer"
   },
   "process": {
     "label": "Process",
@@ -299,7 +303,8 @@
     "legal": "Legal notice",
     "privacy": "Privacy",
     "rights": "All rights reserved.",
-    "copyright": "© 2026 Benjamin de Bruijne"
+    "copyright": "© 2026 Benjamin de Bruijne",
+    "signature": "Turning complexity into clarity."
   },
   "pages": {
     "projects": {
@@ -319,12 +324,16 @@
       "introStrong": "and how I work.",
       "paragraphs": [
         "My name is Benjamin de Bruijne. I live in Belgium, near Brussels, and I have worked in IT for over twenty years — over 200 web projects built or delivered: development, project management, product, quality, digital transformation.",
-        "I have led projects in highly regulated environments (pharmaceutical industry) and built, in parallel, my own products: Service-Volée, Pulse Noir and BiblioPulse (a 2,150-reader crime-fiction community and its library), and an ecosystem around control of data: Beneloo (SME visibility in AI engines), the Observatory (the measurement, sector by sector) and Singulr, the non-profit I chair, which operates sovereign digital commons including a Git forge hosted in Belgium.",
-        "That double track is my edge: the rigour of a large group, the speed of a freelancer. I can scope, document and deliver by the book, and I can also code a complete tool in a few days when that is what is needed.",
+        "I have led projects in highly regulated environments, including several years in the biopharmaceutical industry as an AI & GxP Solutions Architect: computer system validation (CSV), GxP and 21 CFR Part 11 compliance, data integrity, IT/OT integration and document governance. In parallel, I built my own products: Service-Volée, Pulse Noir and BiblioPulse (a 2,150-reader crime-fiction community and its library), and an ecosystem around control of data: Beneloo (SME visibility in AI engines), the Observatory (the measurement, sector by sector) and Singulr, the non-profit I chair, which operates sovereign digital commons including a Git forge hosted in Belgium.",
+        "That double track is my edge: the rigour of regulated environments, the speed of a freelancer. I can scope, document and deliver by the book, and I can also code a complete tool in a few days when that is what is needed.",
         "I work through my company, Hakuna Matata SRL, and I pick tools that leave you in control: code you own, data at home, no opaque subscriptions."
       ],
       "factsLabel": "At a glance",
       "facts": [
+        {
+          "k": "Current role",
+          "v": "AI & GxP Solutions Architect, biopharmaceutical group (UCB)"
+        },
         {
           "k": "Base",
           "v": "Rhode-Saint-Genèse, Belgium"
@@ -341,7 +350,24 @@
           "k": "Stack",
           "v": "Astro, React, Next.js, Node, PHP, Postgres, Supabase, AI (OpenAI, Claude)"
         }
-      ]
+      ],
+      "faq": [
+        {
+          "q": "What is GxP compliance?",
+          "a": "GxP compliance means following the regulatory good practices of the pharmaceutical, biotechnology and medical device industries: GMP (manufacturing), GLP (laboratory), GCP (clinical), GDP (distribution). For IT systems, it implies validated systems, data integrity and documentation proving, at any time, that the process is under control."
+        },
+        {
+          "q": "What is CSV (Computer System Validation)?",
+          "a": "CSV is the documented process that demonstrates a computerised system does exactly what it is meant to do, consistently and reproducibly. It covers user requirements, risk analysis, qualification testing (IQ, OQ, PQ) and change management. It is a regulatory requirement in the pharmaceutical and biopharmaceutical industries to guarantee data integrity."
+        },
+        {
+          "q": "Do you only work with biopharmaceutical companies?",
+          "a": "No. My deepest expertise is in biopharma and GxP compliance, but I also work with SMEs, freelancers, non-profits and clubs on their websites, automations and AI projects. What does not change from one sector to the next: the method, the documentation and a tool that runs."
+        }
+      ],
+      "faqLabel": "Frequently asked questions",
+      "description": "Benjamin de Bruijne, digital & AI consultant in Belgium: twenty years of IT projects, AI & GxP Solutions Architect in biopharma, and six products built in parallel.",
+      "piloterLink": "See the Deliver offer: IT projects in regulated environments"
     },
     "services": {
       "title": [
@@ -365,7 +391,23 @@
           "text": "Follow-up, automations and evolutions month after month, with no fixed term."
         }
       ],
-      "formatsNote": "Pricing on quote after a free, no-commitment 30-minute call."
+      "formatsNote": "Pricing on quote after a free, no-commitment 30-minute call.",
+      "faq": [
+        {
+          "q": "How long does a digital transformation project take?",
+          "a": "From a few weeks to a year depending on scope. An audit or scoping takes two to four weeks; a website or a simple automation, one to three months; a complete transformation with regulatory validation, six to twelve months. I provide a detailed plan after the initial scoping, and deliveries are regular so you see results before the end."
+        },
+        {
+          "q": "What are your rates?",
+          "a": "On quote, after a free 30-minute first call. Three formats: a fixed price for a defined scope (website, tool, migration), a day rate for project delivery or expertise, and monthly support for follow-up and evolutions. The quote always states the scope, deliverables and dates."
+        },
+        {
+          "q": "Does a website or an automation need CSV validation?",
+          "a": "Only if the system has a GxP impact, meaning it affects product quality, patient safety or the integrity of regulated data. A brochure website is not validated; a tool managing production records or electronic signatures is. I make that assessment at scoping and scale the validation effort to the risk, following GAMP 5."
+        }
+      ],
+      "faqLabel": "Frequently asked questions",
+      "description": "Three offers: build websites and applications, automate with AI, deliver IT projects in regulated environments (GxP, CSV). Pricing on quote."
     },
     "blog": {
       "title": [
@@ -500,5 +542,143 @@
     "introStrong": "in Belgium and France.",
     "visit": "Visit site",
     "sheet": "Details"
+  },
+  "offers": {
+    "label": "Offer",
+    "back": "All offers",
+    "who": "Who it is for",
+    "deliverables": "What I deliver",
+    "faqLabel": "Frequently asked questions",
+    "cta": "Let's talk about your project",
+    "related": "See also",
+    "items": {
+      "build": {
+        "name": "Build",
+        "title": [
+          "Websites, applications",
+          "and products."
+        ],
+        "metaTitle": "Build: custom websites, applications and products",
+        "description": "Design and development of websites, business applications and digital products, with no vendor lock-in. You keep the code and the data.",
+        "intro": "A brochure site, a business application, a shop, a member area, a complete product: ",
+        "introStrong": "I design and build the tool, from specification to launch.",
+        "sections": [
+          {
+            "h": "What I build",
+            "p": [
+              "Brochure sites and multilingual platforms, business applications and member areas, shops with payment, forms connected to your tools. Every project starts from a precise need and ends with a documented tool in production that your teams can evolve.",
+              "I pick the technology for the need, not the trend: Astro or Next.js for fast, well-indexed sites, React for applications, PHP or Node for APIs, Postgres or Supabase for data. The code is yours, the data stays with you."
+            ]
+          },
+          {
+            "h": "How I work",
+            "p": [
+              "A short scoping to fix the perimeter, a prototype to validate the screens, then regular tested deliveries. Automated tests and continuous deployment are set up from day one: every release is checked, every regression caught before you see it.",
+              "When you need to leave a closed platform (WordPress, Podia, Lovable, Wix), I migrate the existing content through APIs or exports, without loss, and switch the old system off only once the new one is verified."
+            ]
+          }
+        ],
+        "who": [
+          "Freelancers and SMEs who want a fast, well-indexed website they own",
+          "Organisations that need a business application or a member area",
+          "Teams that want to leave a closed platform without losing their content"
+        ],
+        "faq": []
+      },
+      "automate": {
+        "name": "Automate",
+        "title": [
+          "AI, data",
+          "and CRM."
+        ],
+        "metaTitle": "Automate: AI, data and CRM that work for you",
+        "description": "Automations, AI connected to your data, CRM and dashboards: hours recovered every week, with guardrails and clear governance.",
+        "intro": "AI is useful when it removes a specific chore: ",
+        "introStrong": "I plug models into your data and tools, with guardrails.",
+        "sections": [
+          {
+            "h": "What I automate",
+            "p": [
+              "Automatic summaries, request triage and qualification, follow-ups, content generation, measurement of your visibility in AI engines. I start from the tasks that cost time every week and build the automation that absorbs them, keeping a human in the loop where needed.",
+              "A simple CRM that centralises your contacts, follow-up scenarios that run on their own, dashboards that tell the truth: you know where every request stands without opening five tools."
+            ]
+          },
+          {
+            "h": "AI with governance",
+            "p": [
+              "Models (OpenAI, Claude, Perplexity or open models) are used through APIs, with call logging, control over the data sent and the answers returned, and GDPR compliance. In regulated environments I apply the same principles as in computer system validation: written requirements, documented tests, traceability.",
+              "With Beneloo I also built an observatory that measures, with numbers, whether AI engines cite a company. What gets measured gets fixed."
+            ]
+          }
+        ],
+        "who": [
+          "SMEs and freelancers losing time on repetitive tasks",
+          "Companies that want useful, framed, GDPR-compliant AI",
+          "Teams that want to know whether ChatGPT, Claude or Perplexity cite them"
+        ],
+        "faq": []
+      },
+      "deliver": {
+        "name": "Deliver",
+        "title": [
+          "IT projects",
+          "in regulated",
+          "environments."
+        ],
+        "metaTitle": "Deliver: IT projects, CSV validation and GxP compliance",
+        "description": "IT project delivery in industrial and biopharmaceutical environments: CSV validation, GxP and 21 CFR Part 11 compliance, IT/OT integration, data integrity.",
+        "intro": "An IT, Digital, Quality or Compliance decision-maker needs an answer to one simple question: ",
+        "introStrong": "will this project be delivered, validated and defensible in an inspection?",
+        "sections": [
+          {
+            "h": "AI & GxP Solutions Architect",
+            "p": [
+              "That is the role I hold today at a Belgian biopharmaceutical group: connecting technology, quality and users. Concretely, I translate business and regulatory requirements into validated technical solutions, organise the documentation (URS, specifications, IQ/OQ/PQ, traceability matrix) and coordinate IT, OT, Quality and supplier teams up to go-live.",
+              "Twenty years of IT projects, including several in regulated pharmaceutical environments, taught me one thing: a system is only useful if it is reliable, documented and understood by the people who use it."
+            ]
+          },
+          {
+            "h": "CSV validation, GxP and data integrity",
+            "p": [
+              "Computer system validation (CSV) demonstrates, with evidence, that a system does what it should, reproducibly. I structure the approach along GAMP 5, scaling the effort to the risk: user requirements, risk assessment, qualification protocols and reports, change management.",
+              "21 CFR Part 11 requirements (electronic records and signatures) and data integrity principles (ALCOA+) are built in from the design stage: audit trails, access control, time-stamping, backups, periodic review. The goal is not paperwork, it is a file you can defend in an inspection."
+            ]
+          },
+          {
+            "h": "IT/OT integration and document governance",
+            "p": [
+              "On an industrial site, information systems meet production systems: PLCs, SCADA, MES, LIMS, historians. This IT/OT convergence creates specific risks (security, continuity, data integrity) that I address with the relevant frameworks, ISA/IEC 62443 for industrial cybersecurity and GAMP 5 for validation.",
+              "Document governance ties it together: procedures, versions, approvals, archiving. I set up simple systems and rules so that the right version of the right document is always the one in use."
+            ]
+          },
+          {
+            "h": "AI in regulated environments",
+            "p": [
+              "Artificial intelligence is entering plants and laboratories, and it must enter with governance: a justified use case, controlled data, validation proportionate to risk, traceable decisions. I help define that framework (AI governance, AI compliance) and deliver first useful use cases, such as document assistance, deviation analysis or report summarisation, without compromising compliance.",
+              "The digital transformation of an industrial site is not decreed: it is built project after project, with users, and with a quality file that keeps up."
+            ]
+          }
+        ],
+        "who": [
+          "Industrial and biopharmaceutical companies launching or rescuing an IT project",
+          "IT, Digital, Quality or Compliance leaders who need a project lead who speaks both languages",
+          "Suppliers and integrators who must deliver a validated system to a pharma client"
+        ],
+        "faq": [
+          {
+            "q": "What is 21 CFR Part 11?",
+            "a": "21 CFR Part 11 is the US FDA regulation that sets the conditions under which electronic records and electronic signatures are considered trustworthy and equivalent to paper. It requires, among other things, audit trails, access control, electronic signatures linked to their record, and validated systems. Its European counterpart is EU GMP Annex 11."
+          },
+          {
+            "q": "What is data integrity in pharma?",
+            "a": "Data integrity means data is complete, consistent and accurate throughout its life cycle. Regulators summarise it with the ALCOA+ acronym: attributable, legible, contemporaneous, original, accurate, plus complete, consistent, enduring and available. In practice it translates into audit trails, time-stamps, named access and regular reviews."
+          },
+          {
+            "q": "What is IT/OT convergence?",
+            "a": "IT/OT convergence is the coming together of information systems (IT: servers, networks, applications) and production systems (OT: PLCs, SCADA, sensors, MES). It lets production data flow up to the business and enables more automation, but it exposes industrial equipment to new cyber risks, hence frameworks such as ISA/IEC 62443."
+          }
+        ]
+      }
+    }
   }
 }

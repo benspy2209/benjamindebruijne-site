@@ -12,7 +12,8 @@ function shape(v: unknown): unknown {
 
 describe('content parity FR/EN', () => {
   it('site.json has the same structure in both languages', () => {
-    expect(shape(getSite('en'))).toEqual(shape(getSite('fr')));
+    const norm = (s: any) => ({ ...s, offers: { ...s.offers, items: Object.values(s.offers.items) } });
+    expect(shape(norm(getSite('en')))).toEqual(shape(norm(getSite('fr'))));
   });
   it('projects share slugs, colors and order', () => {
     const fr = getProjects('fr');

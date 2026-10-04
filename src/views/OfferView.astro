@@ -1,0 +1,72 @@
+---
+import type { Lang, RouteKey } from '../lib/i18n';
+import { href, offerRoute } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Button from '../components/Button.astro';
+import Faq from '../components/Faq.astro';
+import Icon from '../components/Icon.astro';
+interface Props { lang: Lang; slug: string }
+const { lang, slug } = Astro.props;
+const s = getSite(lang);
+const o = s.offers.items[slug as keyof typeof s.offers.items];
+const item = s.services.items.find((i) => i.slug === slug)!;
+const routeKey = offerRoute[slug];
+const others = s.services.items.filter((i) => i.slug !== slug);
+const bookHref = s.meta.booking || href('contact', lang);
+---
+<Base lang={lang} routeKey={routeKey} title={o.metaTitle} description={o.description} onDark>
+  <PageHead num="01" label={`${s.offers.label} · ${o.name}`} title={o.title} intro={o.intro} introStrong={o.introStrong} />
+  <section class="of trame section">
+    <div class="wrap of__grid">
+      <aside class="of__side">
+        <p class="label">{s.offers.deliverables}</p>
+        <ol class="of__steps">{item.steps.map((st, j) => <li><span class="mono num">0{j + 1}</span>{st}</li>)}</ol>
+        <p class="label of__wholabel">{s.offers.who}</p>
+        <ul class="of__who">{o.who.map((w) => <li>{w}</li>)}</ul>
+        <Button href={bookHref} label={s.offers.cta} external={!!s.meta.booking} class="of__cta" />
+      </aside>
+      <div class="of__body">
+        {o.sections.map((sec, i) => (
+          <article class="of__sec reveal">
+            <p class="label"><span class="num">0{i + 1}</span>{o.name}</p>
+            <h2 class="h-md">{sec.h}</h2>
+            {sec.p.map((t) => <p>{t}</p>)}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+  <Faq label={s.offers.faqLabel} items={o.faq} num="02" />
+  <section class="trame section of__related">
+    <div class="wrap">
+      <p class="label">{s.offers.related}</p>
+      <ul class="of__links">
+        {others.map((i) => <li><a href={href(offerRoute[i.slug] as RouteKey, lang)}><span class="h-sm">{i.name}</span><span class="muted">{i.title}</span><span class="of__arrow"><Icon name="chevron" /></span></a></li>)}
+        <li><a href={href('about', lang)}><span class="h-sm">{s.nav.find((n) => n.key === 'about')!.label}</span><span class="muted">{s.pages.about.intro}{s.pages.about.introStrong}</span><span class="of__arrow"><Icon name="chevron" /></span></a></li>
+        <li><a href={href('services', lang)}><span class="h-sm">{s.offers.back}</span><span class="muted">{s.pages.services.intro}{s.pages.services.introStrong}</span><span class="of__arrow"><Icon name="chevron" /></span></a></li>
+      </ul>
+    </div>
+  </section>
+</Base>
+<style>
+  .of__grid { display: grid; gap: 48px; }
+  .of__side { display: grid; gap: 16px; align-content: start; }
+  .of__steps { display: grid; gap: 10px; font-size: 15px; }
+  .of__steps .num { opacity: .5; margin-right: 10px; }
+  .of__wholabel { margin-top: 24px; }
+  .of__who { display: grid; gap: 10px; font-size: 15px; color: var(--c-grey-500); }
+  .of__who li::before { content: "— "; color: var(--c-accent); }
+  .of__cta { margin-top: 24px; justify-self: start; }
+  .of__body { display: grid; gap: 48px; }
+  .of__sec { display: grid; gap: 16px; max-width: 64ch; font-size: 16px; line-height: 1.6; }
+  .of__sec h2 { margin-bottom: 4px; }
+  .of__related { background: var(--c-grey-100); }
+  .of__links { margin-top: 24px; border-top: 1px solid var(--c-grey-300); }
+  .of__links a { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 20px 0; border-bottom: 1px solid var(--c-grey-300); align-items: center; }
+  .of__links .muted { grid-column: 1; font-size: 14px; }
+  .of__arrow { grid-column: 2; grid-row: 1 / span 2; width: 28px; height: 28px; background: var(--c-accent); color: #fff; display: grid; place-items: center; }
+  .of__arrow svg { width: 10px; height: 10px; }
+  @media (width >= 810px) { .of__grid { grid-template-columns: 1fr 2fr; gap: 64px; } .of__side { position: sticky; top: 32px; } }
+</style>

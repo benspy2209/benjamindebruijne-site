@@ -5,6 +5,8 @@ import { getSite } from '../../lib/content';
 import SectionHead from '../SectionHead.astro';
 import Button from '../Button.astro';
 import Icon from '../Icon.astro';
+import { offerRoute } from '../../lib/i18n';
+import type { RouteKey } from '../../lib/i18n';
 interface Props { lang: Lang; num?: string; open?: boolean }
 const { lang, num = '03', open = false } = Astro.props;
 const s = getSite(lang);
@@ -41,6 +43,7 @@ const bookHref = s.meta.booking || href('contact', lang);
               <h3 class="h-md">{it.title}</h3>
               <p>{it.p1}</p>
               <p>{it.p2}</p>
+              <Button href={href(offerRoute[it.slug] as RouteKey, lang)} label={sv.more} variant="ghost" class="svc__more" />
             </div>
             <div class="svc__steps">
               <p class="label">{sv.steps}</p>
@@ -73,6 +76,7 @@ const bookHref = s.meta.booking || href('contact', lang);
   .svc__text { display: grid; gap: 16px; max-width: 60ch; }
   .svc__text h3 { margin-bottom: 8px; }
   .svc__text p { color: var(--c-white-60); font-size: 15px; }
+  .svc__more { margin-top: 8px; justify-self: start; }
   .svc__steps ol { display: grid; gap: 10px; margin-top: 16px; }
   .svc__steps li { text-transform: none; letter-spacing: 0; font-family: var(--font-sans); font-size: 14px; }
   .svc__steps .num { opacity: .5; margin-right: 10px; }
