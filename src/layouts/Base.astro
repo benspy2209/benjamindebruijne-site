@@ -27,6 +27,8 @@ const self = slug ? `${href('projects', lang)}${slug}/` : href(routeKey, lang);
     <link rel="alternate" hreflang={lang === 'fr' ? 'en' : 'fr'} href={alt} />
     <link rel="alternate" hreflang="x-default" href={new URL(slug ? `${href('projects', 'fr')}${slug}/` : href(routeKey, 'fr'), site)} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preload" href="/fonts/zalando-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
     <meta property="og:title" content={pageTitle} />

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /blog/
+Disallow: /en/blog/
+
+Sitemap: https://benjamindebruijne.be/sitemap-index.xml
