@@ -333,7 +333,7 @@
     ],
     "ecosystem": "",
     "kind": "product",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "iris-noir",
