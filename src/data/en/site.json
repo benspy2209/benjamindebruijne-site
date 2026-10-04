@@ -11,12 +11,30 @@
     "since": "2005"
   },
   "nav": [
-    { "key": "home", "label": "Home" },
-    { "key": "projects", "label": "Projects" },
-    { "key": "about", "label": "About" },
-    { "key": "services", "label": "Services" },
-    { "key": "contact", "label": "Contact" },
-    { "key": "blog", "label": "Blog" }
+    {
+      "key": "home",
+      "label": "Home"
+    },
+    {
+      "key": "projects",
+      "label": "Projects"
+    },
+    {
+      "key": "about",
+      "label": "About"
+    },
+    {
+      "key": "services",
+      "label": "Services"
+    },
+    {
+      "key": "contact",
+      "label": "Contact"
+    },
+    {
+      "key": "blog",
+      "label": "Blog"
+    }
   ],
   "header": {
     "menu": "Menu",
@@ -28,18 +46,29 @@
   },
   "hero": {
     "title": "I help freelancers and SMEs build digital tools that work for them.",
-    "services": ["Custom websites & apps", "AI & automation", "Google & AI visibility"],
+    "services": [
+      "Custom websites & apps",
+      "AI & automation",
+      "Google & AI visibility"
+    ],
     "proofValue": "20+",
     "proofLabel": "years of experience",
     "proofSub": "Products shipped, clients supported, projects delivered"
   },
-  "logos": ["Beneloo", "Service-Volée", "Bibliopulse", "Observatory", "Iris Noir", "Royal Wellington"],
+  "logos": [
+    "Beneloo",
+    "Service-Volée",
+    "Bibliopulse",
+    "Observatory",
+    "Iris Noir",
+    "Royal Wellington"
+  ],
   "logosLabel": "My products & projects",
   "mission": {
     "label": "My mission",
     "copyright": "©2005-2026",
-    "text": "Hi, I'm Benjamin. Digital & AI consultant, I help ",
-    "highlight": "freelancers, SMEs and IT teams turn an idea into a tool that runs: websites, automations, data, delivery — no fluff, just results.",
+    "text": "I'm Benjamin de Bruijne, digital & AI consultant. Twenty years of IT projects taught me one thing: a good tool is one that runs. ",
+    "highlight": "Websites, automations, data, delivery — I build what works for you, no fluff.",
     "cta": "Contact me",
     "ctaSuffix": "/Benjamin",
     "profession": "Profession",
@@ -47,14 +76,37 @@
     "allProjects": "All projects"
   },
   "counters": [
-    { "label": "Years", "value": 20, "suffix": "+", "text": "Of experience in IT, product and digital transformation, from SMEs to pharma groups." },
-    { "label": "Products", "value": 6, "suffix": "", "text": "Applications and websites I designed, built and shipped myself." },
-    { "label": "Projects", "value": 200, "suffix": "+", "text": "Web projects built or delivered across twenty years, from brochure sites to custom apps." },
-    { "label": "Sectors", "value": 8, "suffix": "", "text": "Pharma, sport, real estate, culture, health, industry, publishing, services." }
+    {
+      "label": "Years",
+      "value": 20,
+      "suffix": "+",
+      "text": "Of experience in IT, product and digital transformation, from SMEs to pharma groups."
+    },
+    {
+      "label": "Products",
+      "value": 6,
+      "suffix": "",
+      "text": "Applications and websites I designed, built and shipped myself."
+    },
+    {
+      "label": "Projects",
+      "value": 200,
+      "suffix": "+",
+      "text": "Web projects built or delivered across twenty years, from brochure sites to custom apps."
+    },
+    {
+      "label": "Sectors",
+      "value": 8,
+      "suffix": "",
+      "text": "Pharma, sport, real estate, culture, health, industry, publishing, services."
+    }
   ],
   "portfolio": {
     "label": "Portfolio",
-    "title": ["Case", "studies."],
+    "title": [
+      "Case",
+      "studies."
+    ],
     "intro": "Each project shows how I connect ",
     "introStrong": "product, tools and data.",
     "cta": "View project",
@@ -63,11 +115,18 @@
   },
   "services": {
     "label": "Services",
-    "title": ["What I", "build."],
+    "title": [
+      "What I",
+      "build."
+    ],
     "intro": "From the first call to launch, I build tools that ",
     "introStrong": "work for you.",
     "cardLabel": "Contact",
-    "cardTitle": ["Plan your", "next tool", "with me."],
+    "cardTitle": [
+      "Plan your",
+      "next tool",
+      "with me."
+    ],
     "cardName": "Benjamin de Bruijne",
     "cardRole": "Digital & AI consultant",
     "cardCta": "Book a call",
@@ -78,69 +137,126 @@
         "title": "Tools that do the job",
         "p1": "A brochure site is fine. A website or app that answers a precise need — booking, catalogue, member area, dashboard — is better. I design clear, fast tools with no vendor lock-in.",
         "p2": "Astro, React, PHP, Supabase or Postgres depending on the need: the right tool, not the trendiest one. You keep the code and the keys.",
-        "steps": ["Needs analysis", "Structure & design", "Launch & follow-up"]
+        "steps": [
+          "Needs analysis",
+          "Structure & design",
+          "Launch & follow-up"
+        ]
       },
       {
         "name": "AI & automation",
         "title": "Your time-saving machine",
         "p1": "Automatic summaries, request triage, content generation, follow-up scenarios: AI is useful when it removes a specific chore. I plug models into your data and tools, with guardrails.",
         "p2": "Result: hours recovered every week, and a system you understand and can evolve.",
-        "steps": ["Task mapping", "Prototype on your data", "Industrialisation"]
+        "steps": [
+          "Task mapping",
+          "Prototype on your data",
+          "Industrialisation"
+        ]
       },
       {
         "name": "Google & AI visibility",
         "title": "Be found, be cited",
         "p1": "Your clients search on Google, and increasingly ask ChatGPT, Perplexity or Gemini directly. I measure your real visibility in those engines, then work on your site so it ranks and gets cited.",
         "p2": "With Beneloo I built an AI visibility score and a sector observatory: numbers, not promises.",
-        "steps": ["Visibility audit", "Content & structured data", "Google & AI tracking"]
+        "steps": [
+          "Visibility audit",
+          "Content & structured data",
+          "Google & AI tracking"
+        ]
       },
       {
         "name": "CRM & conversion funnels",
         "title": "No more lost contacts",
         "p1": "A lead with no answer within 24h is a lost lead. I set up a simple CRM that centralises your leads, exchanges and appointments, with automatic follow-ups.",
         "p2": "Form, calendar, payment, emails: everything is connected. You stay responsive even in meetings or on holiday.",
-        "steps": ["CRM setup", "Follow-up scenarios", "Measure & adjust"]
+        "steps": [
+          "CRM setup",
+          "Follow-up scenarios",
+          "Measure & adjust"
+        ]
       },
       {
         "name": "IT project delivery",
         "title": "Deliver, by the book",
         "p1": "Twenty years of IT projects, including several in regulated pharmaceutical environments: scoping, planning, quality, validation, change management. I run your projects with method, from idea to production.",
         "p2": "Specifications, supplier follow-up, testing, documentation: one contact who speaks both business and tech.",
-        "steps": ["Scoping & objectives", "Delivery & quality", "Go-live"]
+        "steps": [
+          "Scoping & objectives",
+          "Delivery & quality",
+          "Go-live"
+        ]
       },
       {
         "name": "Training & coaching",
         "title": "Make your teams autonomous",
         "p1": "A tool is useless if nobody uses it. I train your teams on AI, on the tools I set up and on good practices, in short, practical sessions.",
         "p2": "Materials, workshops, follow-up: the goal is that you no longer need me.",
-        "steps": ["Usage diagnosis", "Hands-on workshops", "Follow-up & materials"]
+        "steps": [
+          "Usage diagnosis",
+          "Hands-on workshops",
+          "Follow-up & materials"
+        ]
       }
     ]
   },
   "process": {
     "label": "Process",
-    "title": ["5 steps", "to launch."],
+    "title": [
+      "5 steps",
+      "to launch."
+    ],
     "intro": "From the first call to launch, ",
     "introStrong": "a simple, jargon-free process.",
     "items": [
-      { "tag": "Understand", "title": "Analysis & objectives", "text": "We start with a real conversation: your business, your clients, what is stuck today. No ready-made solution — I first look for where time and leads are being lost." },
-      { "tag": "Structure", "title": "Build plan", "text": "I draw the full journey: who uses the tool, what they see, what triggers action. Every screen and every automation has a precise role." },
-      { "tag": "Build", "title": "Tool & integrations", "text": "I build the tool and connect it to what exists: calendar, form, CRM, database. A clean, fast system you can evolve without depending on anyone." },
-      { "tag": "Automate", "title": "AI & follow-ups", "text": "Everything that can be automated is: follow-ups, summaries, triage, confirmations. You answer within 24h even when swamped." },
-      { "tag": "Track", "title": "Measure & optimise", "text": "Launch, test, measure. We look at the numbers together, adjust what needs adjusting, and the tool improves month after month." }
+      {
+        "tag": "Understand",
+        "title": "Analysis & objectives",
+        "text": "We start with a real conversation: your business, your clients, what is stuck today. No ready-made solution — I first look for where time and leads are being lost."
+      },
+      {
+        "tag": "Structure",
+        "title": "Build plan",
+        "text": "I draw the full journey: who uses the tool, what they see, what triggers action. Every screen and every automation has a precise role."
+      },
+      {
+        "tag": "Build",
+        "title": "Tool & integrations",
+        "text": "I build the tool and connect it to what exists: calendar, form, CRM, database. A clean, fast system you can evolve without depending on anyone."
+      },
+      {
+        "tag": "Automate",
+        "title": "AI & follow-ups",
+        "text": "Everything that can be automated is: follow-ups, summaries, triage, confirmations. You answer within 24h even when swamped."
+      },
+      {
+        "tag": "Track",
+        "title": "Measure & optimise",
+        "text": "Launch, test, measure. We look at the numbers together, adjust what needs adjusting, and the tool improves month after month."
+      }
     ],
     "cta": {
-      "title": ["Ready to", "take action?"],
+      "title": [
+        "Ready to",
+        "take action?"
+      ],
       "text": "Tell me about your business, your goals, and where you want to take it.",
       "listLabel": "What you get",
-      "list": ["Free 30-minute call", "No commitment", "Clear action plan"],
+      "list": [
+        "Free 30-minute call",
+        "No commitment",
+        "Clear action plan"
+      ],
       "button": "Book a call",
       "buttonSuffix": "/free"
     }
   },
   "contact": {
     "label": "Contact",
-    "title": ["Let's talk about", "your project."],
+    "title": [
+      "Let's talk about",
+      "your project."
+    ],
     "intro": "A need, an idea, a question: ",
     "introStrong": "I reply within 24h.",
     "name": "Your name",
@@ -167,9 +283,19 @@
     "copyright": "© 2026 Benjamin de Bruijne"
   },
   "pages": {
-    "projects": { "title": ["All", "projects."], "intro": "Products, websites and platforms I ", "introStrong": "designed and shipped." },
+    "projects": {
+      "title": [
+        "All",
+        "projects."
+      ],
+      "intro": "Products, websites and platforms I ",
+      "introStrong": "designed and shipped."
+    },
     "about": {
-      "title": ["Twenty years", "of projects."],
+      "title": [
+        "Twenty years",
+        "of projects."
+      ],
       "intro": "Who I am, what I do, ",
       "introStrong": "and how I work.",
       "paragraphs": [
@@ -180,30 +306,88 @@
       ],
       "factsLabel": "At a glance",
       "facts": [
-        { "k": "Base", "v": "Rhode-Saint-Genèse, Belgium" },
-        { "k": "Languages", "v": "French, English, Dutch" },
-        { "k": "Company", "v": "Hakuna Matata SRL" },
-        { "k": "Stack", "v": "Astro, React, Next.js, Node, PHP, Postgres, Supabase, AI (OpenAI, Claude)" }
+        {
+          "k": "Base",
+          "v": "Rhode-Saint-Genèse, Belgium"
+        },
+        {
+          "k": "Languages",
+          "v": "French, English, Dutch"
+        },
+        {
+          "k": "Company",
+          "v": "Hakuna Matata SRL"
+        },
+        {
+          "k": "Stack",
+          "v": "Astro, React, Next.js, Node, PHP, Postgres, Supabase, AI (OpenAI, Claude)"
+        }
       ]
     },
-    "services": { "title": ["Services", "& offers."], "intro": "Six ways to work together, ", "introStrong": "always tailored." },
-    "blog": { "title": ["Notes", "& articles."], "intro": "Lessons learned on AI, tools and delivery. ", "introStrong": "First articles coming soon.", "empty": "No articles yet." },
+    "services": {
+      "title": [
+        "Services",
+        "& offers."
+      ],
+      "intro": "Six ways to work together, ",
+      "introStrong": "always tailored."
+    },
+    "blog": {
+      "title": [
+        "Notes",
+        "& articles."
+      ],
+      "intro": "Lessons learned on AI, tools and delivery. ",
+      "introStrong": "First articles coming soon.",
+      "empty": "No articles yet."
+    },
     "legal": {
-      "title": ["Legal", "notice."],
+      "title": [
+        "Legal",
+        "notice."
+      ],
       "sections": [
-        { "h": "Publisher", "p": "This website is published by Hakuna Matata SRL, a Belgian company, BCE 0877.585.922, registered in Rhode-Saint-Genèse (Belgium). Publishing director: Benjamin de Bruijne. Contact: debruijneb@gmail.com." },
-        { "h": "Hosting", "p": "Hosting provider to be specified at launch." },
-        { "h": "Intellectual property", "p": "All content on this site (text, visuals, code) is the property of Hakuna Matata SRL unless stated otherwise. Any reproduction without permission is prohibited." }
+        {
+          "h": "Publisher",
+          "p": "This website is published by Hakuna Matata SRL, a Belgian company, BCE 0877.585.922, registered in Rhode-Saint-Genèse (Belgium). Publishing director: Benjamin de Bruijne. Contact: debruijneb@gmail.com."
+        },
+        {
+          "h": "Hosting",
+          "p": "Hosting provider to be specified at launch."
+        },
+        {
+          "h": "Intellectual property",
+          "p": "All content on this site (text, visuals, code) is the property of Hakuna Matata SRL unless stated otherwise. Any reproduction without permission is prohibited."
+        }
       ]
     },
     "privacy": {
-      "title": ["Privacy", "policy."],
+      "title": [
+        "Privacy",
+        "policy."
+      ],
       "sections": [
-        { "h": "Data collected", "p": "The contact form opens your email client: no data is stored on this site. The information you send me by email is used only to answer your request." },
-        { "h": "Cookies", "p": "This site uses no tracking cookies and no audience analytics." },
-        { "h": "Your rights", "p": "Under the GDPR you may request access to, rectification or deletion of your data by writing to debruijneb@gmail.com." }
+        {
+          "h": "Data collected",
+          "p": "The contact form opens your email client: no data is stored on this site. The information you send me by email is used only to answer your request."
+        },
+        {
+          "h": "Cookies",
+          "p": "This site uses no tracking cookies and no audience analytics."
+        },
+        {
+          "h": "Your rights",
+          "p": "Under the GDPR you may request access to, rectification or deletion of your data by writing to debruijneb@gmail.com."
+        }
       ]
     },
-    "notFound": { "title": ["Page", "not found."], "text": "This page does not exist or has moved.", "cta": "Back to home" }
+    "notFound": {
+      "title": [
+        "Page",
+        "not found."
+      ],
+      "text": "This page does not exist or has moved.",
+      "cta": "Back to home"
+    }
   }
 }

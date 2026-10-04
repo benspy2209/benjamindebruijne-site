@@ -8,6 +8,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
 const m = s.mission;
+const words = `${m.text}${m.highlight}`.split(/\s+/).filter(Boolean);
 ---
 <section class="mis trame section" id="mission">
   <div class="mis__in wrap">
@@ -36,7 +37,7 @@ const m = s.mission;
         <p class="label"><span class="num">01</span>{m.label}</p>
         <p class="mono muted">{m.copyright}</p>
       </div>
-      <p class="mis__text h-md reveal">{m.text}<span class="muted">{m.highlight}</span></p>
+      <p class="mis__text h-md" data-words>{words.map((w, i) => <>{i > 0 && ' '}<span class="w">{w}</span></>)}</p>
       <ol class="mis__counters">
         {s.counters.map((c, i) => (
           <li class="mis__counter reveal">
@@ -66,6 +67,8 @@ const m = s.mission;
   .mis__allicon svg { width: 10px; height: 10px; }
   .mis__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; }
   .mis__text { font-weight: 500; max-width: 24ch; }
+  .mis__text .w { display: inline; color: var(--c-grey-300); transition: color .35s var(--ease-appear); }
+  .mis__text .w.on { color: var(--c-dark); }
   .mis__counters { margin-top: 64px; display: grid; }
   .mis__counter { padding-block: 28px; border-top: 1px solid var(--c-accent); display: grid; gap: 20px; }
   .mis__chead { display: flex; justify-content: space-between; align-items: center; }
