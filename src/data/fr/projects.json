@@ -51,6 +51,23 @@
     ]
   },
   {
+    "slug": "singulr",
+    "name": "Singulr",
+    "tag": "Écosystème · Souveraineté numérique",
+    "kpi": "4",
+    "kpiLabel": "piliers",
+    "role": "Fondateur & président",
+    "year": "2026",
+    "lead": "l'ASBL que j'ai fondée pour des communs numériques européens :",
+    "text": " veille, observatoire, forge Git souveraine opérée en Belgique, fédération d'acteurs. Site en 4 langues, événement Singulr Health 2026.",
+    "url": "https://singulr.be",
+    "color": "#1d2b4a",
+    "body": [
+      "Singulr est une ASBL belge que j'ai fondée et que je préside : développer et opérer des communs numériques européens, fédérer les acteurs souverains et promouvoir la souveraineté numérique. Quatre piliers : une veille hebdomadaire, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, forge.singulr.be, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Première édition de Singulr Health le 10 septembre 2026 à Waterloo : une cinquantaine de médecins, experts du numérique, entreprises et institutions. Avec Beneloo et l'Observatory, Singulr forme l'écosystème que je construis autour de la maîtrise des données et des outils.",
+      "Stack : site statique quadrilingue (FR, NL, DE, EN), Forgejo et PostgreSQL sur VPS Debian, Caddy, déploiement continu, formulaires Brevo."
+    ]
+  },
+  {
     "slug": "iris-noir",
     "name": "Iris Noir Bruxelles",
     "tag": "Site · Événement",
@@ -82,23 +99,6 @@
     "body": [
       "Revue éditoriale et technique complète du site du Royal Wellington Club (Bruxelles) : 13 pages, disciplines, cotisations, sélections avec interrupteur saisonnier, privatisation, kiné, en français, néerlandais et anglais. Contenu validé section par section avec le club, 98 ans d'histoire, 1 600 membres actifs, 900 jeunes formés.",
       "Stack : TanStack Start, Cloudflare Workers, contenu trilingue, déploiement wrangler."
-    ]
-  },
-  {
-    "slug": "singulr",
-    "name": "Singulr",
-    "tag": "Marque · Infrastructure",
-    "kpi": "2",
-    "kpiLabel": "VPS en production",
-    "role": "Fondateur & architecte",
-    "year": "2026",
-    "lead": "ma société de conseil tech en constitution :",
-    "text": " Forgejo self-hébergé, PostgreSQL, Caddy, déploiement continu.",
-    "url": "https://singulr.be",
-    "color": "#1e3a5f",
-    "body": [
-      "Singulr SRL est ma structure de conseil technique en cours de constitution. L'infrastructure est déjà live : Forgejo sur forge.singulr.be, deux VPS Behostings, PostgreSQL, Caddy en reverse-proxy, déploiement automatisé.",
-      "Stack : Forgejo, PostgreSQL, Caddy, VPS Debian."
     ]
   },
   {

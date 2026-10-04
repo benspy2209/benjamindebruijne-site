@@ -51,6 +51,23 @@
     ]
   },
   {
+    "slug": "singulr",
+    "name": "Singulr",
+    "tag": "Ecosystem · Digital sovereignty",
+    "kpi": "4",
+    "kpiLabel": "pillars",
+    "role": "Founder & president",
+    "year": "2026",
+    "lead": "the non-profit I founded for European digital commons:",
+    "text": " monitoring, observatory, a sovereign Git forge run in Belgium, a federation of actors. Four-language website, Singulr Health 2026 event.",
+    "url": "https://singulr.be",
+    "color": "#1d2b4a",
+    "body": [
+      "Singulr is a Belgian non-profit I founded and chair: developing and operating European digital commons, federating sovereign actors and promoting digital sovereignty. Four pillars: a weekly monitoring feed, an observatory of European alternatives, a sovereign Git forge (Forgejo, forge.singulr.be, hosted in Belgium under European law) and a federation of actors. First edition of Singulr Health on 10 September 2026 in Waterloo: around fifty doctors, digital experts, companies and institutions. With Beneloo and the Observatory, Singulr forms the ecosystem I am building around control of data and tools.",
+      "Stack: static four-language website (FR, NL, DE, EN), Forgejo and PostgreSQL on Debian VPS, Caddy, continuous deployment, Brevo forms."
+    ]
+  },
+  {
     "slug": "iris-noir",
     "name": "Iris Noir Bruxelles",
     "tag": "Website · Event",
@@ -82,23 +99,6 @@
     "body": [
       "Complete editorial and technical review of the Royal Wellington Club website (Brussels): 13 pages, disciplines, memberships, selections with a seasonal switch, private hire, physiotherapy, in French, Dutch and English. Content validated section by section with the club, 98 years of history, 1,600 active members, 900 young players trained.",
       "Stack: TanStack Start, Cloudflare Workers, trilingual content, wrangler deployment."
-    ]
-  },
-  {
-    "slug": "singulr",
-    "name": "Singulr",
-    "tag": "Brand · Infrastructure",
-    "kpi": "2",
-    "kpiLabel": "VPS in production",
-    "role": "Founder & architect",
-    "year": "2026",
-    "lead": "my tech consulting company in the making:",
-    "text": " self-hosted Forgejo, PostgreSQL, Caddy, continuous deployment.",
-    "url": "https://singulr.be",
-    "color": "#1e3a5f",
-    "body": [
-      "Singulr SRL is my technical consulting company, currently being incorporated. The infrastructure is already live: Forgejo on forge.singulr.be, two Behostings VPS, PostgreSQL, Caddy as reverse-proxy, automated deployment.",
-      "Stack: Forgejo, PostgreSQL, Caddy, Debian VPS."
     ]
   },
   {

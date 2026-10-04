@@ -57,9 +57,10 @@
   },
   "logos": [
     "Beneloo",
-    "Service-Volée",
-    "Bibliopulse",
     "Observatory",
+    "Singulr",
+    "Service-Volée",
+    "BibliPulse",
     "Iris Noir",
     "Royal Wellington"
   ],
@@ -304,7 +305,7 @@
       "introStrong": "and how I work.",
       "paragraphs": [
         "My name is Benjamin de Bruijne. I live in Belgium, near Brussels, and I have worked in IT for over twenty years — over 200 web projects built or delivered: development, project management, product, quality, digital transformation.",
-        "I have led projects in highly regulated environments (pharmaceutical industry) and built, in parallel, my own products: a sports ranking platform, a personal library for readers, an observatory of SME visibility in AI engines.",
+        "I have led projects in highly regulated environments (pharmaceutical industry) and built, in parallel, my own products: Service-Volée, BibliPulse, and an ecosystem around control of data: Beneloo (SME visibility in AI engines), the Observatory (the measurement, sector by sector) and Singulr, the non-profit I chair, which operates sovereign digital commons including a Git forge hosted in Belgium.",
         "That double track is my edge: the rigour of a large group, the speed of a freelancer. I can scope, document and deliver by the book, and I can also code a complete tool in a few days when that is what is needed.",
         "I work through my company, Hakuna Matata SRL, and I pick tools that leave you in control: code you own, data at home, no opaque subscriptions."
       ],
