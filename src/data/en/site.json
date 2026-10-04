@@ -83,22 +83,22 @@
       "text": "Of experience in IT, product and digital transformation, from SMEs to pharma groups."
     },
     {
-      "label": "Products",
-      "value": 6,
-      "suffix": "",
-      "text": "Applications and websites I designed, built and shipped myself."
-    },
-    {
       "label": "Projects",
       "value": 200,
       "suffix": "+",
-      "text": "Web projects built or delivered across twenty years, from brochure sites to custom apps."
+      "text": "Web projects built or led over twenty years, from brochure sites to business applications."
     },
     {
       "label": "Sectors",
-      "value": 8,
+      "value": 15,
+      "suffix": "+",
+      "text": "Pharma, sport, real estate, culture, health, industry, publishing, training, non-profits, services…"
+    },
+    {
+      "label": "Languages",
+      "value": 3,
       "suffix": "",
-      "text": "Pharma, sport, real estate, culture, health, industry, publishing, services."
+      "text": "French, English, Dutch: I work with teams in Belgium and beyond."
     }
   ],
   "portfolio": {

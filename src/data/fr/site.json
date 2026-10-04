@@ -83,12 +83,6 @@
       "text": "D'expérience en IT, produit et transformation digitale, de la PME au groupe pharma."
     },
     {
-      "label": "Produits",
-      "value": 6,
-      "suffix": "",
-      "text": "Applications et sites que j'ai conçus, construits et mis en ligne moi-même."
-    },
-    {
       "label": "Projets",
       "value": 200,
       "suffix": "+",
@@ -96,9 +90,15 @@
     },
     {
       "label": "Secteurs",
-      "value": 8,
+      "value": 15,
+      "suffix": "+",
+      "text": "Pharma, sport, immobilier, culture, santé, industrie, édition, formation, associations, services…"
+    },
+    {
+      "label": "Langues",
+      "value": 3,
       "suffix": "",
-      "text": "Pharma, sport, immobilier, culture, santé, industrie, édition, services."
+      "text": "Français, anglais, néerlandais : je travaille avec des équipes en Belgique et au-delà."
     }
   ],
   "portfolio": {
