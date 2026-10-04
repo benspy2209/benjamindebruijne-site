@@ -42,7 +42,7 @@
     "langSwitch": "FR"
   },
   "hero": {
-    "title": "I build and run digital tools for Belgian businesses.",
+    "title": "I build digital tools and deliver IT projects for Belgian businesses.",
     "services": [
       "Build: websites, apps, products",
       "Automate: AI, data, CRM",
@@ -128,7 +128,7 @@
       "text": "Web projects built or led over twenty years, from brochure sites to business applications."
     },
     {
-      "label": "Products live",
+      "label": "Live products",
       "value": 6,
       "suffix": "",
       "text": "Service-Volée, BiblioPulse, Pulse Noir, Beneloo, Observatory, Singulr: designed and operated by me."
@@ -426,13 +426,13 @@
     }
   },
   "missions": {
-    "label": "On mission at",
+    "label": "Currently working with",
     "title": [
-      "On mission",
-      "at."
+      "Currently",
+      "working with."
     ],
     "intro": "Three missions in parallel, ",
-    "introStrong": "on top of my own products.",
+    "introStrong": "alongside my own products.",
     "badge": "Ongoing",
     "since": "Since",
     "role": "Role",

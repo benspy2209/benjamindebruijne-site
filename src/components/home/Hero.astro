@@ -42,15 +42,15 @@ const hasVideo = Object.keys(videos).length > 0;
   @media (prefers-reduced-motion: reduce) { .hero .hero__video { display: none; } }
   .hero__in { position: relative; z-index: 1; display: grid; grid-template-rows: 1fr auto auto; padding-top: calc(var(--header-h) + 24px); padding-bottom: 28px; min-height: 100svh; }
   .hero__h1 { font-size: 22px; line-height: 1.25; font-weight: 500; letter-spacing: -.01em; max-width: 30ch; align-self: start; margin-top: 8vh; }
-  .hero__services { display: grid; gap: 6px; margin-top: 24px; align-self: start; }
+  .hero__services { display: grid; gap: 6px; margin-top: 24px; align-self: start; white-space: nowrap; }
   .hero__services .num { opacity: .5; margin-right: 8px; }
-  .hero__mark { font-size: clamp(72px, 19vw, 300px); line-height: .8; letter-spacing: -.045em; justify-self: end; margin-top: 40px; margin-right: calc(-.04em); }
+  .hero__mark { font-size: clamp(64px, 12.5vw, 260px); line-height: .8; letter-spacing: -.045em; justify-self: end; margin-top: 40px; margin-right: calc(-.04em); max-width: 100%; }
   .hero__proof { display: flex; align-items: center; gap: 12px; margin-top: 28px; }
   .hero__proof img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid var(--c-dark); }
-  .hero__proof p { font-size: 13px; }
+  .hero__proof p { font-size: 13px; white-space: nowrap; }
   .hero__proof strong { font-weight: 700; }
   @media (width >= 810px) {
-    .hero__in { grid-template-columns: 1fr 1fr; grid-template-areas: "h1 h1" "services mark" "proof mark"; grid-template-rows: 1fr auto auto; align-items: end; }
+    .hero__in { grid-template-columns: minmax(260px, auto) 1fr; grid-template-areas: "h1 h1" "services mark" "proof mark"; grid-template-rows: 1fr auto auto; align-items: end; }
     .hero__h1 { grid-area: h1; font-size: 32px; max-width: 26ch; margin-top: 10vh; }
     .hero__services { grid-area: services; margin-top: 0; align-self: end; }
     .hero__mark { grid-area: mark; margin-top: 0; }

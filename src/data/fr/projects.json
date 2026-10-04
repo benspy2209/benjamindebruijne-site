@@ -64,7 +64,7 @@
       "Stack : React, Supabase (auth, base, edge functions), proxy ISBNdb côté serveur, PWA, prérendu statique pour le SEO, emails d'onboarding automatisés (Resend)."
     ],
     "status": "",
-    "stack": "React · Supabase (auth · base",
+    "stack": "React · Supabase · proxy ISBNdb côté serveur",
     "tagline": "Scanner un livre, ne plus jamais l'acheter deux fois.",
     "sticker": [
       "44 millions",
@@ -208,7 +208,7 @@
       "Stack : Python, Postgres, pipeline de campagnes immuable (prompts et modèles figés, coûts plafonnés), validation humaine tracée, agrégats anonymisés publiables."
     ],
     "status": "",
-    "stack": "Python · Postgres · pipeline de campagnes immuable (prompts",
+    "stack": "Python · Postgres · pipeline de campagnes immuable",
     "tagline": "Mesurer, chiffres à l'appui, qui existe pour les IA.",
     "sticker": [
       "96 à 98 %",
@@ -256,7 +256,7 @@
       "Stack : site statique quadrilingue (FR, NL, DE, EN), Forgejo et PostgreSQL sur VPS Debian, Caddy, déploiement continu, formulaires Brevo."
     ],
     "status": "",
-    "stack": "site statique quadrilingue (FR · NL · DE",
+    "stack": "site statique quadrilingue · Forgejo · PostgreSQL sur VPS Debian",
     "tagline": "Le numérique dont on garde la clé.",
     "sticker": [
       "Forge Git",
@@ -304,7 +304,7 @@
       "Stack : React, Supabase (auth, base, RLS), Cloudflare Stream, Resend, Stripe, déploiement Vercel."
     ],
     "status": "",
-    "stack": "React · Supabase (auth · base",
+    "stack": "React · Supabase · Cloudflare Stream",
     "tagline": "Une masterclass qui ne dépend plus d'une plateforme.",
     "sticker": [
       "26 leçons",
@@ -352,7 +352,7 @@
       "Stack : React, contenu JSON, API PHP légère (commande, contact, SMTP maison), déploiement FTP automatisé."
     ],
     "status": "ongoing",
-    "stack": "React · contenu JSON · API PHP légère (commande",
+    "stack": "React · contenu JSON · API PHP légère",
     "tagline": "Un salon du polar qui n'a plus besoin de WordPress.",
     "sticker": [
       "39 auteurs",

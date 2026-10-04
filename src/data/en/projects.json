@@ -64,7 +64,7 @@
       "Stack: React, Supabase (auth, database, edge functions), server-side ISBNdb proxy, PWA, static pre-rendering for SEO, automated onboarding emails (Resend)."
     ],
     "status": "",
-    "stack": "React · Supabase (auth · database",
+    "stack": "React · Supabase · server-side ISBNdb proxy",
     "tagline": "Scan a book, never buy it twice again.",
     "sticker": [
       "44 million",
@@ -208,7 +208,7 @@
       "Stack: Python, Postgres, immutable campaign pipeline (frozen prompts and models, capped costs), traced human validation, publishable anonymised aggregates."
     ],
     "status": "",
-    "stack": "Python · Postgres · immutable campaign pipeline (frozen prompts",
+    "stack": "Python · Postgres · immutable campaign pipeline",
     "tagline": "Measuring, with numbers, who exists for the AIs.",
     "sticker": [
       "96 to 98%",
@@ -256,7 +256,7 @@
       "Stack: static four-language website (FR, NL, DE, EN), Forgejo and PostgreSQL on Debian VPS, Caddy, continuous deployment, Brevo forms."
     ],
     "status": "",
-    "stack": "static four-language website (FR · NL · DE",
+    "stack": "static four-language website · Forgejo · PostgreSQL on Debian VPS",
     "tagline": "Digital tools you keep the key to.",
     "sticker": [
       "Sovereign",
@@ -304,7 +304,7 @@
       "Stack: React, Supabase (auth, database, RLS), Cloudflare Stream, Resend, Stripe, Vercel deployment."
     ],
     "status": "",
-    "stack": "React · Supabase (auth · database",
+    "stack": "React · Supabase · Cloudflare Stream",
     "tagline": "A masterclass that no longer depends on a platform.",
     "sticker": [
       "26 lessons",
@@ -352,7 +352,7 @@
       "Stack: React, JSON content, lightweight PHP API (orders, contact, in-house SMTP), automated FTP deployment."
     ],
     "status": "ongoing",
-    "stack": "React · JSON content · lightweight PHP API (orders",
+    "stack": "React · JSON content · lightweight PHP API",
     "tagline": "A crime-fiction fair that no longer needs WordPress.",
     "sticker": [
       "39 authors",
