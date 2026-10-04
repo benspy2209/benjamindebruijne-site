@@ -131,7 +131,7 @@
     "url": "https://pulsenoir.be",
     "color": "#1a0a2e",
     "body": [
-      "Pulse Noir is the crime-fiction ecosystem I run under the PULSEMAN persona: a 2,150+ member Facebook group, pulsenoir.be with 1,900+ books and 267 referenced authors, La Revue Pulse Noir, the Grand Prix Pulse Noir (247 votes, 22 finalists, 20-reader jury) and Bibliopulse.",
+      "Pulse Noir is the crime-fiction ecosystem I run under the PULSEMAN persona: a 2,150+ member Facebook group, pulsenoir.be with 1,900+ books and 267 referenced authors, La Revue Pulse Noir, the Grand Prix Pulse Noir (247 votes, 22 finalists, 20-reader jury) and BiblioPulse.",
       "Stack: React, Supabase, Brevo, Lovable, Claude API, Stripe, Edge Middleware SEO."
     ]
   },
