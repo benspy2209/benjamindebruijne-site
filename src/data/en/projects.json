@@ -18,7 +18,7 @@
   },
   {
     "slug": "bibliopulse",
-    "name": "Bibliopulse",
+    "name": "BiblioPulse",
     "tag": "Product · Reading",
     "kpi": "44M",
     "kpiLabel": "ISBNdb references",
@@ -29,7 +29,7 @@
     "url": "https://bibliopulse.com",
     "color": "#7a2e1d",
     "body": [
-      "BibliPulse lets a reader catalogue their library by scanning barcodes: each book is recognised through ISBNdb (44 million references), de-duplicated and filed. Today: 378 sign-ups, 4,800 books catalogued by 172 readers, shareable public libraries, organic growth with no advertising.",
+      "BiblioPulse lets a reader catalogue their library by scanning barcodes: each book is recognised through ISBNdb (44 million references), de-duplicated and filed. Today: 378 sign-ups, 4,800 books catalogued by 172 readers, shareable public libraries, organic growth with no advertising.",
       "Stack: React, Supabase (auth, database, edge functions), server-side ISBNdb proxy, PWA, static pre-rendering for SEO, automated onboarding emails (Resend)."
     ]
   },

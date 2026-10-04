@@ -18,7 +18,7 @@
   },
   {
     "slug": "bibliopulse",
-    "name": "Bibliopulse",
+    "name": "BiblioPulse",
     "tag": "Produit · Lecture",
     "kpi": "44 M",
     "kpiLabel": "références ISBNdb",
@@ -29,7 +29,7 @@
     "url": "https://bibliopulse.com",
     "color": "#7a2e1d",
     "body": [
-      "BibliPulse permet à un lecteur de cataloguer sa bibliothèque en scannant les codes-barres : chaque livre est reconnu via ISBNdb (44 millions de références), dédoublonné et classé. Aujourd'hui : 378 inscrits, 4 800 livres catalogués par 172 lecteurs, bibliothèques publiques partageables, croissance organique sans publicité.",
+      "BiblioPulse permet à un lecteur de cataloguer sa bibliothèque en scannant les codes-barres : chaque livre est reconnu via ISBNdb (44 millions de références), dédoublonné et classé. Aujourd'hui : 378 inscrits, 4 800 livres catalogués par 172 lecteurs, bibliothèques publiques partageables, croissance organique sans publicité.",
       "Stack : React, Supabase (auth, base, edge functions), proxy ISBNdb côté serveur, PWA, prérendu statique pour le SEO, emails d'onboarding automatisés (Resend)."
     ]
   },
