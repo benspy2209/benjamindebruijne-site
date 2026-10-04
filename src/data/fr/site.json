@@ -59,11 +59,11 @@
     },
     {
       "name": "Observatory",
-      "src": ""
+      "src": "/logos/observatory.svg"
     },
     {
       "name": "Singulr",
-      "src": ""
+      "src": "/logos/singulr.svg"
     },
     {
       "name": "Pulse Noir",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Service-Volée",
-      "src": ""
+      "src": "/logos/service-volee.svg"
     },
     {
       "name": "Iris Noir",
@@ -83,7 +83,7 @@
     },
     {
       "name": "Royal Wellington",
-      "src": ""
+      "src": "/logos/royal-wellington.svg"
     },
     {
       "name": "UCB",
