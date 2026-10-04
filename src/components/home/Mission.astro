@@ -77,9 +77,9 @@ const clients = s.missions.items.map((i) => i.client).join(' · ');
   .mis__cval { font-weight: 500; letter-spacing: -.03em; text-transform: none; }
   .mis__ctext { font-size: 14px; max-width: 32ch; }
   @media (width >= 810px) {
-    .mis__in { grid-template-columns: 1fr 1fr; gap: 0; }
-    .mis__card { max-width: 400px; }
-    .mis__text { max-width: 22ch; }
+    .mis__in { grid-template-columns: minmax(280px, 1fr) 2fr; gap: 64px; }
+    .mis__card { max-width: 440px; }
+    .mis__text { max-width: 26ch; }
     .mis__counters { grid-template-columns: 1fr 1fr; gap: 0 32px; align-items: start; }
     .mis__counter:nth-child(2) { margin-top: 120px; }
   }
