@@ -14,7 +14,8 @@
     "body": [
       "Service-Volée takes the federation's public data (AFT) and makes it readable: over 76,000 player profiles indexed, over 300,000 matches, six best results, pending-points estimate and a ranking projection validated on a real case. A mobile match counter lets you umpire, share a live score and post a provisional result on the profile.",
       "Stack: Next.js, Postgres (Neon), crawler scheduled every 10 minutes, installable PWA, account with magic link, rules chat (OpenAI)."
-    ]
+    ],
+    "status": "ongoing"
   },
   {
     "slug": "bibliopulse",
@@ -31,7 +32,8 @@
     "body": [
       "BiblioPulse lets a reader catalogue their library by scanning barcodes: each book is recognised through ISBNdb (44 million references), de-duplicated and filed. Today: 378 sign-ups, 4,800 books catalogued by 172 readers, shareable public libraries, organic growth with no advertising.",
       "Stack: React, Supabase (auth, database, edge functions), server-side ISBNdb proxy, PWA, static pre-rendering for SEO, automated onboarding emails (Resend)."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "observatory",
@@ -48,7 +50,8 @@
     "body": [
       "The Observatory queries four AI models with frozen prompts over exhaustive samples of companies: 488 accountants in Namur, 382 plumbers in Namur, 798 accountants in Walloon Brabant. Every mention is validated by hand (correct, network brand, hallucination). Result: 96.9%, 98.4% and 96.6% invisibility; ChatGPT and Claude cite no local firm at all, Gemini hallucinates up to 52% of its answers.",
       "Stack: Python, Postgres, immutable campaign pipeline (frozen prompts and models, capped costs), traced human validation, publishable anonymised aggregates."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "singulr",
@@ -65,7 +68,8 @@
     "body": [
       "Singulr is a Belgian non-profit I founded and chair: developing and operating European digital commons, federating sovereign actors and promoting digital sovereignty. Four pillars: a weekly monitoring feed, an observatory of European alternatives, a sovereign Git forge (Forgejo, forge.singulr.be, hosted in Belgium under European law) and a federation of actors. First edition of Singulr Health on 10 September 2026 in Waterloo: around fifty doctors, digital experts, companies and institutions. With Beneloo and the Observatory, Singulr forms the ecosystem I am building around control of data and tools.",
       "Stack: static four-language website (FR, NL, DE, EN), Forgejo and PostgreSQL on Debian VPS, Caddy, continuous deployment, Brevo forms."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "iris-noir",
@@ -82,7 +86,8 @@
     "body": [
       "Complete redesign of the website of the Iris Noir non-profit, the Brussels crime-fiction fair (8th edition, 30 October to 1 November 2026 at Be-Here): 39 guest authors, schedule, godmother and godfathers, literary prizes, press review, 23-product shop with cart and email ordering, contact form. Content migrated from the old WordPress through its API, classic shared hosting.",
       "Stack: React, JSON content, lightweight PHP API (orders, contact, in-house SMTP), automated FTP deployment."
-    ]
+    ],
+    "status": "ongoing"
   },
   {
     "slug": "royal-wellington",
@@ -99,7 +104,8 @@
     "body": [
       "Complete editorial and technical review of the Royal Wellington Club website (Brussels): 13 pages, disciplines, memberships, selections with a seasonal switch, private hire, physiotherapy, in French, Dutch and English. Content validated section by section with the club, 98 years of history, 1,600 active members, 900 young players trained.",
       "Stack: TanStack Start, Cloudflare Workers, trilingual content, wrangler deployment."
-    ]
+    ],
+    "status": "ongoing"
   },
   {
     "slug": "wimbledon",
@@ -116,7 +122,8 @@
     "body": [
       "Brochure website of the Wimbledon Tennis Club (Rhode-Saint-Genèse): the 17 courts (7 indoor, 9 clay, 1 hard), squash and fitness, tennis school, bar and terrace, practical information and contact.",
       "Stack: React (Lovable export), Vite, Vercel deployment."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "pulse-noir",
@@ -133,7 +140,8 @@
     "body": [
       "Pulse Noir is the crime-fiction ecosystem I run under the PULSEMAN persona: a 2,150+ member Facebook group, pulsenoir.be with 1,900+ books and 267 referenced authors, La Revue Pulse Noir, the Grand Prix Pulse Noir (247 votes, 22 finalists, 20-reader jury) and BiblioPulse.",
       "Stack: React, Supabase, Brevo, Lovable, Claude API, Stripe, Edge Middleware SEO."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "saul-racine",
@@ -150,7 +158,8 @@
     "body": [
       "Saul Racine is my pen name for French-language noir fiction. The site presents my universe, texts published on Pulse Noir's Dark Blog and my novel \"On attend. On instruit. On condamne.\", a social thriller set in the Belgian Masonic world.",
       "Stack: Astro, Markdown content, Vercel deployment."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "rene-manzor",
@@ -167,7 +176,8 @@
     "body": [
       "Official website of René Manzor, director and author: filmography, books, press area. In 2026, complete migration of his writing masterclass off Podia: 26 lessons, 22 videos with signed playback, 24 PDFs, 71 students and their comments carried over without loss, direct Stripe payment.",
       "Stack: React, Supabase (auth, database, RLS), Cloudflare Stream, Resend, Stripe, Vercel deployment."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "chir-ophta",
@@ -184,7 +194,8 @@
     "body": [
       "Showcase website for a Belgian ophthalmological surgery practice: presentation of surgeons, covered procedures, techniques used and an appointment request form.",
       "Stack: React, JSON content, Vercel deployment."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "le-verseau",
@@ -201,7 +212,8 @@
     "body": [
       "Website of the Le Verseau ophthalmology clinic, founded by Dr Jean-Luc Mélard and established for over ten years in Walloon Brabant: clinic, team, equipment, emergencies, contact and online booking. French and Dutch.",
       "Stack: React, Vite, Tailwind, Vercel deployment."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "notre-dame-de-stockel",
@@ -218,7 +230,8 @@
     "body": [
       "Website of the Notre-Dame de Stockel nursing and care home (Woluwe-Saint-Pierre): an 88-resident facility including 18 double-room places, presentation of the home, care, daily life, admission and contact, in French and Dutch.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "residence-sainte-anne",
@@ -235,7 +248,8 @@
     "body": [
       "Website of the Résidence Sainte-Anne (Watermael-Boitsfort): a 97-room care home with a private park, extended by annexing the Sainte-Anne convent. Presentation, services, admission and contact, in French and Dutch.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "rtms-wellcare",
@@ -252,7 +266,8 @@
     "body": [
       "Website dedicated to repetitive transcranial magnetic stimulation (rTMS) at the Wellcare medical centre: how the treatment works, indications (chronic pain, neurological conditions, depression), multidisciplinary team, appointment booking. French and English.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "abofield",
@@ -269,7 +284,8 @@
     "body": [
       "Website of Abofield, specialist in building and maintaining sports fields and playgrounds: three trades (fields, playgrounds, maintenance), completed projects, downloadable brochure, contact. French and Dutch.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "sar-benelux",
@@ -286,7 +302,8 @@
     "body": [
       "Website of SAR Benelux (Société d'Analyse de Risques), a specialised broker: planning-permit insurance, appeal-risk analysis, contracts for developers, promoters, architects and project owners. French and Dutch.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "valeone",
@@ -303,7 +320,8 @@
     "body": [
       "Website of Valeone, a couture house: made-to-measure wedding and evening dresses, small-group sewing classes, gallery and contact.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "aquares",
@@ -320,7 +338,8 @@
     "body": [
       "Website of Aquares, a textile partner for 20 years: custom clothing for camps, graduating classes, student societies, companies and clubs, the Aqualine swimming range, monthly offers, quote requests. French, Dutch and English.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "success-tennis-cool",
@@ -337,7 +356,8 @@
     "body": [
       "Website of the Success Tennis Cool tennis school, run by Jacques Grandjean (former ATP 230, Davis Cup player): philosophy, lessons, camps, registration and contact, in French, Dutch, English and Italian.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "manuel-apicella",
@@ -354,7 +374,8 @@
     "body": [
       "Website of Manuel Apicella, International Grandmaster and 1992 French champion: online chess lessons at all levels, scheduled masterclasses, opening repertoire, game analysis, contact.",
       "Stack: WordPress, Elementor."
-    ]
+    ],
+    "status": ""
   },
   {
     "slug": "beneloo",
@@ -371,6 +392,7 @@
     "body": [
       "Beneloo is the brand under which I support Belgian SMEs on AI visibility: diagnosis, six-pillar score, action plan, follow-up. I built the website, the observatory and the prospecting portal myself: 17,000 French-speaking company records with phone numbers, split into 11 sectors, with an AI-generated activity summary when each record is opened.",
       "Stack: Next.js, Supabase, OpenAI and Perplexity, BCE and NBB data, email prospecting pipeline."
-    ]
+    ],
+    "status": ""
   }
 ]

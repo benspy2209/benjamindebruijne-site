@@ -14,7 +14,7 @@ const s = getSite(lang);
     <p class="pc__kpi"><span class="h-xl">{p.kpi}</span><span class="mono">{p.kpiLabel}</span></p>
   </div>
   <div class="pc__body">
-    <p class="mono pc__role"><span class="muted">{s.portfolio.role}</span> {p.role} {p.year && <><span class="muted pc__year">{s.portfolio.year}</span> {p.year}</>}</p>
+    <p class="mono pc__role"><span class="muted">{s.portfolio.role}</span> {p.role} {p.year && <><span class="muted pc__year">{s.portfolio.year}</span> {p.year}</>}{p.status === 'ongoing' && <span class="pc__ongoing"><i></i>{s.portfolio.ongoing}</span>}</p>
     <p class="pc__text"><strong>{p.lead}</strong>{p.text}</p>
     <p class="pc__cta mono">{s.portfolio.cta}<span class="btn__i"><Icon name="chevron" /></span></p>
   </div>
@@ -30,6 +30,10 @@ const s = getSite(lang);
   .pc__kpi .h-xl { font-weight: 700; font-size: clamp(28px, 2.6vw, 44px); white-space: nowrap; }
   .pc__body { padding: 16px; display: grid; gap: 16px; }
   .pc__year { margin-left: 12px; }
+  .pc__ongoing { display: inline-flex; align-items: center; gap: 6px; margin-left: 12px; color: var(--c-accent); }
+  .pc__ongoing i { width: 6px; height: 6px; border-radius: 50%; background: var(--c-accent); animation: pcpulse 2s ease-in-out infinite; }
+  @keyframes pcpulse { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+  @media (prefers-reduced-motion: reduce) { .pc__ongoing i { animation: none; } }
   .pc__text { font-size: 14px; text-transform: uppercase; line-height: 1.4; color: var(--c-grey-500); max-width: 40ch; }
   .pc__text strong { color: var(--c-dark); font-weight: 600; }
   .pc__cta { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--c-grey-300); padding-top: 16px; margin-top: 8px; }

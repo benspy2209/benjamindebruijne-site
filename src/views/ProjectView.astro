@@ -16,7 +16,7 @@ const title = p.name;
 <Base lang={lang} routeKey="projects" slug={p.slug} title={title} description={`${p.lead}${p.text}`} onDark>
   <section class="pj dark trame" style={`--pc: ${p.color}`}>
     <div class="wrap pj__hero">
-      <p class="label"><span class="num">0{idx + 1}</span>{p.tag}</p>
+      <p class="label"><span class="num">0{idx + 1}</span>{p.tag}{p.status === 'ongoing' && <span class="pj__ongoing">· {s.portfolio.ongoing}</span>}</p>
       <h1 class="h-giant pj__title">{title}</h1>
       <p class="lead pj__lead"><strong>{p.lead}</strong>{p.text}</p>
       <dl class="pj__meta mono">
@@ -46,6 +46,7 @@ const title = p.name;
   .pj { background: var(--pc); --trame: #ffffff1f; }
   .pj__hero { padding-top: calc(var(--header-h) + 48px); padding-bottom: 48px; display: grid; gap: 28px; }
   .pj__title { text-transform: none; }
+  .pj__ongoing { color: var(--c-accent); margin-left: 6px; }
   .pj__lead { max-width: 48ch; }
   .pj__meta { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; }
   .pj__meta dd { margin: 0; }
