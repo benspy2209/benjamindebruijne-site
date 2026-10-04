@@ -18,11 +18,11 @@ const m = s.missions;
             <p class="label"><span class="num">0{i + 1}</span>{it.sector}</p>
             <p class="ms__badge mono"><i></i>{m.badge}</p>
           </div>
-          <p class="ms__client h-md">{it.client}</p>
+          <p class="ms__client h-md"><img src={it.logo} alt="" class="ms__logo" loading="lazy" height="36" /><span>{it.client}</span></p>
           <p class="ms__role">{it.role}</p>
           <dl class="ms__meta mono">
             <dt class="muted">{m.since}</dt><dd>{it.since}</dd>
-            {it.url && <><dt class="muted">Web</dt><dd><a href={it.url} target="_blank" rel="noopener">{it.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '')} <Icon name="arrow-ext" class="ms__ext" /></a></dd></>}
+            <dt class="muted">Web</dt><dd><a href={it.url} target="_blank" rel="noopener">{it.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '')}<span class="ms__ext"><Icon name="arrow-ext" /></span></a></dd>
           </dl>
         </li>
       ))}
@@ -38,11 +38,14 @@ const m = s.missions;
   .ms__badge i { width: 7px; height: 7px; border-radius: 50%; background: var(--c-accent); animation: pulse 2s ease-in-out infinite; }
   @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.7); } }
   @media (prefers-reduced-motion: reduce) { .ms__badge i { animation: none; } }
-  .ms__client { font-weight: 600; }
+  .ms__client { font-weight: 600; display: flex; align-items: center; gap: 14px; }
+  .ms__logo { height: 36px; width: auto; max-width: 140px; object-fit: contain; }
+  .ms__client span { font-size: 22px; }
   .ms__role { font-size: 15px; color: var(--c-grey-500); max-width: 40ch; }
   .ms__meta { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; padding-top: 16px; border-top: 1px solid var(--c-grey-300); }
   .ms__meta dd { margin: 0; }
-  .ms__meta a { display: inline-flex; align-items: center; gap: 6px; }
-  .ms__ext { width: 10px; height: 10px; }
+  .ms__meta a { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .ms__ext { display: inline-grid; place-items: center; width: 12px; height: 12px; }
+  .ms__ext :global(svg) { width: 10px; height: 10px; }
   @media (width >= 810px) { .ms__grid { grid-template-columns: repeat(3, 1fr); } }
 </style>

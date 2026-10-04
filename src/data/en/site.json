@@ -413,21 +413,24 @@
         "sector": "Biopharma",
         "role": "AI & GxP Solutions Architect: automation, IT/OT integration, document governance, compliance.",
         "since": "2025",
-        "url": "https://www.ucb.com"
+        "url": "https://www.ucb.com/",
+        "logo": "/logos/ucb.svg"
       },
       {
         "client": "XLG",
         "sector": "Business services",
         "role": "Scoping then automation of the invoicing process, from timesheets to client approval.",
         "since": "2026",
-        "url": ""
+        "url": "https://www.xlg.eu/",
+        "logo": "/logos/xlg.svg"
       },
       {
         "client": "Leroy & Partners",
         "sector": "Judicial officers",
         "role": "Generalist mission around accounting: needs, tools, automations.",
         "since": "2026",
-        "url": "https://www.leroy-partners.be/fr/"
+        "url": "https://www.leroy-partners.be/fr/",
+        "logo": "/logos/leroy.png"
       }
     ]
   }
