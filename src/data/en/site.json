@@ -51,9 +51,9 @@
       "AI & automation",
       "Google & AI visibility"
     ],
-    "proofValue": "20+",
-    "proofLabel": "years of experience",
-    "proofSub": "Products shipped, clients supported, projects delivered"
+    "proofValue": "3",
+    "proofLabel": "ongoing missions",
+    "proofSub": "UCB · XLG · Leroy & Partners"
   },
   "logos": [
     "Beneloo",
@@ -67,13 +67,17 @@
   "mission": {
     "label": "My mission",
     "copyright": "©2005-2026",
-    "text": "I'm Benjamin de Bruijne, digital & AI consultant. Twenty years of IT projects taught me one thing: a good tool is one that runs. ",
-    "highlight": "Websites, automations, data, delivery — I build what works for you, no fluff.",
     "cta": "Contact me",
     "ctaSuffix": "/Benjamin",
     "profession": "Profession",
     "localisation": "Location",
-    "allProjects": "All projects"
+    "allProjects": "All projects",
+    "paragraphs": [
+      "I'm Benjamin de Bruijne, digital & AI consultant.",
+      "Twenty years of IT projects taught me one thing: a good tool is one that runs.",
+      "I design digital solutions that turn needs into concrete tools: websites, automations, data, AI and delivery."
+    ],
+    "statusLabel": "On mission"
   },
   "counters": [
     {
@@ -389,5 +393,41 @@
       "text": "This page does not exist or has moved.",
       "cta": "Back to home"
     }
+  },
+  "missions": {
+    "label": "Ongoing missions",
+    "title": [
+      "Where I",
+      "work."
+    ],
+    "intro": "Three missions in parallel, ",
+    "introStrong": "on top of my own products.",
+    "badge": "Ongoing",
+    "since": "Since",
+    "role": "Role",
+    "sector": "Sector",
+    "items": [
+      {
+        "client": "UCB",
+        "sector": "Biopharma",
+        "role": "AI & GxP Solutions Architect: automation, IT/OT integration, document governance, compliance.",
+        "since": "2025",
+        "url": "https://www.ucb.com"
+      },
+      {
+        "client": "XLG",
+        "sector": "Business services",
+        "role": "Scoping then automation of the invoicing process, from timesheets to client approval.",
+        "since": "2026",
+        "url": ""
+      },
+      {
+        "client": "Leroy & Partners",
+        "sector": "Judicial officers",
+        "role": "Generalist mission around accounting: needs, tools, automations.",
+        "since": "2026",
+        "url": "https://www.leroy-partners.be/fr/"
+      }
+    ]
   }
 }

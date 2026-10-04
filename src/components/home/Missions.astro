@@ -1,0 +1,48 @@
+---
+import type { Lang } from '../../lib/i18n';
+import { getSite } from '../../lib/content';
+import SectionHead from '../SectionHead.astro';
+import Icon from '../Icon.astro';
+interface Props { lang: Lang; num?: string }
+const { lang, num = '02' } = Astro.props;
+const s = getSite(lang);
+const m = s.missions;
+---
+<section class="ms trame section" id="missions">
+  <div class="wrap">
+    <SectionHead num={num} label={m.label} title={m.title} intro={m.intro} introStrong={m.introStrong} />
+    <ul class="ms__grid">
+      {m.items.map((it, i) => (
+        <li class="ms__card reveal">
+          <div class="ms__top">
+            <p class="label"><span class="num">0{i + 1}</span>{it.sector}</p>
+            <p class="ms__badge mono"><i></i>{m.badge}</p>
+          </div>
+          <p class="ms__client h-md">{it.client}</p>
+          <p class="ms__role">{it.role}</p>
+          <dl class="ms__meta mono">
+            <dt class="muted">{m.since}</dt><dd>{it.since}</dd>
+            {it.url && <><dt class="muted">Web</dt><dd><a href={it.url} target="_blank" rel="noopener">{it.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '')} <Icon name="arrow-ext" class="ms__ext" /></a></dd></>}
+          </dl>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  .ms { background: var(--c-grey-100); }
+  .ms__grid { margin-top: 64px; display: grid; gap: 20px; }
+  .ms__card { background: var(--c-white); border: 1px solid var(--c-grey-300); border-top: 2px solid var(--c-accent); padding: 24px; display: grid; gap: 18px; align-content: start; }
+  .ms__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .ms__badge { display: inline-flex; align-items: center; gap: 8px; color: var(--c-accent); }
+  .ms__badge i { width: 7px; height: 7px; border-radius: 50%; background: var(--c-accent); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.7); } }
+  @media (prefers-reduced-motion: reduce) { .ms__badge i { animation: none; } }
+  .ms__client { font-weight: 600; }
+  .ms__role { font-size: 15px; color: var(--c-grey-500); max-width: 40ch; }
+  .ms__meta { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; padding-top: 16px; border-top: 1px solid var(--c-grey-300); }
+  .ms__meta dd { margin: 0; }
+  .ms__meta a { display: inline-flex; align-items: center; gap: 6px; }
+  .ms__ext { width: 10px; height: 10px; }
+  @media (width >= 810px) { .ms__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

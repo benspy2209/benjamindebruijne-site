@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import Hero from '../components/home/Hero.astro';
 import LogoMarquee from '../components/home/LogoMarquee.astro';
 import Mission from '../components/home/Mission.astro';
+import Missions from '../components/home/Missions.astro';
 import Portfolio from '../components/home/Portfolio.astro';
 import Services from '../components/home/Services.astro';
 import Process from '../components/home/Process.astro';
@@ -15,8 +16,9 @@ const { lang } = Astro.props;
   <Hero lang={lang} />
   <LogoMarquee lang={lang} />
   <Mission lang={lang} />
-  <Portfolio lang={lang} />
-  <Services lang={lang} />
-  <Process lang={lang} />
-  <ContactForm lang={lang} />
+  <Missions lang={lang} num="02" />
+  <Portfolio lang={lang} num="03" />
+  <Services lang={lang} num="04" />
+  <Process lang={lang} num="05" />
+  <ContactForm lang={lang} num="06" />
 </Base>

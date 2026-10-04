@@ -51,9 +51,9 @@
       "IA & automatisation",
       "Visibilité Google & IA"
     ],
-    "proofValue": "20+",
-    "proofLabel": "ans d'expérience",
-    "proofSub": "Produits en ligne, clients accompagnés, projets pilotés"
+    "proofValue": "3",
+    "proofLabel": "missions en cours",
+    "proofSub": "UCB · XLG · Leroy & Partners"
   },
   "logos": [
     "Beneloo",
@@ -67,13 +67,17 @@
   "mission": {
     "label": "Ma mission",
     "copyright": "©2005-2026",
-    "text": "Je suis Benjamin de Bruijne, consultant digital & IA. Vingt ans de projets IT m'ont appris une chose : un bon outil est un outil qui tourne. ",
-    "highlight": "Sites, automatisations, données, pilotage — je construis ce qui travaille pour vous, sans blabla.",
     "cta": "Me contacter",
     "ctaSuffix": "/Benjamin",
     "profession": "Profession",
     "localisation": "Localisation",
-    "allProjects": "Tous les projets"
+    "allProjects": "Tous les projets",
+    "paragraphs": [
+      "Je suis Benjamin de Bruijne, consultant digital & IA.",
+      "Vingt ans de projets IT m'ont appris une chose : un bon outil est un outil qui tourne.",
+      "Je conçois des solutions digitales qui transforment les besoins en outils concrets : sites, automatisations, données, IA et pilotage."
+    ],
+    "statusLabel": "En mission"
   },
   "counters": [
     {
@@ -389,5 +393,41 @@
       "text": "Cette page n'existe pas ou a été déplacée.",
       "cta": "Retour à l'accueil"
     }
+  },
+  "missions": {
+    "label": "Missions en cours",
+    "title": [
+      "Où je",
+      "travaille."
+    ],
+    "intro": "Trois missions en parallèle, ",
+    "introStrong": "en plus de mes propres produits.",
+    "badge": "En cours",
+    "since": "Depuis",
+    "role": "Rôle",
+    "sector": "Secteur",
+    "items": [
+      {
+        "client": "UCB",
+        "sector": "Biopharma",
+        "role": "AI & GxP Solutions Architect : automatisation, intégration IT/OT, gouvernance documentaire, conformité.",
+        "since": "2025",
+        "url": "https://www.ucb.com"
+      },
+      {
+        "client": "XLG",
+        "sector": "Services aux entreprises",
+        "role": "Cadrage puis automatisation du processus de facturation, des pointages à la validation client.",
+        "since": "2026",
+        "url": ""
+      },
+      {
+        "client": "Leroy & Partners",
+        "sector": "Huissiers de justice",
+        "role": "Mission généraliste autour de la comptabilité : besoins, outils, automatisations.",
+        "since": "2026",
+        "url": "https://www.leroy-partners.be/fr/"
+      }
+    ]
   }
 }

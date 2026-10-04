@@ -8,7 +8,8 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
 const m = s.mission;
-const words = `${m.text}${m.highlight}`.split(/\s+/).filter(Boolean);
+const paras = m.paragraphs.map((t) => t.split(/\s+/).filter(Boolean));
+const clients = s.missions.items.map((i) => i.client).join(' · ');
 ---
 <section class="mis trame section" id="mission">
   <div class="mis__in wrap">
@@ -27,6 +28,7 @@ const words = `${m.text}${m.highlight}`.split(/\s+/).filter(Boolean);
         <dl class="mis__dl mono">
           <dt>{m.profession}</dt><dd>{s.meta.role}</dd>
           <dt>{m.localisation}</dt><dd>{s.meta.location}</dd>
+          <dt>{m.statusLabel}</dt><dd><a href="#missions">{clients}</a></dd>
         </dl>
       </div>
       <a href={href('projects', lang)} class="mis__all mono"><span class="mis__allicon"><Icon name="chevron-left" /></span>{m.allProjects}</a>
@@ -37,7 +39,7 @@ const words = `${m.text}${m.highlight}`.split(/\s+/).filter(Boolean);
         <p class="label"><span class="num">01</span>{m.label}</p>
         <p class="mono muted">{m.copyright}</p>
       </div>
-      <p class="mis__text h-md" data-words>{words.map((w, i) => <>{i > 0 && ' '}<span class="w">{w}</span></>)}</p>
+      <div class="mis__text h-md" data-words>{paras.map((words) => <p>{words.map((w, i) => <>{i > 0 && ' '}<span class="w">{w}</span></>)}</p>)}</div>
       <ol class="mis__counters">
         {s.counters.map((c, i) => (
           <li class="mis__counter reveal">
@@ -66,7 +68,7 @@ const words = `${m.text}${m.highlight}`.split(/\s+/).filter(Boolean);
   .mis__allicon { width: 22px; height: 22px; border: 1px solid var(--c-grey-300); border-radius: 50%; display: grid; place-items: center; }
   .mis__allicon svg { width: 10px; height: 10px; }
   .mis__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; }
-  .mis__text { font-weight: 500; max-width: 24ch; }
+  .mis__text { font-weight: 500; max-width: 24ch; display: grid; gap: .6em; }
   .mis__text .w { display: inline; color: var(--c-grey-300); transition: color .35s var(--ease-appear); }
   .mis__text .w.on { color: var(--c-dark); }
   .mis__counters { margin-top: 64px; display: grid; }
