@@ -4,6 +4,7 @@ import { href } from '../../lib/i18n';
 import { getSite } from '../../lib/content';
 import SectionHead from '../SectionHead.astro';
 import Button from '../Button.astro';
+import { CONTACT_ENDPOINT, CONTACT_KEY } from '../../lib/contact';
 interface Props { lang: Lang; num?: string; as?: 'h1' | 'h2' }
 const { lang, num = '05', as = 'h2' } = Astro.props;
 const s = getSite(lang);
@@ -12,7 +13,7 @@ const c = s.contact;
 <section class="ctc trame section" id="contact">
   <div class="wrap ctc__in">
     <SectionHead num={num} label={c.label} title={c.title} intro={c.intro} introStrong={c.introStrong} class="ctc__head" as={as} />
-    <form class="ctc__form" data-contact novalidate data-to={s.meta.email} data-subject={c.subject} data-incomplete={c.incomplete} data-send={c.send} data-sent={c.sent} data-sending={c.sending} data-success={c.success} data-error={c.error} action="/api/contact" method="post">
+    <form class="ctc__form" data-contact novalidate data-to={s.meta.email} data-subject={c.subject} data-incomplete={c.incomplete} data-send={c.send} data-sent={c.sent} data-sending={c.sending} data-success={c.success} data-error={c.error} action={CONTACT_ENDPOINT} data-key={CONTACT_KEY} method="post">
       <input type="text" name="website" tabindex="-1" autocomplete="off" class="ctc__hp" aria-hidden="true" />
       <div class="ctc__field">
         <label for="f-name" class="label">{c.name}</label>
@@ -75,7 +76,8 @@ const c = s.contact;
       const hp = (form.elements.namedItem('website') as HTMLInputElement).value;
       btn.disabled = true; label.textContent = form.dataset.sending!; status.textContent = '';
       try {
-        const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name, email, message, website: hp, lang: document.documentElement.lang }) });
+        if (hp) { status.textContent = form.dataset.success!; form.reset(); sync(); return; }
+        const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', apikey: form.dataset.key!, Authorization: `Bearer ${form.dataset.key!}` }, body: JSON.stringify({ name, email, subject: form.dataset.subject, message: `${message}\n\n(langue : ${document.documentElement.lang})` }) });
         if (r.ok) { status.textContent = form.dataset.success!; form.reset(); sync(); return; }
         throw new Error(String(r.status));
       } catch { sync(); mailto(name, email, message); }

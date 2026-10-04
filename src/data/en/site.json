@@ -63,12 +63,11 @@
     },
     {
       "name": "Singulr",
-      "src": "/logos/singulr.svg"
+      "src": ""
     },
     {
       "name": "Pulse Noir",
-      "src": "/logos/pulse-noir.png",
-      "dark": true
+      "src": "/logos/pulse-noir.png"
     },
     {
       "name": "BiblioPulse",
@@ -76,7 +75,7 @@
     },
     {
       "name": "Service-Volée",
-      "src": "/logos/service-volee.png"
+      "src": ""
     },
     {
       "name": "Iris Noir",
@@ -85,9 +84,21 @@
     {
       "name": "Royal Wellington",
       "src": ""
+    },
+    {
+      "name": "UCB",
+      "src": "/logos/ucb.svg"
+    },
+    {
+      "name": "XLG",
+      "src": "/logos/xlg.svg"
+    },
+    {
+      "name": "Leroy & Partners",
+      "src": "/logos/leroy.png"
     }
   ],
-  "logosLabel": "My products & projects",
+  "logosLabel": "My products & missions",
   "mission": {
     "label": "Who I am",
     "copyright": "©2005-2026",
