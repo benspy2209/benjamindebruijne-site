@@ -324,7 +324,7 @@
       "introStrong": "et comment je travaille.",
       "paragraphs": [
         "Je m'appelle Benjamin de Bruijne. Je vis en Belgique, près de Bruxelles, et je travaille depuis plus de vingt ans dans l'IT — plus de 200 projets web construits ou pilotés : développement, gestion de projets, produit, qualité, transformation digitale.",
-        "J'ai piloté des projets dans des environnements très cadrés, notamment plusieurs années dans l'industrie biopharmaceutique en tant qu'AI & GxP Solutions Architect : validation des systèmes informatisés (CSV), conformité GxP et 21 CFR Part 11, intégrité des données, intégration IT/OT et gouvernance documentaire. En parallèle, j'ai construit mes propres produits : Service-Volée, Pulse Noir et BiblioPulse (une communauté de 2 150 lecteurs de polars et sa bibliothèque), et un écosystème autour de la maîtrise des données : Beneloo (visibilité des PME dans les moteurs d'IA), l'Observatory (la mesure, secteur par secteur) et Singulr, l'ASBL que je préside, qui opère des communs numériques souverains dont une forge Git hébergée en Belgique.",
+        "J'ai piloté des projets dans des environnements très cadrés, notamment plusieurs années dans l'industrie biopharmaceutique en tant que Digital Technology Subject Matter Expert (DT SME) : validation des systèmes informatisés (CSV), conformité GxP et 21 CFR Part 11, intégrité des données, intégration IT/OT et gouvernance documentaire. En parallèle, j'ai construit mes propres produits : Service-Volée, Pulse Noir et BiblioPulse (une communauté de 2 150 lecteurs de polars et sa bibliothèque), et un écosystème autour de la maîtrise des données : Beneloo (visibilité des PME dans les moteurs d'IA), l'Observatory (la mesure, secteur par secteur) et Singulr, l'ASBL que je préside, qui opère des communs numériques souverains dont une forge Git hébergée en Belgique.",
         "Ce double parcours est ma particularité : la rigueur des environnements réglementés, la vitesse de l'indépendant. Je sais cadrer, documenter et livrer dans les règles, et je sais aussi coder un outil complet en quelques jours quand c'est ce qu'il faut.",
         "Je travaille via ma société, Hakuna Matata SRL, et je choisis des outils qui vous laissent la main : code que vous possédez, données chez vous, pas d'abonnement opaque."
       ],
@@ -332,7 +332,7 @@
       "facts": [
         {
           "k": "Rôle actuel",
-          "v": "AI & GxP Solutions Architect, groupe biopharmaceutique (UCB)"
+          "v": "Digital Technology Subject Matter Expert (DT SME), groupe biopharmaceutique (UCB)"
         },
         {
           "k": "Base",
@@ -366,7 +366,7 @@
         }
       ],
       "faqLabel": "Questions fréquentes",
-      "description": "Benjamin de Bruijne, consultant digital & IA en Belgique : vingt ans de projets IT, AI & GxP Solutions Architect en biopharma, et six produits construits en parallèle.",
+      "description": "Benjamin de Bruijne, consultant digital & IA en Belgique : vingt ans de projets IT, Digital Technology SME en biopharma, et six produits construits en parallèle.",
       "piloterLink": "Voir l'offre Piloter : projets IT en environnement réglementé"
     },
     "services": {
@@ -483,7 +483,7 @@
       {
         "client": "UCB",
         "sector": "Biopharma",
-        "role": "AI & GxP Solutions Architect : automatisation, intégration IT/OT, gouvernance documentaire, conformité.",
+        "role": "Digital Technology Subject Matter Expert (DT SME) : résolution de blocages techniques, traduction tech ↔ métier, validation des projets digitaux en environnement GxP, veille et conseil à la direction.",
         "since": "2025",
         "url": "https://www.ucb.com/",
         "logo": "/logos/ucb.svg"
@@ -631,10 +631,10 @@
         "introStrong": "ce projet sera-t-il livré, validé et défendable en inspection ?",
         "sections": [
           {
-            "h": "AI & GxP Solutions Architect",
+            "h": "Digital Technology Subject Matter Expert (DT SME)",
             "p": [
-              "C'est le rôle que j'occupe aujourd'hui chez un groupe biopharmaceutique belge : relier la technologie, la qualité et les utilisateurs. Concrètement, je traduis les exigences métier et réglementaires en solutions techniques validées, j'organise la documentation (URS, spécifications, IQ/OQ/PQ, matrice de traçabilité) et je coordonne les équipes IT, OT, Qualité et fournisseurs jusqu'à la mise en production.",
-              "Vingt ans de projets IT, dont plusieurs années en environnement pharmaceutique réglementé, m'ont appris une chose : un système n'est utile que s'il est fiable, documenté et compris par ceux qui l'utilisent."
+              "C'est le rôle que j'occupe aujourd'hui chez un groupe biopharmaceutique belge : le référent auquel les équipes s'adressent quand un sujet digital dépasse le périmètre de l'IT courante. Quatre responsabilités : résoudre les blocages techniques et architecturaux complexes ; traduire les concepts digitaux en termes clairs et actionnables pour les métiers et la direction ; relire et valider les plans de développement, de mise à niveau d'infrastructure et de transformation digitale pour garantir exactitude, sécurité et alignement avec les objectifs de l'entreprise ; conseiller la direction sur les technologies émergentes, l'IA et les feuilles de route d'adoption.",
+              "En environnement GxP, cela se traduit par des exigences écrites, des systèmes validés, une documentation que l'on peut défendre en inspection, et une veille permanente sur ce qui change : nouveaux paradigmes, nouvelles menaces, nouveaux outils. Vingt ans de projets IT m'ont appris une chose : un système n'est utile que s'il est fiable, documenté et compris par ceux qui l'utilisent."
             ]
           },
           {
