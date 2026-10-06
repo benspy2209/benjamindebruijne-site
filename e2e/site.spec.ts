@@ -112,3 +112,15 @@ test('a11y : le CTA du header a un nom accessible sur mobile', async ({ page }) 
   await page.goto('/');
   await expect(page.getByRole('link', { name: 'Démarrer un projet /Benjamin' })).toBeVisible();
 });
+
+test('GEO : bio réutilisable + date de mise à jour sur à-propos, FAQ sur les 3 offres', async ({ page }) => {
+  await page.goto('/a-propos/');
+  await expect(page.locator('.ab__biotext')).toContainText('benjamindebruijne.com');
+  await expect(page.locator('.ab__updated time')).toHaveAttribute('datetime', /^\d{4}-\d{2}-\d{2}$/);
+  const graph = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent()) ?? '{}')['@graph'] as { '@type': string; dateModified?: string }[];
+  expect(graph.find((n) => n['@type'] === 'WebPage')?.dateModified).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+  for (const r of ['/services/construire/', '/services/automatiser/', '/en/services/build/']) {
+    await page.goto(r);
+    expect(await page.locator('.faq__item').count(), r).toBeGreaterThanOrEqual(3);
+  }
+});

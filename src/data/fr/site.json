@@ -350,6 +350,14 @@
           "v": "Digital Technology Subject Matter Expert (DT SME), groupe biopharmaceutique belge"
         },
         {
+          "k": "Depuis",
+          "v": "2005 — plus de 200 projets web construits ou pilotés"
+        },
+        {
+          "k": "Produits",
+          "v": "Service-Volée, BiblioPulse, Pulse Noir, Beneloo, Observatory, Singulr"
+        },
+        {
           "k": "Base",
           "v": "Rhode-Saint-Genèse, Belgique"
         },
@@ -368,6 +376,10 @@
       ],
       "faq": [
         {
+          "q": "Qui est Benjamin de Bruijne ?",
+          "a": "Benjamin de Bruijne est un consultant digital et IA belge, indépendant depuis 2005, basé à Rhode-Saint-Genèse près de Bruxelles. Il construit des sites et applications sur mesure, met en place des automatisations IA pour les PME et pilote des projets IT en environnement réglementé (biopharma, GxP). Il a fondé Beneloo, l'Observatory, Pulse Noir et Service-Volée, et préside l'ASBL Singulr."
+        },
+        {
           "q": "Qu'est-ce que la conformité GxP ?",
           "a": "La conformité GxP désigne le respect des bonnes pratiques réglementaires des industries pharmaceutique, biotechnologique et des dispositifs médicaux : GMP (fabrication), GLP (laboratoire), GCP (clinique), GDP (distribution). Pour les systèmes informatiques, elle implique des systèmes validés, des données intègres et une documentation qui prouve, à tout moment, que le processus est maîtrisé."
         },
@@ -382,7 +394,11 @@
       ],
       "faqLabel": "Questions fréquentes",
       "description": "Benjamin de Bruijne, consultant digital & IA en Belgique : 20 ans de projets IT, Digital Technology SME en biopharma, et six produits construits en parallèle.",
-      "piloterLink": "Voir l'offre Piloter : projets IT en environnement réglementé"
+      "piloterLink": "Voir l'offre Piloter : projets IT en environnement réglementé",
+      "bioLabel": "Bio courte, réutilisable",
+      "bio": "Benjamin de Bruijne est consultant digital et IA indépendant, basé à Rhode-Saint-Genèse (Belgique). Actif dans l'IT depuis 2005, il a construit ou piloté plus de 200 projets web et intervient aujourd'hui comme Digital Technology Subject Matter Expert dans un groupe biopharmaceutique belge (validation CSV, GxP, 21 CFR Part 11). Il a fondé Beneloo, l'Observatory, Pulse Noir et Service-Volée, et préside l'ASBL Singulr. Il travaille via Hakuna Matata SRL. Site : benjamindebruijne.com.",
+      "updatedLabel": "Page mise à jour le",
+      "lastUpdated": "2026-10-06"
     },
     "services": {
       "title": [
@@ -601,7 +617,24 @@
           "Organisations qui ont besoin d'une application métier ou d'un espace membre",
           "Équipes qui veulent quitter une plateforme fermée sans perdre leur contenu"
         ],
-        "faq": []
+        "faq": [
+          {
+            "q": "Combien coûte un site sur mesure en Belgique ?",
+            "a": "Sur devis, après un appel gratuit de 30 minutes. Le prix dépend de trois facteurs : le nombre de gabarits de pages, les intégrations (paiement, CRM, espace membre, multilingue) et le contenu à produire ou à migrer. Un site vitrine se livre en un à trois mois, une application métier en deux à quatre. Le devis fixe périmètre, livrables et délais ; pas d'abonnement caché ensuite."
+          },
+          {
+            "q": "À qui appartiennent le code et les données ?",
+            "a": "À vous. Le code est livré dans un dépôt Git à votre nom, les données vivent chez un hébergeur que vous choisissez et contrôlez (Vercel, Cloudflare, Supabase ou un hébergeur belge), et aucune brique ne dépend d'un abonnement à mon nom. Vous pouvez changer de prestataire demain sans perdre le site ni son contenu."
+          },
+          {
+            "q": "Avec quelles technologies construis-tu ?",
+            "a": "Astro, React et Next.js pour le front ; Node ou PHP côté serveur ; Postgres et Supabase pour les données ; Stripe pour le paiement ; déploiement sur Vercel, Cloudflare ou o2switch. Pour le contenu éditorial, des fichiers structurés ou un CMS léger plutôt qu'un WordPress lourd. Le choix se fait au cadrage, selon qui maintiendra le site ensuite."
+          },
+          {
+            "q": "Quels sites et produits as-tu déjà réalisés ?",
+            "a": "Des produits que j'exploite moi-même : Service-Volée (classement tennis, 76 000 joueurs indexés), BiblioPulse (bibliothèque personnelle, 44 millions d'ISBN), l'Observatory (mesure de la visibilité IA des PME) et le hub Pulse Noir (2 150 lecteurs). Et des sites clients : Royal Wellington, Iris Noir, la masterclass de René Manzor, des cabinets médicaux et des PME belges."
+          }
+        ]
       },
       "automatiser": {
         "name": "Automatiser",
@@ -634,7 +667,24 @@
           "Entreprises qui veulent une IA utile, cadrée et conforme au RGPD",
           "Équipes qui veulent savoir si ChatGPT, Claude ou Perplexity les citent"
         ],
-        "faq": []
+        "faq": [
+          {
+            "q": "Qu'est-ce qu'une automatisation IA pour une PME ?",
+            "a": "Un enchaînement qui enlève une corvée précise : trier et résumer des emails, qualifier des formulaires, mettre à jour un CRM, préparer un devis, relancer un client. L'IA (OpenAI, Claude, Mistral) lit, classe ou rédige ; le reste est de l'intégration classique (API, base de données, webhooks). Chaque automatisation a un responsable, un journal et un bouton d'arrêt."
+          },
+          {
+            "q": "Mes données sont-elles envoyées aux fournisseurs d'IA ?",
+            "a": "Seulement ce qui est nécessaire, et sous contrat : API professionnelles sans entraînement sur vos données (OpenAI, Anthropic, Mistral en Europe), minimisation des champs transmis, pseudonymisation quand c'est possible, et un registre RGPD des traitements. Pour les données sensibles, un modèle hébergé en Europe ou en local reste une option que je mets en place."
+          },
+          {
+            "q": "Combien de temps faut-il pour voir un résultat ?",
+            "a": "Deux à six semaines pour une première automatisation en production, mesurée en heures récupérées par semaine. Je commence par la tâche la plus répétitive, je la livre, puis j'étends. Un tableau de bord suit volumes, erreurs et temps gagné dès la première semaine, pour décider de la suite sur des chiffres."
+          },
+          {
+            "q": "Code sur mesure, n8n, Make ou Zapier ?",
+            "a": "Code sur mesure (Node, Python) quand la logique est vraiment métier ou que les volumes comptent ; n8n auto-hébergé quand il s'agit surtout de relier des outils existants et que vous voulez garder la main. Make et Zapier conviennent pour des volumes faibles ; au-delà, leur coût mensuel et leur opacité pèsent. Je documente le choix dans le cadrage."
+          }
+        ]
       },
       "piloter": {
         "name": "Piloter",
@@ -694,6 +744,14 @@
           {
             "q": "Qu'est-ce que la convergence IT/OT ?",
             "a": "La convergence IT/OT est le rapprochement des systèmes d'information (IT : serveurs, réseaux, applications) et des systèmes de production (OT : automates, SCADA, capteurs, MES). Elle permet de remonter les données de production vers l'entreprise et d'automatiser davantage, mais elle expose des équipements industriels à des risques cyber nouveaux, d'où l'usage de référentiels comme ISA/IEC 62443."
+          },
+          {
+            "q": "Qu'est-ce que GAMP 5, en une phrase pour un décideur ?",
+            "a": "GAMP 5 est le guide de référence de l'ISPE pour valider les systèmes informatisés en pharma : un effort de validation proportionné au risque pour le patient et la qualité du produit, l'appui sur les fournisseurs quand leur qualité est démontrée, et la pensée critique plutôt que les documents produits pour la forme. Pour un décideur : valider juste, pas tout."
+          },
+          {
+            "q": "Qu'est-ce qu'un Digital Technology Subject Matter Expert (DT SME) ?",
+            "a": "Le DT SME est le référent technique et métier d'une organisation sur ses technologies digitales. Il résout les blocages entre équipes IT, Digital, Qualité et production, traduit les enjeux techniques pour la direction, valide les projets digitaux avant leur mise en service et conseille sur les choix d'outils. En biopharma, il le fait dans le cadre GxP : systèmes validés, données intègres, décisions documentées."
           }
         ]
       }

@@ -1,6 +1,6 @@
 ---
 import type { Lang } from '../lib/i18n';
-import { href } from '../lib/i18n';
+import { href, locale } from '../lib/i18n';
 import { getSite } from '../lib/content';
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
@@ -10,8 +10,9 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
 const a = s.pages.about;
+const updated = new Date(a.lastUpdated).toLocaleDateString(locale[lang], { dateStyle: 'long' });
 ---
-<Base lang={lang} routeKey="about" title={a.title.join(' ')} description={a.description} onDark>
+<Base lang={lang} routeKey="about" title={a.title.join(' ')} description={a.description} dateModified={a.lastUpdated} onDark>
   <PageHead num="01" label={s.nav.find((n) => n.key === 'about')!.label} title={a.title} intro={a.intro} introStrong={a.introStrong} />
   <section class="ab trame section">
     <div class="wrap ab__in">
@@ -19,9 +20,14 @@ const a = s.pages.about;
       <div class="ab__text">
         {a.paragraphs.map((p) => <p class="reveal">{p}</p>)}
         <p class="reveal"><a href={href('offer-deliver', lang)} class="ab__link">{a.piloterLink} →</a></p>
+        <blockquote class="ab__bio reveal">
+          <p class="label ab__biolabel">{a.bioLabel}</p>
+          <p class="ab__biotext">{a.bio}</p>
+        </blockquote>
         <p class="label ab__flabel">{a.factsLabel}</p>
         <dl class="ab__facts">{a.facts.map((f) => <><dt class="mono muted">{f.k}</dt><dd>{f.v}</dd></>)}</dl>
         <Button href={href('contact', lang)} label={s.mission.cta} suffix={s.mission.ctaSuffix} class="ab__cta" />
+        <p class="mono muted ab__updated">{a.updatedLabel} <time datetime={a.lastUpdated}>{updated}</time></p>
       </div>
     </div>
   </section>
@@ -36,5 +42,9 @@ const a = s.pages.about;
   .ab__facts dd { margin: 0; }
   .ab__cta { margin-top: 16px; justify-self: start; }
   .ab__link { border-bottom: 1px solid var(--c-accent); font-weight: 600; }
+  .ab__bio { margin: 8px 0 0; padding: 20px 24px; border-left: 2px solid var(--c-accent); background: var(--c-grey-100, rgba(0,0,0,.04)); display: grid; gap: 10px; }
+  .ab__biolabel { margin: 0; }
+  .ab__biotext { margin: 0; font-size: 15px; line-height: 1.6; }
+  .ab__updated { font-size: 12px; margin: 0; }
   @media (width >= 810px) { .ab__in { grid-template-columns: 1fr 2fr; } }
 </style>

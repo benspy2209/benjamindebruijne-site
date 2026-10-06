@@ -6,8 +6,8 @@ import { getSite } from '../lib/content';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 type Crumb = { name: string; href: string };
-interface Props { lang: Lang; routeKey: RouteKey; slug?: string; title?: string; description?: string; onDark?: boolean; noindex?: boolean; breadcrumbs?: Crumb[]; jsonLd?: Record<string, unknown>[] }
-const { lang, routeKey, slug, title, description, onDark = false, noindex = false, breadcrumbs = [], jsonLd = [] } = Astro.props;
+interface Props { lang: Lang; routeKey: RouteKey; slug?: string; title?: string; description?: string; onDark?: boolean; noindex?: boolean; breadcrumbs?: Crumb[]; jsonLd?: Record<string, unknown>[]; dateModified?: string }
+const { lang, routeKey, slug, title, description, onDark = false, noindex = false, breadcrumbs = [], jsonLd = [], dateModified } = Astro.props;
 const s = getSite(lang);
 const pageTitle = title ? `${title.replace(/[.\s]+$/, '')} — ${s.meta.name}` : s.meta.title;
 const desc = description ?? s.meta.description;
@@ -30,7 +30,7 @@ const graph: Record<string, unknown>[] = [
   },
   { '@type': ['Organization', 'ProfessionalService'], '@id': orgId, name: 'Hakuna Matata SRL', url: `${origin}/`, founder: { '@id': personId }, address, areaServed: { '@type': 'Country', name: 'Belgium' } },
   { '@type': 'WebSite', '@id': websiteId, url: `${origin}/`, name: s.meta.name, inLanguage: locale[lang], publisher: { '@id': personId } },
-  { '@type': 'WebPage', '@id': canonical.toString(), url: canonical.toString(), name: pageTitle, description: desc, inLanguage: locale[lang], isPartOf: { '@id': websiteId }, about: { '@id': personId } },
+  { '@type': 'WebPage', '@id': canonical.toString(), url: canonical.toString(), name: pageTitle, description: desc, inLanguage: locale[lang], isPartOf: { '@id': websiteId }, about: { '@id': personId }, ...(dateModified ? { dateModified } : {}) },
   ...(breadcrumbs.length ? [{ '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(b.href, site).toString() })) }] : []),
   ...jsonLd,
 ];

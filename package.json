@@ -7,11 +7,12 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/indexnow.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest run",
-    "e2e": "astro build && (astro preview --port 4173 --background || true) && playwright test; s=$?; astro preview stop >/dev/null 2>&1; exit $s"
+    "e2e": "astro build && (astro preview --port 4173 --background || true) && playwright test; s=$?; astro preview stop >/dev/null 2>&1; exit $s",
+    "indexnow": "node scripts/indexnow.mjs --now"
   },
   "dependencies": {
     "astro": "^7.3.5"

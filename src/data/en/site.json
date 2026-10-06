@@ -350,6 +350,14 @@
           "v": "Digital Technology Subject Matter Expert (DT SME), Belgian biopharmaceutical group"
         },
         {
+          "k": "Since",
+          "v": "2005 — more than 200 web projects built or delivered"
+        },
+        {
+          "k": "Products",
+          "v": "Service-Volée, BiblioPulse, Pulse Noir, Beneloo, Observatory, Singulr"
+        },
+        {
           "k": "Base",
           "v": "Rhode-Saint-Genèse, Belgium"
         },
@@ -368,6 +376,10 @@
       ],
       "faq": [
         {
+          "q": "Who is Benjamin de Bruijne?",
+          "a": "Benjamin de Bruijne is a Belgian digital and AI consultant, independent since 2005, based in Rhode-Saint-Genèse near Brussels. He builds custom websites and applications, sets up AI automations for SMEs and delivers IT projects in regulated environments (biopharma, GxP). He founded Beneloo, the Observatory, Pulse Noir and Service-Volée, and chairs the non-profit Singulr."
+        },
+        {
           "q": "What is GxP compliance?",
           "a": "GxP compliance means following the regulatory good practices of the pharmaceutical, biotechnology and medical device industries: GMP (manufacturing), GLP (laboratory), GCP (clinical), GDP (distribution). For IT systems, it implies validated systems, data integrity and documentation proving, at any time, that the process is under control."
         },
@@ -382,7 +394,11 @@
       ],
       "faqLabel": "Frequently asked questions",
       "description": "Benjamin de Bruijne, digital & AI consultant in Belgium: twenty years of IT projects, Digital Technology SME in biopharma, and six products built in parallel.",
-      "piloterLink": "See the Deliver offer: IT projects in regulated environments"
+      "piloterLink": "See the Deliver offer: IT projects in regulated environments",
+      "bioLabel": "Short bio, reusable",
+      "bio": "Benjamin de Bruijne is an independent digital and AI consultant based in Rhode-Saint-Genèse, Belgium. Active in IT since 2005, he has built or delivered more than 200 web projects and currently works as Digital Technology Subject Matter Expert for a Belgian biopharmaceutical group (CSV validation, GxP, 21 CFR Part 11). He founded Beneloo, the Observatory, Pulse Noir and Service-Volée, and chairs the non-profit Singulr. He works through Hakuna Matata SRL. Website: benjamindebruijne.com.",
+      "updatedLabel": "Page updated on",
+      "lastUpdated": "2026-10-06"
     },
     "services": {
       "title": [
@@ -601,7 +617,24 @@
           "Organisations that need a business application or a member area",
           "Teams that want to leave a closed platform without losing their content"
         ],
-        "faq": []
+        "faq": [
+          {
+            "q": "How much does a custom website cost in Belgium?",
+            "a": "Quoted after a free 30-minute call. The price depends on three factors: the number of page templates, the integrations (payment, CRM, member area, multilingual) and the content to produce or migrate. A showcase site ships in one to three months, a business application in two to four. The quote fixes scope, deliverables and timeline; no hidden subscription afterwards."
+          },
+          {
+            "q": "Who owns the code and the data?",
+            "a": "You do. The code is delivered in a Git repository under your name, the data lives with a host you choose and control (Vercel, Cloudflare, Supabase or a Belgian host), and no component depends on a subscription in my name. You can switch providers tomorrow without losing the site or its content."
+          },
+          {
+            "q": "Which technologies do you build with?",
+            "a": "Astro, React and Next.js for the front end; Node or PHP on the server; Postgres and Supabase for data; Stripe for payments; deployment on Vercel, Cloudflare or o2switch. For editorial content, structured files or a light CMS rather than a heavy WordPress. The choice is made during scoping, based on who will maintain the site afterwards."
+          },
+          {
+            "q": "Which websites and products have you already built?",
+            "a": "Products I run myself: Service-Volée (tennis rankings, 76,000 players indexed), BiblioPulse (personal library, 44 million ISBNs), the Observatory (measuring the AI visibility of SMEs) and the Pulse Noir hub (2,150 readers). And client websites: Royal Wellington, Iris Noir, René Manzor's masterclass, medical practices and Belgian SMEs."
+          }
+        ]
       },
       "automate": {
         "name": "Automate",
@@ -634,7 +667,24 @@
           "Companies that want useful, framed, GDPR-compliant AI",
           "Teams that want to know whether ChatGPT, Claude or Perplexity cite them"
         ],
-        "faq": []
+        "faq": [
+          {
+            "q": "What is an AI automation for an SME?",
+            "a": "A chain that removes one specific chore: sorting and summarising emails, qualifying forms, updating a CRM, preparing a quote, following up a customer. The AI (OpenAI, Claude, Mistral) reads, classifies or writes; the rest is classic integration (APIs, database, webhooks). Every automation has an owner, a log and a stop button."
+          },
+          {
+            "q": "Is my data sent to AI providers?",
+            "a": "Only what is necessary, and under contract: professional APIs with no training on your data (OpenAI, Anthropic, Mistral in Europe), minimisation of the fields transmitted, pseudonymisation where possible, and a GDPR record of processing. For sensitive data, a model hosted in Europe or on-premise remains an option I set up."
+          },
+          {
+            "q": "How long before I see a result?",
+            "a": "Two to six weeks for a first automation in production, measured in hours recovered per week. I start with the most repetitive task, ship it, then extend. A dashboard tracks volumes, errors and time saved from the first week, so the next step is decided on numbers."
+          },
+          {
+            "q": "Custom code, n8n, Make or Zapier?",
+            "a": "Custom code (Node, Python) when the logic is genuinely business-specific or volumes matter; self-hosted n8n when the job is mostly connecting existing tools and you want to keep control. Make and Zapier suit low volumes; beyond that, their monthly cost and opacity weigh. I document the choice during scoping."
+          }
+        ]
       },
       "deliver": {
         "name": "Deliver",
@@ -694,6 +744,14 @@
           {
             "q": "What is IT/OT convergence?",
             "a": "IT/OT convergence is the coming together of information systems (IT: servers, networks, applications) and production systems (OT: PLCs, SCADA, sensors, MES). It lets production data flow up to the business and enables more automation, but it exposes industrial equipment to new cyber risks, hence frameworks such as ISA/IEC 62443."
+          },
+          {
+            "q": "What is GAMP 5, in one sentence for a decision-maker?",
+            "a": "GAMP 5 is the ISPE reference guide for validating computerised systems in pharma: a validation effort proportionate to patient and product-quality risk, reliance on suppliers when their quality is demonstrated, and critical thinking rather than documents produced for form's sake. For a decision-maker: validate what matters, not everything."
+          },
+          {
+            "q": "What is a Digital Technology Subject Matter Expert (DT SME)?",
+            "a": "The DT SME is an organisation's technical and business reference on its digital technologies. They resolve blockages between IT, Digital, Quality and production teams, translate technical stakes for management, validate digital projects before go-live and advise on tooling choices. In biopharma they do so within the GxP framework: validated systems, data integrity, documented decisions."
           }
         ]
       }
