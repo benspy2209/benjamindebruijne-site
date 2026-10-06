@@ -7,7 +7,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
 ---
-<Base lang={lang} routeKey="contact" title={s.contact.title.join(' ')}>
+<Base lang={lang} routeKey="contact" title={s.contact.title.join(' ')} description={s.contact.description}>
   <div class="pad"></div>
   <ContactForm lang={lang} num="01" as="h1" />
 </Base>

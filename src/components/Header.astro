@@ -20,7 +20,7 @@ const alt = alternate(routeKey, lang, slug);
     <p class="hdr__time mono"><time data-clock>--:--</time> <span class="muted">{s.header.localTime}</span></p>
     <div class="hdr__r">
       <a href={alt} class="hdr__lang mono" hreflang={lang === 'fr' ? 'en' : 'fr'}>{s.header.langSwitch}</a>
-      <a href={href('contact', lang)} class="hdr__cta btn btn--light">
+      <a href={href('contact', lang)} class="hdr__cta btn btn--light" aria-label={`${s.header.cta} ${s.header.ctaSuffix}`}>
         <img src="/benjamin.jpg" alt="" width="40" height="40" class="hdr__avatar" />
         <span class="btn__t">{s.header.cta}<small>{s.header.ctaSuffix}</small></span>
         <span class="btn__i"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 2l4 4-4 4"/></svg></span>

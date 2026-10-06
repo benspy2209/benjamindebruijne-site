@@ -7,9 +7,22 @@
     "location": "Belgium",
     "email": "debruijneb@gmail.com",
     "title": "Benjamin de Bruijne — Digital & AI consultant",
-    "description": "Digital & AI consultant in Belgium: custom websites and applications, AI and automation, IT project delivery in regulated environments (GxP, biopharma, industry).",
+    "description": "Digital & AI consultant in Belgium: custom websites and applications, AI automation, IT project delivery in regulated environments (GxP, biopharma).",
     "since": "2005",
-    "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo"
+    "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo",
+    "sameAs": [
+      "https://www.linkedin.com/in/benjamindebruijne/",
+      "https://github.com/benspy2209"
+    ],
+    "knowsAbout": [
+      "Artificial intelligence for SMEs",
+      "Automation and CRM",
+      "Web development (Astro, React, Supabase)",
+      "IT project delivery",
+      "Computerised system validation (CSV, GAMP 5)",
+      "GxP and 21 CFR Part 11 compliance",
+      "AI visibility and SEO"
+    ]
   },
   "nav": [
     {
@@ -295,7 +308,8 @@
     "subject": "Project via benjamindebruijne.com",
     "sending": "Sending…",
     "success": "Message sent. I will reply within 24h.",
-    "error": "Could not send, opening your email client instead."
+    "error": "Could not send, opening your email client instead.",
+    "description": "A digital project, an AI automation or an IT assignment to scope? Write to me or book a 30-minute call. I reply within 48 hours."
   },
   "footer": {
     "roleLine": "Digital & AI consultant",
@@ -313,7 +327,8 @@
         "& projects."
       ],
       "intro": "My products, client projects with a real story, ",
-      "introStrong": "and the websites delivered."
+      "introStrong": "and the websites delivered.",
+      "description": "Products, websites and tools built for Belgian businesses: Service-Volée, BiblioPulse, Beneloo, Observatory, Royal Wellington and more."
     },
     "about": {
       "title": [
@@ -416,7 +431,8 @@
       ],
       "intro": "Lessons learned on AI, tools and delivery. ",
       "introStrong": "First articles coming soon.",
-      "empty": "No articles yet."
+      "empty": "No articles yet.",
+      "description": "Notes by Benjamin de Bruijne on AI in business, automation and IT project delivery. First articles coming soon."
     },
     "legal": {
       "title": [
@@ -436,7 +452,8 @@
           "h": "Intellectual property",
           "p": "All content on this site (text, visuals, code) is the property of Hakuna Matata SRL unless stated otherwise. Any reproduction without permission is prohibited."
         }
-      ]
+      ],
+      "description": "Legal notice for benjamindebruijne.com, published by Hakuna Matata SRL, Rhode-Saint-Genèse, Belgium."
     },
     "privacy": {
       "title": [
@@ -456,7 +473,8 @@
           "h": "Your rights",
           "p": "Under the GDPR you may request access to, rectification or deletion of your data by writing to debruijneb@gmail.com."
         }
-      ]
+      ],
+      "description": "Privacy policy: data collected through the contact form, purposes, retention period and your GDPR rights."
     },
     "notFound": {
       "title": [
@@ -558,7 +576,7 @@
           "Websites, applications",
           "and products."
         ],
-        "metaTitle": "Build: custom websites, applications and products",
+        "metaTitle": "Build: custom websites and applications",
         "description": "Design and development of websites, business applications and digital products, with no vendor lock-in. You keep the code and the data.",
         "intro": "A brochure site, a business application, a shop, a member area, a complete product: ",
         "introStrong": "I design and build the tool, from specification to launch.",
@@ -591,7 +609,7 @@
           "AI, data",
           "and CRM."
         ],
-        "metaTitle": "Automate: AI, data and CRM that work for you",
+        "metaTitle": "Automate: AI, data and CRM",
         "description": "Automations, AI connected to your data, CRM and dashboards: hours recovered every week, with guardrails and clear governance.",
         "intro": "AI is useful when it removes a specific chore: ",
         "introStrong": "I plug models into your data and tools, with guardrails.",
@@ -625,7 +643,7 @@
           "in regulated",
           "environments."
         ],
-        "metaTitle": "Deliver: IT projects, CSV validation and GxP compliance",
+        "metaTitle": "Deliver: IT projects, CSV and GxP",
         "description": "IT project delivery in industrial and biopharmaceutical environments: CSV validation, GxP and 21 CFR Part 11 compliance, IT/OT integration, data integrity.",
         "intro": "An IT, Digital, Quality or Compliance decision-maker needs an answer to one simple question: ",
         "introStrong": "will this project be delivered, validated and defensible in an inspection?",

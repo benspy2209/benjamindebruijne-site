@@ -7,9 +7,22 @@
     "location": "Belgique",
     "email": "debruijneb@gmail.com",
     "title": "Benjamin de Bruijne — Consultant digital & IA",
-    "description": "Consultant digital & IA en Belgique : sites et applications sur mesure, IA et automatisation, pilotage de projets IT en environnements réglementés (GxP, biopharma, industrie).",
+    "description": "Consultant digital & IA en Belgique : sites et applications sur mesure, automatisation IA, pilotage de projets IT en environnement réglementé (GxP, biopharma).",
     "since": "2005",
-    "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo"
+    "booking": "https://calendly.com/debruijneb/appel-strategique-beneloo",
+    "sameAs": [
+      "https://www.linkedin.com/in/benjamindebruijne/",
+      "https://github.com/benspy2209"
+    ],
+    "knowsAbout": [
+      "Intelligence artificielle appliquée aux PME",
+      "Automatisation et CRM",
+      "Développement web (Astro, React, Supabase)",
+      "Pilotage de projets IT",
+      "Validation de systèmes informatisés (CSV, GAMP 5)",
+      "Conformité GxP et 21 CFR Part 11",
+      "Visibilité IA et SEO"
+    ]
   },
   "nav": [
     {
@@ -295,7 +308,8 @@
     "subject": "Projet via benjamindebruijne.com",
     "sending": "Envoi en cours…",
     "success": "Message envoyé. Je vous réponds sous 24h.",
-    "error": "Envoi impossible, votre messagerie s'ouvre à la place."
+    "error": "Envoi impossible, votre messagerie s'ouvre à la place.",
+    "description": "Un projet digital, une automatisation IA ou une mission IT à cadrer ? Écrivez-moi ou réservez un appel de 30 minutes. Réponse sous 48 h."
   },
   "footer": {
     "roleLine": "Consultant digital & IA",
@@ -313,7 +327,8 @@
         "& projets."
       ],
       "intro": "Mes produits, les projets clients avec une vraie histoire, ",
-      "introStrong": "et les sites livrés."
+      "introStrong": "et les sites livrés.",
+      "description": "Produits, sites et outils construits pour des entreprises belges : Service-Volée, BiblioPulse, Beneloo, Observatory, Royal Wellington et d'autres."
     },
     "about": {
       "title": [
@@ -366,7 +381,7 @@
         }
       ],
       "faqLabel": "Questions fréquentes",
-      "description": "Benjamin de Bruijne, consultant digital & IA en Belgique : vingt ans de projets IT, Digital Technology SME en biopharma, et six produits construits en parallèle.",
+      "description": "Benjamin de Bruijne, consultant digital & IA en Belgique : 20 ans de projets IT, Digital Technology SME en biopharma, et six produits construits en parallèle.",
       "piloterLink": "Voir l'offre Piloter : projets IT en environnement réglementé"
     },
     "services": {
@@ -416,7 +431,8 @@
       ],
       "intro": "Retours d'expérience sur l'IA, les outils et le pilotage. ",
       "introStrong": "Premiers articles bientôt.",
-      "empty": "Aucun article pour le moment."
+      "empty": "Aucun article pour le moment.",
+      "description": "Notes de Benjamin de Bruijne sur l'IA en entreprise, l'automatisation et le pilotage de projets IT. Premiers articles à venir."
     },
     "legal": {
       "title": [
@@ -436,7 +452,8 @@
           "h": "Propriété intellectuelle",
           "p": "L'ensemble des contenus de ce site (textes, visuels, code) est la propriété de Hakuna Matata SRL, sauf mention contraire. Toute reproduction sans autorisation est interdite."
         }
-      ]
+      ],
+      "description": "Mentions légales du site benjamindebruijne.com, édité par Hakuna Matata SRL, Rhode-Saint-Genèse, Belgique."
     },
     "privacy": {
       "title": [
@@ -456,7 +473,8 @@
           "h": "Vos droits",
           "p": "Conformément au RGPD, vous pouvez demander l'accès, la rectification ou la suppression de vos données en écrivant à debruijneb@gmail.com."
         }
-      ]
+      ],
+      "description": "Politique de confidentialité : données collectées via le formulaire de contact, finalités, durée de conservation et vos droits RGPD."
     },
     "notFound": {
       "title": [
@@ -558,7 +576,7 @@
           "Sites, applications",
           "et produits."
         ],
-        "metaTitle": "Construire : sites, applications et produits sur mesure",
+        "metaTitle": "Construire : sites et applications sur mesure",
         "description": "Conception et développement de sites, applications métier et produits digitaux sur mesure, sans dépendance à un éditeur. Vous gardez le code et les données.",
         "intro": "Un site vitrine, une application métier, une boutique, un espace membre, un produit complet : ",
         "introStrong": "je conçois et je construis l'outil, du cahier des charges à la mise en ligne.",
@@ -591,7 +609,7 @@
           "IA, données",
           "et CRM."
         ],
-        "metaTitle": "Automatiser : IA, données et CRM qui travaillent pour vous",
+        "metaTitle": "Automatiser : IA, données et CRM",
         "description": "Automatisations, IA branchée sur vos données, CRM et tableaux de bord : des heures récupérées chaque semaine, avec des garde-fous et une gouvernance claire.",
         "intro": "L'IA est utile quand elle enlève une corvée précise : ",
         "introStrong": "je branche les modèles sur vos données et vos outils, avec des garde-fous.",
@@ -625,8 +643,8 @@
           "en environnement",
           "réglementé."
         ],
-        "metaTitle": "Piloter : projets IT, validation CSV et conformité GxP",
-        "description": "Pilotage de projets IT en environnement industriel et biopharmaceutique : validation CSV, conformité GxP et 21 CFR Part 11, intégration IT/OT, intégrité des données.",
+        "metaTitle": "Piloter : projets IT, CSV et GxP",
+        "description": "Pilotage de projets IT en environnement industriel et biopharma : validation CSV, conformité GxP et 21 CFR Part 11, intégration IT/OT, intégrité des données.",
         "intro": "Un décideur IT, Digital, Qualité ou Compliance doit pouvoir répondre à une question simple : ",
         "introStrong": "ce projet sera-t-il livré, validé et défendable en inspection ?",
         "sections": [

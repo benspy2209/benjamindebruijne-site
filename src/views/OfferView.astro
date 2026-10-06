@@ -15,8 +15,11 @@ const item = s.services.items.find((i) => i.slug === slug)!;
 const routeKey = offerRoute[slug];
 const others = s.services.items.filter((i) => i.slug !== slug);
 const bookHref = s.meta.booking || href('contact', lang);
+const navLabel = (k: string) => s.nav.find((n) => n.key === k)?.label ?? k;
+const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: navLabel('services'), href: href('services', lang) }, { name: o.name, href: href(routeKey, lang) }];
+const service = { '@type': 'Service', name: o.name, serviceType: o.metaTitle, description: o.description, url: new URL(href(routeKey, lang), Astro.site).toString(), provider: { '@id': `${Astro.site?.origin ?? ''}/#person` }, areaServed: { '@type': 'Country', name: 'Belgium' } };
 ---
-<Base lang={lang} routeKey={routeKey} title={o.metaTitle} description={o.description} onDark>
+<Base lang={lang} routeKey={routeKey} title={o.metaTitle} description={o.description} breadcrumbs={crumbs} jsonLd={[service]} onDark>
   <PageHead num="01" label={`${s.offers.label} · ${o.name}`} title={o.title} intro={o.intro} introStrong={o.introStrong} />
   <section class="of trame section">
     <div class="wrap of__grid">

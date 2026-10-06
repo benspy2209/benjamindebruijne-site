@@ -9,7 +9,7 @@ const { lang, kind } = Astro.props;
 const s = getSite(lang);
 const page = s.pages[kind];
 ---
-<Base lang={lang} routeKey={kind as RouteKey} title={page.title.join(' ')} onDark>
+<Base lang={lang} routeKey={kind as RouteKey} title={page.title.join(' ')} description={page.description} onDark>
   <PageHead num="01" label={kind === 'legal' ? s.footer.legal : s.footer.privacy} title={page.title} />
   <Prose sections={page.sections} />
 </Base>

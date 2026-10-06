@@ -71,3 +71,44 @@ test('compteurs animés atteignent leur valeur', async ({ page }) => {
   await first.scrollIntoViewIfNeeded();
   await expect(first).toHaveText('20+', { timeout: 5000 });
 });
+
+test('SEO : JSON-LD Person avec sameAs, OG locale, description propre au contact', async ({ page }) => {
+  await page.goto('/');
+  const ld = await page.locator('script[type="application/ld+json"]').first().textContent();
+  const graph = JSON.parse(ld ?? '{}')['@graph'] as { '@type': string | string[]; sameAs?: string[] }[];
+  const person = graph.find((n) => n['@type'] === 'Person');
+  expect(person?.sameAs).toContain('https://www.linkedin.com/in/benjamindebruijne/');
+  expect(graph.some((n) => n['@type'] === 'WebSite')).toBe(true);
+  await expect(page.locator('meta[property="og:locale"]')).toHaveAttribute('content', 'fr_BE');
+  await page.goto('/contact/');
+  const desc = await page.locator('meta[name="description"]').getAttribute('content');
+  expect(desc).toContain('30 minutes');
+  await expect(page).toHaveTitle(/^Parlons de votre projet — Benjamin de Bruijne$/);
+});
+
+test('SEO : fil d’Ariane + Service sur une offre, CreativeWork sur un projet', async ({ page }) => {
+  await page.goto('/services/piloter/');
+  const types = async () => JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent()) ?? '{}')['@graph'].map((n: { '@type': string }) => n['@type']).flat();
+  expect(await types()).toEqual(expect.arrayContaining(['BreadcrumbList', 'Service']));
+  await page.goto('/projets/beneloo/');
+  expect(await types()).toEqual(expect.arrayContaining(['BreadcrumbList', 'CreativeWork']));
+  await expect(page).toHaveTitle(/^Beneloo — Un score qui dit si les IA vous citent, et quoi corriger — Benjamin de Bruijne$/);
+});
+
+test('GEO : llms.txt servi en texte, blog en noindex', async ({ page, request }) => {
+  const res = await request.get('/llms.txt');
+  expect(res.status()).toBe(200);
+  expect(res.headers()['content-type']).toContain('text/plain');
+  const body = await res.text();
+  expect(body).toContain('# Benjamin de Bruijne');
+  expect(body).toContain('/services/piloter/');
+  expect(body).toContain('/en/projects/beneloo/');
+  await page.goto('/blog/');
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+});
+
+test('a11y : le CTA du header a un nom accessible sur mobile', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 800 });
+  await page.goto('/');
+  await expect(page.getByRole('link', { name: 'Démarrer un projet /Benjamin' })).toBeVisible();
+});

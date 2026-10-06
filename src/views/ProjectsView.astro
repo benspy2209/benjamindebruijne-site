@@ -8,7 +8,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const s = getSite(lang);
 ---
-<Base lang={lang} routeKey="projects" title={s.pages.projects.title.join(' ')}>
+<Base lang={lang} routeKey="projects" title={s.pages.projects.title.join(' ')} description={s.pages.projects.description}>
   <div class="pad"></div>
   <Portfolio lang={lang} all num="01" />
   <ClientSites lang={lang} num="02" />

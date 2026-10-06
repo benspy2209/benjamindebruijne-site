@@ -19,6 +19,9 @@ const sticker = (p as any).sticker as string[];
 const cat = (p as any).cat as string;
 const tagline = (p as any).tagline as string;
 const stack = (p as any).stack as string;
+const navLabel = (k: string) => s.nav.find((n) => n.key === k)?.label ?? k;
+const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: navLabel('projects'), href: href('projects', lang) }, { name: p.name, href: `${href('projects', lang)}${p.slug}/` }];
+const work = { '@type': 'CreativeWork', name: p.name, url: p.url, description: tagline, dateCreated: String(p.year), creator: { '@id': `${Astro.site?.origin ?? ''}/#person` } };
 /** Teinte plus claire de la couleur du projet pour la bande. */
 const lighten = (hex: string, k = 0.22) => {
   const n = parseInt(hex.slice(1), 16); const r = n >> 16, g = (n >> 8) & 255, b = n & 255;
@@ -26,7 +29,7 @@ const lighten = (hex: string, k = 0.22) => {
   return `#${f(r)}${f(g)}${f(b)}`;
 };
 ---
-<Base lang={lang} routeKey="projects" slug={p.slug} title={p.name} description={`${p.lead}${p.text}`} onDark>
+<Base lang={lang} routeKey="projects" slug={p.slug} title={`${p.name} — ${tagline.replace(/[.\s]+$/, '')}`} description={`${p.lead}${p.text}`} breadcrumbs={crumbs} jsonLd={[work]} onDark>
   <section class="pj" style={`--brand: ${p.color}; --brand-2: ${lighten(p.color)}`}>
     <div class="pj__fond" aria-hidden="true"></div>
     <div class="wrap pj__hero">

@@ -5,15 +5,35 @@ import { alternate, locale, href } from '../lib/i18n';
 import { getSite } from '../lib/content';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-interface Props { lang: Lang; routeKey: RouteKey; slug?: string; title?: string; description?: string; onDark?: boolean }
-const { lang, routeKey, slug, title, description, onDark = false } = Astro.props;
+type Crumb = { name: string; href: string };
+interface Props { lang: Lang; routeKey: RouteKey; slug?: string; title?: string; description?: string; onDark?: boolean; noindex?: boolean; breadcrumbs?: Crumb[]; jsonLd?: Record<string, unknown>[] }
+const { lang, routeKey, slug, title, description, onDark = false, noindex = false, breadcrumbs = [], jsonLd = [] } = Astro.props;
 const s = getSite(lang);
-const pageTitle = title ? `${title} — ${s.meta.name}` : s.meta.title;
+const pageTitle = title ? `${title.replace(/[.\s]+$/, '')} — ${s.meta.name}` : s.meta.title;
 const desc = description ?? s.meta.description;
 const site = Astro.site ?? new URL('http://localhost:4321');
 const canonical = new URL(Astro.url.pathname, site);
 const alt = new URL(alternate(routeKey, lang, slug), site);
 const self = slug ? `${href('projects', lang)}${slug}/` : href(routeKey, lang);
+const other = lang === 'fr' ? 'en' : 'fr';
+const origin = site.origin;
+const personId = `${origin}/#person`;
+const orgId = `${origin}/#organization`;
+const websiteId = `${origin}/#website`;
+const address = { '@type': 'PostalAddress', addressLocality: 'Rhode-Saint-Genèse', addressRegion: 'Brabant flamand', addressCountry: 'BE' };
+const graph: Record<string, unknown>[] = [
+  {
+    '@type': 'Person', '@id': personId, name: s.meta.name, jobTitle: s.meta.role, description: s.meta.description,
+    email: s.meta.email, url: `${origin}/`, image: new URL('/benjamin.jpg', site).toString(),
+    sameAs: s.meta.sameAs, knowsAbout: s.meta.knowsAbout, address,
+    worksFor: { '@id': orgId }, knowsLanguage: ['fr', 'en', 'nl'],
+  },
+  { '@type': ['Organization', 'ProfessionalService'], '@id': orgId, name: 'Hakuna Matata SRL', url: `${origin}/`, founder: { '@id': personId }, address, areaServed: { '@type': 'Country', name: 'Belgium' } },
+  { '@type': 'WebSite', '@id': websiteId, url: `${origin}/`, name: s.meta.name, inLanguage: locale[lang], publisher: { '@id': personId } },
+  { '@type': 'WebPage', '@id': canonical.toString(), url: canonical.toString(), name: pageTitle, description: desc, inLanguage: locale[lang], isPartOf: { '@id': websiteId }, about: { '@id': personId } },
+  ...(breadcrumbs.length ? [{ '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(b.href, site).toString() })) }] : []),
+  ...jsonLd,
+];
 ---
 <!doctype html>
 <html lang={locale[lang]}>
@@ -36,12 +56,17 @@ const self = slug ? `${href('projects', lang)}${slug}/` : href(routeKey, lang);
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL('/og.jpg', site)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={s.meta.name} />
+    <meta property="og:site_name" content={s.meta.name} />
+    <meta property="og:locale" content={locale[lang].replace('-', '_')} />
+    <meta property="og:locale:alternate" content={locale[other].replace('-', '_')} />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json" set:html={JSON.stringify({
-      '@context': 'https://schema.org', '@type': 'Person', name: s.meta.name, jobTitle: s.meta.role,
-      email: s.meta.email, url: site.toString(), address: { '@type': 'PostalAddress', addressLocality: 'Rhode-Saint-Genèse', addressCountry: 'BE' },
-      worksFor: { '@type': 'Organization', name: 'Hakuna Matata SRL' },
-    })} />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={desc} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
   </head>
   <body>
     <a href="#main" class="skip mono">Skip to content</a>
