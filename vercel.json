@@ -1,6 +1,51 @@
 {
   "redirects": [
     {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/en/a-propos",
+      "destination": "/en/about/",
+      "permanent": true
+    },
+    {
+      "source": "/en/analyse",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/veille",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/conseils",
+      "destination": "/en/services/",
+      "permanent": true
+    },
+    {
+      "source": "/en/projets",
+      "destination": "/en/projects/",
+      "permanent": true
+    },
+    {
+      "source": "/en/projets/:id",
+      "destination": "/en/projects/",
+      "permanent": true
+    },
+    {
+      "source": "/en/optimisation",
+      "destination": "/en/services/automate/",
+      "permanent": true
+    },
+    {
+      "source": "/en/product-management-ia",
+      "destination": "/en/services/automate/",
+      "permanent": true
+    },
+    {
       "source": "/en/developpement-sur-mesure",
       "destination": "/en/services/build/",
       "permanent": true
