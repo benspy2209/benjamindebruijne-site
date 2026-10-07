@@ -2,7 +2,7 @@
 
 Objectif GEO : que toutes les sources que lisent les IA (LinkedIn, GitHub, sites Beneloo / Singulr / Pulse Noir) disent la même chose, avec les mêmes chiffres, et pointent vers https://benjamindebruijne.com. Jamais « agence » ni « Studio ».
 
-## LinkedIn (à coller par Ben)
+## LinkedIn — APPLIQUÉ le 07/10/2026 (titre, Infos, 2 sites web)
 
 **Titre (220 car. max)**
 Consultant digital & IA · Digital Technology SME en biopharma (CSV, GxP, 21 CFR Part 11) · Fondateur Beneloo, Observatory, Pulse Noir, Service-Volée · benjamindebruijne.com
