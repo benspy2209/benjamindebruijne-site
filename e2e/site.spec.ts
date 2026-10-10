@@ -42,12 +42,12 @@ test('mobile 375 : pas de débordement horizontal sur l’accueil et une fiche',
   }
 });
 
-test('menu mobile s’ouvre et liste les 5 entrées', async ({ page }) => {
+test('menu mobile s’ouvre et liste les 6 entrées', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 800 });
   await page.goto('/');
   await page.getByRole('button', { name: 'Menu' }).click();
   await expect(page.locator('#menu')).toBeVisible();
-  await expect(page.locator('#menu .menu__link')).toHaveCount(5);
+  await expect(page.locator('#menu .menu__link')).toHaveCount(6);
   await page.keyboard.press('Escape');
   await expect(page.locator('#menu')).toBeHidden();
 });
