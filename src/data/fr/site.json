@@ -499,6 +499,132 @@
       ],
       "text": "Cette page n'existe pas ou a été déplacée.",
       "cta": "Retour à l'accueil"
+    },
+    "biopharma": {
+      "label": "Biopharma · GxP",
+      "title": [
+        "Biopharma :",
+        "DT SME, PMO."
+      ],
+      "intro": "Projets IT et digitaux en environnement GxP, ",
+      "introStrong": "disponible pour une mission à partir de janvier 2027.",
+      "description": "Benjamin de Bruijne, Digital Technology SME et PMO pour projets IT en environnement GxP (CSV, GAMP 5, Part 11) : profil, preuves, CV FR/EN, disponibilité.",
+      "availabilityLabel": "Disponibilité",
+      "availability": "Mission actuelle jusqu'au 31 décembre 2026. J'étudie les missions à partir de janvier 2027.",
+      "availabilityNote": "Freelance via Hakuna Matata SRL, portage via intermédiaire possible. Belgique (Bruxelles, Brabant wallon, Anvers), hybride. Français, anglais, néerlandais.",
+      "cta": "Réserver un appel de 30 min",
+      "ctaMail": "M'écrire",
+      "rolesLabel": "Deux façons de m'intégrer",
+      "roles": [
+        {
+          "slug": "dt-sme",
+          "name": "Digital Technology SME",
+          "title": "Le référent digital des équipes Labs, Production et Qualité.",
+          "p": [
+            "C'est le rôle que j'occupe aujourd'hui chez un leader mondial du biopharma, via Computacenter : résoudre les blocages techniques et architecturaux, traduire le digital pour les métiers et la direction, relire et valider les plans de développement, d'infrastructure et de transformation, conseiller sur les technologies émergentes et l'IA.",
+            "En environnement GxP, cela veut dire des exigences écrites, des systèmes validés selon GAMP 5, une documentation défendable en inspection et une veille permanente sur ce qui change. Ma particularité : je sais aussi valider et gouverner les outils d'IA qui entrent dans les usines et les laboratoires."
+          ],
+          "keywords": [
+            "GAMP 5",
+            "CSV / CSA",
+            "21 CFR Part 11",
+            "EU GMP Annexe 11",
+            "ALCOA+",
+            "URS · FS · DCS · IQ/OQ/PQ",
+            "Matrice de traçabilité",
+            "Change control",
+            "IT/OT · ISA/IEC 62443",
+            "AI governance · EU AI Act",
+            "ServiceNow",
+            "SharePoint"
+          ],
+          "cvLabel": "CV DT SME",
+          "cvFr": "/cv/benjamin-de-bruijne-dt-sme-gxp-fr.pdf",
+          "cvEn": "/cv/benjamin-de-bruijne-dt-sme-gxp-en.pdf"
+        },
+        {
+          "slug": "pmo",
+          "name": "PMO / chef de projet",
+          "title": "Faire tenir ensemble le planning, les livrables et le dossier qualité.",
+          "p": [
+            "Gouvernance du cycle de vie projet GP0→GP4 : gates, critères d'entrée et de sortie, RACI, kits projets et templates, revue qualité des livrables, suivi des risques, des actions et des décisions, tableaux de bord d'avancement et de qualité, préparation des comités de pilotage.",
+            "Certifié Project Manager (Bruxelles Formation), Master en Sciences du travail (management de projet, conduite du changement). Program manager en service public, consultant interne en banque, plus de 200 projets web pilotés comme indépendant. Je parle aux métiers, à l'IT et à la direction dans la même langue."
+          ],
+          "keywords": [
+            "Stage-gate GP0→GP4",
+            "Project charters",
+            "RACI / RASIC",
+            "Registres RAID",
+            "Reporting direction",
+            "Power BI · SQL · Excel",
+            "Revue qualité documentaire",
+            "Cycle en V / GAMP 5",
+            "Jira · Confluence",
+            "Conduite du changement",
+            "Knowledge Academy",
+            "Coordination fournisseurs"
+          ],
+          "cvLabel": "CV PMO",
+          "cvFr": "/cv/benjamin-de-bruijne-pmo-gxp-fr.pdf",
+          "cvEn": "/cv/benjamin-de-bruijne-pmo-gxp-en.pdf"
+        }
+      ],
+      "proofLabel": "Mission en cours",
+      "proof": [
+        {
+          "k": "Client",
+          "v": "Groupe biopharmaceutique belge, leader mondial, site de Braine-l'Alleud, via Computacenter, depuis septembre 2025"
+        },
+        {
+          "k": "Périmètre",
+          "v": "Transformation digitale d'environnements industriels et de laboratoires GxP, projets GP0 à GP4"
+        },
+        {
+          "k": "Livrables",
+          "v": "15+ livrables de validation (URS, DCS, stratégie CSV, IQ/OQ/PQ), matrice de traçabilité, kits projets, SOP, tableaux de bord"
+        },
+        {
+          "k": "Équipes",
+          "v": "Labs, Production, Qualité, IT Security & Compliance, direction"
+        },
+        {
+          "k": "Confidentialité",
+          "v": "Aucune donnée client ne figure sur ce site ni dans les CV. Références sur autorisation."
+        }
+      ],
+      "beforeLabel": "Avant la pharma",
+      "before": [
+        "Fortis Bank (2006–2008) : optimisation des processus et outils des départements Litiges et Successions, en environnement bancaire réglementé.",
+        "Mission Locale de Schaerbeek (2009–2011) : program manager d'une plateforme de matching emploi-compétences, 40+ entreprises partenaires.",
+        "Indépendant depuis 2009 : plus de 200 projets web construits ou pilotés, dont un système d'IA vocale RGPD pour un centre médical."
+      ],
+      "cvsLabel": "Télécharger les CV",
+      "cvsNote": "Versions publiques, sans coordonnées personnelles. Version complète avec références sur demande.",
+      "faqLabel": "Questions des recruteurs",
+      "faq": [
+        {
+          "q": "Benjamin de Bruijne est-il disponible pour une mission pharma ?",
+          "a": "Oui, à partir de janvier 2027. Sa mission actuelle de Digital Technology SME chez un leader mondial du biopharma, via Computacenter, court jusqu'au 31 décembre 2026. Il étudie les missions longues en Belgique, en hybride, pour un rôle de DT SME, de PMO ou de chef de projet en environnement GxP. Le préavis est de deux à quatre semaines selon le contexte."
+        },
+        {
+          "q": "Quel est le statut et le tarif de Benjamin de Bruijne ?",
+          "a": "Benjamin de Bruijne travaille en freelance via sa société Hakuna Matata SRL, en direct ou en portage par un intermédiaire comme c'est le cas aujourd'hui avec Computacenter. Le tarif journalier est communiqué sur demande, en fonction du rôle, de la durée et de la charge réglementaire. Il travaille en français et en anglais, avec un néerlandais opérationnel."
+        },
+        {
+          "q": "Quelle expérience a-t-il de la validation CSV et de GAMP 5 ?",
+          "a": "Depuis septembre 2025, il rédige et gère des livrables de validation de systèmes informatisés dans un environnement GxP : URS, spécifications de conception, stratégies CSV, protocoles et rapports IQ/OQ/PQ, matrices de traçabilité, change control. Il applique GAMP 5 avec un effort proportionné au risque et intègre les exigences du 21 CFR Part 11 et de l'annexe 11 dès la conception."
+        },
+        {
+          "q": "Peut-il tenir un rôle PMO plutôt que technique ?",
+          "a": "Oui. Sa mission actuelle comporte déjà la structuration de la gouvernance projet GP0→GP4, les kits projets, la revue qualité des livrables et les tableaux de bord. Il est certifié Project Manager, a été program manager dans le secteur public et consultant interne en banque, et a piloté plus de 200 projets web comme indépendant. Un CV orienté PMO est téléchargeable sur cette page."
+        },
+        {
+          "q": "Quelle est sa valeur ajoutée sur l'IA en environnement réglementé ?",
+          "a": "Il pratique les modèles et les API d'IA au quotidien dans ses propres produits et il connaît les contraintes GxP. Il peut donc cadrer l'arrivée d'outils d'IA dans une usine ou un laboratoire : cas d'usage justifié, données maîtrisées, validation proportionnée au risque, traçabilité des décisions, conformité à l'EU AI Act. C'est une combinaison encore rare chez les consultants CSV."
+        }
+      ],
+      "updatedLabel": "Page mise à jour le",
+      "lastUpdated": "2026-10-10"
     }
   },
   "missions": {

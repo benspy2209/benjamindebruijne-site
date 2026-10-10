@@ -1,0 +1,118 @@
+---
+import type { Lang } from '../lib/i18n';
+import { href, locale } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Button from '../components/Button.astro';
+import Faq from '../components/Faq.astro';
+import Icon from '../components/Icon.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = getSite(lang);
+const b = s.pages.biopharma;
+const updated = new Date(b.lastUpdated).toLocaleDateString(locale[lang], { dateStyle: 'long' });
+const bookHref = s.meta.booking || href('contact', lang);
+const navLabel = (k: string) => s.nav.find((n) => n.key === k)?.label ?? k;
+const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: b.title.join(' '), href: href('biopharma', lang) }];
+const profile = { '@type': 'ProfilePage', mainEntity: { '@id': `${Astro.site?.origin ?? ''}/#person` }, dateModified: b.lastUpdated };
+const cvs = b.roles.flatMap((r) => [{ label: `${r.cvLabel} · FR`, href: r.cvFr }, { label: `${r.cvLabel} · EN`, href: r.cvEn }]);
+---
+<Base lang={lang} routeKey="biopharma" title={b.title.join(' ')} description={b.description} breadcrumbs={crumbs} jsonLd={[profile]} dateModified={b.lastUpdated} onDark>
+  <PageHead num="01" label={b.label} title={b.title} intro={b.intro} introStrong={b.introStrong} />
+
+  <section class="bp-av trame">
+    <div class="wrap bp-av__in">
+      <p class="label"><span class="num">02</span>{b.availabilityLabel}</p>
+      <p class="bp-av__text h-md reveal">{b.availability}</p>
+      <p class="bp-av__note muted reveal">{b.availabilityNote}</p>
+      <div class="bp-av__ctas reveal">
+        <Button href={bookHref} label={b.cta} external={!!s.meta.booking} variant="accent" />
+        <Button href={`mailto:${s.meta.email}`} label={b.ctaMail} variant="ghost" icon="arrow-ext" />
+      </div>
+    </div>
+  </section>
+
+  <section class="bp-roles trame section">
+    <div class="wrap">
+      <p class="label"><span class="num">03</span>{b.rolesLabel}</p>
+      <div class="bp-roles__grid">
+        {b.roles.map((r) => (
+          <article class="bp-role reveal" id={r.slug}>
+            <p class="mono bp-role__name">{r.name}</p>
+            <h2 class="h-md">{r.title}</h2>
+            {r.p.map((t) => <p class="bp-role__p">{t}</p>)}
+            <ul class="bp-role__kw mono">{r.keywords.map((k) => <li>{k}</li>)}</ul>
+            <div class="bp-role__cv">
+              <a href={r.cvFr} class="bp-cv">{r.cvLabel} · FR <Icon name="arrow-ext" /></a>
+              <a href={r.cvEn} class="bp-cv">{r.cvLabel} · EN <Icon name="arrow-ext" /></a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bp-proof dark trame section">
+    <div class="wrap bp-proof__in">
+      <div>
+        <p class="label"><span class="num">04</span>{b.proofLabel}</p>
+        <dl class="bp-proof__facts">{b.proof.map((f) => <><dt class="mono muted">{f.k}</dt><dd>{f.v}</dd></>)}</dl>
+      </div>
+      <div>
+        <p class="label">{b.beforeLabel}</p>
+        <ul class="bp-proof__before">{b.before.map((t) => <li>{t}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bp-cvs trame section">
+    <div class="wrap bp-cvs__in">
+      <div>
+        <p class="label"><span class="num">05</span>{b.cvsLabel}</p>
+        <p class="muted bp-cvs__note">{b.cvsNote}</p>
+      </div>
+      <ul class="bp-cvs__list">{cvs.map((c) => <li><a href={c.href} class="bp-cvs__link"><span class="h-sm">{c.label}</span><span class="mono muted">PDF</span><span class="of__arrow"><Icon name="arrow-ext" /></span></a></li>)}</ul>
+    </div>
+  </section>
+
+  <Faq label={b.faqLabel} items={b.faq} num="06" />
+  <section class="trame"><div class="wrap bp-upd"><p class="mono muted">{b.updatedLabel} <time datetime={b.lastUpdated}>{updated}</time> · <a href={href('about', lang)}>{navLabel('about')}</a> · <a href={href('offer-deliver', lang)}>{s.offers.items.piloter?.name ?? s.offers.items.deliver?.name}</a></p></div></section>
+</Base>
+<style>
+  .bp-av { background: var(--c-grey-100); }
+  .bp-av__in { display: grid; gap: 20px; padding-block: 48px; }
+  .bp-av__text { max-width: 28ch; }
+  .bp-av__note { max-width: 60ch; font-size: 15px; line-height: 1.6; }
+  .bp-av__ctas { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+  .bp-roles__grid { display: grid; gap: 40px; margin-top: 32px; }
+  .bp-role { display: grid; gap: 16px; align-content: start; padding-top: 24px; border-top: 2px solid var(--c-accent); }
+  .bp-role__name { color: var(--c-accent); }
+  .bp-role__p { font-size: 16px; line-height: 1.6; max-width: 58ch; }
+  .bp-role__kw { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; text-transform: none; font-size: 12px; letter-spacing: .02em; }
+  .bp-role__kw li { border: 1px solid var(--c-grey-300); padding: 5px 10px; }
+  .bp-role__cv { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px; }
+  .bp-cv { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; font-weight: 500; border-bottom: 1px solid var(--c-accent); padding-bottom: 2px; }
+  .bp-cv :global(svg) { width: 10px; height: 10px; flex: none; }
+  .bp-proof__in { display: grid; gap: 40px; }
+  .bp-proof__facts { display: grid; grid-template-columns: auto 1fr; gap: 12px 24px; margin: 24px 0 0; font-size: 15px; line-height: 1.5; }
+  .bp-proof__facts dd { margin: 0; }
+  .bp-proof__before { display: grid; gap: 14px; margin-top: 24px; font-size: 15px; line-height: 1.5; color: var(--c-white-60); }
+  .bp-proof__before li::before { content: "— "; color: var(--c-accent); }
+  .bp-cvs__in { display: grid; gap: 24px; }
+  .bp-cvs__note { font-size: 15px; max-width: 40ch; margin-top: 12px; }
+  .bp-cvs__list { border-top: 1px solid var(--c-grey-300); }
+  .bp-cvs__link { display: grid; grid-template-columns: 1fr auto auto; gap: 16px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--c-grey-300); }
+  .of__arrow { width: 28px; height: 28px; background: var(--c-accent); color: #fff; display: grid; place-items: center; }
+  .of__arrow :global(svg) { width: 10px; height: 10px; }
+  .bp-upd { padding-block: 24px 48px; }
+  .bp-upd a { border-bottom: 1px solid var(--c-accent); }
+  @media (width >= 810px) {
+    .bp-av__in { grid-template-columns: 1fr 2fr; grid-template-areas: "label text" "label note" "label ctas"; gap: 20px 48px; padding-block: 64px; }
+    .bp-av__in .label { grid-area: label; align-self: start; }
+    .bp-av__text { grid-area: text; } .bp-av__note { grid-area: note; } .bp-av__ctas { grid-area: ctas; }
+    .bp-roles__grid { grid-template-columns: 1fr 1fr; gap: 64px; }
+    .bp-proof__in { grid-template-columns: 3fr 2fr; gap: 64px; }
+    .bp-cvs__in { grid-template-columns: 1fr 2fr; gap: 48px; }
+  }
+</style>

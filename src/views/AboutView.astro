@@ -20,6 +20,7 @@ const updated = new Date(a.lastUpdated).toLocaleDateString(locale[lang], { dateS
       <div class="ab__text">
         {a.paragraphs.map((p) => <p class="reveal">{p}</p>)}
         <p class="reveal"><a href={href('offer-deliver', lang)} class="ab__link">{a.piloterLink} →</a></p>
+        <p class="reveal"><a href={href('biopharma', lang)} class="ab__link">{s.pages.biopharma.title.join(' ')} {s.pages.biopharma.introStrong} →</a></p>
         <blockquote class="ab__bio reveal">
           <p class="label ab__biolabel">{a.bioLabel}</p>
           <p class="ab__biotext">{a.bio}</p>

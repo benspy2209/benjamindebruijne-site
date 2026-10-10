@@ -12,7 +12,7 @@ describe('SEO data', () => {
   it('every page section carries its own description', () => {
     for (const l of langs) {
       const s = getSite(l);
-      const descs = [s.contact.description, s.pages.projects.description, s.pages.blog.description, s.pages.legal.description, s.pages.privacy.description, s.pages.about.description, s.pages.services.description, ...Object.values(s.offers.items).map((o) => o.description)];
+      const descs = [s.contact.description, s.pages.projects.description, s.pages.blog.description, s.pages.legal.description, s.pages.privacy.description, s.pages.about.description, s.pages.services.description, s.pages.biopharma.description, ...Object.values(s.offers.items).map((o) => o.description)];
       for (const d of descs) { expect(d.length, `${l}: ${d}`).toBeGreaterThanOrEqual(50); expect(d.length, `${l}: ${d}`).toBeLessThanOrEqual(160); }
       expect(new Set([...descs, s.meta.description]).size).toBe(descs.length + 1);
     }
@@ -35,6 +35,18 @@ describe('SEO data', () => {
 
 describe('GEO data (étape 3)', () => {
   const words = (s: string) => s.trim().split(/\s+/).length;
+  it('biopharma page: dated availability, 2 roles with FR+EN CVs, ≥ 4 citable FAQ entries', () => {
+    for (const l of langs) {
+      const b = getSite(l).pages.biopharma;
+      expect(b.availability).toMatch(/2027/);
+      expect(b.lastUpdated).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(b.roles.map((r) => r.slug)).toEqual(['dt-sme', 'pmo']);
+      for (const r of b.roles) { expect(r.cvFr).toMatch(/^\/cv\/.+-fr\.pdf$/); expect(r.cvEn).toMatch(/^\/cv\/.+-en\.pdf$/); expect(r.keywords.length).toBeGreaterThanOrEqual(8); }
+      expect(b.faq.length).toBeGreaterThanOrEqual(4);
+      for (const f of b.faq) { expect(words(f.a), `${l} ${f.q}`).toBeGreaterThanOrEqual(30); expect(words(f.a), `${l} ${f.q}`).toBeLessThanOrEqual(110); expect(f.q.endsWith('?'), f.q).toBe(true); }
+      expect(b.faq[0].q).toContain('Benjamin de Bruijne');
+    }
+  });
   it('about page carries a reusable short bio and a last-updated date', () => {
     for (const l of langs) {
       const a = getSite(l).pages.about;
@@ -54,7 +66,7 @@ describe('GEO data (étape 3)', () => {
   it('never uses the forbidden Beneloo words in bios and FAQs', () => {
     for (const l of langs) {
       const s = getSite(l);
-      const text = [s.pages.about.bio, ...s.pages.about.faq.map((f) => f.a), ...Object.values(s.offers.items).flatMap((o) => o.faq.map((f) => f.a))].join(' ');
+      const text = [s.pages.about.bio, ...s.pages.about.faq.map((f) => f.a), ...s.pages.biopharma.faq.map((f) => f.a), ...s.pages.biopharma.roles.flatMap((r) => r.p), ...Object.values(s.offers.items).flatMap((o) => o.faq.map((f) => f.a))].join(' ');
       expect(text).not.toMatch(/\bagence\b|\bagency\b|\bStudio\b/i);
     }
   });

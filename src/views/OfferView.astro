@@ -47,6 +47,7 @@ const service = { '@type': 'Service', name: o.name, serviceType: o.metaTitle, de
       <p class="label">{s.offers.related}</p>
       <ul class="of__links">
         {others.map((i) => <li><a href={href(offerRoute[i.slug] as RouteKey, lang)}><span class="h-sm">{i.name}</span><span class="muted">{i.title}</span><span class="of__arrow"><Icon name="chevron" /></span></a></li>)}
+        {routeKey === 'offer-deliver' && <li><a href={href('biopharma', lang)}><span class="h-sm">{s.pages.biopharma.title.join(' ')}</span><span class="muted">{s.pages.biopharma.intro}{s.pages.biopharma.introStrong}</span><span class="of__arrow"><Icon name="chevron" /></span></a></li>}
         <li><a href={href('about', lang)}><span class="h-sm">{s.nav.find((n) => n.key === 'about')!.label}</span><span class="muted">{s.pages.about.intro}{s.pages.about.introStrong}</span><span class="of__arrow"><Icon name="chevron" /></span></a></li>
         <li><a href={href('services', lang)}><span class="h-sm">{s.offers.back}</span><span class="muted">{s.pages.services.intro}{s.pages.services.introStrong}</span><span class="of__arrow"><Icon name="chevron" /></span></a></li>
       </ul>

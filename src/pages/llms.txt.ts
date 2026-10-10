@@ -22,6 +22,7 @@ export const GET: APIRoute = ({ site }) => {
       `- [${lang === 'fr' ? 'À propos' : 'About'}](${abs(href('about', lang))}): ${s.pages.about.description}`,
       `- [Services](${abs(href('services', lang))}): ${s.pages.services.description}`,
       `- [Contact](${abs(href('contact', lang))}): ${s.contact.description}`,
+      `- [${lang === 'fr' ? 'Biopharma : DT SME, PMO' : 'Biopharma: DT SME, PMO'}](${abs(href('biopharma', lang))}): ${s.pages.biopharma.description}`,
     ];
     return lines.join('\n');
   };

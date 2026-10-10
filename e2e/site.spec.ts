@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 const routes = [
   '/', '/projets/', '/a-propos/', '/services/', '/contact/', '/blog/', '/mentions-legales/', '/confidentialite/',
   '/projets/service-volee/', '/projets/bibliopulse/', '/projets/observatory/', '/projets/iris-noir/', '/projets/royal-wellington/', '/projets/beneloo/',
+  '/biopharma/', '/en/biopharma/',
   '/services/construire/', '/services/automatiser/', '/services/piloter/', '/en/services/build/', '/en/services/automate/', '/en/services/deliver/',
   '/en/', '/en/projects/', '/en/about/', '/en/services/', '/en/contact/', '/en/blog/', '/en/legal/', '/en/privacy/',
   '/en/projects/service-volee/', '/en/projects/bibliopulse/', '/en/projects/observatory/', '/en/projects/iris-noir/', '/en/projects/royal-wellington/', '/en/projects/beneloo/',
@@ -123,4 +124,20 @@ test('GEO : bio réutilisable + date de mise à jour sur à-propos, FAQ sur les 
     await page.goto(r);
     expect(await page.locator('.faq__item').count(), r).toBeGreaterThanOrEqual(3);
   }
+});
+
+test('biopharma : disponibilité, 2 rôles, 4 CV publics en 200 sans coordonnées perso', async ({ page, request }) => {
+  await page.goto('/biopharma/');
+  await expect(page.locator('h1')).toContainText('DT SME');
+  await expect(page.getByText('janvier 2027').first()).toBeVisible();
+  const cvs = page.locator('a[href^="/cv/"][href$=".pdf"]');
+  const hrefs = [...new Set(await cvs.evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).getAttribute('href'))))];
+  expect(hrefs).toHaveLength(4);
+  for (const href of hrefs) {
+    const res = await request.get(href!);
+    expect(res.status(), href!).toBe(200);
+    expect(res.headers()['content-type']).toContain('pdf');
+  }
+  await page.goto('/en/biopharma/');
+  await expect(page.getByText('January 2027').first()).toBeVisible();
 });

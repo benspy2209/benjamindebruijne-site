@@ -4,7 +4,7 @@ export const defaultLang: Lang = 'fr';
 
 export type RouteKey =
   | 'home' | 'projects' | 'about' | 'services' | 'contact' | 'blog' | 'legal' | 'privacy'
-  | 'offer-build' | 'offer-automate' | 'offer-deliver';
+  | 'offer-build' | 'offer-automate' | 'offer-deliver' | 'biopharma';
 
 export const routes: Record<RouteKey, Record<Lang, string>> = {
   home: { fr: '/', en: '/en/' },
@@ -18,6 +18,7 @@ export const routes: Record<RouteKey, Record<Lang, string>> = {
   'offer-build': { fr: '/services/construire/', en: '/en/services/build/' },
   'offer-automate': { fr: '/services/automatiser/', en: '/en/services/automate/' },
   'offer-deliver': { fr: '/services/piloter/', en: '/en/services/deliver/' },
+  biopharma: { fr: '/biopharma/', en: '/en/biopharma/' },
 };
 
 export function href(key: RouteKey, lang: Lang): string {

@@ -499,6 +499,132 @@
       ],
       "text": "This page does not exist or has moved.",
       "cta": "Back to home"
+    },
+    "biopharma": {
+      "label": "Biopharma · GxP",
+      "title": [
+        "Biopharma:",
+        "DT SME, PMO."
+      ],
+      "intro": "IT and digital projects in GxP environments, ",
+      "introStrong": "available for an assignment from January 2027.",
+      "description": "Benjamin de Bruijne, Digital Technology SME and PMO for IT projects in GxP environments (CSV, GAMP 5, 21 CFR Part 11): profile, proof, FR/EN CVs, availability.",
+      "availabilityLabel": "Availability",
+      "availability": "Current assignment until 31 December 2026. I am considering assignments starting January 2027.",
+      "availabilityNote": "Freelance via Hakuna Matata SRL, engagement through an intermediary possible. Belgium (Brussels, Walloon Brabant, Antwerp), hybrid. French, English, Dutch.",
+      "cta": "Book a 30-minute call",
+      "ctaMail": "Email me",
+      "rolesLabel": "Two ways to bring me in",
+      "roles": [
+        {
+          "slug": "dt-sme",
+          "name": "Digital Technology SME",
+          "title": "The digital reference for Labs, Manufacturing and Quality teams.",
+          "p": [
+            "This is the role I hold today at a global biopharma leader, via Computacenter: resolving technical and architectural blockers, translating digital topics for business and management, reviewing and validating development, infrastructure and transformation plans, advising on emerging technologies and AI.",
+            "In a GxP environment this means written requirements, systems validated under GAMP 5, documentation that stands up in an inspection and constant watch on what changes. My distinctive edge: I can also validate and govern the AI tools entering plants and laboratories."
+          ],
+          "keywords": [
+            "GAMP 5",
+            "CSV / CSA",
+            "21 CFR Part 11",
+            "EU GMP Annex 11",
+            "ALCOA+",
+            "URS · FS · DCS · IQ/OQ/PQ",
+            "Traceability matrix",
+            "Change control",
+            "IT/OT · ISA/IEC 62443",
+            "AI governance · EU AI Act",
+            "ServiceNow",
+            "SharePoint"
+          ],
+          "cvLabel": "DT SME CV",
+          "cvFr": "/cv/benjamin-de-bruijne-dt-sme-gxp-fr.pdf",
+          "cvEn": "/cv/benjamin-de-bruijne-dt-sme-gxp-en.pdf"
+        },
+        {
+          "slug": "pmo",
+          "name": "PMO / project manager",
+          "title": "Keeping the plan, the deliverables and the quality file together.",
+          "p": [
+            "GP0→GP4 project lifecycle governance: gates, entry and exit criteria, RACI, project kits and templates, deliverable quality review, tracking of risks, actions and decisions, progress and quality dashboards, steering committee preparation.",
+            "Certified Project Manager (Bruxelles Formation), Master's in Labour Sciences (project management, change management). Programme manager in the public sector, internal consultant in banking, 200+ web projects managed as an independent. I speak the same language to business, IT and management."
+          ],
+          "keywords": [
+            "Stage-gate GP0→GP4",
+            "Project charters",
+            "RACI / RASIC",
+            "RAID logs",
+            "Management reporting",
+            "Power BI · SQL · Excel",
+            "Documentation quality review",
+            "V-model / GAMP 5",
+            "Jira · Confluence",
+            "Change management",
+            "Knowledge Academy",
+            "Vendor coordination"
+          ],
+          "cvLabel": "PMO CV",
+          "cvFr": "/cv/benjamin-de-bruijne-pmo-gxp-fr.pdf",
+          "cvEn": "/cv/benjamin-de-bruijne-pmo-gxp-en.pdf"
+        }
+      ],
+      "proofLabel": "Current assignment",
+      "proof": [
+        {
+          "k": "Client",
+          "v": "Belgian biopharmaceutical group, global leader, Braine-l'Alleud site, via Computacenter, since September 2025"
+        },
+        {
+          "k": "Scope",
+          "v": "Digital transformation of GxP industrial and laboratory environments, GP0 to GP4 projects"
+        },
+        {
+          "k": "Deliverables",
+          "v": "15+ validation deliverables (URS, DCS, CSV strategy, IQ/OQ/PQ), traceability matrix, project kits, SOPs, dashboards"
+        },
+        {
+          "k": "Teams",
+          "v": "Labs, Manufacturing, Quality, IT Security & Compliance, management"
+        },
+        {
+          "k": "Confidentiality",
+          "v": "No client data appears on this site or in the CVs. References upon authorisation."
+        }
+      ],
+      "beforeLabel": "Before pharma",
+      "before": [
+        "Fortis Bank (2006–2008): process and tooling optimisation for the Litigation and Succession departments, in a regulated banking environment.",
+        "Mission Locale de Schaerbeek (2009–2011): programme manager of a job-matching platform, 40+ partner companies.",
+        "Independent since 2009: 200+ web projects built or managed, including a GDPR-compliant voice AI system for a medical centre."
+      ],
+      "cvsLabel": "Download the CVs",
+      "cvsNote": "Public versions, without personal contact details. Full version with references upon request.",
+      "faqLabel": "Recruiters' questions",
+      "faq": [
+        {
+          "q": "Is Benjamin de Bruijne available for a pharma assignment?",
+          "a": "Yes, from January 2027. His current assignment as Digital Technology SME at a global biopharma leader, via Computacenter, runs until 31 December 2026. He is considering long assignments in Belgium, hybrid, as a DT SME, PMO or project manager in a GxP environment. Notice is two to four weeks depending on the context."
+        },
+        {
+          "q": "What are Benjamin de Bruijne's status and rate?",
+          "a": "Benjamin de Bruijne works as a freelancer through his company Hakuna Matata SRL, directly or through an intermediary, as is the case today with Computacenter. The daily rate is communicated on request, depending on the role, the duration and the regulatory load. He works in French and English, with working-level Dutch."
+        },
+        {
+          "q": "What is his experience with CSV validation and GAMP 5?",
+          "a": "Since September 2025 he has authored and managed computerised system validation deliverables in a GxP environment: URS, design specifications, CSV strategies, IQ/OQ/PQ protocols and reports, traceability matrices, change control. He applies GAMP 5 with a risk-proportionate effort and builds 21 CFR Part 11 and Annex 11 requirements in from the design stage."
+        },
+        {
+          "q": "Can he hold a PMO role rather than a technical one?",
+          "a": "Yes. His current assignment already includes structuring GP0→GP4 project governance, project kits, deliverable quality review and dashboards. He is a certified Project Manager, was a programme manager in the public sector and an internal consultant in banking, and has managed 200+ web projects as an independent. A PMO-oriented CV can be downloaded on this page."
+        },
+        {
+          "q": "What is his added value on AI in regulated environments?",
+          "a": "He uses AI models and APIs daily in his own products and he knows the GxP constraints. He can therefore frame the arrival of AI tools in a plant or a laboratory: justified use case, controlled data, risk-proportionate validation, traceable decisions, EU AI Act compliance. This combination is still rare among CSV consultants."
+        }
+      ],
+      "updatedLabel": "Page updated on",
+      "lastUpdated": "2026-10-10"
     }
   },
   "missions": {
