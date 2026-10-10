@@ -31,7 +31,9 @@ Première personne, Ben parle depuis le terrain. Phrases courtes. Concret avant 
 Structure qui marche : accroche en 2 phrases (la situation concrète) → « le cadre existe déjà » (sources) → la méthode en étapes numérotées → « ce qui bloque en pratique » (2-3 pièges) → « par où commencer » (un premier pas en 6 semaines) → note d'auteur.
 
 ## 4. Exactitude : règles non négociables
-- Toute affirmation réglementaire ou normative (texte, édition, année, organisme, obligation) est vérifiée pendant la rédaction sur une source primaire, et la source est nommée dans le texte (organisme + document + année). Sources acceptées : ISPE (GAMP 5 2e éd. 2022, Good Practice Guides), EMA (ema.europa.eu), FDA (fda.gov, 21 CFR), Commission européenne / EUR-Lex (EudraLex vol. 4 annexe 11, AI Act), PIC/S, ISO/IEC et ISA (62443), WHO. Blogs, vendeurs et LinkedIn ne sont pas des sources.
+- Toute affirmation réglementaire ou normative (texte, édition, année, organisme, obligation) est vérifiée pendant la rédaction sur une source primaire, et la source est nommée dans le texte (organisme + document + année). Sources acceptées : ISPE (GAMP 5 2e éd. 2022, Good Practice Guides), EMA (ema.europa.eu), FDA (fda.gov, 21 CFR), Commission européenne / EUR-Lex (EudraLex vol. 4 annexe 11, AI Act), PIC/S, ISO/IEC et ISA (62443), WHO, MHRA (gov.uk). Blogs, vendeurs et LinkedIn ne sont pas des sources.
+- **Moyen de vérification** : ouvrir la page (WebFetch) quand c'est possible. Dans l'environnement cloud de la routine, l'ouverture directe des sites est bloquée par la politique réseau : la vérification se fait alors par **WebSearch restreint aux domaines officiels** (`allowed_domains` = fda.gov, ema.europa.eu, ispe.org, eur-lex.europa.eu, health.ec.europa.eu, picscheme.org, gov.uk, who.int). Une affirmation est considérée vérifiée si au moins un résultat provenant du domaine officiel la confirme explicitement (titre, date, statut). Ce mode est acceptable et ne justifie pas de sauter la semaine.
+- Quand les résultats sont contradictoires ou flous (projet vs texte final, date incertaine), on n'arbitre pas : on écrit la nuance telle quelle (« guidance publiée en projet en 2022, version finale annoncée en 2025 ; vérifiez le statut en vigueur sur fda.gov ») ou on retire l'affirmation. Le reste de l'article ne dépend jamais d'un point incertain.
 - Ce qui ne peut pas être vérifié n'est pas écrit. Aucun chiffre inventé, aucune statistique sans source, aucune citation.
 - Ne jamais affirmer qu'un texte « exige » quelque chose s'il « recommande ». Distinguer guide (GAMP) et réglementation (CFR, annexe 11, AI Act).
 - Pas de conseil juridique : « à confirmer avec votre Qualité / votre conseil » quand c'est un point d'interprétation.
@@ -45,7 +47,7 @@ Structure qui marche : accroche en 2 phrases (la situation concrète) → « le 
 ## 6. Contrôles avant publication (tous obligatoires)
 1. Les deux fichiers existent, même nom, `lang` correct, `description` entre 50 et 160 caractères, pas de champ `slug`.
 2. `grep -iE "UCB|Computacenter|Hakuna|agence|Studio|Beneloo|Pulse Noir|Singulr|TJM|€/j"` sur les deux fichiers ne renvoie rien.
-3. Chaque source citée a été ouverte pendant la rédaction (WebFetch) et dit bien ce qui est écrit.
+3. Chaque source citée a été vérifiée pendant la rédaction (page ouverte, ou résultat de recherche restreint au domaine officiel, voir §4) et dit bien ce qui est écrit. L'absence d'accès direct aux sites n'est pas un motif de blocage ; l'absence de toute confirmation sur domaine officiel, oui : dans ce cas on retire l'affirmation, pas l'article.
 4. `npm ci && npm test && npm run build` passent.
 5. Si un seul contrôle échoue : ne rien committer, ne rien publier, écrire un rapport. La semaine saute, c'est voulu.
 
