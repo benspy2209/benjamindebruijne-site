@@ -4,6 +4,10 @@ description: "An AI tool is entering a pharma lab or plant: does it need validat
 date: 2026-10-10
 lang: en
 tags: [GxP, CSV, GAMP 5, AI, validation]
+points:
+  - "The intended use, in writing, first"
+  - "Test the use, not the model"
+  - "Human in the loop and review over time"
 ---
 
 An artificial intelligence tool arrives in a laboratory or on a pharmaceutical manufacturing site. An assistant that summarises reports, a model that pre-classifies deviations, a document search that answers in natural language. The question comes quickly, and it lands on Quality and IT at the same time: **does it need to be validated, and how?**

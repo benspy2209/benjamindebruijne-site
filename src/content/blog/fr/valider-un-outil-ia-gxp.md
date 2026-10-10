@@ -4,6 +4,10 @@ description: "Un outil d'IA entre dans un labo ou une usine pharma : faut-il le 
 date: 2026-10-10
 lang: fr
 tags: [GxP, CSV, GAMP 5, IA, validation]
+points:
+  - "L'usage prévu, écrit, avant tout"
+  - "Tester l'usage, pas le modèle"
+  - "Humain dans la boucle et revue dans le temps"
 ---
 
 Un outil d'intelligence artificielle arrive dans un laboratoire ou sur un site de production pharmaceutique. Un assistant qui résume des rapports, un modèle qui pré-classe des déviations, une recherche documentaire qui répond en langage naturel. La question tombe vite, et elle tombe sur la Qualité et l'IT en même temps : **faut-il le valider, et comment ?**

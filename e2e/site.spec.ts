@@ -143,7 +143,7 @@ test('biopharma : disponibilité, 2 rôles, 4 CV publics en 200 sans coordonnée
   await expect(page.getByText('January 2027').first()).toBeVisible();
 });
 
-test('blog : liste indexable, article avec JSON-LD BlogPosting, hreflang croisés FR/EN', async ({ page }) => {
+test('blog : liste indexable, article avec JSON-LD BlogPosting, hreflang croisés FR/EN, cartes PNG', async ({ page, request }) => {
   await page.goto('/blog/');
   expect(await page.locator('meta[name=robots]').count()).toBe(0);
   await page.getByRole('link', { name: /Valider un outil d'IA/ }).first().click();
@@ -154,6 +154,12 @@ test('blog : liste indexable, article avec JSON-LD BlogPosting, hreflang croisé
   await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute('href', /\/en\/blog\/valider-un-outil-ia-gxp\/$/);
   await page.getByRole('link', { name: 'EN', exact: true }).click();
   await expect(page).toHaveURL(/\/en\/blog\/valider-un-outil-ia-gxp\/$/);
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', /\/blog\/valider-un-outil-ia-gxp-en-og\.png$/);
+  for (const f of ['valider-un-outil-ia-gxp-card.png', 'valider-un-outil-ia-gxp-og.png', 'valider-un-outil-ia-gxp-en-card.png']) {
+    const res = await request.get(`/blog/${f}`);
+    expect(res.status(), f).toBe(200);
+    expect(res.headers()['content-type']).toContain('image/png');
+  }
 });
 
 test('footer : liens LinkedIn et GitHub sur toutes les pages, et LinkedIn dans le bloc disponibilité biopharma', async ({ page }) => {

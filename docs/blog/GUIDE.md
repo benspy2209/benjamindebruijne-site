@@ -16,6 +16,10 @@ Lecteurs : recruteurs, hiring managers et pairs en pharma/biotech belge (IT, Qua
   date: AAAA-MM-JJ                      # jour de publication
   lang: fr                              # ou en
   tags: [GxP, CSV, GAMP 5]              # 3 à 5 tags, mêmes tags FR/EN
+  points:                               # exactement 3 lignes, ≤ 70 caractères, les 3 idées clés (carte visuelle)
+    - "…"
+    - "…"
+    - "…"
   ---
   ```
 - JAMAIS de champ `slug` en frontmatter (le loader l'utilise comme identifiant et écrase FR/EN).
@@ -51,14 +55,16 @@ Structure qui marche : accroche en 2 phrases (la situation concrète) → « le 
 4. `npm ci && npm test && npm run build` passent.
 5. Si un seul contrôle échoue : ne rien committer, ne rien publier, écrire un rapport. La semaine saute, c'est voulu.
 
-## 7. Publication
+## 7. Carte visuelle, puis publication
+- Avant de committer, générer la carte LinkedIn (1200×1200) et l'image de partage (1200×630) pour les deux langues : `node scripts/blog-card.mjs <slug>` puis `node scripts/blog-card.mjs <slug> --lang en`. Sortie dans `public/blog/` : `<slug>-card.png`, `<slug>-og.png`, `<slug>-en-card.png`, `<slug>-en-og.png`. Sans navigateur (satori + resvg), fonctionne dans le cloud. Les 4 fichiers sont committés avec l'article.
+- Sur le site, l'image 1200×630 sert d'aperçu de partage (og:image) de l'article ; elle n'est pas affichée dans la page. Sur LinkedIn, la carte carrée est jointe au post.
 - `git config user.email debruijneb@gmail.com` et `git config user.name benspy2209`.
-- `git add` uniquement les deux fichiers de l'article et `docs/blog/backlog.md`. Jamais `git add -A` ni `git add .`.
+- `git add` uniquement les deux fichiers de l'article, les 4 images `public/blog/<slug>*.png` et `docs/blog/backlog.md`. Jamais `git add -A` ni `git add .`.
 - Message : `blog: <titre FR>` + ligne vide + `Co-Authored-By: Claude <noreply@anthropic.com>`.
 - `git push origin main` = déploiement Vercel. Vérifier ensuite que `https://benjamindebruijne.com/blog/<slug>/` et `/en/blog/<slug>/` répondent 200 (attendre jusqu'à 10 minutes).
 
 ## 8. Post LinkedIn (Metricool)
-- Marque Metricool : blogId `6408500`, fuseau `Europe/Madrid` (même heure que Bruxelles). Réseau : `linkedin` uniquement, type `post`, `previewIncluded: true`, `autoPublish: true`, pas de média (l'aperçu du lien suffit).
+- Marque Metricool : blogId `6408500`, fuseau `Europe/Madrid` (même heure que Bruxelles). Réseau : `linkedin` uniquement, type `post`, `previewIncluded: false`, `autoPublish: true`, média = la carte carrée `https://benjamindebruijne.com/blog/<slug>-card.png` (URL publique, en ligne après le déploiement ; attendre qu'elle réponde 200, ou 3 minutes après le push si curl est bloqué). Le lien vers l'article reste dans le texte.
 - Horaire : le lendemain matin de la publication de l'article, 08:30 Europe/Brussels. Deux passages par semaine : article le lundi soir (18:00) → post le mardi 08:30 ; article le jeudi matin (07:00) → post le vendredi 08:30.
 - Texte FR uniquement, 120 à 180 mots, structure : 1 phrase d'accroche (la situation), 1 phrase qui nomme le piège, 3 à 4 lignes sur ce que contient l'article, une flèche `→` suivie de l'URL FR complète, puis 4 à 5 hashtags (#GxP #CSV #GAMP5 #Pharma + 1 du sujet). Pas d'emoji, pas de « je suis ravi », pas de question rhétorique en ouverture.
 - Exemple validé :

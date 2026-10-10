@@ -12,7 +12,8 @@
     "astro": "astro",
     "test": "vitest run",
     "e2e": "astro build && (astro preview --port 4173 --background || true) && playwright test; s=$?; astro preview stop >/dev/null 2>&1; exit $s",
-    "indexnow": "node scripts/indexnow.mjs --now"
+    "indexnow": "node scripts/indexnow.mjs --now",
+    "blog:card": "node scripts/blog-card.mjs"
   },
   "dependencies": {
     "astro": "^7.3.5"
@@ -23,6 +24,8 @@
   "devDependencies": {
     "@astrojs/sitemap": "^3.7.4",
     "@playwright/test": "^1.63.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.47.1",
     "vitest": "^5.0.3"
   }
 }

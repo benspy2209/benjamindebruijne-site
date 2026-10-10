@@ -1,5 +1,6 @@
 ---
 import { render } from 'astro:content';
+import { existsSync } from 'node:fs';
 import type { Lang } from '../lib/i18n';
 import { href, locale } from '../lib/i18n';
 import { getSite } from '../lib/content';
@@ -20,9 +21,11 @@ const origin = Astro.site?.origin ?? '';
 const url = `${origin}${paths[lang]}`;
 const navLabel = (k: string) => s.nav.find((n) => n.key === k)?.label ?? k;
 const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: 'Blog', href: href('blog', lang) }, { name: post.data.title, href: paths[lang] }];
-const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: post.data.title, description: post.data.description, url, datePublished: iso(post.data.date), dateModified: iso(post.data.updated ?? post.data.date), inLanguage: locale[lang], keywords: post.data.tags.join(', '), wordCount: words, author: { '@id': `${origin}/#person` }, publisher: { '@id': `${origin}/#person` }, mainEntityOfPage: url, image: `${origin}/og-biopharma.jpg` };
+const ogFile = `/blog/${slugOf(post)}${lang === 'fr' ? '' : `-${lang}`}-og.png`;
+const ogImage = existsSync(`public${ogFile}`) ? ogFile : '/og-biopharma.jpg';
+const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: post.data.title, description: post.data.description, url, datePublished: iso(post.data.date), dateModified: iso(post.data.updated ?? post.data.date), inLanguage: locale[lang], keywords: post.data.tags.join(', '), wordCount: words, author: { '@id': `${origin}/#person` }, publisher: { '@id': `${origin}/#person` }, mainEntityOfPage: url, image: `${origin}${ogImage}` };
 ---
-<Base lang={lang} routeKey="blog" title={post.data.title} description={post.data.description} breadcrumbs={crumbs} jsonLd={[article]} dateModified={iso(post.data.updated ?? post.data.date)} paths={paths} ogType="article" ogImage="/og-biopharma.jpg" onDark>
+<Base lang={lang} routeKey="blog" title={post.data.title} description={post.data.description} breadcrumbs={crumbs} jsonLd={[article]} dateModified={iso(post.data.updated ?? post.data.date)} paths={paths} ogType="article" ogImage={ogImage} onDark>
   <section class="ah dark trame">
     <div class="wrap ah__in">
       <p class="label"><span class="num">01</span>Blog · {post.data.tags.slice(0, 3).join(' · ')}</p>
