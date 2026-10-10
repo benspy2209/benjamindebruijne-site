@@ -6,16 +6,18 @@ import { getSite } from '../lib/content';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 type Crumb = { name: string; href: string };
-interface Props { lang: Lang; routeKey: RouteKey; slug?: string; title?: string; description?: string; onDark?: boolean; noindex?: boolean; breadcrumbs?: Crumb[]; jsonLd?: Record<string, unknown>[]; dateModified?: string; ogImage?: string; headerCta?: { label: string; suffix?: string; href: string; external?: boolean } }
-const { lang, routeKey, slug, title, description, onDark = false, noindex = false, breadcrumbs = [], jsonLd = [], dateModified, ogImage = '/og.jpg', headerCta } = Astro.props;
+interface Props { lang: Lang; routeKey: RouteKey; slug?: string; title?: string; description?: string; onDark?: boolean; noindex?: boolean; breadcrumbs?: Crumb[]; jsonLd?: Record<string, unknown>[]; dateModified?: string; ogImage?: string; headerCta?: { label: string; suffix?: string; href: string; external?: boolean }; paths?: Record<Lang, string>; ogType?: string }
+const { lang, routeKey, slug, title, description, onDark = false, noindex = false, breadcrumbs = [], jsonLd = [], dateModified, ogImage = '/og.jpg', headerCta, paths, ogType = 'website' } = Astro.props;
 const s = getSite(lang);
 const pageTitle = title ? `${title.replace(/[.\s]+$/, '')} — ${s.meta.name}` : s.meta.title;
 const desc = description ?? s.meta.description;
 const site = Astro.site ?? new URL('http://localhost:4321');
 const canonical = new URL(Astro.url.pathname, site);
-const alt = new URL(alternate(routeKey, lang, slug), site);
-const self = slug ? `${href('projects', lang)}${slug}/` : href(routeKey, lang);
 const other = lang === 'fr' ? 'en' : 'fr';
+const altPath = paths ? paths[other] : alternate(routeKey, lang, slug);
+const alt = new URL(altPath, site);
+const self = paths ? paths[lang] : slug ? `${href('projects', lang)}${slug}/` : href(routeKey, lang);
+const xDefault = paths ? paths.fr : slug ? `${href('projects', 'fr')}${slug}/` : href(routeKey, 'fr');
 const origin = site.origin;
 const personId = `${origin}/#person`;
 const orgId = `${origin}/#organization`;
@@ -46,7 +48,7 @@ const graph: Record<string, unknown>[] = [
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang={lang} href={new URL(self, site)} />
     <link rel="alternate" hreflang={lang === 'fr' ? 'en' : 'fr'} href={alt} />
-    <link rel="alternate" hreflang="x-default" href={new URL(slug ? `${href('projects', 'fr')}${slug}/` : href(routeKey, 'fr'), site)} />
+    <link rel="alternate" hreflang="x-default" href={new URL(xDefault, site)} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -54,7 +56,7 @@ const graph: Record<string, unknown>[] = [
     <link rel="preload" href="/fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={desc} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL(ogImage, site)} />
     <meta property="og:image:width" content="1200" />
@@ -71,7 +73,7 @@ const graph: Record<string, unknown>[] = [
   </head>
   <body>
     <a href="#main" class="skip mono">Skip to content</a>
-    <Header lang={lang} routeKey={routeKey} slug={slug} onDark={onDark} cta={headerCta} />
+    <Header lang={lang} routeKey={routeKey} slug={slug} onDark={onDark} cta={headerCta} altHref={paths ? altPath : undefined} />
     <main id="main"><slot /></main>
     <Footer lang={lang} />
     <script>

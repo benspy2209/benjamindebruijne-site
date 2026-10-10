@@ -1,0 +1,68 @@
+---
+import { render } from 'astro:content';
+import type { Lang } from '../lib/i18n';
+import { href, locale } from '../lib/i18n';
+import { getSite } from '../lib/content';
+import { postHref, slugOf, type Post } from '../lib/blog';
+import Base from '../layouts/Base.astro';
+import Button from '../components/Button.astro';
+interface Props { lang: Lang; post: Post }
+const { lang, post } = Astro.props;
+const s = getSite(lang);
+const b = s.pages.blog;
+const { Content } = await render(post);
+const words = post.body?.split(/\s+/).length ?? 0;
+const minutes = Math.max(1, Math.round(words / 220));
+const fmt = (d: Date) => d.toLocaleDateString(locale[lang], { dateStyle: 'long' });
+const iso = (d: Date) => d.toISOString().slice(0, 10);
+const paths = { fr: postHref(slugOf(post), 'fr'), en: postHref(slugOf(post), 'en') };
+const origin = Astro.site?.origin ?? '';
+const url = `${origin}${paths[lang]}`;
+const navLabel = (k: string) => s.nav.find((n) => n.key === k)?.label ?? k;
+const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: 'Blog', href: href('blog', lang) }, { name: post.data.title, href: paths[lang] }];
+const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: post.data.title, description: post.data.description, url, datePublished: iso(post.data.date), dateModified: iso(post.data.updated ?? post.data.date), inLanguage: locale[lang], keywords: post.data.tags.join(', '), wordCount: words, author: { '@id': `${origin}/#person` }, publisher: { '@id': `${origin}/#person` }, mainEntityOfPage: url, image: `${origin}/og-biopharma.jpg` };
+---
+<Base lang={lang} routeKey="blog" title={post.data.title} description={post.data.description} breadcrumbs={crumbs} jsonLd={[article]} dateModified={iso(post.data.updated ?? post.data.date)} paths={paths} ogType="article" ogImage="/og-biopharma.jpg" onDark>
+  <section class="ah dark trame">
+    <div class="wrap ah__in">
+      <p class="label"><span class="num">01</span>Blog · {post.data.tags.slice(0, 3).join(' · ')}</p>
+      <h1 class="h-xl ah__title reveal">{post.data.title}</h1>
+      <p class="ah__meta mono muted"><span>{b.published} <time datetime={iso(post.data.date)}>{fmt(post.data.date)}</time></span>{post.data.updated && <span> · {b.updated} <time datetime={iso(post.data.updated)}>{fmt(post.data.updated)}</time></span>}<span> · {minutes} {b.readingTime}</span></p>
+    </div>
+  </section>
+  <section class="trame section">
+    <div class="wrap ar__in">
+      <aside class="ar__side">
+        <p class="label">{b.authorNote}</p>
+        <Button href={href('biopharma', lang)} label={s.pages.biopharma.title.join(' ')} class="ar__cta" />
+        <a href={href('blog', lang)} class="mono ar__back">← {b.back}</a>
+      </aside>
+      <article class="ar__body">
+        <Content />
+      </article>
+    </div>
+  </section>
+</Base>
+<style>
+  .ah__in { padding-top: calc(var(--header-h) + 48px); padding-bottom: 56px; display: grid; gap: 24px; }
+  .ah__title { max-width: 22ch; }
+  .ah__meta { font-size: 12px; }
+  .ar__in { display: grid; gap: 40px; }
+  .ar__side { display: grid; gap: 20px; align-content: start; }
+  .ar__side .label { max-width: 28ch; line-height: 1.6; }
+  .ar__cta { justify-self: start; }
+  .ar__back { color: var(--c-grey-500); }
+  .ar__body { max-width: 68ch; font-size: 17px; line-height: 1.65; }
+  .ar__body :global(h2) { font-size: 24px; line-height: 1.2; font-weight: 600; letter-spacing: -.015em; margin: 40px 0 14px; }
+  .ar__body :global(p) { margin: 0 0 18px; }
+  .ar__body :global(ul), .ar__body :global(ol) { margin: 0 0 18px; padding-left: 22px; display: grid; gap: 8px; }
+  .ar__body :global(ul) { list-style: none; padding-left: 0; }
+  .ar__body :global(ul li) { padding-left: 22px; position: relative; }
+  .ar__body :global(ul li)::before { content: "—"; position: absolute; left: 0; color: var(--c-accent); }
+  .ar__body :global(ol) { list-style: decimal; }
+  .ar__body :global(strong) { font-weight: 600; }
+  .ar__body :global(a) { border-bottom: 1px solid var(--c-accent); }
+  .ar__body :global(hr) { border: 0; border-top: 1px solid var(--c-grey-300); margin: 40px 0 24px; }
+  .ar__body :global(em) { color: var(--c-grey-500); font-style: normal; font-size: 15px; }
+  @media (width >= 810px) { .ah__in { padding-top: calc(var(--header-h) + 80px); padding-bottom: 80px; } .ar__in { grid-template-columns: 1fr 2fr; gap: 64px; } .ar__side { position: sticky; top: 32px; } }
+</style>

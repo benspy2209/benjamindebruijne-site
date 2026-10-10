@@ -4,13 +4,13 @@ import { href, alternate } from '../lib/i18n';
 import { getSite } from '../lib/content';
 import Button from './Button.astro';
 type Cta = { label: string; suffix?: string; href: string; external?: boolean };
-interface Props { lang: Lang; routeKey: RouteKey; slug?: string; onDark?: boolean; cta?: Cta }
-const { lang, routeKey, slug, onDark = false, cta } = Astro.props;
+interface Props { lang: Lang; routeKey: RouteKey; slug?: string; onDark?: boolean; cta?: Cta; altHref?: string }
+const { lang, routeKey, slug, onDark = false, cta, altHref } = Astro.props;
 const s = getSite(lang);
 const ctaLabel = cta?.label ?? s.header.cta;
 const ctaSuffix = cta?.suffix ?? s.header.ctaSuffix;
 const ctaHref = cta?.href ?? href('contact', lang);
-const alt = alternate(routeKey, lang, slug);
+const alt = altHref ?? alternate(routeKey, lang, slug);
 ---
 <header class:list={['hdr', { 'hdr--dark': onDark }]} data-header>
   <div class="hdr__in wrap">

@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { getSite, getProjects } from '../src/lib/content';
 import { routes, href, projectHref, alternate } from '../src/lib/i18n';
+import { readdirSync, readFileSync } from 'node:fs';
 
 function shape(v: unknown): unknown {
   if (Array.isArray(v)) return v.map(shape);
@@ -41,5 +42,19 @@ describe('i18n helpers', () => {
   it('alternate switches language', () => {
     expect(alternate('about', 'fr')).toBe('/en/about/');
     expect(alternate('projects', 'en', 'beneloo')).toBe('/projets/beneloo/');
+  });
+});
+
+describe('blog posts FR/EN parity (files)', () => {
+  const fm = (f: string) => Object.fromEntries([...readFileSync(f, 'utf8').split('---')[1].matchAll(/^(\w+):\s*"?(.*?)"?\s*$/gm)].map((m) => [m[1], m[2]]));
+  const list = (l: string) => readdirSync(`src/content/blog/${l}`).filter((f) => f.endsWith('.md')).sort();
+  it('every FR post has an EN twin with the same filename and a 50–160 char description', () => {
+    expect(list('en')).toEqual(list('fr'));
+    for (const l of ['fr', 'en']) for (const f of list(l)) {
+      const d = fm(`src/content/blog/${l}/${f}`);
+      expect(d.lang, f).toBe(l);
+      expect(d.description.length, f).toBeGreaterThanOrEqual(50);
+      expect(d.description.length, f).toBeLessThanOrEqual(160);
+    }
   });
 });

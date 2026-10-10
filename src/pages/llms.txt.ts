@@ -1,13 +1,15 @@
 import type { APIRoute } from 'astro';
 import { getSite, getProjects } from '../lib/content';
 import { href, projectHref, type Lang } from '../lib/i18n';
+import { getPosts, postHref, slugOf } from '../lib/blog';
 
 /** llms.txt : résumé du site lisible par les assistants IA (https://llmstxt.org). */
-export const GET: APIRoute = ({ site }) => {
+export const GET: APIRoute = async ({ site }) => {
   const origin = site?.origin ?? 'https://benjamindebruijne.com';
   const abs = (path: string) => `${origin}${path}`;
-  const block = (lang: Lang) => {
+  const block = async (lang: Lang) => {
     const s = getSite(lang);
+    const posts = await getPosts(lang);
     const offers = Object.entries(s.offers.items) as [string, { name: string; metaTitle: string; description: string }][];
     const offerKey: Record<string, 'offer-build' | 'offer-automate' | 'offer-deliver'> = { construire: 'offer-build', build: 'offer-build', automatiser: 'offer-automate', automate: 'offer-automate', piloter: 'offer-deliver', deliver: 'offer-deliver' };
     const projects = getProjects(lang);
@@ -23,6 +25,9 @@ export const GET: APIRoute = ({ site }) => {
       `- [Services](${abs(href('services', lang))}): ${s.pages.services.description}`,
       `- [Contact](${abs(href('contact', lang))}): ${s.contact.description}`,
       `- [${lang === 'fr' ? 'Biopharma : DT SME, PMO' : 'Biopharma: DT SME, PMO'}](${abs(href('biopharma', lang))}): ${s.pages.biopharma.description}`,
+      '',
+      lang === 'fr' ? '## Articles' : '## Articles (EN)',
+      ...posts.map((p) => `- [${p.data.title}](${abs(postHref(slugOf(p), lang))}): ${p.data.description} (${p.data.date.toISOString().slice(0, 10)})`),
     ];
     return lines.join('\n');
   };
@@ -37,9 +42,9 @@ export const GET: APIRoute = ({ site }) => {
     `Profils : ${fr.meta.sameAs.join(' · ')}.`,
     `Contact : ${fr.meta.email} · ${fr.meta.booking}`,
     '',
-    block('fr'),
+    await block('fr'),
     '',
-    block('en'),
+    await block('en'),
     '',
   ].join('\n');
   return new Response(text, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });

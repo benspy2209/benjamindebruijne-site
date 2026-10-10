@@ -445,10 +445,16 @@
         "Notes",
         "& articles."
       ],
-      "intro": "Retours d'expérience sur l'IA, les outils et le pilotage. ",
-      "introStrong": "Premiers articles bientôt.",
+      "intro": "Retours d'expérience sur le GxP, l'IA et le pilotage de projets IT. ",
+      "introStrong": "Écrits depuis le terrain.",
       "empty": "Aucun article pour le moment.",
-      "description": "Notes de Benjamin de Bruijne sur l'IA en entreprise, l'automatisation et le pilotage de projets IT. Premiers articles à venir."
+      "description": "Notes de Benjamin de Bruijne sur la validation CSV, l'IA en environnement GxP, l'automatisation et le pilotage de projets IT.",
+      "read": "Lire l'article",
+      "back": "Tous les articles",
+      "published": "Publié le",
+      "updated": "Mis à jour le",
+      "readingTime": "min de lecture",
+      "authorNote": "Écrit par Benjamin de Bruijne, Digital Technology SME en biopharma."
     },
     "legal": {
       "title": [

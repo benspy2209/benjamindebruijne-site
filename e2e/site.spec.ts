@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 const routes = [
   '/', '/projets/', '/a-propos/', '/services/', '/contact/', '/blog/', '/mentions-legales/', '/confidentialite/',
   '/projets/service-volee/', '/projets/bibliopulse/', '/projets/observatory/', '/projets/iris-noir/', '/projets/royal-wellington/', '/projets/beneloo/',
-  '/biopharma/', '/en/biopharma/',
+  '/biopharma/', '/en/biopharma/', '/blog/valider-un-outil-ia-gxp/', '/en/blog/valider-un-outil-ia-gxp/',
   '/services/construire/', '/services/automatiser/', '/services/piloter/', '/en/services/build/', '/en/services/automate/', '/en/services/deliver/',
   '/en/', '/en/projects/', '/en/about/', '/en/services/', '/en/contact/', '/en/blog/', '/en/legal/', '/en/privacy/',
   '/en/projects/service-volee/', '/en/projects/bibliopulse/', '/en/projects/observatory/', '/en/projects/iris-noir/', '/en/projects/royal-wellington/', '/en/projects/beneloo/',
@@ -96,7 +96,7 @@ test('SEO : fil d’Ariane + Service sur une offre, CreativeWork sur un projet',
   await expect(page).toHaveTitle(/^Beneloo — Un score qui dit si les IA vous citent, et quoi corriger — Benjamin de Bruijne$/);
 });
 
-test('GEO : llms.txt servi en texte, blog en noindex', async ({ page, request }) => {
+test('GEO : llms.txt servi en texte avec les articles, blog indexable', async ({ page, request }) => {
   const res = await request.get('/llms.txt');
   expect(res.status()).toBe(200);
   expect(res.headers()['content-type']).toContain('text/plain');
@@ -104,8 +104,9 @@ test('GEO : llms.txt servi en texte, blog en noindex', async ({ page, request })
   expect(body).toContain('# Benjamin de Bruijne');
   expect(body).toContain('/services/piloter/');
   expect(body).toContain('/en/projects/beneloo/');
+  expect(body).toContain('/blog/valider-un-outil-ia-gxp/');
   await page.goto('/blog/');
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+  expect(await page.locator('meta[name="robots"]').count()).toBe(0);
 });
 
 test('a11y : le CTA du header a un nom accessible sur mobile', async ({ page }) => {
@@ -140,4 +141,17 @@ test('biopharma : disponibilité, 2 rôles, 4 CV publics en 200 sans coordonnée
   }
   await page.goto('/en/biopharma/');
   await expect(page.getByText('January 2027').first()).toBeVisible();
+});
+
+test('blog : liste indexable, article avec JSON-LD BlogPosting, hreflang croisés FR/EN', async ({ page }) => {
+  await page.goto('/blog/');
+  expect(await page.locator('meta[name=robots]').count()).toBe(0);
+  await page.getByRole('link', { name: /Valider un outil d'IA/ }).first().click();
+  await expect(page).toHaveURL(/\/blog\/valider-un-outil-ia-gxp\/$/);
+  const ld = await page.locator('script[type="application/ld+json"]').first().textContent();
+  const graph = JSON.parse(ld ?? '{}')['@graph'] as { '@type': string }[];
+  expect(graph.some((n) => n['@type'] === 'BlogPosting')).toBe(true);
+  await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute('href', /\/en\/blog\/valider-un-outil-ia-gxp\/$/);
+  await page.getByRole('link', { name: 'EN', exact: true }).click();
+  await expect(page).toHaveURL(/\/en\/blog\/valider-un-outil-ia-gxp\/$/);
 });

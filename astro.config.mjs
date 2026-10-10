@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://benjamindebruijne.com',
   trailingSlash: 'always',
-  integrations: [sitemap({ filter: (page) => !/\/blog\/$/.test(page), i18n: { defaultLocale: 'fr', locales: { fr: 'fr-BE', en: 'en-GB' } } })],
+  integrations: [sitemap({ i18n: { defaultLocale: 'fr', locales: { fr: 'fr-BE', en: 'en-GB' } } })],
   i18n: {
     defaultLocale: 'fr',
     locales: ['fr', 'en'],

@@ -445,10 +445,16 @@
         "Notes",
         "& articles."
       ],
-      "intro": "Lessons learned on AI, tools and delivery. ",
-      "introStrong": "First articles coming soon.",
+      "intro": "Lessons learned on GxP, AI and IT project delivery. ",
+      "introStrong": "Written from the field.",
       "empty": "No articles yet.",
-      "description": "Notes by Benjamin de Bruijne on AI in business, automation and IT project delivery. First articles coming soon."
+      "description": "Notes by Benjamin de Bruijne on CSV validation, AI in GxP environments, automation and IT project delivery.",
+      "read": "Read the article",
+      "back": "All articles",
+      "published": "Published on",
+      "updated": "Updated on",
+      "readingTime": "min read",
+      "authorNote": "Written by Benjamin de Bruijne, Digital Technology SME in biopharma."
     },
     "legal": {
       "title": [
