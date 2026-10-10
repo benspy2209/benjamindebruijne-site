@@ -155,3 +155,12 @@ test('blog : liste indexable, article avec JSON-LD BlogPosting, hreflang croisé
   await page.getByRole('link', { name: 'EN', exact: true }).click();
   await expect(page).toHaveURL(/\/en\/blog\/valider-un-outil-ia-gxp\/$/);
 });
+
+test('footer : liens LinkedIn et GitHub sur toutes les pages, et LinkedIn dans le bloc disponibilité biopharma', async ({ page }) => {
+  for (const r of ['/', '/en/', '/biopharma/']) {
+    await page.goto(r);
+    await expect(page.locator('footer a[href="https://www.linkedin.com/in/benjamindebruijne/"]')).toHaveCount(1);
+    await expect(page.locator('footer a[href="https://github.com/benspy2209"]')).toHaveCount(1);
+  }
+  await expect(page.locator('.bp-li')).toHaveAttribute('href', 'https://www.linkedin.com/in/benjamindebruijne/');
+});

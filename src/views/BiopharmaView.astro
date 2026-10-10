@@ -29,6 +29,7 @@ const cvs = b.roles.flatMap((r) => [{ label: `${r.cvLabel} · FR`, href: r.cvFr 
       <div class="bp-av__ctas reveal">
         <Button href={bookHref} label={b.cta} external={!!s.meta.booking} variant="accent" />
         <Button href={`mailto:${s.meta.email}`} label={b.ctaMail} variant="ghost" icon="arrow-ext" />
+        <a href={s.meta.sameAs[0]} target="_blank" rel="me noopener" class="bp-li"><Icon name="linkedin" /><span class="mono">LinkedIn</span></a>
       </div>
     </div>
   </section>
@@ -85,6 +86,8 @@ const cvs = b.roles.flatMap((r) => [{ label: `${r.cvLabel} · FR`, href: r.cvFr 
   .bp-av__text { max-width: 28ch; }
   .bp-av__note { max-width: 60ch; font-size: 15px; line-height: 1.6; }
   .bp-av__ctas { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+  .bp-li { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--c-accent); padding-bottom: 2px; }
+  .bp-li :global(svg) { width: 16px; height: 16px; }
   .bp-roles.section { padding-top: 40px; }
   .bp-roles__grid { display: grid; gap: 40px; margin-top: 32px; }
   .bp-role { display: grid; gap: 16px; align-content: start; padding-top: 24px; border-top: 2px solid var(--c-accent); }
