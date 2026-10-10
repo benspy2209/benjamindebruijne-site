@@ -13,4 +13,4 @@ Le premier sujet de « À écrire » est le prochain article. Un sujet = une lig
 8. **Revue périodique d'un système validé : la faire sans y passer une semaine** — angle : checklist proportionnée au risque ; sources : GAMP 5, annexe 11 §11.
 
 ## Publiés
-- 2026-10-10 · `valider-un-outil-ia-gxp` · https://benjamindebruijne.com/blog/valider-un-outil-ia-gxp/ · EN /en/blog/valider-un-outil-ia-gxp/ · LinkedIn : posté manuellement par Ben (texte dans GUIDE §8).
+- 2026-10-10 · `valider-un-outil-ia-gxp` · https://benjamindebruijne.com/blog/valider-un-outil-ia-gxp/ · EN /en/blog/valider-un-outil-ia-gxp/ · LinkedIn : programmé via Metricool le 10/10 à 12:05 (post 392650154, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=3647075076185604113).
