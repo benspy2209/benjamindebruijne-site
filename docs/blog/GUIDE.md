@@ -1,6 +1,6 @@
 # Guide de rédaction du blog — benjamindebruijne.com
 
-Ce guide est la référence de la routine hebdomadaire qui écrit, publie et relaie un article. Il s'applique aussi à toute rédaction manuelle.
+Ce guide est la référence des deux routines hebdomadaires (lundi soir et jeudi matin) qui écrivent, publient et relaient un article. Il s'applique aussi à toute rédaction manuelle.
 
 ## 1. Cible et objectif
 Lecteurs : recruteurs, hiring managers et pairs en pharma/biotech belge (IT, Qualité, Digital). Objectif : montrer une pratique de terrain en validation CSV, GxP, gouvernance de projet et IA en environnement réglementé, et ramener vers `/biopharma/` (EN : `/en/biopharma/`). Le blog est hors menu : il vit par le sitemap, llms.txt, LinkedIn et les moteurs.
@@ -59,7 +59,7 @@ Structure qui marche : accroche en 2 phrases (la situation concrète) → « le 
 
 ## 8. Post LinkedIn (Metricool)
 - Marque Metricool : blogId `6408500`, fuseau `Europe/Madrid` (même heure que Bruxelles). Réseau : `linkedin` uniquement, type `post`, `previewIncluded: true`, `autoPublish: true`, pas de média (l'aperçu du lien suffit).
-- Horaire : le vendredi qui suit la publication, 08:30 Europe/Brussels.
+- Horaire : le lendemain matin de la publication de l'article, 08:30 Europe/Brussels. Deux passages par semaine : article le lundi soir (18:00) → post le mardi 08:30 ; article le jeudi matin (07:00) → post le vendredi 08:30.
 - Texte FR uniquement, 120 à 180 mots, structure : 1 phrase d'accroche (la situation), 1 phrase qui nomme le piège, 3 à 4 lignes sur ce que contient l'article, une flèche `→` suivie de l'URL FR complète, puis 4 à 5 hashtags (#GxP #CSV #GAMP5 #Pharma + 1 du sujet). Pas d'emoji, pas de « je suis ravi », pas de question rhétorique en ouverture.
 - Exemple validé :
   ```
