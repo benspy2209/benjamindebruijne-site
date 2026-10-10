@@ -74,5 +74,11 @@ Structure qui marche : accroche en 2 phrases (la situation concrète) → « le 
   #GxP #CSV #GAMP5 #AI #Pharma
   ```
 
-## 9. Backlog
-`docs/blog/backlog.md` : section `## À écrire` (file d'attente, le premier est le prochain) et `## Publiés` (date, slug, URL, lien Metricool). Après publication, déplacer la ligne du sujet vers « Publiés » et pousser. Si la file est vide : ne rien publier, le signaler.
+## 9. Backlog et auto-alimentation
+`docs/blog/backlog.md` : section `## À écrire` (file d'attente, le premier est le prochain) et `## Publiés` (date, slug, URL, lien Metricool). Après publication, déplacer la ligne du sujet vers « Publiés » et pousser.
+
+**Si la file est vide, la routine ne s'arrête pas : elle choisit elle-même le sujet suivant**, dans ce cadre :
+- Thèmes autorisés : validation CSV / CSA ; intégrité des données ; gouvernance de projet en pharma (stage-gate, PMO, livrables) ; IT/OT et cybersécurité industrielle ; IA et automatisation en environnement GxP ; rôle du DT SME, du PMO, du chef de projet ; systèmes génériques (LIMS, MES, QMS, GED, ITSM) sans nommer d'éditeur ; inspection readiness ; qualification fournisseurs et cloud ; revue périodique, change control, formation.
+- Déclencheur préféré : une actualité réglementaire récente (nouvelle guidance FDA, EMA, PIC/S, révision d'annexe, AI Act) vérifiée sur la source primaire, ou une question de terrain classique.
+- Interdit : répéter un sujet de « Publiés » (vérifier les slugs et les angles), les sujets marketing, PME, IA grand public, et tout ce que §5 interdit.
+- Format : ajouter la ligne du sujet dans « À écrire » (angle, points, sources) avant de l'écrire, puis la déplacer vers « Publiés » comme d'habitude. Le rapport final précise que le sujet a été choisi par la routine.
