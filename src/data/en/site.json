@@ -624,7 +624,9 @@
         }
       ],
       "updatedLabel": "Page updated on",
-      "lastUpdated": "2026-10-10"
+      "lastUpdated": "2026-10-10",
+      "headerCta": "Book a call",
+      "headerCtaSuffix": "/30 min"
     }
   },
   "missions": {

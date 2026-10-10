@@ -18,7 +18,7 @@ const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: b.
 const profile = { '@type': 'ProfilePage', mainEntity: { '@id': `${Astro.site?.origin ?? ''}/#person` }, dateModified: b.lastUpdated };
 const cvs = b.roles.flatMap((r) => [{ label: `${r.cvLabel} · FR`, href: r.cvFr }, { label: `${r.cvLabel} · EN`, href: r.cvEn }]);
 ---
-<Base lang={lang} routeKey="biopharma" title={b.title.join(' ')} description={b.description} breadcrumbs={crumbs} jsonLd={[profile]} dateModified={b.lastUpdated} onDark>
+<Base lang={lang} routeKey="biopharma" title={b.title.join(' ')} description={b.description} breadcrumbs={crumbs} jsonLd={[profile]} dateModified={b.lastUpdated} ogImage="/og-biopharma.jpg" headerCta={{ label: b.headerCta, suffix: b.headerCtaSuffix, href: bookHref, external: !!s.meta.booking }} onDark>
   <PageHead num="01" label={b.label} title={b.title} intro={b.intro} introStrong={b.introStrong} />
 
   <section class="bp-av trame">
@@ -85,6 +85,7 @@ const cvs = b.roles.flatMap((r) => [{ label: `${r.cvLabel} · FR`, href: r.cvFr 
   .bp-av__text { max-width: 28ch; }
   .bp-av__note { max-width: 60ch; font-size: 15px; line-height: 1.6; }
   .bp-av__ctas { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+  .bp-roles.section { padding-top: 40px; }
   .bp-roles__grid { display: grid; gap: 40px; margin-top: 32px; }
   .bp-role { display: grid; gap: 16px; align-content: start; padding-top: 24px; border-top: 2px solid var(--c-accent); }
   .bp-role__name { color: var(--c-accent); }
@@ -108,6 +109,7 @@ const cvs = b.roles.flatMap((r) => [{ label: `${r.cvLabel} · FR`, href: r.cvFr 
   .bp-upd { padding-block: 24px 48px; }
   .bp-upd a { border-bottom: 1px solid var(--c-accent); }
   @media (width >= 810px) {
+    .bp-roles.section { padding-top: 64px; }
     .bp-av__in { grid-template-columns: 1fr 2fr; grid-template-areas: "label text" "label note" "label ctas"; gap: 20px 48px; padding-block: 64px; }
     .bp-av__in .label { grid-area: label; align-self: start; }
     .bp-av__text { grid-area: text; } .bp-av__note { grid-area: note; } .bp-av__ctas { grid-area: ctas; }

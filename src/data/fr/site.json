@@ -624,7 +624,9 @@
         }
       ],
       "updatedLabel": "Page mise à jour le",
-      "lastUpdated": "2026-10-10"
+      "lastUpdated": "2026-10-10",
+      "headerCta": "Réserver un appel",
+      "headerCtaSuffix": "/30 min"
     }
   },
   "missions": {
