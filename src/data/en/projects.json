@@ -146,9 +146,9 @@
   {
     "slug": "beneloo",
     "name": "Beneloo",
-    "tag": "Brand · AI visibility",
+    "tag": "Brand · AI visibility and automation",
     "kpi": "17,000+",
-    "kpiLabel": "SMEs analysed",
+    "kpiLabel": "prospect records tracked",
     "role": "Founder",
     "year": "2024",
     "lead": "my consulting brand:",
@@ -156,7 +156,7 @@
     "url": "https://beneloo.com",
     "color": "#8a3a1d",
     "body": [
-      "Beneloo is the brand under which I support Belgian SMEs on AI visibility: diagnosis, six-pillar score, action plan, follow-up. I built the website, the observatory and the prospecting portal myself: 17,000 French-speaking company records with phone numbers, split into 11 sectors, with an AI-generated activity summary when each record is opened.",
+      "Beneloo is my consulting brand, founded in 2024, with two lines of work: AI visibility (being cited by ChatGPT, Perplexity, Gemini) and AI automation for Belgian SMEs. On the visibility side: diagnosis, six-pillar score, action plan, follow-up. I built the website, the observatory and the prospecting portal myself: 17,000 French-speaking company records with phone numbers, split into 11 sectors, with an AI-generated activity summary when each record is opened.",
       "Stack: Next.js, Supabase, OpenAI and Perplexity, BCE and NBB data, email prospecting pipeline."
     ],
     "status": "",
@@ -528,7 +528,7 @@
     "url": "https://www.cliniqueleverseau.be",
     "color": "#12303f",
     "body": [
-      "Website of the Le Verseau ophthalmology clinic, founded by Dr Jean-Luc Mélard and established for over ten years in Walloon Brabant: clinic, team, equipment, emergencies, contact and online booking. French and Dutch.",
+      "Website of the Le Verseau ophthalmology clinic, founded by Dr Jean-Luc Mélard and established for more than a decade in Walloon Brabant: clinic, team, equipment, emergencies, contact and online booking. French and Dutch.",
       "Stack: React, Vite, Tailwind, Vercel deployment."
     ],
     "status": "",

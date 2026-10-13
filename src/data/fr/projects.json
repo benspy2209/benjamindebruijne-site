@@ -146,9 +146,9 @@
   {
     "slug": "beneloo",
     "name": "Beneloo",
-    "tag": "Marque · Visibilité IA",
+    "tag": "Marque · Visibilité IA et automatisation",
     "kpi": "17 000+",
-    "kpiLabel": "PME analysées",
+    "kpiLabel": "fiches de prospection suivies",
     "role": "Fondateur",
     "year": "2024",
     "lead": "ma structure de conseil :",
@@ -156,7 +156,7 @@
     "url": "https://beneloo.com",
     "color": "#8a3a1d",
     "body": [
-      "Beneloo est la marque sous laquelle j'accompagne les PME belges sur la visibilité IA : diagnostic, score en six piliers, plan d'action, suivi. J'ai construit moi-même le site, l'observatoire et le portail de prospection : 17 000 fiches de sociétés francophones avec téléphone, réparties en 11 secteurs, résumé d'activité généré par IA à l'ouverture de chaque fiche.",
+      "Beneloo est ma structure de conseil, fondée en 2024, avec deux métiers : la visibilité IA (être cité par ChatGPT, Perplexity, Gemini) et l'automatisation IA pour les PME belges. Côté visibilité : diagnostic, score en six piliers, plan d'action, suivi. J'ai construit moi-même le site, l'observatoire et le portail de prospection : 17 000 fiches de sociétés francophones avec téléphone, réparties en 11 secteurs, résumé d'activité généré par IA à l'ouverture de chaque fiche.",
       "Stack : Next.js, Supabase, OpenAI et Perplexity, données BCE et BNB, pipeline de prospection par email."
     ],
     "status": "",
@@ -528,7 +528,7 @@
     "url": "https://www.cliniqueleverseau.be",
     "color": "#12303f",
     "body": [
-      "Site de la clinique ophtalmologique Le Verseau, fondée par le Dr Jean-Luc Mélard et implantée depuis plus de dix ans dans le Brabant wallon : clinique, équipe, équipements, urgences, contact et prise de rendez-vous en ligne. Français et néerlandais.",
+      "Site de la clinique ophtalmologique Le Verseau, fondée par le Dr Jean-Luc Mélard et implantée depuis plus d'une décennie dans le Brabant wallon : clinique, équipe, équipements, urgences, contact et prise de rendez-vous en ligne. Français et néerlandais.",
       "Stack : React, Vite, Tailwind, déploiement Vercel."
     ],
     "status": "",

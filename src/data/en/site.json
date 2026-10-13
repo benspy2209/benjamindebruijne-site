@@ -224,7 +224,7 @@
       {
         "name": "Deliver",
         "title": "IT projects delivered by the book, including in GxP environments",
-        "p1": "Twenty years of IT projects, including several in regulated pharmaceutical environments: scoping, planning, quality, computer system validation (CSV), change management. I run your projects with method, from idea to production, in line with GxP, 21 CFR Part 11 and data integrity requirements.",
+        "p1": "Twenty years of IT projects, and today a digital expert role in a regulated pharmaceutical environment: scoping, planning, quality, computer system validation (CSV), change management. I run your projects with method, from idea to production, in line with GxP, 21 CFR Part 11 and data integrity requirements.",
         "p2": "Specifications, supplier follow-up, IT/OT integration, document governance, testing, team training: one contact who speaks business, quality and tech, and who makes your teams autonomous.",
         "steps": [
           "Scoping, planning and supplier follow-up",
@@ -343,7 +343,7 @@
       "introStrong": "and how I work.",
       "paragraphs": [
         "My name is Benjamin de Bruijne. I live in Belgium, near Brussels, and I have worked in IT for over twenty years — over 200 web projects built or delivered: development, project management, product, quality, digital transformation.",
-        "I have led projects in highly regulated environments, including several years in the biopharmaceutical industry as a Digital Technology Subject Matter Expert (DT SME): computer system validation (CSV), GxP and 21 CFR Part 11 compliance, data integrity, IT/OT integration and document governance. In parallel, I built my own products: Service-Volée, Pulse Noir and BiblioPulse (a 2,150-reader crime-fiction community and its library), and an ecosystem around control of data: Beneloo (SME visibility in AI engines), the Observatory (the measurement, sector by sector) and Singulr, the non-profit I chair, which operates sovereign digital commons including a Git forge hosted in Belgium.",
+        "I have led projects in highly regulated environments, and today in the biopharmaceutical industry, as Digital Technology Subject Matter Expert (DT SME) at UCB: computer system validation (CSV), GxP and 21 CFR Part 11 compliance, data integrity, IT/OT integration and document governance. In parallel, I built my own products: Service-Volée, Pulse Noir and BiblioPulse (a 2,150-reader crime-fiction community and its library), and an ecosystem around control of data: Beneloo (SME visibility in AI engines), the Observatory (the measurement, sector by sector) and Singulr, the non-profit I chair, which operates sovereign digital commons including a Git forge hosted in Belgium.",
         "That double track is my edge: the rigour of regulated environments, the speed of a freelancer. I can scope, document and deliver by the book, and I can also code a complete tool in a few days when that is what is needed.",
         "I work through my company, Hakuna Matata SRL, and I pick tools that leave you in control: code you own, data at home, no opaque subscriptions."
       ],
