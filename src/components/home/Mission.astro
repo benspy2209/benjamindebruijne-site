@@ -29,6 +29,7 @@ const clients = s.missions.items.map((i) => i.client).join(' · ');
           <dt>{m.profession}</dt><dd>{s.meta.role}</dd>
           <dt>{m.localisation}</dt><dd>{s.meta.location}</dd>
           <dt>{m.statusLabel}</dt><dd><a href="#missions">{clients}</a></dd>
+          <dt>{m.cvLabel}</dt><dd class="mis__cv"><a href={m.cvFr} class="mis__cvlink">FR <Icon name="arrow-ext" /></a><a href={m.cvEn} class="mis__cvlink">EN <Icon name="arrow-ext" /></a></dd>
         </dl>
       </div>
       <a href={href('projects', lang)} class="mis__all mono"><span class="mis__allicon"><Icon name="chevron-left" /></span>{m.allProjects}</a>
@@ -64,6 +65,10 @@ const clients = s.missions.items.map((i) => i.client).join(' · ');
   .mis__social svg { width: 14px; height: 14px; }
   .mis__dl { display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; margin: 0; }
   .mis__dl dt { color: var(--c-grey-500); } .mis__dl dd { margin: 0; text-align: right; font-family: var(--font-sans); font-size: 12px; font-weight: 600; text-transform: uppercase; }
+  .mis__cv { display: inline-flex; justify-content: flex-end; gap: 14px; }
+  .mis__cvlink { display: inline-flex; align-items: center; gap: 4px; }
+  .mis__cvlink svg { width: 10px; height: 10px; }
+  .mis__cvlink:hover { text-decoration: underline; text-underline-offset: 3px; }
   .mis__all { display: inline-flex; align-items: center; gap: 12px; margin-top: 40px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0; }
   .mis__allicon { width: 22px; height: 22px; border: 1px solid var(--c-grey-300); border-radius: 50%; display: grid; place-items: center; }
   .mis__allicon svg { width: 10px; height: 10px; }

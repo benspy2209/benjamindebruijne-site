@@ -129,7 +129,10 @@
       "Vingt ans de projets IT m'ont appris une chose : un bon outil est un outil qui tourne.",
       "Je conçois des solutions digitales qui transforment les besoins en outils concrets : sites, automatisations, données, IA et pilotage."
     ],
-    "statusLabel": "En mission"
+    "statusLabel": "En mission",
+    "cvLabel": "CV",
+    "cvFr": "/cv/benjamin-de-bruijne-consultant-digital-ia-fr.pdf",
+    "cvEn": "/cv/benjamin-de-bruijne-consultant-digital-ia-en.pdf"
   },
   "counters": [
     {

@@ -129,7 +129,10 @@
       "Twenty years of IT projects taught me one thing: a good tool is one that runs.",
       "I design digital solutions that turn needs into concrete tools: websites, automations, data, AI and delivery."
     ],
-    "statusLabel": "On mission"
+    "statusLabel": "On mission",
+    "cvLabel": "Resume",
+    "cvFr": "/cv/benjamin-de-bruijne-consultant-digital-ia-fr.pdf",
+    "cvEn": "/cv/benjamin-de-bruijne-consultant-digital-ia-en.pdf"
   },
   "counters": [
     {

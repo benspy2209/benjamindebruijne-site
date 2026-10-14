@@ -58,3 +58,16 @@ describe('blog posts FR/EN parity (files)', () => {
     }
   });
 });
+
+describe('CV généraliste sur l’accueil', () => {
+  it('mission.cvFr/cvEn pointent vers des PDF présents dans public/cv (FR et EN)', () => {
+    for (const l of ['fr', 'en'] as const) {
+      const m = getSite(l).mission as any;
+      expect(m.cvLabel).toBeTruthy();
+      for (const k of ['cvFr', 'cvEn']) {
+        expect(m[k], `${l}.${k}`).toMatch(/^\/cv\/.+\.pdf$/);
+        expect(readdirSync('public/cv')).toContain(m[k].replace('/cv/', ''));
+      }
+    }
+  });
+});

@@ -143,6 +143,19 @@ test('biopharma : disponibilité, 2 rôles, 4 CV publics en 200 sans coordonnée
   await expect(page.getByText('January 2027').first()).toBeVisible();
 });
 
+test('accueil : CV généraliste FR + EN en 200 (application/pdf) sur / et /en/', async ({ page, request }) => {
+  for (const r of ['/', '/en/']) {
+    await page.goto(r);
+    const cvs = page.locator('.mis__cv a[href^="/cv/"][href$=".pdf"]');
+    await expect(cvs).toHaveCount(2);
+    for (const href of await cvs.evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).getAttribute('href')))) {
+      const res = await request.get(href!);
+      expect(res.status(), href!).toBe(200);
+      expect(res.headers()['content-type']).toContain('pdf');
+    }
+  }
+});
+
 test('blog : liste indexable, article avec JSON-LD BlogPosting, hreflang croisés FR/EN, cartes PNG', async ({ page, request }) => {
   await page.goto('/blog/');
   expect(await page.locator('meta[name=robots]').count()).toBe(0);
