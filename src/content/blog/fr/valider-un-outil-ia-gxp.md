@@ -2,6 +2,7 @@
 title: "Valider un outil d'IA en environnement GxP : par où commencer"
 description: "Un outil d'IA entre dans un labo ou une usine pharma : faut-il le valider, et comment ? Méthode en six étapes, proportionnée au risque, selon GAMP 5."
 date: 2026-10-10
+rubrique: gxp
 lang: fr
 tags: [GxP, CSV, GAMP 5, IA, validation]
 points:

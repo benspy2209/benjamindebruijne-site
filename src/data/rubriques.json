@@ -1,0 +1,50 @@
+{
+  "gxp": {
+    "label": { "fr": "Biopharma · GxP", "en": "Biopharma · GxP" },
+    "card": "BIOPHARMA · GXP · BLOG",
+    "signature": "DIGITAL TECHNOLOGY SME · PMO · GXP",
+    "route": "biopharma",
+    "cta": { "fr": "Biopharma : DT SME, PMO.", "en": "Biopharma: DT SME, PMO." },
+    "authorNote": {
+      "fr": "Écrit par Benjamin de Bruijne, Digital Technology SME en biopharma.",
+      "en": "Written by Benjamin de Bruijne, Digital Technology SME in biopharma."
+    },
+    "hashtags": "#GxP #CSV #GAMP5 #Pharma"
+  },
+  "automatisation": {
+    "label": { "fr": "Automatisation", "en": "Automation" },
+    "card": "AUTOMATISATION · PME · BLOG",
+    "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
+    "route": "offer-automate",
+    "cta": { "fr": "Automatiser : IA, données, CRM.", "en": "Automate: AI, data, CRM." },
+    "authorNote": {
+      "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
+      "en": "Written by Benjamin de Bruijne, independent digital and AI consultant in Belgium."
+    },
+    "hashtags": "#Automatisation #PME #Belgique #IA"
+  },
+  "ia": {
+    "label": { "fr": "IA en entreprise", "en": "AI at work" },
+    "card": "IA EN ENTREPRISE · BLOG",
+    "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
+    "route": "offer-automate",
+    "cta": { "fr": "Automatiser : IA, données, CRM.", "en": "Automate: AI, data, CRM." },
+    "authorNote": {
+      "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
+      "en": "Written by Benjamin de Bruijne, independent digital and AI consultant in Belgium."
+    },
+    "hashtags": "#IA #AIAct #PME #Belgique"
+  },
+  "construire": {
+    "label": { "fr": "Construire", "en": "Build" },
+    "card": "OUTILS SUR MESURE · BLOG",
+    "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
+    "route": "offer-build",
+    "cta": { "fr": "Construire : sites, applications, produits.", "en": "Build: sites, apps, products." },
+    "authorNote": {
+      "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
+      "en": "Written by Benjamin de Bruijne, independent digital and AI consultant in Belgium."
+    },
+    "hashtags": "#Développement #ProduitDigital #PME #Belgique"
+  }
+}

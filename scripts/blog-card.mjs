@@ -16,6 +16,8 @@ const md = readFileSync(join(root, `src/content/blog/${lang}/${slug}.md`), 'utf8
 const fm = md.split('---')[1];
 const get = (k) => (fm.match(new RegExp(`^${k}:\\s*"?(.*?)"?\\s*$`, 'm')) || [])[1] ?? '';
 const title = get('title');
+const rubriques = JSON.parse(readFileSync(join(root, 'src/data/rubriques.json'), 'utf8'));
+const rub = rubriques[get('rubrique') || 'gxp'] ?? rubriques.gxp;
 const points = [...fm.matchAll(/^\s{2}-\s*"?(.*?)"?\s*$/gm)].map((m) => m[1]).filter(Boolean);
 const h2s = [...md.matchAll(/^## (.+)$/gm)].map((m) => m[1]).filter((h) => !/cadre existe|framework already/i.test(h)).slice(0, 3);
 const keyPoints = points.length === 3 ? points : h2s;
@@ -29,7 +31,7 @@ const fonts = [
 ];
 const photo = `data:image/jpeg;base64,${readFileSync(join(root, 'public/benjamin.jpg')).toString('base64')}`;
 const ACCENT = '#f04e23', BG = '#111111', GRID = 'rgba(255,255,255,.12)';
-const label = lang === 'fr' ? 'BIOPHARMA · GXP · BLOG' : 'BIOPHARMA · GXP · BLOG';
+const label = rub.card;
 const site = lang === 'fr' ? 'benjamindebruijne.com/blog' : 'benjamindebruijne.com/en/blog';
 
 const h = (type, props, ...children) => ({ type, props: { ...props, children: children.length === 1 ? children[0] : children } });
@@ -55,7 +57,7 @@ function tree(w, hgt) {
       h('div', { style: { fontFamily: 'Geist', fontSize: square ? 20 : 17, letterSpacing: 1, color: '#bbbbbb' } }, site),
       h('div', { style: { display: 'flex', flexDirection: 'column', alignItems: 'flex-end' } },
         h('div', { style: { fontSize: square ? 30 : 24, fontWeight: 700 } }, 'Benjamin de Bruijne'),
-        h('div', { style: { fontFamily: 'Geist', fontSize: square ? 17 : 15, letterSpacing: 1, color: '#bbbbbb', marginTop: 4 } }, 'DIGITAL TECHNOLOGY SME · PMO · GXP')))));
+        h('div', { style: { fontFamily: 'Geist', fontSize: square ? 17 : 15, letterSpacing: 1, color: '#bbbbbb', marginTop: 4 } }, rub.signature)))));
 }
 
 async function render(w, hgt, out) {

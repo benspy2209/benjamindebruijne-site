@@ -2,6 +2,7 @@
 title: "Validating an AI tool in a GxP environment: where to start"
 description: "An AI tool is entering a pharma lab or plant: does it need validation, and how? A six-step, risk-proportionate method based on GAMP 5."
 date: 2026-10-10
+rubrique: gxp
 lang: en
 tags: [GxP, CSV, GAMP 5, AI, validation]
 points:

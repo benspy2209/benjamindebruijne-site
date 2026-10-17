@@ -2,6 +2,7 @@
 title: "GP0 à GP4 : les portes de décision d'un projet pharma"
 description: "Un projet de système informatisé en pharma avance par portes. Ce qu'on attend à GP0, GP1, GP2, GP3 et GP4, les livrables et les erreurs de début."
 date: 2026-10-15
+rubrique: gxp
 lang: fr
 tags: [GxP, CSV, GAMP 5, stage-gate, URS]
 points:

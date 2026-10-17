@@ -10,6 +10,7 @@ const blog = defineCollection({
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
     lang: z.enum(['fr', 'en']),
+    rubrique: z.enum(['gxp', 'automatisation', 'ia', 'construire']).default('gxp'),
     tags: z.array(z.string()).default([]),
     points: z.array(z.string().max(70)).length(3).optional(),
   }),

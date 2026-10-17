@@ -2,6 +2,7 @@
 title: "CSV or CSA: what really changes for a project manager"
 description: "The FDA's CSA guidance is now final. What changes in a validation plan, what does not change, and who it actually applies to."
 date: 2026-10-12
+rubrique: gxp
 lang: en
 tags: [GxP, CSV, CSA, GAMP 5, validation]
 points:

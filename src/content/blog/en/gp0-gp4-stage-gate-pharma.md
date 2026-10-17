@@ -2,6 +2,7 @@
 title: "GP0 to GP4: the decision gates of a pharma project"
 description: "A computerised system project in pharma moves through gates. What is expected at GP0 to GP4, the deliverables, and the beginner mistakes."
 date: 2026-10-15
+rubrique: gxp
 lang: en
 tags: [GxP, CSV, GAMP 5, stage-gate, URS]
 points:

@@ -2,6 +2,7 @@
 title: "CSV ou CSA : ce qui change vraiment pour un chef de projet"
 description: "La guidance CSA de la FDA est passée en version finale. Ce qui change dans un plan de validation, ce qui ne change pas, et pour qui elle s'applique."
 date: 2026-10-12
+rubrique: gxp
 lang: fr
 tags: [GxP, CSV, CSA, GAMP 5, validation]
 points:

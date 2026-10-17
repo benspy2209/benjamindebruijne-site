@@ -1,3 +1,4 @@
+import rubriques from '../src/data/rubriques.json';
 import { describe, it, expect } from 'vitest';
 import { getSite, getProjects } from '../src/lib/content';
 import { routes, href, projectHref, alternate } from '../src/lib/i18n';
@@ -55,6 +56,20 @@ describe('blog posts FR/EN parity (files)', () => {
       expect(d.lang, f).toBe(l);
       expect(d.description.length, f).toBeGreaterThanOrEqual(50);
       expect(d.description.length, f).toBeLessThanOrEqual(160);
+    }
+  });
+  it('rubrique : valeur connue, identique FR/EN, et chaque rubrique a un libellé, une carte et une route', () => {
+    const known = Object.keys(rubriques);
+    expect(known).toEqual(['gxp', 'automatisation', 'ia', 'construire']);
+    for (const k of known) {
+      const r = (rubriques as any)[k];
+      expect(r.label.fr && r.label.en && r.card && r.signature && r.route && r.cta.fr && r.cta.en && r.authorNote.fr && r.authorNote.en && r.hashtags, k).toBeTruthy();
+    }
+    for (const f of list('fr')) {
+      const fr = fm(`src/content/blog/fr/${f}`).rubrique ?? 'gxp';
+      const en = fm(`src/content/blog/en/${f}`).rubrique ?? 'gxp';
+      expect(known, f).toContain(fr);
+      expect(en, f).toBe(fr);
     }
   });
 });

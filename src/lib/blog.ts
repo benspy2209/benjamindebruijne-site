@@ -1,7 +1,8 @@
 import { existsSync } from 'node:fs';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { Lang } from './i18n';
-import { href } from './i18n';
+import { href, type RouteKey } from './i18n';
+import rubriques from '../data/rubriques.json';
 
 export type Post = CollectionEntry<'blog'>;
 
@@ -25,4 +26,13 @@ export function postHref(slug: string, lang: Lang): string {
 export function cardOf(post: Post, lang: Lang): string | null {
   const file = `/blog/${slugOf(post)}${lang === 'fr' ? '' : `-${lang}`}-card.png`;
   return existsSync(`public${file}`) ? file : null;
+}
+
+export type Rubrique = keyof typeof rubriques;
+export interface RubriqueInfo { key: Rubrique; label: string; cta: string; authorNote: string; href: string }
+/** Rubrique d'un article (gxp par défaut) : libellé, bouton et note d'auteur dans la langue demandée. */
+export function rubriqueOf(post: Post, lang: Lang): RubriqueInfo {
+  const key = (post.data.rubrique ?? 'gxp') as Rubrique;
+  const r = rubriques[key];
+  return { key, label: r.label[lang], cta: r.cta[lang], authorNote: r.authorNote[lang], href: href(r.route as RouteKey, lang) };
 }
