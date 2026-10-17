@@ -2,7 +2,7 @@
 import type { Lang } from '../lib/i18n';
 import { locale } from '../lib/i18n';
 import { getSite } from '../lib/content';
-import { getPosts, postHref, slugOf } from '../lib/blog';
+import { cardOf, getPosts, postHref, slugOf } from '../lib/blog';
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
 import Icon from '../components/Icon.astro';
@@ -26,6 +26,7 @@ const fmt = (d: Date) => d.toLocaleDateString(locale[lang], { dateStyle: 'long' 
                 <span class="bl__title h-md">{p.data.title}</span>
                 <span class="bl__desc muted">{p.data.description}</span>
                 <span class="bl__read mono">{b.read} <span class="of__arrow"><Icon name="chevron" /></span></span>
+                {cardOf(p, lang) && <img src={cardOf(p, lang)!} alt="" width="1200" height="1200" class="bl__card" loading="lazy" decoding="async" />}
               </a>
             </li>
           ))}
@@ -39,7 +40,8 @@ const fmt = (d: Date) => d.toLocaleDateString(locale[lang], { dateStyle: 'long' 
   .bl__item { display: grid; gap: 10px; padding: 32px 0; border-bottom: 1px solid var(--c-grey-300); }
   .bl__desc { font-size: 16px; line-height: 1.6; max-width: 64ch; }
   .bl__read { display: inline-flex; align-items: center; gap: 10px; margin-top: 6px; }
+  .bl__card { width: 100%; max-width: 240px; height: auto; display: block; border: 1px solid var(--c-grey-300); }
   .of__arrow { width: 28px; height: 28px; background: var(--c-accent); color: #fff; display: grid; place-items: center; }
   .of__arrow :global(svg) { width: 10px; height: 10px; }
-  @media (width >= 810px) { .bl__item { grid-template-columns: 180px 1fr; grid-template-areas: "date title" "date desc" "date read"; gap: 10px 32px; } .bl__item time { grid-area: date; padding-top: 6px; } .bl__title { grid-area: title; } .bl__desc { grid-area: desc; } .bl__read { grid-area: read; } }
+  @media (width >= 810px) { .bl__item { grid-template-columns: 180px 1fr 240px; grid-template-areas: "date title card" "date desc card" "date read card"; gap: 10px 32px; align-items: start; } .bl__card { grid-area: card; justify-self: end; } .bl__item time { grid-area: date; padding-top: 6px; } .bl__title { grid-area: title; } .bl__desc { grid-area: desc; } .bl__read { grid-area: read; } }
 </style>

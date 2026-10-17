@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs';
 import type { Lang } from '../lib/i18n';
 import { href, locale } from '../lib/i18n';
 import { getSite } from '../lib/content';
-import { postHref, slugOf, type Post } from '../lib/blog';
+import { cardOf, postHref, slugOf, type Post } from '../lib/blog';
 import Base from '../layouts/Base.astro';
 import Button from '../components/Button.astro';
 interface Props { lang: Lang; post: Post }
@@ -21,6 +21,7 @@ const origin = Astro.site?.origin ?? '';
 const url = `${origin}${paths[lang]}`;
 const navLabel = (k: string) => s.nav.find((n) => n.key === k)?.label ?? k;
 const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: 'Blog', href: href('blog', lang) }, { name: post.data.title, href: paths[lang] }];
+const card = cardOf(post, lang);
 const ogFile = `/blog/${slugOf(post)}${lang === 'fr' ? '' : `-${lang}`}-og.png`;
 const ogImage = existsSync(`public${ogFile}`) ? ogFile : '/og-biopharma.jpg';
 const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: post.data.title, description: post.data.description, url, datePublished: iso(post.data.date), dateModified: iso(post.data.updated ?? post.data.date), inLanguage: locale[lang], keywords: post.data.tags.join(', '), wordCount: words, author: { '@id': `${origin}/#person` }, publisher: { '@id': `${origin}/#person` }, mainEntityOfPage: url, image: `${origin}${ogImage}` };
@@ -39,6 +40,7 @@ const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: pos
         <p class="label">{b.authorNote}</p>
         <Button href={href('biopharma', lang)} label={s.pages.biopharma.title.join(' ')} class="ar__cta" />
         <a href={href('blog', lang)} class="mono ar__back">← {b.back}</a>
+        {card && <img src={card} alt={post.data.title} width="1200" height="1200" class="ar__card" loading="lazy" decoding="async" />}
       </aside>
       <article class="ar__body">
         <Content />
@@ -55,6 +57,7 @@ const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: pos
   .ar__side .label { max-width: 28ch; line-height: 1.6; }
   .ar__cta { justify-self: start; }
   .ar__back { color: var(--c-grey-500); }
+  .ar__card { width: 100%; max-width: 360px; height: auto; display: block; border: 1px solid var(--c-grey-300); }
   .ar__body { max-width: 68ch; font-size: 17px; line-height: 1.65; }
   .ar__body :global(h2) { font-size: 24px; line-height: 1.2; font-weight: 600; letter-spacing: -.015em; margin: 40px 0 14px; }
   .ar__body :global(p) { margin: 0 0 18px; }

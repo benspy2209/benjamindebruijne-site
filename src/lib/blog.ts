@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { Lang } from './i18n';
 import { href } from './i18n';
@@ -18,4 +19,10 @@ export async function getPost(lang: Lang, slug: string): Promise<Post | undefine
 
 export function postHref(slug: string, lang: Lang): string {
   return `${href('blog', lang)}${slug}/`;
+}
+
+/** Carte visuelle 1200×1200 générée par scripts/blog-card.mjs, ou null si absente. */
+export function cardOf(post: Post, lang: Lang): string | null {
+  const file = `/blog/${slugOf(post)}${lang === 'fr' ? '' : `-${lang}`}-card.png`;
+  return existsSync(`public${file}`) ? file : null;
 }
