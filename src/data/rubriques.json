@@ -24,10 +24,9 @@
     },
     "card": "AUTOMATISATION · PME · BLOG",
     "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
-    "route": "offer-automate",
     "cta": {
-      "fr": "Automatiser : IA, données, CRM.",
-      "en": "Automate: AI, data, CRM."
+      "fr": "Astérisme : l’IA dans vos process.",
+      "en": "Astérisme: AI inside your processes."
     },
     "authorNote": {
       "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
@@ -48,7 +47,8 @@
         "en": "Thirty minutes to talk it through"
       },
       "url": "https://asterisme.ai/"
-    }
+    },
+    "url": "https://asterisme.ai/"
   },
   "ia": {
     "label": {
@@ -57,10 +57,9 @@
     },
     "card": "IA EN ENTREPRISE · BLOG",
     "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
-    "route": "offer-automate",
     "cta": {
-      "fr": "Automatiser : IA, données, CRM.",
-      "en": "Automate: AI, data, CRM."
+      "fr": "Astérisme : l’IA dans vos process.",
+      "en": "Astérisme: AI inside your processes."
     },
     "authorNote": {
       "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
@@ -81,7 +80,8 @@
         "en": "Thirty minutes to talk it through"
       },
       "url": "https://asterisme.ai/"
-    }
+    },
+    "url": "https://asterisme.ai/"
   },
   "construire": {
     "label": {
@@ -90,10 +90,9 @@
     },
     "card": "OUTILS SUR MESURE · BLOG",
     "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
-    "route": "offer-build",
     "cta": {
-      "fr": "Construire : sites, applications, produits.",
-      "en": "Build: sites, apps, products."
+      "fr": "Astérisme : concevoir et mettre en place.",
+      "en": "Astérisme: design and deploy."
     },
     "authorNote": {
       "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
@@ -114,6 +113,7 @@
         "en": "Thirty minutes to talk it through"
       },
       "url": "https://asterisme.ai/"
-    }
+    },
+    "url": "https://asterisme.ai/"
   }
 }

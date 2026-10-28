@@ -39,7 +39,7 @@ const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: pos
     <div class="wrap ar__in">
       <aside class="ar__side">
         <p class="label">{rub.authorNote}</p>
-        <Button href={rub.href} label={rub.cta} class="ar__cta" />
+        <Button href={rub.href} label={rub.cta} class="ar__cta" external={rub.external} />
         <a href={href('blog', lang)} class="mono ar__back">← {b.back}</a>
         {card && <img src={card} alt={post.data.title} width="1200" height="1200" class="ar__card" loading="lazy" decoding="async" />}
       </aside>

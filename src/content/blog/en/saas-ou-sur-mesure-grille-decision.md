@@ -70,4 +70,4 @@ The rule I apply: four criteria out of six pointing to standard, and we stop loo
 
 ---
 
-*Benjamin de Bruijne is an independent digital and AI consultant in Belgium. He builds websites, business applications and products, and delivers them to production. [Build: sites, apps, products](/en/services/build/).*
+*Benjamin de Bruijne is an independent digital and AI consultant in Belgium. He builds websites, business applications and products, and delivers them to production. [Astérisme: design and deploy](https://asterisme.ai/).*

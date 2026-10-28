@@ -64,4 +64,4 @@ The rest — levels 2 and 3, the annual review — is built on that base. And if
 
 ---
 
-*Benjamin de Bruijne is an independent digital and AI consultant in Belgium. He automates repetitive work for SMEs and puts AI where it removes a specific chore. [Automate: AI, data, CRM](/en/services/automate/).*
+*Benjamin de Bruijne is an independent digital and AI consultant in Belgium. He automates repetitive work for SMEs and puts AI where it removes a specific chore. [Astérisme: AI inside your processes](https://asterisme.ai/).*

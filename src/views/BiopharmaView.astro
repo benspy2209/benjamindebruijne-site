@@ -78,7 +78,7 @@ const cvs = b.roles.flatMap((r) => [{ label: `${r.cvLabel} · FR`, href: r.cvFr 
   </section>
 
   <Faq label={b.faqLabel} items={b.faq} num="06" />
-  <section class="trame"><div class="wrap bp-upd"><p class="mono muted">{b.updatedLabel} <time datetime={b.lastUpdated}>{updated}</time> · <a href={href('about', lang)}>{navLabel('about')}</a> · <a href={href('offer-deliver', lang)}>{s.offers.items.piloter?.name ?? s.offers.items.deliver?.name}</a></p></div></section>
+  <section class="trame"><div class="wrap bp-upd"><p class="mono muted">{b.updatedLabel} <time datetime={b.lastUpdated}>{updated}</time> · <a href={href('about', lang)}>{navLabel('about')}</a></p></div></section>
 </Base>
 <style>
   .bp-av { background: var(--c-grey-100); }

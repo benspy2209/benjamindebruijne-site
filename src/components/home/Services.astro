@@ -43,7 +43,7 @@ const bookHref = s.meta.booking || href('contact', lang);
               <h3 class="h-md">{it.title}</h3>
               <p>{it.p1}</p>
               <p>{it.p2}</p>
-              <Button href={href(offerRoute[it.slug] as RouteKey, lang)} label={sv.more} variant="ghost" class="svc__more" />
+              <Button href={s.meta.asterisme} label={sv.more} variant="ghost" class="svc__more" external />
             </div>
             <div class="svc__steps">
               <p class="label">{sv.steps}</p>

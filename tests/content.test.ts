@@ -58,12 +58,14 @@ describe('blog posts FR/EN parity (files)', () => {
       expect(d.description.length, f).toBeLessThanOrEqual(160);
     }
   });
-  it('rubrique : valeur connue, identique FR/EN, et chaque rubrique a un libellé, une carte et une route', () => {
+  it('rubrique : valeur connue, identique FR/EN, et chaque rubrique a un libellé, une carte et une destination', () => {
     const known = Object.keys(rubriques);
     expect(known).toEqual(['gxp', 'automatisation', 'ia', 'construire']);
     for (const k of known) {
       const r = (rubriques as any)[k];
-      expect(r.label.fr && r.label.en && r.card && r.signature && r.route && r.cta.fr && r.cta.en && r.authorNote.fr && r.authorNote.en && r.hashtags, k).toBeTruthy();
+      expect(r.label.fr && r.label.en && r.card && r.signature && (r.route || r.url) && r.cta.fr && r.cta.en && r.authorNote.fr && r.authorNote.en && r.hashtags, k).toBeTruthy();
+      // une rubrique a soit une route interne, soit une url externe, jamais les deux
+      expect(Boolean(r.route) !== Boolean(r.url), `${k} : route ET url`).toBe(true);
     }
     for (const f of list('fr')) {
       const fr = fm(`src/content/blog/fr/${f}`).rubrique ?? 'gxp';

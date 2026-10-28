@@ -64,4 +64,4 @@ Le reste — niveaux 2 et 3, revue annuelle — se construit sur ce socle. Et si
 
 ---
 
-*Benjamin de Bruijne est consultant digital et IA indépendant en Belgique. Il automatise les tâches répétitives des PME et met l'IA là où elle enlève une corvée précise. [Automatiser : IA, données, CRM](/services/automatiser/).*
+*Benjamin de Bruijne est consultant digital et IA indépendant en Belgique. Il automatise les tâches répétitives des PME et met l'IA là où elle enlève une corvée précise. [Astérisme : l’IA dans vos process](https://asterisme.ai/).*

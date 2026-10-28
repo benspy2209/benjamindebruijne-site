@@ -22,7 +22,8 @@
       "Validation de systèmes informatisés (CSV, GAMP 5)",
       "Conformité GxP et 21 CFR Part 11",
       "Visibilité IA et SEO"
-    ]
+    ],
+    "asterisme": "https://asterisme.ai/"
   },
   "nav": [
     {
@@ -36,10 +37,6 @@
     {
       "key": "about",
       "label": "À propos"
-    },
-    {
-      "key": "services",
-      "label": "Services"
     },
     {
       "key": "blog",

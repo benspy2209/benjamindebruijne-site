@@ -22,7 +22,8 @@
       "Computerised system validation (CSV, GAMP 5)",
       "GxP and 21 CFR Part 11 compliance",
       "AI visibility and SEO"
-    ]
+    ],
+    "asterisme": "https://asterisme.ai/"
   },
   "nav": [
     {
@@ -36,10 +37,6 @@
     {
       "key": "about",
       "label": "About"
-    },
-    {
-      "key": "services",
-      "label": "Services"
     },
     {
       "key": "blog",

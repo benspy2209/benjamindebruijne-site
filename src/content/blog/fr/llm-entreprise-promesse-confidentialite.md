@@ -59,4 +59,4 @@ Si une clause reste ambiguë après lecture — et il en restera une — c'est u
 
 ---
 
-*Benjamin de Bruijne est consultant digital et IA indépendant en Belgique. Il automatise les tâches répétitives des PME et met l'IA là où elle enlève une corvée précise. [Automatiser : IA, données, CRM](/services/automatiser/).*
+*Benjamin de Bruijne est consultant digital et IA indépendant en Belgique. Il automatise les tâches répétitives des PME et met l'IA là où elle enlève une corvée précise. [Astérisme : l’IA dans vos process](https://asterisme.ai/).*

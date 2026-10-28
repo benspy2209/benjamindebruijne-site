@@ -70,4 +70,4 @@ La règle que j'applique : quatre critères sur six qui pointent vers le standar
 
 ---
 
-*Benjamin de Bruijne est consultant digital et IA indépendant en Belgique. Il construit des sites, des applications métier et des produits, et les pilote jusqu'en production. [Construire : sites, applications, produits](/services/construire/).*
+*Benjamin de Bruijne est consultant digital et IA indépendant en Belgique. Il construit des sites, des applications métier et des produits, et les pilote jusqu'en production. [Astérisme : concevoir et mettre en place](https://asterisme.ai/).*
