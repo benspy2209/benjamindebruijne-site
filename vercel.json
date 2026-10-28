@@ -157,6 +157,36 @@
       "permanent": true
     },
     {
+      "source": "/services/",
+      "destination": "https://asterisme.ai/",
+      "permanent": true
+    },
+    {
+      "source": "/services/automatiser/",
+      "destination": "https://asterisme.ai/",
+      "permanent": true
+    },
+    {
+      "source": "/services/construire/",
+      "destination": "https://asterisme.ai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/",
+      "destination": "https://asterisme.ai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/automate/",
+      "destination": "https://asterisme.ai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/build/",
+      "destination": "https://asterisme.ai/",
+      "permanent": true
+    },
+    {
       "source": "/services/:slug*",
       "destination": "https://asterisme.ai/",
       "permanent": true
