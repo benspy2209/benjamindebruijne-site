@@ -45,6 +45,13 @@ const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: pos
       </aside>
       <article class="ar__body">
         <Content />
+        {rub.exit && (
+          <aside class="ar__exit">
+            <p class="label">{rub.exit.title}</p>
+            <p class="ar__exit-text">{rub.exit.text}</p>
+            <a href={rub.exit.url} class="mono ar__exit-cta">{rub.exit.cta} →</a>
+          </aside>
+        )}
       </article>
     </div>
   </section>
@@ -71,5 +78,8 @@ const article = { '@type': 'BlogPosting', '@id': `${url}#article`, headline: pos
   .ar__body :global(a) { border-bottom: 1px solid var(--c-accent); }
   .ar__body :global(hr) { border: 0; border-top: 1px solid var(--c-grey-300); margin: 40px 0 24px; }
   .ar__body :global(em) { color: var(--c-grey-500); font-style: normal; font-size: 15px; }
+  .ar__exit { margin-top: 48px; padding: 24px; border: 1px solid var(--c-grey-300); border-left: 2px solid var(--c-accent); display: grid; gap: 12px; }
+  .ar__exit-text { margin: 0; font-size: 16px; line-height: 1.6; }
+  .ar__exit-cta { justify-self: start; border-bottom: 1px solid var(--c-accent); font-size: 14px; }
   @media (width >= 810px) { .ah__in { padding-top: calc(var(--header-h) + 80px); padding-bottom: 80px; } .ar__in { grid-template-columns: 1fr 2fr; gap: 64px; } .ar__side { position: sticky; top: 32px; } }
 </style>

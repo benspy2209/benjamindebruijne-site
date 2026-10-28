@@ -29,10 +29,13 @@ export function cardOf(post: Post, lang: Lang): string | null {
 }
 
 export type Rubrique = keyof typeof rubriques;
-export interface RubriqueInfo { key: Rubrique; label: string; cta: string; authorNote: string; href: string }
+export interface RubriqueExit { title: string; text: string; cta: string; url: string }
+export interface RubriqueInfo { key: Rubrique; label: string; cta: string; authorNote: string; href: string; exit?: RubriqueExit }
 /** Rubrique d'un article (gxp par défaut) : libellé, bouton et note d'auteur dans la langue demandée. */
 export function rubriqueOf(post: Post, lang: Lang): RubriqueInfo {
   const key = (post.data.rubrique ?? 'gxp') as Rubrique;
   const r = rubriques[key];
-  return { key, label: r.label[lang], cta: r.cta[lang], authorNote: r.authorNote[lang], href: href(r.route as RouteKey, lang) };
+  const e = (r as { exit?: { title: Record<string, string>; text: Record<string, string>; cta: Record<string, string>; url: string } }).exit;
+  const exit = e ? { title: e.title[lang], text: e.text[lang], cta: e.cta[lang], url: e.url } : undefined;
+  return { key, label: r.label[lang], cta: r.cta[lang], authorNote: r.authorNote[lang], href: href(r.route as RouteKey, lang), exit };
 }

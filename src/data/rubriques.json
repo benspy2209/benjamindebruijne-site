@@ -1,10 +1,16 @@
 {
   "gxp": {
-    "label": { "fr": "Biopharma · GxP", "en": "Biopharma · GxP" },
+    "label": {
+      "fr": "Biopharma · GxP",
+      "en": "Biopharma · GxP"
+    },
     "card": "BIOPHARMA · GXP · BLOG",
     "signature": "DIGITAL TECHNOLOGY SME · PMO · GXP",
     "route": "biopharma",
-    "cta": { "fr": "Biopharma : DT SME, PMO.", "en": "Biopharma: DT SME, PMO." },
+    "cta": {
+      "fr": "Biopharma : DT SME, PMO.",
+      "en": "Biopharma: DT SME, PMO."
+    },
     "authorNote": {
       "fr": "Écrit par Benjamin de Bruijne, Digital Technology SME en biopharma.",
       "en": "Written by Benjamin de Bruijne, Digital Technology SME in biopharma."
@@ -12,39 +18,102 @@
     "hashtags": "#GxP #CSV #GAMP5 #Pharma"
   },
   "automatisation": {
-    "label": { "fr": "Automatisation", "en": "Automation" },
+    "label": {
+      "fr": "Automatisation",
+      "en": "Automation"
+    },
     "card": "AUTOMATISATION · PME · BLOG",
     "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
     "route": "offer-automate",
-    "cta": { "fr": "Automatiser : IA, données, CRM.", "en": "Automate: AI, data, CRM." },
+    "cta": {
+      "fr": "Automatiser : IA, données, CRM.",
+      "en": "Automate: AI, data, CRM."
+    },
     "authorNote": {
       "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
       "en": "Written by Benjamin de Bruijne, independent digital and AI consultant in Belgium."
     },
-    "hashtags": "#Automatisation #PME #Belgique #IA"
+    "hashtags": "#Automatisation #PME #Belgique #IA",
+    "exit": {
+      "title": {
+        "fr": "Et chez vous ?",
+        "en": "And in your company?"
+      },
+      "text": {
+        "fr": "Astérisme conçoit et met en place l’IA dans les métiers où une erreur coûte cher. Un process à la fois, l’IA sur une seule étape, une personne qui valide.",
+        "en": "Astérisme designs and deploys AI in lines of work where a mistake is expensive. One process at a time, AI on a single step, a person who validates."
+      },
+      "cta": {
+        "fr": "Trente minutes pour en parler",
+        "en": "Thirty minutes to talk it through"
+      },
+      "url": "https://asterisme.ai/"
+    }
   },
   "ia": {
-    "label": { "fr": "IA en entreprise", "en": "AI at work" },
+    "label": {
+      "fr": "IA en entreprise",
+      "en": "AI at work"
+    },
     "card": "IA EN ENTREPRISE · BLOG",
     "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
     "route": "offer-automate",
-    "cta": { "fr": "Automatiser : IA, données, CRM.", "en": "Automate: AI, data, CRM." },
+    "cta": {
+      "fr": "Automatiser : IA, données, CRM.",
+      "en": "Automate: AI, data, CRM."
+    },
     "authorNote": {
       "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
       "en": "Written by Benjamin de Bruijne, independent digital and AI consultant in Belgium."
     },
-    "hashtags": "#IA #AIAct #PME #Belgique"
+    "hashtags": "#IA #AIAct #PME #Belgique",
+    "exit": {
+      "title": {
+        "fr": "Et chez vous ?",
+        "en": "And in your company?"
+      },
+      "text": {
+        "fr": "Astérisme conçoit et met en place l’IA dans les métiers où une erreur coûte cher. Un process à la fois, l’IA sur une seule étape, une personne qui valide.",
+        "en": "Astérisme designs and deploys AI in lines of work where a mistake is expensive. One process at a time, AI on a single step, a person who validates."
+      },
+      "cta": {
+        "fr": "Trente minutes pour en parler",
+        "en": "Thirty minutes to talk it through"
+      },
+      "url": "https://asterisme.ai/"
+    }
   },
   "construire": {
-    "label": { "fr": "Construire", "en": "Build" },
+    "label": {
+      "fr": "Construire",
+      "en": "Build"
+    },
     "card": "OUTILS SUR MESURE · BLOG",
     "signature": "CONSULTANT DIGITAL & IA · BELGIQUE",
     "route": "offer-build",
-    "cta": { "fr": "Construire : sites, applications, produits.", "en": "Build: sites, apps, products." },
+    "cta": {
+      "fr": "Construire : sites, applications, produits.",
+      "en": "Build: sites, apps, products."
+    },
     "authorNote": {
       "fr": "Écrit par Benjamin de Bruijne, consultant digital et IA indépendant en Belgique.",
       "en": "Written by Benjamin de Bruijne, independent digital and AI consultant in Belgium."
     },
-    "hashtags": "#Développement #ProduitDigital #PME #Belgique"
+    "hashtags": "#Développement #ProduitDigital #PME #Belgique",
+    "exit": {
+      "title": {
+        "fr": "Et chez vous ?",
+        "en": "And in your company?"
+      },
+      "text": {
+        "fr": "Astérisme conçoit et met en place l’IA dans les métiers où une erreur coûte cher. Un process à la fois, l’IA sur une seule étape, une personne qui valide.",
+        "en": "Astérisme designs and deploys AI in lines of work where a mistake is expensive. One process at a time, AI on a single step, a person who validates."
+      },
+      "cta": {
+        "fr": "Trente minutes pour en parler",
+        "en": "Thirty minutes to talk it through"
+      },
+      "url": "https://asterisme.ai/"
+    }
   }
 }

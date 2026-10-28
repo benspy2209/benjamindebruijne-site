@@ -43,6 +43,13 @@ Le blog est hors menu : il vit par le sitemap, llms.txt, LinkedIn et les moteurs
   - `construire` FR : `*Benjamin de Bruijne est consultant digital et IA indépendant en Belgique. Il construit des sites, des applications métier et des produits, et les pilote jusqu'en production. [Construire : sites, applications, produits](/services/construire/).*`
   - `construire` EN : `*Benjamin de Bruijne is an independent digital and AI consultant in Belgium. He builds websites, business applications and products, and delivers them to production. [Build: sites, apps, products](/en/services/build/).*`
 
+### Sortie vers Astérisme (automatique, ne pas l'écrire)
+Les articles des rubriques `automatisation`, `ia` et `construire` reçoivent automatiquement, en fin de corps, un encadré « Et chez vous ? » qui renvoie vers asterisme.ai. Il est rendu par le gabarit depuis `src/data/rubriques.json` (clé `exit`). Tu n'as donc RIEN à écrire de ce genre dans l'article : ni appel à nous contacter, ni mention d'Astérisme dans le corps du texte, ni lien vers asterisme.ai. La note d'auteur en italique reste le dernier paragraphe que tu écris.
+
+La rubrique `gxp` n'a pas cet encadré : son lecteur cherche un expert nommé, pas un cabinet. Elle garde sa note d'auteur vers `/biopharma/`.
+
+Astérisme est la société de Benjamin de Bruijne (cabinet d'IA appliquée, Bruxelles). Contrairement à Beneloo, Singulr, Pulse Noir et Saul Racine, le nom n'est pas interdit — mais il ne s'écrit pas dans le corps d'un article : c'est le gabarit qui s'en charge.
+
 ## 3. Voix
 Première personne, Ben parle depuis le terrain. Phrases courtes. Concret avant théorie : un exemple par section. Pas de jargon non expliqué : chaque sigle est développé à sa première apparition (CSV, CSA, URS, IQ/OQ/PQ, ALCOA+, GP0→GP4). Pas de flatterie, pas de « révolution », pas de promesse. Ton : un collègue senior qui explique à quelqu'un qui démarre : un chef de projet en pharma (`gxp`), un dirigeant de PME qui perd ses soirées en admin (`automatisation`, `ia`), un porteur de produit (`construire`). Tutoiement interdit (vous ou impersonnel). Hors `gxp`, les exemples viennent de PME belges génériques (un installateur, un cabinet, une boutique, un cabinet comptable) jamais nommées, ou des produits publics de Ben (BibliPulse, Service-Volée, Observatory) avec uniquement les chiffres déjà publiés sur ce site.
 
