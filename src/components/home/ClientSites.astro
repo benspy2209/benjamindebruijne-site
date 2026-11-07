@@ -19,7 +19,7 @@ const domain = (u: string) => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.
           <span class="mono num cs__n">{String(i + 1).padStart(2, '0')}</span>
           <a href={projectHref(p.slug, lang)} class="cs__name">{p.name}</a>
           <span class="mono cs__tag">{p.tag.split('·').pop()?.trim()}{p.year && <span class="muted"> · {p.year}</span>}</span>
-          <a href={p.url} target="_blank" rel="noopener" class="mono cs__ext">{domain(p.url)}<span class="cs__i"><Icon name="arrow-ext" /></span></a>
+          {p.url ? <a href={p.url} target="_blank" rel="noopener" class="mono cs__ext">{domain(p.url)}<span class="cs__i"><Icon name="arrow-ext" /></span></a> : <span></span>}
         </li>
       ))}
     </ol>

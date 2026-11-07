@@ -21,7 +21,7 @@ const tagline = (p as any).tagline as string;
 const stack = (p as any).stack as string;
 const navLabel = (k: string) => s.nav.find((n) => n.key === k)?.label ?? k;
 const crumbs = [{ name: navLabel('home'), href: href('home', lang) }, { name: navLabel('projects'), href: href('projects', lang) }, { name: p.name, href: `${href('projects', lang)}${p.slug}/` }];
-const work = { '@type': 'CreativeWork', name: p.name, url: p.url, description: tagline, dateCreated: String(p.year), creator: { '@id': `${Astro.site?.origin ?? ''}/#person` } };
+const work = { '@type': 'CreativeWork', name: p.name, ...(p.url ? { url: p.url } : {}), description: tagline, dateCreated: String(p.year), creator: { '@id': `${Astro.site?.origin ?? ''}/#person` } };
 /** Teinte plus claire de la couleur du projet pour la bande. */
 const lighten = (hex: string, k = 0.22) => {
   const n = parseInt(hex.slice(1), 16); const r = n >> 16, g = (n >> 8) & 255, b = n & 255;
@@ -60,7 +60,7 @@ const lighten = (hex: string, k = 0.22) => {
           {stack && <><dt class="mono muted">{pf.stack}</dt><dd>{stack}</dd></>}
           <dt class="mono muted">{pf.status}</dt><dd>{statut}</dd>
         </dl>
-        <a href={p.url} target="_blank" rel="noopener" class="pj__link mono">{domain}<span class="pj__ext"><Icon name="arrow-ext" /></span></a>
+        {p.url && <a href={p.url} target="_blank" rel="noopener" class="pj__link mono">{domain}<span class="pj__ext"><Icon name="arrow-ext" /></span></a>}
       </div>
       <div class="pj__col pj__text">
         <h2 class="h-md">{p.lead.charAt(0).toUpperCase() + p.lead.slice(1)}{p.text}</h2>

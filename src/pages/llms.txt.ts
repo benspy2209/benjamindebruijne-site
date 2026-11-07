@@ -18,7 +18,7 @@ export const GET: APIRoute = async ({ site }) => {
       ...offers.map(([slug, o]) => `- [${o.metaTitle}](${abs(href(offerKey[slug], lang))}): ${o.description}`),
       '',
       lang === 'fr' ? '## Produits et projets' : '## Products and projects',
-      ...projects.map((p) => `- [${p.name}](${abs(projectHref(p.slug, lang))}): ${p.tagline.replace(/[.\s]+$/, '')} (${p.year}, ${p.url})`),
+      ...projects.map((p) => `- [${p.name}](${abs(projectHref(p.slug, lang))}): ${p.tagline.replace(/[.\s]+$/, '')} (${[p.year, p.url].filter(Boolean).join(', ')})`),
       '',
       lang === 'fr' ? '## Pages' : '## Pages (EN)',
       `- [${lang === 'fr' ? 'À propos' : 'About'}](${abs(href('about', lang))}): ${s.pages.about.description}`,
