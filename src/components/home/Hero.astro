@@ -48,6 +48,7 @@ const hasVideo = Object.keys(videos).length > 0;
   .hero__proof { display: flex; align-items: center; gap: 12px; margin-top: 28px; }
   .hero__proof img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid var(--c-dark); }
   .hero__proof p { font-size: 13px; white-space: nowrap; }
+  .hero__proof p + p { white-space: normal; }
   .hero__proof strong { font-weight: 700; }
   @media (width >= 810px) {
     .hero__in { grid-template-columns: minmax(260px, auto) 1fr; grid-template-areas: "h1 h1" "services mark" "proof mark"; grid-template-rows: 1fr auto auto; align-items: end; }

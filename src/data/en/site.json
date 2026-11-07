@@ -15,7 +15,7 @@
       "https://github.com/benspy2209"
     ],
     "knowsAbout": [
-      "Artificial intelligence for SMEs",
+      "Applied artificial intelligence in business",
       "Automation and CRM",
       "Web development (Astro, React, Supabase)",
       "IT project delivery",
@@ -62,17 +62,17 @@
       "Automate: AI, data, CRM",
       "Deliver: IT projects, quality, GxP"
     ],
-    "proofValue": "3",
-    "proofLabel": "ongoing missions",
-    "proofSub": "UCB · XLG · Leroy & Partners"
+    "proofValue": "Astérisme",
+    "proofLabel": "founder",
+    "proofSub": "Biopharma DT SME until 31/12/2026"
   },
   "logos": [
     {
-      "name": "Beneloo",
-      "src": "/logos/beneloo.svg"
+      "name": "Astérisme",
+      "src": "/logos/asterisme.svg"
     },
     {
-      "name": "Observatory",
+      "name": "Observatoire",
       "src": "/logos/observatory.svg"
     },
     {
@@ -100,10 +100,6 @@
       "src": "/logos/royal-wellington.svg"
     },
     {
-      "name": "UCB",
-      "src": "/logos/ucb.svg"
-    },
-    {
       "name": "XLG",
       "src": "/logos/xlg.svg"
     },
@@ -122,7 +118,7 @@
     "localisation": "Location",
     "allProjects": "All projects",
     "paragraphs": [
-      "I'm Benjamin de Bruijne, digital & AI consultant.",
+      "I'm Benjamin de Bruijne, founder of Astérisme and digital & AI consultant.",
       "Twenty years of IT projects taught me one thing: a good tool is one that runs.",
       "I design digital solutions that turn needs into concrete tools: websites, automations, data, AI and delivery."
     ],
@@ -148,13 +144,13 @@
       "label": "Live products",
       "value": 6,
       "suffix": "",
-      "text": "Service-Volée, BiblioPulse, Pulse Noir, Beneloo, Observatory, Singulr: designed and operated by me."
+      "text": "Service-Volée, BiblioPulse, Pulse Noir, Radar, Observatoire, Singulr: designed and operated by me."
     },
     {
       "label": "Ongoing missions",
       "value": 3,
       "suffix": "",
-      "text": "UCB, XLG and Leroy & Partners, alongside my products."
+      "text": "A biopharma group, XLG and Leroy & Partners, alongside Astérisme."
     }
   ],
   "portfolio": {
@@ -332,7 +328,7 @@
       ],
       "intro": "My products, client projects with a real story, ",
       "introStrong": "and the websites delivered.",
-      "description": "Products, websites and tools built for Belgian businesses: Service-Volée, BiblioPulse, Beneloo, Observatory, Royal Wellington and more."
+      "description": "Products, websites and tools built for Belgian businesses: Astérisme, Service-Volée, BiblioPulse, the Observatoire, Royal Wellington and more."
     },
     "about": {
       "title": [
@@ -343,15 +339,16 @@
       "introStrong": "and how I work.",
       "paragraphs": [
         "My name is Benjamin de Bruijne. I live in Belgium, near Brussels, and I have worked in IT for over twenty years — over 200 web projects built or delivered: development, project management, product, quality, digital transformation.",
-        "I have led projects in highly regulated environments, and today in the biopharmaceutical industry, as Digital Technology Subject Matter Expert (DT SME) at UCB: computer system validation (CSV), GxP and 21 CFR Part 11 compliance, data integrity, IT/OT integration and document governance. In parallel, I built my own products: Service-Volée, Pulse Noir and BiblioPulse (a 2,150-reader crime-fiction community and its library), and an ecosystem around control of data: Beneloo (SME visibility in AI engines), the Observatory (the measurement, sector by sector) and Singulr, the non-profit I chair, which operates sovereign digital commons including a Git forge hosted in Belgium.",
+        "I have led projects in highly regulated environments, and today in the biopharmaceutical industry: I am Digital Technology Subject Matter Expert (DT SME) for a biopharma company, through Computacenter, until 31 December 2026. Computer system validation (CSV), GxP and 21 CFR Part 11 compliance, data integrity, IT/OT integration, document governance. In parallel, I built my own products: Service-Volée, Pulse Noir and BiblioPulse (a 2,150-reader crime-fiction community and its library).",
         "That double track is my edge: the rigour of regulated environments, the speed of a freelancer. I can scope, document and deliver by the book, and I can also code a complete tool in a few days when that is what is needed.",
-        "I work through my company, Hakuna Matata SRL, and I pick tools that leave you in control: code you own, data at home, no opaque subscriptions."
+        "Since November 2026 I have worked through my company, Astérisme SRL, an applied AI consultancy for lines of work where a mistake is expensive: accounting firms, law firms, bailiffs, real estate, banking, insurance, automotive. Every process handed to AI is described, tested on the client's own files and approved by their team before going live, then measured, then kept or stopped. The error threshold and the stop criterion are written down before the test. The client chooses where the AI runs: public, on Astérisme's servers in Belgium, or on their own premises. Astérisme also publishes Radar and the Observatoire de la souveraineté conversationnelle, and operates Singulr. Humans lead. AI assists.",
+        "I pick tools that leave you in control: code you own, data at home, no opaque subscriptions."
       ],
       "factsLabel": "At a glance",
       "facts": [
         {
           "k": "Current role",
-          "v": "Digital Technology Subject Matter Expert (DT SME), Belgian biopharmaceutical group"
+          "v": "Founder of Astérisme SRL · Digital Technology Subject Matter Expert (DT SME) for a biopharma company, through Computacenter, until 31/12/2026"
         },
         {
           "k": "Since",
@@ -359,7 +356,7 @@
         },
         {
           "k": "Products",
-          "v": "Service-Volée, BiblioPulse, Pulse Noir, Beneloo, Observatory, Singulr"
+          "v": "Service-Volée, BiblioPulse, Pulse Noir, Radar, Observatoire, Singulr"
         },
         {
           "k": "Base",
@@ -371,7 +368,7 @@
         },
         {
           "k": "Company",
-          "v": "Hakuna Matata SRL"
+          "v": "Astérisme SRL, Brussels (BCE 1044.920.226)"
         },
         {
           "k": "Stack",
@@ -381,7 +378,7 @@
       "faq": [
         {
           "q": "Who is Benjamin de Bruijne?",
-          "a": "Benjamin de Bruijne is a Belgian digital and AI consultant, independent since 2009, based in Rhode-Saint-Genèse near Brussels. He builds custom websites and applications, sets up AI automations for SMEs and delivers IT projects in regulated environments (biopharma, GxP). He founded Beneloo, the Observatory, Pulse Noir and Service-Volée, and chairs the non-profit Singulr."
+          "a": "Benjamin de Bruijne is a Belgian digital and AI consultant, independent since 2009, based in Rhode-Saint-Genèse near Brussels. In November 2026 he founded Astérisme SRL, an applied AI consultancy for lines of work where a mistake is expensive. He builds custom websites and applications and delivers IT projects in regulated environments (biopharma, GxP). He also founded Pulse Noir and Service-Volée."
         },
         {
           "q": "What is GxP compliance?",
@@ -393,16 +390,16 @@
         },
         {
           "q": "Do you only work with biopharmaceutical companies?",
-          "a": "No. My deepest expertise is in biopharma and GxP compliance, but I also work with SMEs, freelancers, non-profits and clubs on their websites, automations and AI projects. What does not change from one sector to the next: the method, the documentation and a tool that runs."
+          "a": "No. My deepest expertise is in biopharma and GxP compliance, but I also work with companies, freelancers, non-profits and clubs on their websites, automations and AI projects. What does not change from one sector to the next: the method, the documentation and a tool that runs."
         }
       ],
       "faqLabel": "Frequently asked questions",
-      "description": "Benjamin de Bruijne, digital & AI consultant in Belgium: twenty years of IT projects, Digital Technology SME in biopharma, and six products built in parallel.",
+      "description": "Benjamin de Bruijne, founder of Astérisme SRL and digital & AI consultant in Belgium: twenty years of IT projects, Digital Technology SME in biopharma, and six products built in parallel.",
       "piloterLink": "See the Deliver offer: IT projects in regulated environments",
       "bioLabel": "Short bio, reusable",
-      "bio": "Benjamin de Bruijne is an independent digital and AI consultant based in Rhode-Saint-Genèse, Belgium. Active in IT since 2005, he has built or delivered more than 200 web projects and currently works as Digital Technology Subject Matter Expert for a Belgian biopharmaceutical group (CSV validation, GxP, 21 CFR Part 11). He founded Beneloo, the Observatory, Pulse Noir and Service-Volée, and chairs the non-profit Singulr. He works through Hakuna Matata SRL. Website: benjamindebruijne.com.",
+      "bio": "Benjamin de Bruijne is a digital and AI consultant based in Rhode-Saint-Genèse, Belgium, and the founder of Astérisme SRL, an applied AI consultancy incorporated in November 2026. Active in IT since 2005, he has built or delivered more than 200 web projects and works until 31 December 2026 as Digital Technology Subject Matter Expert for a biopharma company (CSV validation, GxP, 21 CFR Part 11). He also founded Pulse Noir and Service-Volée. Website: benjamindebruijne.com.",
       "updatedLabel": "Page updated on",
-      "lastUpdated": "2026-10-06"
+      "lastUpdated": "2026-11-07"
     },
     "services": {
       "title": [
@@ -468,7 +465,7 @@
       "sections": [
         {
           "h": "Publisher",
-          "p": "This website is published by Hakuna Matata SRL, a Belgian company, BCE 0877.585.922, registered in Rhode-Saint-Genèse (Belgium). Publishing director: Benjamin de Bruijne. Contact: debruijneb@gmail.com."
+          "p": "This website is published by Astérisme SRL, a Belgian company, BCE 1044.920.226, registered at Avenue Louise 231, 1050 Brussels (Belgium). Publishing director: Benjamin de Bruijne. Contact: debruijneb@gmail.com."
         },
         {
           "h": "Hosting",
@@ -476,10 +473,10 @@
         },
         {
           "h": "Intellectual property",
-          "p": "All content on this site (text, visuals, code) is the property of Hakuna Matata SRL unless stated otherwise. Any reproduction without permission is prohibited."
+          "p": "All content on this site (text, visuals, code) is the property of Astérisme SRL unless stated otherwise. Any reproduction without permission is prohibited."
         }
       ],
-      "description": "Legal notice for benjamindebruijne.com, published by Hakuna Matata SRL, Rhode-Saint-Genèse, Belgium."
+      "description": "Legal notice for benjamindebruijne.com, published by Astérisme SRL, Brussels, Belgium."
     },
     "privacy": {
       "title": [
@@ -521,7 +518,7 @@
       "description": "Benjamin de Bruijne, Digital Technology SME and PMO for IT projects in GxP environments (CSV, GAMP 5, 21 CFR Part 11): profile, proof, FR/EN CVs, availability.",
       "availabilityLabel": "Availability",
       "availability": "Current assignment until 31 December 2026. I am considering assignments starting January 2027.",
-      "availabilityNote": "Freelance, engagement through an intermediary possible. Belgium (Brussels, Walloon Brabant, Antwerp), hybrid. French, English, Dutch.",
+      "availabilityNote": "Freelance, through my company Astérisme SRL, founded in November 2026: it does not reduce my availability for an engagement from January 2027. Engagement through an intermediary possible. Belgium (Brussels, Walloon Brabant, Antwerp), hybrid. French, English, Dutch.",
       "cta": "Book a 30-minute call",
       "ctaMail": "Email me",
       "rolesLabel": "Two ways to bring me in",
@@ -618,7 +615,7 @@
         },
         {
           "q": "What are Benjamin de Bruijne's status and rate?",
-          "a": "Benjamin de Bruijne works as a freelancer, directly or through an intermediary, as is the case today with Computacenter. The daily rate is communicated on request, depending on the role, the duration and the regulatory load. He works in French and English, with working-level Dutch."
+          "a": "Benjamin de Bruijne works as a freelancer, through his company Astérisme SRL, directly or through an intermediary, as is the case today with Computacenter. The daily rate is communicated on request, depending on the role, the duration and the regulatory load. He works in French and English, with working-level Dutch."
         },
         {
           "q": "What is his experience with CSV validation and GAMP 5?",
@@ -634,7 +631,7 @@
         }
       ],
       "updatedLabel": "Page updated on",
-      "lastUpdated": "2026-10-10",
+      "lastUpdated": "2026-11-07",
       "headerCta": "Book a call",
       "headerCtaSuffix": "/30 min"
     }
@@ -645,20 +642,28 @@
       "Currently",
       "working with."
     ],
-    "intro": "Three missions in parallel, ",
-    "introStrong": "alongside my own products.",
+    "intro": "My company, and three missions in parallel.",
+    "introStrong": " All run with the same method.",
     "badge": "Ongoing",
     "since": "Since",
     "role": "Role",
     "sector": "Sector",
     "items": [
       {
-        "client": "UCB",
+        "client": "Astérisme SRL",
+        "sector": "Applied AI",
+        "role": "Founder and sole decision-maker: an applied AI consultancy for lines of work where a mistake is expensive, from accounting to insurance.",
+        "since": "2026",
+        "url": "https://asterisme.ai/",
+        "logo": ""
+      },
+      {
+        "client": "Biopharmaceutical group",
         "sector": "Biopharma",
-        "role": "Digital Technology Subject Matter Expert (DT SME): resolving technical bottlenecks, translating tech to business, validating digital projects in GxP environments, advising leadership on emerging technologies.",
+        "role": "Digital Technology Subject Matter Expert (DT SME), through Computacenter, until 31/12/2026: resolving technical bottlenecks, translating tech to business, validating digital projects in GxP environments, advising leadership on emerging technologies.",
         "since": "2025",
-        "url": "https://www.ucb.com/",
-        "logo": "/logos/ucb.svg"
+        "url": "",
+        "logo": ""
       },
       {
         "client": "XLG",
@@ -693,11 +698,12 @@
       },
       {
         "key": "data",
-        "name": "Beneloo × Observatory × Singulr",
-        "label": "Data & sovereignty ecosystem",
-        "text": "Measure SME visibility in AIs, advise from the measurement, and keep control of data and tools.",
+        "name": "Astérisme × Radar × Observatoire × Singulr",
+        "label": "Astérisme ecosystem",
+        "text": "An applied AI consultancy and its tools: a free visibility audit, an observatory of conversational sovereignty, a sovereign Git forge run in Belgium.",
         "members": [
-          "beneloo",
+          "asterisme",
+          "radar",
           "observatory",
           "singulr"
         ]
@@ -770,7 +776,7 @@
           },
           {
             "q": "Which websites and products have you already built?",
-            "a": "Products I run myself: Service-Volée (tennis rankings, 76,000 players indexed), BiblioPulse (personal library, 44 million ISBNs), the Observatory (measuring the AI visibility of SMEs) and the Pulse Noir hub (2,150 readers). And client websites: Royal Wellington, Iris Noir, René Manzor's masterclass, medical practices and Belgian SMEs."
+            "a": "Products I run myself: Service-Volée (tennis rankings, 76,000 players indexed), BiblioPulse (personal library, 44 million ISBNs), the Observatoire (company visibility in AI engines) and the Pulse Noir hub (2,150 readers). And client websites: Royal Wellington, Iris Noir, René Manzor's masterclass, medical practices and Belgian SMEs."
           }
         ]
       },
@@ -796,7 +802,7 @@
             "h": "AI with governance",
             "p": [
               "Models (OpenAI, Claude, Perplexity or open models) are used through APIs, with call logging, control over the data sent and the answers returned, and GDPR compliance. In regulated environments I apply the same principles as in computer system validation: written requirements, documented tests, traceability.",
-              "With Beneloo I also built an observatory that measures, with numbers, whether AI engines cite a company. What gets measured gets fixed."
+              "I also built the Observatoire de la souveraineté conversationnelle, which measures, with numbers, whether AI engines cite a company. What gets measured gets fixed."
             ]
           }
         ],

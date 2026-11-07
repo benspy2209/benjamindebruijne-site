@@ -42,7 +42,7 @@ describe('i18n helpers', () => {
   });
   it('alternate switches language', () => {
     expect(alternate('about', 'fr')).toBe('/en/about/');
-    expect(alternate('projects', 'en', 'beneloo')).toBe('/projets/beneloo/');
+    expect(alternate('projects', 'en', 'asterisme')).toBe('/projets/asterisme/');
   });
 });
 

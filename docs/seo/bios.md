@@ -1,45 +1,38 @@
-# Bios et textes externes à aligner sur benjamindebruijne.com (06/10/2026)
+# Bios et textes externes à aligner sur benjamindebruijne.com (mis à jour le 07/11/2026)
 
-Objectif GEO : que toutes les sources que lisent les IA (LinkedIn, GitHub, sites Beneloo / Singulr / Pulse Noir) disent la même chose, avec les mêmes chiffres, et pointent vers https://benjamindebruijne.com. Jamais « agence » ni « Studio ».
+Objectif GEO : que toutes les sources que lisent les IA (LinkedIn, GitHub, asterisme.ai, radar.asterisme.ai, observatoire.asterisme.ai, singulr.be, pulsenoir.be) disent la même chose, avec les mêmes faits, et pointent vers https://benjamindebruijne.com.
 
-## LinkedIn — APPLIQUÉ le 07/10/2026 (titre, Infos, 2 sites web)
+Règles : jamais « agence » ni « Studio », jamais « PME » pour Astérisme (Astérisme s'adresse à toutes les entreprises). Plus aucune mention de Beneloo ni de Hakuna Matata SRL : toute l'activité passe par Astérisme SRL. Le client biopharma n'est jamais nommé.
+
+Faits de référence : Astérisme SRL, société de droit belge constituée en novembre 2026, BCE 1044.920.226, Avenue Louise 231, 1050 Bruxelles. Fondateur et seul décisionnaire : Benjamin de Bruijne. Signature : « L'humain dirige. L'IA assiste. »
+
+## LinkedIn, profil (À APPLIQUER)
 
 **Titre (220 car. max)**
-Consultant digital & IA · Digital Technology SME en biopharma (CSV, GxP, 21 CFR Part 11) · Fondateur Beneloo, Observatory, Pulse Noir, Service-Volée · benjamindebruijne.com
+Fondateur d'Astérisme, IA appliquée aux métiers où l'erreur coûte cher · Digital Technology SME en biopharma (CSV, GxP, 21 CFR Part 11) · benjamindebruijne.com
 
 **Section Infos**
-Je construis et je pilote des outils digitaux pour les entreprises belges depuis 2005 : plus de 200 projets web construits ou pilotés.
+Je construis et je pilote des outils digitaux depuis 2005 : plus de 200 projets web construits ou pilotés.
 
-Trois façons de travailler ensemble :
-• Construire — sites, applications et produits sur mesure, dont vous gardez le code et les données.
-• Automatiser — IA, données et CRM qui enlèvent une corvée précise, avec garde-fous et gouvernance.
-• Piloter — projets IT en environnement réglementé : validation CSV, GxP, 21 CFR Part 11, intégrité des données, IT/OT.
+Depuis novembre 2026, je dirige Astérisme SRL, cabinet d'IA appliquée pour les métiers où l'erreur coûte cher : fiduciaires, cabinets d'avocats, études d'huissiers, immobilier, banque, assurance, automobile. Chaque process confié à l'IA est décrit, testé sur les dossiers du client, validé par son équipe avant la mise en service, puis mesuré, puis gardé ou arrêté. Le seuil d'erreur et le critère d'arrêt sont écrits avant le test. L'humain dirige. L'IA assiste. → https://asterisme.ai
 
-Aujourd'hui Digital Technology Subject Matter Expert (DT SME) dans un groupe biopharmaceutique belge. En parallèle, mes propres produits : Service-Volée (classement tennis, 76 000 joueurs), BiblioPulse, le hub Pulse Noir (2 150 lecteurs), Beneloo et l'Observatory (visibilité des PME dans les moteurs d'IA). Je préside l'ASBL Singulr.
+Jusqu'au 31/12/2026, Digital Technology Subject Matter Expert (DT SME) chez un acteur biopharma, via Computacenter. Disponible pour une mission à partir de janvier 2027, facturée via Astérisme SRL.
 
-Société : Hakuna Matata SRL, Rhode-Saint-Genèse. FR · EN · NL.
+Outils publiés par Astérisme : Radar, l'Observatoire de la souveraineté conversationnelle, et Singulr, forge Git souveraine hébergée en Belgique. Autres produits : Service-Volée, BiblioPulse, Pulse Noir.
 → Tout est détaillé sur https://benjamindebruijne.com (bio, projets, FAQ).
 
 **Site web du profil** : https://benjamindebruijne.com
-**Lien en vedette** : https://benjamindebruijne.com/services/piloter/
+**Lien en vedette** : https://asterisme.ai
 
-## GitHub — profil benspy2209
-README du dépôt `benspy2209/benspy2209` créé le 06/10/2026 (voir ci-dessous). Compléter dans les paramètres du profil : site web = https://benjamindebruijne.com, bio = « Consultant digital & IA · DT SME biopharma (CSV/GxP) · Beneloo, Observatory, Singulr ».
+## GitHub, profil benspy2209
+Bio : « Fondateur d'Astérisme (IA appliquée) · DT SME biopharma (CSV/GxP) · benjamindebruijne.com ». Site web : https://benjamindebruijne.com. Mettre à jour le README du dépôt `benspy2209/benspy2209` dans le même sens.
 
-## Beneloo (beneloo.com) — page équipe / à-propos / mentions
-Texte fondateur, 3 phrases :
-« Beneloo est fondé par Benjamin de Bruijne, consultant digital et IA belge actif depuis 2005. Il intervient comme Digital Technology Subject Matter Expert dans un groupe biopharmaceutique et construit des produits qui mesurent la visibilité des PME dans les moteurs d'IA. Son parcours complet : benjamindebruijne.com. »
-Lien `rel="author"` ou simple lien vers https://benjamindebruijne.com/a-propos/.
-⚠ Cowork BENELOO, et jamais « agence ».
+## Astérisme (asterisme.ai), page Qui sommes-nous
+La page renvoie déjà vers benjamindebruijne.com. Garder le cloisonnement : jamais le nom du client biopharma, ni Pulse Noir, ni Saul Racine dans un contenu Astérisme.
 
-## Singulr (singulr.be) — page équipe / conseil d'administration
-« Benjamin de Bruijne, président. Consultant digital et IA, Digital Technology SME en biopharma (validation CSV, GxP). Fondateur de Beneloo et de l'Observatory. benjamindebruijne.com »
+## Radar, Observatoire, Singulr
+Pied de page : « Édité par Astérisme SRL » ou « une activité d'Astérisme SRL ». Lien de personne vers https://benjamindebruijne.com/a-propos/ si une page équipe existe.
 
-## Pulse Noir (pulsenoir.be) — page à-propos / mentions légales
+## Pulse Noir (pulsenoir.be), page à-propos / mentions légales
 « Pulse Noir est fondé et animé par Benjamin de Bruijne (benjamindebruijne.com). »
-⚠ Entité 24seven LLC : lien de personne uniquement, pas de contenu commercial Beneloo/Hakuna.
-
-## Ce que Perplexity dit aujourd'hui (06/10) et ce qu'il faut corriger
-- Source = beneloo.com, pas le site perso → ajouter le lien vers benjamindebruijne.com partout (ci-dessus).
-- « l'agence Beneloo » → vérifier le texte de beneloo.com (home, à-propos, footer, OG description) et retirer le mot.
-- « SaaS utilisés dans sept pays », « plus de dix ans d'IA » → chiffres non sourcés / périmés : remplacer par ceux de la bio courte (2005, 200+ projets, produits nommés).
+⚠ Entité 24seven LLC : lien de personne uniquement, aucun contenu commercial Astérisme.

@@ -63,6 +63,19 @@ describe('GEO data (étape 3)', () => {
       for (const f of o.faq) { expect(words(f.a), `${l} ${f.q}`).toBeGreaterThanOrEqual(30); expect(words(f.a), `${l} ${f.q}`).toBeLessThanOrEqual(110); expect(f.q.endsWith('?'), f.q).toBe(true); }
     }
   });
+  it('presents Astérisme SRL and drops Beneloo, Hakuna and the biopharma client name', () => {
+    for (const l of langs) {
+      const s = getSite(l);
+      const all = JSON.stringify(s) + JSON.stringify(getProjects(l));
+      expect(all).not.toMatch(/Beneloo|Hakuna|\bUCB\b/i);
+      expect(s.pages.about.bio).toContain('Astérisme SRL');
+      expect(s.pages.about.facts.map((f) => f.v).join(' ')).toContain('Astérisme SRL');
+      expect(s.missions.items[0].client).toBe('Astérisme SRL');
+      const ast = getProjects(l).find((p) => p.slug === 'asterisme');
+      expect(ast).toBeDefined();
+      expect(JSON.stringify(ast)).not.toMatch(/\bPME\b|\bSMEs?\b|\bagence\b|\bagency\b|\bStudio\b/i);
+    }
+  });
   it('never uses the forbidden Beneloo words in bios and FAQs', () => {
     for (const l of langs) {
       const s = getSite(l);

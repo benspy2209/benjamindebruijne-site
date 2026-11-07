@@ -2,11 +2,11 @@ import { test, expect } from '@playwright/test';
 
 const routes = [
   '/', '/projets/', '/a-propos/', '/services/', '/contact/', '/blog/', '/mentions-legales/', '/confidentialite/',
-  '/projets/service-volee/', '/projets/bibliopulse/', '/projets/observatory/', '/projets/iris-noir/', '/projets/royal-wellington/', '/projets/beneloo/',
+  '/projets/service-volee/', '/projets/bibliopulse/', '/projets/observatory/', '/projets/iris-noir/', '/projets/royal-wellington/', '/projets/asterisme/', '/projets/radar/',
   '/biopharma/', '/en/biopharma/', '/blog/valider-un-outil-ia-gxp/', '/en/blog/valider-un-outil-ia-gxp/',
   '/services/construire/', '/services/automatiser/', '/services/piloter/', '/en/services/build/', '/en/services/automate/', '/en/services/deliver/',
   '/en/', '/en/projects/', '/en/about/', '/en/services/', '/en/contact/', '/en/blog/', '/en/legal/', '/en/privacy/',
-  '/en/projects/service-volee/', '/en/projects/bibliopulse/', '/en/projects/observatory/', '/en/projects/iris-noir/', '/en/projects/royal-wellington/', '/en/projects/beneloo/',
+  '/en/projects/service-volee/', '/en/projects/bibliopulse/', '/en/projects/observatory/', '/en/projects/iris-noir/', '/en/projects/royal-wellington/', '/en/projects/asterisme/', '/en/projects/radar/',
 ];
 
 for (const r of routes) {
@@ -91,9 +91,9 @@ test('SEO : fil d’Ariane + Service sur une offre, CreativeWork sur un projet',
   await page.goto('/services/piloter/');
   const types = async () => JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent()) ?? '{}')['@graph'].map((n: { '@type': string }) => n['@type']).flat();
   expect(await types()).toEqual(expect.arrayContaining(['BreadcrumbList', 'Service']));
-  await page.goto('/projets/beneloo/');
+  await page.goto('/projets/asterisme/');
   expect(await types()).toEqual(expect.arrayContaining(['BreadcrumbList', 'CreativeWork']));
-  await expect(page).toHaveTitle(/^Beneloo — Un score qui dit si les IA vous citent, et quoi corriger — Benjamin de Bruijne$/);
+  await expect(page).toHaveTitle(/^Astérisme — L'humain dirige\. L'IA assiste — Benjamin de Bruijne$/);
 });
 
 test('GEO : llms.txt servi en texte avec les articles, blog indexable', async ({ page, request }) => {
@@ -103,7 +103,9 @@ test('GEO : llms.txt servi en texte avec les articles, blog indexable', async ({
   const body = await res.text();
   expect(body).toContain('# Benjamin de Bruijne');
   expect(body).toContain('/services/piloter/');
-  expect(body).toContain('/en/projects/beneloo/');
+  expect(body).toContain('/en/projects/asterisme/');
+  expect(body).toContain('Astérisme SRL');
+  expect(body).not.toMatch(/Beneloo|Hakuna/i);
   expect(body).toContain('/blog/valider-un-outil-ia-gxp/');
   await page.goto('/blog/');
   expect(await page.locator('meta[name="robots"]').count()).toBe(0);
@@ -182,4 +184,19 @@ test('footer : liens LinkedIn et GitHub sur toutes les pages, et LinkedIn dans l
     await expect(page.locator('footer a[href="https://github.com/benspy2209"]')).toHaveCount(1);
   }
   await expect(page.locator('.bp-li')).toHaveAttribute('href', 'https://www.linkedin.com/in/benjamindebruijne/');
+});
+
+test('Astérisme : société de Ben partout, plus aucune trace de Beneloo, Hakuna ni du client biopharma', async ({ page }) => {
+  for (const url of ['/', '/en/', '/a-propos/', '/en/about/', '/mentions-legales/', '/en/legal/', '/biopharma/', '/en/biopharma/']) {
+    await page.goto(url);
+    const html = await page.content();
+    expect(html, url).not.toMatch(/Beneloo|Hakuna|\bUCB\b/i);
+  }
+  await page.goto('/');
+  await expect(page.locator('#missions')).toContainText('Astérisme SRL');
+  const graph = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent()) ?? '{}')['@graph'];
+  const org = graph.find((n: { legalName?: string }) => n.legalName === 'Astérisme SRL');
+  expect(org?.identifier?.value).toBe('1044.920.226');
+  await page.goto('/mentions-legales/');
+  await expect(page.locator('main')).toContainText('BCE 1044.920.226');
 });

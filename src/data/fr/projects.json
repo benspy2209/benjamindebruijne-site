@@ -1,5 +1,101 @@
 [
   {
+    "slug": "asterisme",
+    "name": "Astérisme",
+    "tag": "Société · IA appliquée",
+    "kpi": "3",
+    "kpiLabel": "langues (FR, EN, NL)",
+    "role": "Fondateur",
+    "year": "2026",
+    "lead": "ma société, un cabinet d'IA appliquée",
+    "text": " pour les métiers où l'erreur coûte cher : fiduciaires, avocats, huissiers, immobilier, banque, assurance, automobile.",
+    "url": "https://asterisme.ai/",
+    "color": "#16140c",
+    "body": [
+      "Astérisme SRL est une société de droit belge constituée en novembre 2026, siège Avenue Louise 231 à Bruxelles, BCE 1044.920.226. J'en suis le fondateur et le seul décisionnaire. Astérisme met l'IA dans les process des métiers où une erreur coûte cher, un process à la fois. Chaque process est décrit, testé sur les dossiers du client, validé par son équipe avant la mise en service, puis mesuré, puis gardé ou arrêté. Le client choisit où tourne l'IA : publique, sur nos serveurs en Belgique, ou chez lui.",
+      "Stack : site statique généré en Python, en français, anglais et néerlandais, hébergé chez o2switch."
+    ],
+    "status": "",
+    "stack": "site statique généré en Python · FR, EN, NL",
+    "tagline": "L'humain dirige. L'IA assiste.",
+    "sticker": [
+      "L'humain dirige.",
+      "L'IA assiste."
+    ],
+    "cat": "IA appliquée",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "Les entreprises adoptent l'IA vite, souvent sans méthode ni règles sur les données.",
+        "p1": "Une IA, comme un humain, peut voir des motifs qui n'existent pas. Fin 2025, la cour d'appel d'Anvers a condamné un avocat à payer 25 000 € pour des conclusions qui citaient une jurisprudence inventée par une IA.",
+        "p2": "Dans une fiduciaire, une étude d'huissiers ou une compagnie d'assurance, une erreur de ce type coûte un client, une amende ou un dossier."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Une méthode reprise de la validation pharmaceutique.",
+        "p1": "Avant tout test, le seuil d'erreur acceptable et le critère d'arrêt sont écrits et approuvés. Le process est testé sur les dossiers du client, et rien ne part en production sans la validation de son équipe.",
+        "p2": "Chaque process mis en service est mesuré, puis gardé, corrigé ou arrêté. Le client garde tous les livrables, dans des formats ouverts."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "Société constituée, site en trois langues.",
+        "p1": "asterisme.ai est en ligne en français, anglais et néerlandais. Astérisme publie Radar et l'Observatoire de la souveraineté conversationnelle, et opère Singulr, une forge Git souveraine hébergée en Belgique.",
+        "p2": "Premier contact : un diagnostic gratuit de 30 minutes en visio."
+      }
+    ],
+    "ecosystem": "Astérisme × Radar × Observatoire × Singulr",
+    "kind": "product",
+    "featured": true
+  },
+  {
+    "slug": "radar",
+    "name": "Radar",
+    "tag": "Outil · Visibilité IA",
+    "kpi": "2",
+    "kpiLabel": "axes d'audit",
+    "role": "Conception & développement",
+    "year": "2026",
+    "lead": "l'outil gratuit d'Astérisme",
+    "text": " qui audite l'exposition d'un site aux politiques anti-spam de Google et sa lisibilité pour les moteurs d'IA.",
+    "url": "https://radar.asterisme.ai/",
+    "color": "#1a1a12",
+    "body": [
+      "Radar est un outil gratuit publié par Astérisme. Il audite deux choses sur un site : son exposition aux politiques anti-spam de Google, et la façon dont les moteurs d'IA arrivent à le lire.",
+      "Stack : TanStack Start, React, Vite."
+    ],
+    "status": "",
+    "stack": "TanStack Start · React · Vite",
+    "tagline": "Savoir si Google vous sanctionne et si les IA vous lisent.",
+    "sticker": [
+      "Audit",
+      "gratuit"
+    ],
+    "cat": "Visibilité IA",
+    "sections": [
+      {
+        "label": "Le problème",
+        "title": "Un site peut disparaître de deux façons.",
+        "p1": "Sanctionné par les politiques anti-spam de Google, ou illisible pour les moteurs d'IA qui répondent à la place des moteurs de recherche.",
+        "p2": "Dans les deux cas, le propriétaire du site s'en rend compte tard, quand les demandes baissent."
+      },
+      {
+        "label": "Ce que j'ai construit",
+        "title": "Un audit des deux risques, sur un même site.",
+        "p1": "Radar examine l'exposition du site aux politiques anti-spam de Google et sa lisibilité pour les moteurs d'IA.",
+        "p2": "L'outil a été conçu et développé pour Astérisme, qui le publie."
+      },
+      {
+        "label": "Où ça en est",
+        "title": "En ligne, gratuit.",
+        "p1": "Radar est accessible sur radar.asterisme.ai.",
+        "p2": "Il fait partie des outils d'Astérisme, avec l'Observatoire et Singulr."
+      }
+    ],
+    "ecosystem": "Astérisme × Radar × Observatoire × Singulr",
+    "kind": "product",
+    "featured": true
+  },
+  {
     "slug": "service-volee",
     "name": "Service-Volée",
     "tag": "Produit · Tennis",
@@ -144,67 +240,19 @@
     "featured": true
   },
   {
-    "slug": "beneloo",
-    "name": "Beneloo",
-    "tag": "Marque · Visibilité IA et automatisation",
-    "kpi": "17 000+",
-    "kpiLabel": "fiches de prospection suivies",
-    "role": "Fondateur",
-    "year": "2024",
-    "lead": "ma structure de conseil :",
-    "text": " le Beneloo Score mesure la visibilité d'une PME dans les moteurs d'IA, un portail suit 17 000 fiches de prospection.",
-    "url": "https://beneloo.com",
-    "color": "#8a3a1d",
-    "body": [
-      "Beneloo est ma structure de conseil, fondée en 2024, avec deux métiers : la visibilité IA (être cité par ChatGPT, Perplexity, Gemini) et l'automatisation IA pour les PME belges. Côté visibilité : diagnostic, score en six piliers, plan d'action, suivi. J'ai construit moi-même le site, l'observatoire et le portail de prospection : 17 000 fiches de sociétés francophones avec téléphone, réparties en 11 secteurs, résumé d'activité généré par IA à l'ouverture de chaque fiche.",
-      "Stack : Next.js, Supabase, OpenAI et Perplexity, données BCE et BNB, pipeline de prospection par email."
-    ],
-    "status": "",
-    "stack": "Next.js · Supabase · OpenAI",
-    "tagline": "Un score qui dit si les IA vous citent, et quoi corriger.",
-    "sticker": [
-      "Beneloo",
-      "Score"
-    ],
-    "cat": "Visibilité IA",
-    "sections": [
-      {
-        "label": "Le problème",
-        "title": "Les PME ne savent pas qu'elles sont invisibles pour les IA.",
-        "p1": "Mes campagnes d'observatoire montrent que plus de 96 % des PME locales n'apparaissent jamais quand on interroge ChatGPT, Claude, Gemini ou Perplexity. La plupart ne le savent pas, et celles qui s'en doutent ne savent pas quoi faire.",
-        "p2": "Le conseil classique en référencement ne mesure pas cela, et les agences vendent des promesses."
-      },
-      {
-        "label": "Ce que j'ai construit",
-        "title": "Une marque, un score en six piliers, un portail de prospection.",
-        "p1": "Beneloo mesure la visibilité IA d'une entreprise sur six piliers, produit un plan d'action et suit l'évolution. Derrière : un portail que j'ai construit moi-même, 17 000 fiches de sociétés francophones avec téléphone réparties en 11 secteurs, résumé d'activité généré par IA à l'ouverture, séquences d'emails programmées.",
-        "p2": "Le site beneloo.com, l'observatoire et le portail partagent la même base de données officielles (BCE, BNB)."
-      },
-      {
-        "label": "Où ça en est",
-        "title": "Prospection en cours, offre en structuration.",
-        "p1": "Les premiers emails partent chaque jour ouvré, les onglets sectoriels sont en place. Le renommage de l'ancien diagnostic en Beneloo Score et la page méthode sont le chantier du moment.",
-        "p2": "Prochaines étapes : annuaire public de la visibilité IA par société, revendication de fiche, et premiers clients accompagnés sur la durée."
-      }
-    ],
-    "ecosystem": "Beneloo × Observatory × Singulr",
-    "kind": "product",
-    "featured": true
-  },
-  {
     "slug": "observatory",
-    "name": "Beneloo Observatory",
+    "name": "Observatoire",
     "tag": "Recherche · IA",
     "kpi": "1 668",
-    "kpiLabel": "PME testées",
+    "kpiLabel": "entreprises testées",
     "role": "Conception & données",
     "year": "2026",
-    "lead": "l'observatoire de la visibilité des PME belges",
-    "text": " dans ChatGPT, Claude, Gemini et Perplexity : 3 campagnes, 1 668 sociétés, 96 à 98 % invisibles.",
-    "url": "https://beneloo.com",
+    "lead": "l'Observatoire de la souveraineté conversationnelle,",
+    "text": " la visibilité des entreprises belges dans ChatGPT, Claude, Gemini et Perplexity : 3 campagnes, 1 668 sociétés, 96 à 98 % invisibles.",
+    "url": "https://observatoire.asterisme.ai/",
     "color": "#12121f",
     "body": [
-      "L'Observatory interroge quatre modèles d'IA avec des prompts figés sur des échantillons exhaustifs de sociétés : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque mention est validée à la main (correct, réseau, hallucination). Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité ; ChatGPT et Claude ne citent aucun cabinet local, Gemini hallucine jusqu'à 52 % de ses réponses.",
+      "L'Observatoire interroge quatre modèles d'IA avec des prompts figés sur des échantillons exhaustifs de sociétés : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque mention est validée à la main (correct, réseau, hallucination). Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité ; ChatGPT et Claude ne citent aucun cabinet local, Gemini hallucine jusqu'à 52 % de ses réponses.",
       "Stack : Python, Postgres, pipeline de campagnes immuable (prompts et modèles figés, coûts plafonnés), validation humaine tracée, agrégats anonymisés publiables."
     ],
     "status": "",
@@ -219,23 +267,23 @@
       {
         "label": "Le problème",
         "title": "Tout le monde parle de visibilité IA, personne ne la mesure.",
-        "p1": "Quand un particulier demande à ChatGPT ou Perplexity un comptable ou un plombier près de chez lui, qui est cité ? Les discours abondent, les chiffres manquent. Et sans mesure, impossible de dire à une PME si elle a un problème, ni s'il se corrige.",
+        "p1": "Quand un particulier demande à ChatGPT ou Perplexity un comptable ou un plombier près de chez lui, qui est cité ? Les discours abondent, les chiffres manquent. Et sans mesure, impossible de dire à une entreprise si elle a un problème, ni s'il se corrige.",
         "p2": "Il fallait un protocole reproductible : mêmes questions, mêmes modèles, échantillons exhaustifs, validation humaine de chaque nom cité."
       },
       {
         "label": "Ce que j'ai construit",
         "title": "Un pipeline de campagnes figées et une validation nom par nom.",
-        "p1": "L'Observatory interroge quatre modèles (ChatGPT, Claude, Gemini, Perplexity) avec des prompts gelés sur des populations entières : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque entité citée est rapprochée du registre officiel et classée : correcte, marque de réseau, hallucination.",
+        "p1": "L'Observatoire interroge quatre modèles (ChatGPT, Claude, Gemini, Perplexity) avec des prompts gelés sur des populations entières : 488 comptables namurois, 382 plombiers namurois, 798 comptables du Brabant wallon. Chaque entité citée est rapprochée du registre officiel et classée : correcte, marque de réseau, hallucination.",
         "p2": "Résultat : 96,9 %, 98,4 % et 96,6 % d'invisibilité. ChatGPT et Claude ne citent aucun cabinet local ; Gemini hallucine jusqu'à 52 % de ses réponses. Coût total des trois campagnes : moins de 5 euros d'API."
       },
       {
         "label": "Où ça en est",
         "title": "Trois campagnes publiées en interne, méthode documentée.",
-        "p1": "Les agrégats sont anonymisés et publiables ; le protocole de validation, les limites et les biais sont écrits. Le mur éditorial sépare strictement l'observatoire public du conseil Beneloo.",
-        "p2": "Prochaines étapes : nouveaux secteurs, contraste à deux secteurs publié, et le Beneloo Score qui applique cette mesure à une entreprise à la fois."
+        "p1": "Les agrégats sont anonymisés et publiables ; le protocole de validation, les limites et les biais sont écrits. Le mur éditorial sépare strictement l'observatoire public du conseil d'Astérisme.",
+        "p2": "L'Observatoire est publié par Astérisme SRL sur observatoire.asterisme.ai."
       }
     ],
-    "ecosystem": "Beneloo × Observatory × Singulr",
+    "ecosystem": "Astérisme × Radar × Observatoire × Singulr",
     "kind": "product",
     "featured": true
   },
@@ -245,14 +293,14 @@
     "tag": "Écosystème · Souveraineté numérique",
     "kpi": "4",
     "kpiLabel": "piliers",
-    "role": "Fondateur & président",
+    "role": "Conception & opération",
     "year": "2026",
-    "lead": "l'ASBL que j'ai fondée pour des communs numériques européens :",
+    "lead": "une activité d'Astérisme SRL pour des communs numériques européens :",
     "text": " veille, observatoire, forge Git souveraine opérée en Belgique, fédération d'acteurs. Site en 4 langues, événement Singulr Health 2026.",
     "url": "https://singulr.be",
     "color": "#1d2b4a",
     "body": [
-      "Singulr est une ASBL belge que j'ai fondée et que je préside : développer et opérer des communs numériques européens, fédérer les acteurs souverains et promouvoir la souveraineté numérique. Quatre piliers : une veille hebdomadaire, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, forge.singulr.be, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Première édition de Singulr Health le 10 septembre 2026 à Waterloo : une cinquantaine de médecins, experts du numérique, entreprises et institutions. Avec Beneloo et l'Observatory, Singulr forme l'écosystème que je construis autour de la maîtrise des données et des outils.",
+      "Singulr est une activité d'Astérisme SRL : développer et opérer des communs numériques européens, fédérer les acteurs souverains et promouvoir la souveraineté numérique. Quatre piliers : une veille hebdomadaire, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, forge.singulr.be, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Première édition de Singulr Health le 10 septembre 2026 à Waterloo : une cinquantaine de médecins, experts du numérique, entreprises et institutions. Avec Radar et l'Observatoire, Singulr fait partie des outils d'Astérisme pour garder la main sur les données et le code.",
       "Stack : site statique quadrilingue (FR, NL, DE, EN), Forgejo et PostgreSQL sur VPS Debian, Caddy, déploiement continu, formulaires Brevo."
     ],
     "status": "",
@@ -273,7 +321,7 @@
       {
         "label": "Ce que j'ai construit",
         "title": "Quatre piliers, un seul mouvement.",
-        "p1": "Singulr ASBL opère une veille hebdomadaire sur la souveraineté numérique, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Le site existe en quatre langues.",
+        "p1": "Singulr opère une veille hebdomadaire sur la souveraineté numérique, un observatoire des alternatives européennes, une forge Git souveraine (Forgejo, hébergée en Belgique sous droit européen) et une fédération d'acteurs. Le site existe en quatre langues.",
         "p2": "Le 10 septembre 2026, la première édition de Singulr Health a réuni une cinquantaine de médecins, experts du numérique, entreprises et institutions à Waterloo."
       },
       {
@@ -283,7 +331,7 @@
         "p2": "Prochaines étapes : outil d'envoi souverain pour les membres, nouveaux guides santé, deuxième édition de Singulr Health."
       }
     ],
-    "ecosystem": "Beneloo × Observatory × Singulr",
+    "ecosystem": "Astérisme × Radar × Observatoire × Singulr",
     "kind": "product",
     "featured": true
   },
