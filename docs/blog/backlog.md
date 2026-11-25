@@ -12,12 +12,13 @@ Une file par rubrique (voir GUIDE §1 et §9). Chaque routine prend le premier s
 _(file vide : la prochaine routine choisit son sujet selon le GUIDE §9)_
 
 ## À écrire — ia
-1. **Les erreurs typiques d'un LLM en entreprise, et comment les attraper** — angle : connaître les pannes pour les encadrer ; couvrir : invention de faits, chiffres déplacés, mauvaise langue, instructions ignorées, dérive dans le temps ; pour chacune : le test qui la détecte ; sources : documentation officielle des fournisseurs sur les limites, AI Act pour les obligations de transparence.
+_(file vide : la prochaine routine choisit son sujet selon le GUIDE §9)_
 
 ## À écrire — construire
 1. **Site d'entreprise : les sept réglages que personne ne fait, et qui comptent** — angle : nom de domaine, sauvegardes, HTTPS, mentions légales, RGPD, mesure, vitesse ; couvrir : pour chacun, le risque concret et le réglage en 10 minutes ; sources : APD (cookies et mentions), SPF Économie (mentions obligatoires d'un site), documentation officielle des outils décrits.
 
 ## Publiés
+- 2026-11-25 · ia · `erreurs-typiques-llm-detecter` · https://benjamindebruijne.com/blog/erreurs-typiques-llm-detecter/ · EN https://benjamindebruijne.com/en/blog/erreurs-typiques-llm-detecter/ · LinkedIn : programmé le 26/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=2103760275369968007).
 - 2026-11-24 · automatisation · `boite-mail-partagee-trier-router` · https://benjamindebruijne.com/blog/boite-mail-partagee-trier-router/ · EN https://benjamindebruijne.com/en/blog/boite-mail-partagee-trier-router/ · LinkedIn : programmé le 25/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=-4437309078283924332).
 - 2026-11-23 · gxp · `revue-periodique-systeme-valide` · https://benjamindebruijne.com/blog/revue-periodique-systeme-valide/ · EN https://benjamindebruijne.com/en/blog/revue-periodique-systeme-valide/ · LinkedIn : programmé le 24/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=-8264320497744983983).
 - 2026-11-19 · construire · `lancer-produit-seul-cinq-lecons` · https://benjamindebruijne.com/blog/lancer-produit-seul-cinq-lecons/ · EN https://benjamindebruijne.com/en/blog/lancer-produit-seul-cinq-lecons/ · LinkedIn : programmé le 20/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=-5976442485044854298).
