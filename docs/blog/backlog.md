@@ -15,9 +15,10 @@ _(file vide : la prochaine routine choisit son sujet selon le GUIDE §9)_
 _(file vide : la prochaine routine choisit son sujet selon le GUIDE §9)_
 
 ## À écrire — construire
-1. **Site d'entreprise : les sept réglages que personne ne fait, et qui comptent** — angle : nom de domaine, sauvegardes, HTTPS, mentions légales, RGPD, mesure, vitesse ; couvrir : pour chacun, le risque concret et le réglage en 10 minutes ; sources : APD (cookies et mentions), SPF Économie (mentions obligatoires d'un site), documentation officielle des outils décrits.
+_(file vide : la prochaine routine choisit son sujet selon le GUIDE §9)_
 
 ## Publiés
+- 2026-11-26 · construire · `site-entreprise-sept-reglages` · https://benjamindebruijne.com/blog/site-entreprise-sept-reglages/ · EN https://benjamindebruijne.com/en/blog/site-entreprise-sept-reglages/ · LinkedIn : programmé le 27/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=-1908302651714616714).
 - 2026-11-25 · ia · `erreurs-typiques-llm-detecter` · https://benjamindebruijne.com/blog/erreurs-typiques-llm-detecter/ · EN https://benjamindebruijne.com/en/blog/erreurs-typiques-llm-detecter/ · LinkedIn : programmé le 26/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=2103760275369968007).
 - 2026-11-24 · automatisation · `boite-mail-partagee-trier-router` · https://benjamindebruijne.com/blog/boite-mail-partagee-trier-router/ · EN https://benjamindebruijne.com/en/blog/boite-mail-partagee-trier-router/ · LinkedIn : programmé le 25/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=-4437309078283924332).
 - 2026-11-23 · gxp · `revue-periodique-systeme-valide` · https://benjamindebruijne.com/blog/revue-periodique-systeme-valide/ · EN https://benjamindebruijne.com/en/blog/revue-periodique-systeme-valide/ · LinkedIn : programmé le 24/11 à 08:30 Europe/Brussels (Metricool, https://app.metricool.com/planner/calendar?blogId=6408500&openWithPostUuid=-8264320497744983983).
